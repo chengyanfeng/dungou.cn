@@ -59,7 +59,6 @@ func (this *Mssql)Query(str string) []map[string]interface{} {
 	defer rows.Close()
 	return d
 }
-
 func printRow(c []interface{},colsdata []interface{}) map[string]interface{}{
 	a :=make(map[string]interface{})
 	for i, val := range colsdata {
