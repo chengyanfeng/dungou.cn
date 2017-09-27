@@ -166,7 +166,7 @@ type User struct{
 	Password     string `gorm:"size:512;column:password"`
 	Role string `gorm:"size:512;column:role"`
 	Grade string  `gorm:"size:512;column:grade"`
-	Company string `gorm:"size:512;column:grade"`
+	Company string `gorm:"size:512;column:company"`
 	T1  string  `gorm:"size:512;column:t1"`
 	T2 string  `gorm:"size:512;column:t2"`
 }
