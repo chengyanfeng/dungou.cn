@@ -36,6 +36,7 @@ import (
 	"crypto/cipher"
 	"runtime"
 	"os/exec"
+	"mime/multipart"
 )
 
 var localCache cache.Cache
@@ -495,6 +496,56 @@ func ToString1(v interface{}, def ...string) string {
 	}
 }
 
+func Upload(url, file string) (body []byte, err error) {
+	// Prepare a form that you will submit to that URL.
+	var b bytes.Buffer
+	w := multipart.NewWriter(&b)
+	// Add your file
+	f, err := os.Open(file)
+	if err != nil {
+		return
+	}
+	defer f.Close()
+	fw, err := w.CreateFormFile("bin", file)
+	if err != nil {
+		return
+	}
+	if _, err = io.Copy(fw, f); err != nil {
+		return
+	}
+	// Add the other fields
+	if fw, err = w.CreateFormField("key"); err != nil {
+		return
+	}
+	if _, err = fw.Write([]byte("KEY")); err != nil {
+		return
+	}
+	// Don't forget to close the multipart writer.
+	// If you don't close it, your request will be missing the terminating boundary.
+	w.Close()
+
+	// Now that you have a form, you can submit it to your handler.
+	req, err := http.NewRequest("POST", url, &b)
+	if err != nil {
+		return
+	}
+	// Don't forget to set the content type, this will contain the boundary.
+	req.Header.Set("Content-Type", w.FormDataContentType())
+
+	// Submit the request
+	client := &http.Client{}
+	res, err := client.Do(req)
+	if err != nil {
+		return []byte(ToString(res)), err
+	}
+	defer func() {
+		if res != nil {
+			res.Body.Close()
+		}
+	}()
+	body, err = ioutil.ReadAll(res.Body)
+	return
+}
 
 func ToString(v interface{}) string {
 	if v != nil {
@@ -995,4 +1046,23 @@ func Exec(cmd string) (str string, e error) {
 		str = string(output)
 		return
 	}
+}
+
+func RemoveDuplicatesAndEmpty(a []string) (ret []string){
+	var x []string = []string{}
+	for _, i := range a {
+		if len(x) == 0 {
+			x = append(x, i)
+		} else {
+			for k, v := range x {
+				if i == v {
+					break
+				}
+				if k == len(x)-1 {
+					x = append(x, i)
+				}
+			}
+		}
+	}
+	return x
 }

@@ -1,12 +1,39 @@
 package datasource
 
 type Dungouset struct {
-	Id        string `gorm:"size:512;column:id"`
-	Type      string `gorm:"size:512;column:type"`
-	Status    int    `gorm:"column:status"`
-	Nowsta    string `gorm:"size:512;column:nowsta"`
-	Jacks     int    `gorm:"column:jacks"`
-	Pressures int    `gorm:"column:pressures"`
+	Project    string `gorm:"size:512;column:project"`
+	Path       string `gorm:"size:512;column:path"`
+	Section    string `gorm:"size:512;column:section"`
+	Dungou     string `gorm:"size:512;column:dungou"`
+	Positivity string `gorm:"size:512;column:positivity"`
+	Company1   string `gorm:"size:512;column:company1"`
+	Company2   string `gorm:"size:512;column:company2"`
+	Client     string `gorm:"size:512;column:client"`
+	Datano     string `gorm:"size:512;column:datano"`
+	Jack       string `gorm:"size:512;column:jack"`
+	Ringnum    string `gorm:"size:512;column:ringnum"`
+	Lon  string `gorm:"size:512;column:longitude"`
+	Lat   string `gorm:"size:512;column:latitude"`
+	Status     string `gorm:"size:512;column:status"`
+}
+
+type Rtinfo struct {
+	Line string `gorm:"size:512;column:line"`
+	Name string `gorm:"size:512;column:name"`
+}
+type Seclonlat struct {
+	Section string `gorm:"size:512;column:section"`
+	Lon  string `gorm:"size:512;column:lon"`
+	Lat   string `gorm:"size:512;column:lat"`
+}
+type Prolonlat struct {
+	Section string `gorm:"size:512;column:section"`
+	Lon  string `gorm:"size:512;column:lon"`
+	Lat   string `gorm:"size:512;column:lat"`
+}
+type Profile struct {
+	Section string `gorm:"size:512;column:section"`
+	Url     string `gorm:"size:512;column:url"`
 }
 
 type Daopan struct {
