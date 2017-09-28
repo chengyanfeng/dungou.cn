@@ -3,12 +3,15 @@ package controller
 import (
 	"bytes"
 	. "dungou.cn/datasource"
-	."dungou.cn/util"
+	. "dungou.cn/util"
 	"encoding/base64"
+	"encoding/csv"
 	"encoding/json"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"net/http"
+	"os"
 	"strings"
 )
 
@@ -64,6 +67,35 @@ func (this *ApiController) Getdaopan() {
 	this.EchoJsonMsg(daopan)
 }
 
+func (this *ApiController) Getpath() {
+	sets := []Dungouset{}
+	paths := make([]string, 0)
+	Db.Where("status = ?", 1).Find(&sets)
+	for _, v := range sets {
+		path := v.Path
+		paths = append(paths, path)
+	}
+	paths = RemoveDuplicatesAndEmpty(paths)
+	this.EchoJson(paths)
+}
+
+func (this *ApiController) Getsection() {
+	sets := []Dungouset{}
+	path := this.GetString("path")
+	sections := make([]string, 0)
+	if path == "" {
+		Db.Where("status = ?", 1).Find(&sets)
+	} else {
+		Db.Where("status = ? and path = ?", 1, path).Find(&sets)
+	}
+	for _, v := range sets {
+		section := v.Section
+		sections = append(sections, section)
+	}
+	sections = RemoveDuplicatesAndEmpty(sections)
+	this.EchoJson(sections)
+}
+
 func (this *ApiController) Upload() {
 	f, h, err := this.GetFile("bin")
 	defer func() {
@@ -90,7 +122,7 @@ func (this *ApiController) Upload() {
 		} else {
 			md5 := Md5(buff.Bytes())
 			filename := JoinStr(md5, ".", ext)
-			updir := ":"
+			updir := "upload"
 			locfile := updir + "/" + filename
 			exist := FileExists(locfile)
 			if !exist {
@@ -126,6 +158,46 @@ func (this *ApiController) Upload() {
 }
 
 func (this *ApiController) Pub() {
+	url := this.GetString("url")
+	table := this.GetString("table")
+	section := this.GetString("section")
+	pg := Mysql{}
+
+	if table == "profile" {
+		profile := Profile{}
+		profile.Section = section
+		Db.Where("section = ?", section).Delete(Profile{})
+		profile.Url = url
+		Db.Create(profile)
+	} else if table == "dungouset" {
+		file, err := os.Open(url)
+		if err != nil {
+			fmt.Println("Error:", err)
+			return
+		}
+		defer file.Close()
+		reader := csv.NewReader(file)
+		k := 0
+		for {
+			record, err := reader.Read()
+			if err == io.EOF {
+				break
+			} else if err != nil {
+				this.EchoJsonErr(err)
+				return
+			}
+			if k != 0 {
+				inserSet(record)
+			}
+			k++
+		}
+	}else if table == "rtinfo"||table =="seclonlat"||table=="prolonlat" {
+		_, e := pg.LoadCsv(url, table, ",")
+		if e != nil {
+			this.EchoJsonErr(e)
+		}
+	}
+	this.EchoJson("200")
 
 }
 
@@ -137,4 +209,30 @@ func encrypt(param string) string {
 	param = base64.StdEncoding.EncodeToString(result)
 	param = strings.Replace(param, "/", "-", -1)
 	return param
+}
+
+func inserSet(record []string) {
+	set := Dungouset{}
+	p := P{}
+
+	dungou := record[3]
+	status := "1"
+	p["dungou"] = dungou
+	p["status"] = status
+	Db.Table("dungouset").Where("dungou = ? and status = ?", dungou, status).Updates(P{"status": "0"})
+	set.Project = record[0]
+	set.Path = record[1]
+	set.Section = record[2]
+	set.Dungou = record[3]
+	set.Positivity = record[4]
+	set.Company1 = record[5]
+	set.Company2 = record[6]
+	set.Client = record[7]
+	set.Datano = record[8]
+	set.Jack = record[9]
+	set.Ringnum = record[10]
+	set.Lon = record[11]
+	set.Lat = record[12]
+	set.Status = status
+	Db.Create(set)
 }
