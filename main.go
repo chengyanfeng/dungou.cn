@@ -9,12 +9,13 @@ import (
 	. "dungou.cn/task"
 	. "dungou.cn/util"
 	"os"
+
 )
 
 var orm Orm
 var mssql Mssql
 func main() {
-
+	initConf()
 	MODE = Trim(os.Getenv("mode"))
 	beego.BConfig.Listen.HTTPPort = 9700                     //端口设置
 	beego.BConfig.RecoverPanic = true                        //开启异常捕获
@@ -51,4 +52,18 @@ func crontab() {
 		return nil
 	}))
 	toolbox.StartTask() //开启定时任务
+}
+func initConf() {
+	myConfig := new(Config)
+	config := myConfig.InitConfig("./", "privilege.ini", "nats")
+	VISITOR = config["visitor"]
+	VISITORS = config["visitors"]
+	ORDINARYUSER = config["ordinaryuser"]
+	LEADERUSER = config["leaderuser"]
+	ADMINISTRATOR = config["administrator"]
+	ROOT = config["root"]
+	SUPERROOT = config["superroot"]
+
+
+
 }

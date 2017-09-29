@@ -160,13 +160,23 @@ type Tuya struct {
 	Ztl      string `gorm:"size:512;column:ztl"`
 }
 
-type User struct{
-	Id int `gorm:"size:32;column:id"`
-	Username     string `gorm:"size:512;column:username"`
-	Password     string `gorm:"size:512;column:password"`
-	Role string `gorm:"size:512;column:role"`
-	Grade string  `gorm:"size:512;column:grade"`
-	Company string `gorm:"size:512;column:company"`
-	T1  string  `gorm:"size:512;column:t1"`
-	T2 string  `gorm:"size:512;column:t2"`
+type User struct {
+
+	Id        int `json:"size:32;column:id;auto_increment"`
+	Username  string `json:"size:512;column:username"`
+	Password  string `json:"size:512;column:password"`
+	Role      string `json:"size:512;column:role"`
+	Grade     string `json:"size:512;column:grade"`
+	Companyid string `json:"size:512;column:companyid"`
+	T1        string `json:"size:512;column:t1"`
+	T2        string `json:"size:512;column:t2"`
+}
+
+type Message struct {
+	Id        int    `json:"size:32;column:id;auto_increment"`
+	Username  string `json:"size:512;column:username"`
+	Companyid string `json:"size:512;column:companyid"`
+	Date      string `json:"size:512;column:date"`
+	Text      string `json:"size:1024;column:text"`
+	Img       string `json:"size:64;column:img"`
 }
