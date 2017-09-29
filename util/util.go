@@ -308,7 +308,7 @@ func JsonEncode(v interface{}) (r string) {
 	if err != nil {
 		Error(err)
 	}
-	r = string(b)
+	r = strings.ToLower(string(b))
 	return
 }
 
