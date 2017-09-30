@@ -5,32 +5,32 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
-	"time"
 )
 
-var DbMssql *sql.DB
+var DbTjMssql *sql.DB
 
-type Mssql struct {
+type TjMssql struct {
 }
 
-func (this *Mssql) Init() {
+func (this *TjMssql) Init() {
 	var err error
 	connString := fmt.Sprintf("server=%s;database=%s;user id=%s;password=%s;port=%d;encrypt=disable",
-		SqlServerConn["host"],
-		SqlServerConn["name"],
-		SqlServerConn["username"],
-		SqlServerConn["password"],
-		SqlServerConn["port"],
+		TjConn["host"],
+		TjConn["name"],
+		TjConn["username"],
+		TjConn["password"],
+		TjConn["port"],
 	)
-	DbMssql,err = sql.Open("mssql", connString)
+	DbTjMssql,err = sql.Open("mssql", connString)
 	if err != nil {
 		panic(err.Error())
 	}
+
 }
 
-func (this *Mssql)Query(str string) []map[string]interface{} {
+func (this *TjMssql)Query(str string) []map[string]interface{} {
 	//产生查询语句的Statement
-	stmt, err := DbMssql.Prepare(str)
+	stmt, err := DbTjMssql.Prepare(str)
 	if err != nil {
 		log.Fatal("Prepare failed:", err.Error())
 	}
@@ -60,25 +60,3 @@ func (this *Mssql)Query(str string) []map[string]interface{} {
 	return d
 }
 
-func printRow(c []interface{},colsdata []interface{}) map[string]interface{}{
-	a :=make(map[string]interface{})
-	for i, val := range colsdata {
-		switch v := (*(val.(*interface{}))).(type) {
-		case nil:
-			a[c[i].(string)]=nil
-		case bool:
-			if v {
-				a[c[i].(string)]="1"
-			} else {
-				a[c[i].(string)]="0"
-			}
-		case []byte:
-			a[c[i].(string)]=string(v)
-		case time.Time:
-			a[c[i].(string)]=v.Format("2006-01-02 15:04:05")
-		default:
-			a[c[i].(string)]=v
-		}
-	}
-	return a
-}

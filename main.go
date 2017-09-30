@@ -13,6 +13,7 @@ import (
 
 var orm Orm
 var mssql Mssql
+var tjMssql TjMssql
 func main() {
 
 	MODE = Trim(os.Getenv("mode"))
@@ -32,8 +33,9 @@ func main() {
 	//调用以下函数处理接口数据
 	orm.Init()
 	mssql.Init()
-
-	Insert()
+	tjMssql.Init()
+	//a()
+	//Insert()
 	go func() {
 		//开启协程
 		InitCache() //初始化
@@ -51,4 +53,13 @@ func crontab() {
 		return nil
 	}))
 	toolbox.StartTask() //开启定时任务
+}
+
+func a() {
+	jd,err :=Upload("http://106.75.33.170:16680/api/upload","D:/lon.xlsx")
+	if err != nil {
+		Debug(err)
+	}
+	//json := *JsonDecode([]byte(jd))
+	Debug(string(jd))
 }

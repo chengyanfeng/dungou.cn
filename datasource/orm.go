@@ -58,6 +58,14 @@ func (Prolonlat) TableName() string {
 	return "prolonlat"
 }
 
+func (Commum) TableName() string {
+	return "commum"
+}
+
+func (Sediment) TableName() string {
+	return "sediment"
+}
+
 func (this *Orm) Init() {
 	var err error
 	conn := fmt.Sprintf("%v:%v@tcp(%v:%v)/%v?charset=utf8&parseTime=True&loc=Local",
@@ -126,6 +134,16 @@ func (this *Orm) Init() {
 
 	} else {
 		Db.CreateTable(&Prolonlat{})
+	}
+	if Db.HasTable("commum") {
+
+	} else {
+		Db.CreateTable(&Commum{})
+	}
+	if Db.HasTable("sediment") {
+
+	} else {
+		Db.CreateTable(&Sediment{})
 	}
 }
 

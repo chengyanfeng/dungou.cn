@@ -35,6 +35,13 @@ var SqlServerConn = P{
 	"name":     "dtdg",
 }
 
+var TjConn = P{
+	"username": "sa",
+	"password": "datahunter",
+	"host":     "localhost",
+	"port":     1433,
+	"name":     "SMCAS",
+}
 
 func FilterAs(o string) (n string) {
 	tmp := strings.Split(o, " as ")

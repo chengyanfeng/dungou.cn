@@ -7,7 +7,9 @@ import (
 	"github.com/astaxie/beego"
 	"fmt"
 	"errors"
+	."github.com/casbin/casbin"
 )
+
 
 var BaseFilter = func(ctx *context.Context) {
 	if MODE == "test" {
@@ -26,9 +28,9 @@ var RpcFilter = func(ctx *context.Context) {
 	if IsEmpty(p) {
 		err = errors.New("无效的请求参数格式")
 	} else {
-		fmt.Println(111111111111111)
 		act := p["act"]
 		args := ToP(p["args"])
+		role("","")
 		url := fmt.Sprintf("http://localhost:%v/%v", beego.BConfig.Listen.HTTPPort, act)
 		header := ctx.Request.Header
 		hp := P{}
@@ -44,4 +46,15 @@ var RpcFilter = func(ctx *context.Context) {
 		body = JsonEncode(P{"code": GENERAL_ERR, "msg": body})
 	}
 	ctx.Output.Body([]byte(body))
+}
+
+func role(role string,api string) {
+	e := NewEnforcer("path/to/rbac_model.conf", "path/to/rbac_policy.csv")
+	testEnforceWithoutUsers( e, "alice", "read", true)
+}
+
+func testEnforceWithoutUsers(e *Enforcer, obj string, act string, res bool) {
+	if e.Enforce(obj, act) != res {
+		fmt.Println("%s, %s: %t, supposed to be %t", obj, act, !res, res)
+	}
 }

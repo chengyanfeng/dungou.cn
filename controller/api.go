@@ -20,7 +20,7 @@ type ApiController struct {
 }
 
 const MAX_UPLOAD int64 = 50 * 1024 * 1024
-
+const OWNCOMPANY string = "上海地铁盾构设备工程有限公司"
 var url = "http://www.metroshield.com:7070"
 var key = []byte("qzQpyDAGqDDaHiOY")
 
@@ -60,6 +60,57 @@ func (this *ApiController) Getdata() {
 	this.EchoJsonMsg(jd)
 }
 
+
+func (this *ApiController) Maps() {
+	param :=this.FormToP("city","company","type","path","section","own","dungou")
+	p := make(map[string]interface{})
+	for k,v:=range param{
+		if v != nil {
+			p[k]=v
+		}
+	}
+	sets := []Dungouset{}
+	Db.Where(p).Find(&sets)
+	this.EchoJsonMsg(sets)
+}
+
+func (this *ApiController) Getcommu() {
+	commum := []Commum{}
+	sets :=[]Dungouset{}
+	Db.Find(&commum)
+	for _,v := range commum {
+		set := Dungouset{}
+		name :=v.Dungou
+		Db.Where("dungou = ?" ,name).Find(&set)
+		sets = append(sets,set)
+	}
+	this.EchoJsonMsg(sets)
+}
+
+func (this *ApiController) Getcompany(){
+	sets := []Dungouset{}
+	companys := make([]string, 0)
+	Db.Where("status = ?", 1).Find(&sets)
+	for _, v := range sets {
+		company := v.Company1
+		companys = append(companys, company)
+	}
+	companys = RemoveDuplicatesAndEmpty(companys)
+	this.EchoJson(companys)
+}
+
+func (this *ApiController) Gettype(){
+	sets := []Dungouset{}
+	typelist := make([]string, 0)
+	Db.Where("status = ?", 1).Find(&sets)
+	for _, v := range sets {
+		types := v.Type
+		typelist = append(typelist, types)
+	}
+	typelist = RemoveDuplicatesAndEmpty(typelist)
+	this.EchoJson(typelist)
+}
+
 func (this *ApiController) Getdaopan() {
 	dungou := this.GetString("dungou")
 	daopan := Daopan{}
@@ -77,6 +128,36 @@ func (this *ApiController) Getpath() {
 	}
 	paths = RemoveDuplicatesAndEmpty(paths)
 	this.EchoJson(paths)
+}
+
+func (this *ApiController) Getseclonlat() {
+	dungou := this.GetString("dungou")
+	set := Dungouset{}
+	Db.Where("dungou = ?", dungou).Find(&set)
+	section := set.Section
+	sec := []Seclonlat{}
+	Db.Where("section = ?",section).Find(&sec)
+	this.EchoJson(sec)
+}
+
+func (this *ApiController) Getprolonlat() {
+	dungou := this.GetString("dungou")
+	set := Dungouset{}
+	Db.Where("dungou = ?", dungou).Find(&set)
+	section := set.Section
+	prolonlat := []Prolonlat{}
+	Db.Where("section = ?",section).Find(&prolonlat)
+	this.EchoJson(prolonlat)
+}
+
+func (this *ApiController) Getprofile() {
+	dungou := this.GetString("dungou")
+	set := Dungouset{}
+	Db.Where("dungou = ?", dungou).Find(&set)
+	section := set.Section
+	profile := Profile{}
+	Db.Where("section = ?",section).Find(&profile)
+	this.EchoJson(profile)
 }
 
 func (this *ApiController) Getsection() {
@@ -157,6 +238,12 @@ func (this *ApiController) Upload() {
 	}
 }
 
+func (this *ApiController) Getsediment()  {
+	sediment := []Sediment{}
+	Db.Find(&sediment)
+	this.EchoJsonMsg(sediment)
+}
+
 func (this *ApiController) Pub() {
 	url := this.GetString("url")
 	table := this.GetString("table")
@@ -214,7 +301,6 @@ func encrypt(param string) string {
 func inserSet(record []string) {
 	set := Dungouset{}
 	p := P{}
-
 	dungou := record[3]
 	status := "1"
 	p["dungou"] = dungou
@@ -224,15 +310,28 @@ func inserSet(record []string) {
 	set.Path = record[1]
 	set.Section = record[2]
 	set.Dungou = record[3]
-	set.Positivity = record[4]
+	set.Type = record[4]
 	set.Company1 = record[5]
 	set.Company2 = record[6]
 	set.Client = record[7]
 	set.Datano = record[8]
-	set.Jack = record[9]
-	set.Ringnum = record[10]
-	set.Lon = record[11]
-	set.Lat = record[12]
+	set.Pressures = record[9]
+	set.Jack = record[10]
+	set.Ringnum = record[11]
+	set.Lon = record[12]
+	set.Lat = record[13]
+	city :=record[14]
 	set.Status = status
+	if city == "是" {
+		set.City = "1"
+	}else if city == "否" {
+		set.City = "0"
+	}
+	if record[5] == OWNCOMPANY {
+		set.Own = "1"
+	}else{
+		set.Own = "0"
+	}
+
 	Db.Create(set)
 }

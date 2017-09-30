@@ -5,16 +5,19 @@ type Dungouset struct {
 	Path       string `gorm:"size:512;column:path"`
 	Section    string `gorm:"size:512;column:section"`
 	Dungou     string `gorm:"size:512;column:dungou"`
-	Positivity string `gorm:"size:512;column:positivity"`
+	Type 	   string `gorm:"size:512;column:type"`
 	Company1   string `gorm:"size:512;column:company1"`
 	Company2   string `gorm:"size:512;column:company2"`
 	Client     string `gorm:"size:512;column:client"`
 	Datano     string `gorm:"size:512;column:datano"`
+	Pressures  string `gorm:"size:512;column:pressures"`
 	Jack       string `gorm:"size:512;column:jack"`
 	Ringnum    string `gorm:"size:512;column:ringnum"`
-	Lon  string `gorm:"size:512;column:longitude"`
-	Lat   string `gorm:"size:512;column:latitude"`
+	Lon        string `gorm:"size:512;column:longitude"`
+	Lat        string `gorm:"size:512;column:latitude"`
+	City   	   string `gorm:"size:512;column:city"`
 	Status     string `gorm:"size:512;column:status"`
+	Own        string `gorm:"size:512;column:own"`
 }
 
 type Rtinfo struct {
@@ -23,13 +26,13 @@ type Rtinfo struct {
 }
 type Seclonlat struct {
 	Section string `gorm:"size:512;column:section"`
-	Lon  string `gorm:"size:512;column:lon"`
-	Lat   string `gorm:"size:512;column:lat"`
+	Lon     string `gorm:"size:512;column:lon"`
+	Lat     string `gorm:"size:512;column:lat"`
 }
 type Prolonlat struct {
 	Section string `gorm:"size:512;column:section"`
-	Lon  string `gorm:"size:512;column:lon"`
-	Lat   string `gorm:"size:512;column:lat"`
+	Lon     string `gorm:"size:512;column:lon"`
+	Lat     string `gorm:"size:512;column:lat"`
 }
 type Profile struct {
 	Section string `gorm:"size:512;column:section"`
@@ -158,4 +161,19 @@ type Tuya struct {
 	Tuya4    string `gorm:"size:512;column:tuya4"`
 	Tuya5    string `gorm:"size:512;column:tuya5"`
 	Ztl      string `gorm:"size:512;column:ztl"`
+}
+type  Commum struct {
+	Dungou   string `gorm:"size:512;column:dungou"`
+	Jilutime string `gorm:"size:512;column:Jilutime"`
+	Shike    string `gorm:"size:512;column:shike"`
+}
+
+type Sediment struct {
+	Line   string `gorm:"size:512;column:line"`
+	Project string `gorm:"size:512;column:project"`
+	Loopnum    string `gorm:"size:512;column:loopnum"`
+	Loop    string `gorm:"size:512;column:loop"`
+	Groundlr1    string `gorm:"size:512;column:groundlr1"`
+	Loop1    string `gorm:"size:512;column:loop1"`
+	Groundlr2    string `gorm:"size:512;column:groundlr2"`
 }
