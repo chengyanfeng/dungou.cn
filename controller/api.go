@@ -12,6 +12,8 @@ import (
 	"strings"
 	//."dungou.cn/def"
 
+	"strconv"
+
 )
 
 type ApiController struct {
@@ -78,14 +80,19 @@ func (this *ApiController)Login(){
 		this.EchoJsonErr("用户不存在")
 		this.StopRun()
 	}
+
 	if user.Password!=password{
 		fmt.Println(user.Password)
 		fmt.Println(password)
 		this.EchoJsonErr("密码错误")
 		this.StopRun()
 	}
-	k,_:=json.Marshal(user)
-	this.EchoJsonMsg(JsonDecode([]byte(strings.ToLower(string(k)))))
+	this.SetSession("username",username)
+	this.SetSession("grade",user.Grade)
+	this.GetSession("username")
+	this.Ctx.SetCookie("username",username)
+	fmt.Println("username:",username)
+	this.EchoJsonMsg(user)
 }
 //添加
 func (this *ApiController)Adduser(){
@@ -154,10 +161,8 @@ func (this *ApiController)Finduser(){
 
 	if strings.Fields(ToString(db))[1]=="<nil>"{
 		if strings.Fields(ToString(db))[2]!="0" {
-			k,_:=json.Marshal(users)
-			fmt.Println("fanhuideshuju")
-			fmt.Println(JsonDecode([]byte(strings.ToLower(string(k)))))
-			this.EchoJsonMsg(strings.ToLower(string(k)))
+
+			this.EchoJsonMsg(users)
 		}else{
 			this.EchoJsonErr("查询失败")
 		}
@@ -171,10 +176,8 @@ func (this * ApiController)Deletuser(){
 	username := this.GetString("username")
 	db:=Db.Where("username = ?", username).Delete(User{})
 	fmt.Println(db)
-	a:=*db.Value.(map[string]interface{})
-	fmt.Println(a)
-	if strings.Fields(ToString(db))[1]=="<nil>"{
-		if strings.Fields(ToString(db))[2]!="0" {
+	if strings.Fields(ToString(db))[2]=="<nil>"{
+		if strings.Fields(ToString(db))[3]!="0" {
 			this.EchoJsonMsg("删除成功")
 		}else{
 			this.EchoJsonErr("删除失败")
@@ -270,8 +273,26 @@ func (this *ApiController) Upmessage(){
 		}else{
 			this.EchoJsonErr("上报失败")
 		}
-
 	}else
 	{this.EchoJsonErr("上报失败")}
+
+}
+//上传
+func (this *ApiController) Upremark(){
+	remark:=Remark{}
+	remark.Username=this.GetString("username")
+	remark.Companyid=this.GetString("companyid")
+	remark.Messageid,_=strconv.Atoi((this.GetString("messageid")))
+	remark.Text=this.GetString("text")
+	remark.Date=this.GetString("date")
+	db:=Db.Create(&remark)
+	if strings.Fields(ToString(db))[1]=="<nil>"{
+		if strings.Fields(ToString(db))[2]!="0" {
+			this.EchoJsonMsg("添加备注成功")
+		}else{
+			this.EchoJsonErr("添加备注失败")
+		}
+	}else
+	{this.EchoJsonErr("添加备注失败")}
 
 }

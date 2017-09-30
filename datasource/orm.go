@@ -137,6 +137,12 @@ func (this *Orm) Init() {
 	} else {
 		Db.CreateTable(&Prolonlat{})
 	}
+
+	if Db.HasTable("remark") {
+
+	} else {
+		Db.CreateTable(&Remark{})
+	}
 }
 
 func (this *Orm) GetIdList() []map[string]interface{} {

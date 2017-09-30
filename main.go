@@ -10,21 +10,33 @@ import (
 	. "dungou.cn/util"
 	"os"
 
+	"github.com/astaxie/beego/plugins/cors"
 )
 
 var orm Orm
 var mssql Mssql
 func main() {
-	initConf()
+	beego.InsertFilter("http://192.168.1.70", beego.BeforeRouter, cors.Allow(&cors.Options{
+
+		AllowAllOrigins:  true,
+		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+		AllowHeaders:     []string{"Origin", "Authorization", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type","Access-Control-Allow-Credentials"},
+
+		ExposeHeaders:    []string{"Content-Length", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type","Access-Control-Allow-Credentials"},
+		AllowCredentials: true,
+	}))
+	beego.BConfig.WebConfig.Session.SessionOn = true
 	MODE = Trim(os.Getenv("mode"))
 	beego.BConfig.Listen.HTTPPort = 9700                     //端口设置
 	beego.BConfig.RecoverPanic = true                        //开启异常捕获
 	beego.BConfig.EnableErrorsShow = true
 	beego.BConfig.CopyRequestBody = true
-	beego.InsertFilter("/*", beego.BeforeRouter, BaseFilter) //路由过滤
+	beego.BConfig.WebConfig.Session.SessionAutoSetCookie =true
 
-	//自动匹配路由
+	beego.InsertFilter("/*", beego.BeforeRouter, BaseFilter) //路由过滤
 	beego.AutoRouter(&ApiController{})
+	//自动匹配路由
+
 	beego.InsertFilter("/rpc", beego.BeforeRouter, RpcFilter)
 	//beego.InsertFilter("/api/*", beego.BeforeRouter, WhiteListFilter)
 	Mkdir("./logs")                                        //创建日志文件夹
