@@ -1,1724 +1,603 @@
-2017/08/22 17:15:14 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/22 17:15:14 [I] http server Running on http://:9700
-2017/08/22 17:17:55 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/22 17:17:55 [I] http server Running on http://:9700
-2017/08/22 17:18:12 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/22 17:18:12 [I] http server Running on http://:9700
-2017/08/22 17:18:25 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/22 17:18:25 [I] http server Running on http://:9700
-2017/08/22 19:01:40 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/22 19:01:40 [I] http server Running on http://:9700
-2017/08/23 09:54:23 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 09:54:23 [I] http server Running on http://:9700
-2017/08/23 09:55:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 09:55:09 [I] http server Running on http://:9700
-2017/08/23 10:32:54 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 10:32:54 [I] http server Running on http://:9700
-2017/08/23 10:34:15 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 10:34:15 [I] http server Running on http://:9700
-2017/08/23 15:15:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 15:15:09 [I] http server Running on http://:9700
-2017/08/23 15:22:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 15:22:09 [I] http server Running on http://:9700
-2017/08/23 15:24:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 15:24:09 [I] http server Running on http://:9700
-2017/08/23 15:27:01 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 15:27:01 [I] http server Running on http://:9700
-2017/08/23 15:29:22 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 15:29:22 [I] http server Running on http://:9700
-2017/08/23 15:34:34 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 15:34:34 [I] http server Running on http://:9700
-2017/08/23 15:38:02 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 15:38:02 [I] http server Running on http://:9700
-2017/08/23 16:03:29 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 16:03:29 [I] http server Running on http://:9700
-2017/08/23 16:44:49 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 16:44:49 [I] http server Running on http://:9700
-2017/08/23 17:06:20 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:06:20 [I] http server Running on http://:9700
-2017/08/23 17:06:58 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:06:58 [I] http server Running on http://:9700
-2017/08/23 17:07:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:07:39 [I] http server Running on http://:9700
-2017/08/23 17:12:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:15:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:15:55 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:17:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:24:50 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:24:50 [I] http server Running on http://:9700
-2017/08/23 17:25:29 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:25:30 [I] http server Running on http://:9700
-2017/08/23 17:26:00 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:26:00 [I] http server Running on http://:9700
-2017/08/23 17:26:26 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:26:26 [I] http server Running on http://:9700
-2017/08/23 17:26:40 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:26:40 [I] http server Running on http://:9700
-2017/08/23 17:28:20 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:28:20 [I] http server Running on http://:9700
-2017/08/23 17:29:16 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:29:16 [I] http server Running on http://:9700
-2017/08/23 17:29:21 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:36:34 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 17:36:50 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 18:14:08 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 18:14:34 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 18:16:27 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 18:17:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 18:26:23 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 18:29:32 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 18:36:59 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/23 18:39:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 09:55:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 09:57:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 09:58:35 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 09:59:57 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:00:36 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:01:32 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:01:51 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:20:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:20:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:20:07 [I] http server Running on http://:9700
-2017/08/24 10:20:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:20:37 [I] http server Running on http://:9700
-2017/08/24 10:21:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:21:40 [I] http server Running on http://:9700
-2017/08/24 10:30:54 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:30:54 [I] http server Running on http://:9700
-2017/08/24 10:33:19 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:33:20 [I] http server Running on http://:9700
-2017/08/24 10:36:57 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:36:59 [I] http server Running on http://:9700
-2017/08/24 10:37:46 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:37:48 [I] http server Running on http://:9700
-2017/08/24 10:38:57 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:38:58 [I] http server Running on http://:9700
-2017/08/24 10:39:27 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:39:29 [I] http server Running on http://:9700
-2017/08/24 10:41:25 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:41:27 [I] http server Running on http://:9700
-2017/08/24 10:41:44 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:41:45 [I] http server Running on http://:9700
-2017/08/24 10:42:14 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:42:16 [I] http server Running on http://:9700
-2017/08/24 10:43:20 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:43:22 [I] http server Running on http://:9700
-2017/08/24 10:43:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:43:40 [I] http server Running on http://:9700
-2017/08/24 10:44:13 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 10:44:15 [I] http server Running on http://:9700
-2017/08/24 11:06:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:06:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:06:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:08:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:08:43 [I] http server Running on http://:9700
-2017/08/24 11:09:11 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:09:13 [I] http server Running on http://:9700
-2017/08/24 11:10:29 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:10:31 [I] http server Running on http://:9700
-2017/08/24 11:10:58 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:11:00 [I] http server Running on http://:9700
-2017/08/24 11:11:56 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:11:58 [I] http server Running on http://:9700
-2017/08/24 11:13:19 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:13:21 [I] http server Running on http://:9700
-2017/08/24 11:14:03 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:14:05 [I] http server Running on http://:9700
-2017/08/24 11:14:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:14:41 [I] http server Running on http://:9700
-2017/08/24 11:15:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:15:08 [I] http server Running on http://:9700
-2017/08/24 11:15:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:15:12 [I] http server Running on http://:9700
-2017/08/24 11:15:50 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:15:51 [I] http server Running on http://:9700
-2017/08/24 11:18:45 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:18:46 [I] http server Running on http://:9700
-2017/08/24 11:18:51 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:18:53 [I] http server Running on http://:9700
-2017/08/24 11:19:21 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:19:23 [I] http server Running on http://:9700
-2017/08/24 11:19:50 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:19:52 [I] http server Running on http://:9700
-2017/08/24 11:21:18 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:21:20 [I] http server Running on http://:9700
-2017/08/24 11:21:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:21:43 [I] http server Running on http://:9700
-2017/08/24 11:22:15 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:22:17 [I] http server Running on http://:9700
-2017/08/24 11:22:44 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:22:46 [I] http server Running on http://:9700
-2017/08/24 11:23:11 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:23:13 [I] http server Running on http://:9700
-2017/08/24 11:24:02 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:24:04 [I] http server Running on http://:9700
-2017/08/24 11:24:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:24:06 [I] http server Running on http://:9700
-2017/08/24 11:29:01 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:29:03 [I] http server Running on http://:9700
-2017/08/24 11:31:34 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:31:36 [I] http server Running on http://:9700
-2017/08/24 11:32:20 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:32:22 [I] http server Running on http://:9700
-2017/08/24 11:38:27 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:38:30 [I] http server Running on http://:9700
-2017/08/24 11:39:15 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:39:18 [I] http server Running on http://:9700
-2017/08/24 11:40:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:40:11 [I] http server Running on http://:9700
-2017/08/24 11:40:34 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:40:36 [I] http server Running on http://:9700
-2017/08/24 11:40:46 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:40:48 [I] http server Running on http://:9700
-2017/08/24 11:41:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:41:55 [I] http server Running on http://:9700
-2017/08/24 11:42:07 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:42:09 [I] http server Running on http://:9700
-2017/08/24 11:42:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 11:42:30 [I] http server Running on http://:9700
-2017/08/24 11:59:59 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 12:00:01 [I] http server Running on http://:9700
-2017/08/24 15:46:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 15:46:41 [I] http server Running on http://:9700
-2017/08/24 16:54:16 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/24 16:54:21 [I] http server Running on http://:9700
-2017/08/25 11:18:32 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:18:36 [I] http server Running on http://:9700
-2017/08/25 11:18:46 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:18:46 [I] http server Running on http://:9700
-2017/08/25 11:19:09 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:19:09 [D] [BaseFilter /favicon.ico] 
-2017/08/25 11:19:19 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:20:02 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:20:02 [I] http server Running on http://:9700
-2017/08/25 11:20:04 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:20:41 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:20:59 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:20:59 [I] http server Running on http://:9700
-2017/08/25 11:21:51 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:21:51 [I] http server Running on http://:9700
-2017/08/25 11:21:54 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:21:55 [C] the request url is  /api/getdata
-2017/08/25 11:21:55 [C] Handler crashed with error can't find templatefile in the path:apicontroller/getdata.tpl
-2017/08/25 11:21:55 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 11:21:55 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 11:21:55 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
-2017/08/25 11:21:55 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
-2017/08/25 11:21:55 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
-2017/08/25 11:21:55 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
-2017/08/25 11:21:55 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
-2017/08/25 11:21:55 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 11:21:55 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 11:21:55 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 11:22:07 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:22:07 [I] http server Running on http://:9700
-2017/08/25 11:22:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:22:28 [I] http server Running on http://:9700
-2017/08/25 11:22:48 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:22:48 [I] http server Running on http://:9700
-2017/08/25 11:22:50 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:24:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:24:10 [I] http server Running on http://:9700
-2017/08/25 11:24:13 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:26:33 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:26:33 [I] http server Running on http://:9700
-2017/08/25 11:27:12 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:27:12 [I] http server Running on http://:9700
-2017/08/25 11:28:32 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:30:36 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:30:36 [I] http server Running on http://:9700
-2017/08/25 11:32:35 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:32:35 [I] http server Running on http://:9700
-2017/08/25 11:32:43 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:32:44 [C] the request url is  /api/getdata
-2017/08/25 11:32:44 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 11:32:44 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 11:32:44 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 11:32:44 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 11:32:44 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:75
-2017/08/25 11:32:44 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:42
-2017/08/25 11:32:44 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 11:32:44 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 11:32:44 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 11:32:44 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 11:32:44 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 11:32:44 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 11:32:44 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 11:32:57 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:32:57 [C] the request url is  /api/getdata
-2017/08/25 11:32:57 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 11:32:57 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 11:32:57 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 11:32:57 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 11:32:57 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:75
-2017/08/25 11:32:57 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:42
-2017/08/25 11:32:57 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 11:32:57 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 11:32:57 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 11:32:57 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 11:32:57 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 11:32:57 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 11:32:57 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 11:32:58 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:32:58 [C] the request url is  /api/getdata
-2017/08/25 11:32:58 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 11:32:58 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 11:32:58 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 11:32:58 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 11:32:58 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:75
-2017/08/25 11:32:58 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:42
-2017/08/25 11:32:58 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 11:32:58 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 11:32:58 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 11:32:58 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 11:32:58 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 11:32:58 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 11:32:58 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 11:33:21 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:33:21 [I] http server Running on http://:9700
-2017/08/25 11:33:23 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:33:23 [C] the request url is  /api/getdata
-2017/08/25 11:33:23 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 11:33:23 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 11:33:23 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 11:33:23 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 11:33:23 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:75
-2017/08/25 11:33:23 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:42
-2017/08/25 11:33:23 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 11:33:23 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 11:33:23 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 11:33:23 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 11:33:23 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 11:33:23 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 11:33:23 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 11:33:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:33:52 [I] http server Running on http://:9700
-2017/08/25 11:33:55 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:34:05 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:34:05 [I] http server Running on http://:9700
-2017/08/25 11:34:17 [D] [BaseFilter /api/getdata] 
-2017/08/25 11:34:17 [C] the request url is  /api/getdata
-2017/08/25 11:34:17 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 11:34:17 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 11:34:17 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 11:34:17 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 11:34:17 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:75
-2017/08/25 11:34:17 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:42
-2017/08/25 11:34:17 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 11:34:17 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 11:34:17 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 11:34:17 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 11:34:17 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 11:34:17 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 11:34:17 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 11:35:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 11:35:10 [I] http server Running on http://:9700
-2017/08/25 12:05:15 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 12:05:15 [I] http server Running on http://:9700
-2017/08/25 12:05:33 [D] [BaseFilter /api/getdata] 
-2017/08/25 12:05:33 [C] the request url is  /api/getdata
-2017/08/25 12:05:33 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 12:05:33 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 12:05:33 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 12:05:33 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 12:05:33 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:79
-2017/08/25 12:05:33 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 12:05:33 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 12:05:33 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 12:05:33 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 12:05:33 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 12:05:33 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 12:05:33 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 12:05:33 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 12:11:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 12:11:28 [I] http server Running on http://:9700
-2017/08/25 12:11:31 [D] [BaseFilter /api/getdata] 
-2017/08/25 12:15:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 12:15:17 [I] http server Running on http://:9700
-2017/08/25 14:22:35 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:22:35 [I] http server Running on http://:9700
-2017/08/25 14:23:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:23:10 [I] http server Running on http://:9700
-2017/08/25 14:23:19 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:23:19 [C] the request url is  /api/getdata
-2017/08/25 14:23:19 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 14:23:19 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:23:19 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 14:23:19 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 14:23:19 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:81
-2017/08/25 14:23:19 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:47
-2017/08/25 14:23:19 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:23:19 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 14:23:19 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 14:23:19 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 14:23:19 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 14:23:19 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 14:23:19 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 14:23:56 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:23:56 [I] http server Running on http://:9700
-2017/08/25 14:23:57 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:23:57 [C] the request url is  /api/getdata
-2017/08/25 14:23:57 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 14:23:57 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:23:57 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 14:23:57 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 14:23:57 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:81
-2017/08/25 14:23:57 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:47
-2017/08/25 14:23:57 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:23:57 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 14:23:57 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 14:23:57 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 14:23:57 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 14:23:57 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 14:23:57 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 14:24:12 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:24:12 [C] the request url is  /api/getdata
-2017/08/25 14:24:12 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 14:24:12 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:24:12 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 14:24:12 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 14:24:12 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:81
-2017/08/25 14:24:12 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:47
-2017/08/25 14:24:12 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:24:12 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 14:24:12 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 14:24:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 14:24:12 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 14:24:12 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 14:24:12 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 14:24:21 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:24:21 [C] the request url is  /api/getdata
-2017/08/25 14:24:21 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 14:24:21 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:24:21 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 14:24:21 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 14:24:21 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:81
-2017/08/25 14:24:21 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:47
-2017/08/25 14:24:21 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:24:21 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 14:24:21 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 14:24:21 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 14:24:21 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 14:24:21 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 14:24:21 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 14:24:45 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:24:45 [C] the request url is  /api/getdata
-2017/08/25 14:24:45 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 14:24:45 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:24:45 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 14:24:45 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 14:24:45 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:81
-2017/08/25 14:24:45 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:47
-2017/08/25 14:24:45 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:24:45 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 14:24:45 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 14:24:45 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 14:24:45 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 14:24:45 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 14:24:45 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 14:25:40 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:25:40 [I] http server Running on http://:9700
-2017/08/25 14:25:42 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:26:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:26:06 [I] http server Running on http://:9700
-2017/08/25 14:26:29 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:26:44 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:26:44 [I] http server Running on http://:9700
-2017/08/25 14:26:44 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:26:44 [C] the request url is  /api/getdata
-2017/08/25 14:26:44 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 14:26:44 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:26:44 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 14:26:44 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 14:26:44 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:81
-2017/08/25 14:26:44 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:47
-2017/08/25 14:26:44 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:26:44 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 14:26:44 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 14:26:44 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 14:26:44 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 14:26:44 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 14:26:44 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 14:27:14 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:27:14 [I] http server Running on http://:9700
-2017/08/25 14:27:29 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:27:29 [I] http server Running on http://:9700
-2017/08/25 14:27:30 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:27:30 [C] the request url is  /api/getdata
-2017/08/25 14:27:30 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 14:27:30 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:27:30 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 14:27:30 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 14:27:30 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:81
-2017/08/25 14:27:30 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:47
-2017/08/25 14:27:30 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:27:30 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 14:27:30 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 14:27:30 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 14:27:30 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 14:27:30 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 14:27:30 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 14:27:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:27:42 [I] http server Running on http://:9700
-2017/08/25 14:42:48 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:42:48 [I] http server Running on http://:9700
-2017/08/25 14:42:50 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:42:50 [C] the request url is  /api/getdata
-2017/08/25 14:42:50 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 14:42:50 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:42:50 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 14:42:50 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 14:42:50 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:79
-2017/08/25 14:42:50 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:47
-2017/08/25 14:42:50 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:42:50 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 14:42:50 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 14:42:50 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 14:42:50 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 14:42:50 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 14:42:50 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 14:46:12 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:46:12 [I] http server Running on http://:9700
-2017/08/25 14:46:13 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:46:13 [C] the request url is  /api/getdata
-2017/08/25 14:46:13 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 14:46:13 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:46:13 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 14:46:13 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 14:46:13 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:81
-2017/08/25 14:46:13 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:47
-2017/08/25 14:46:13 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:46:13 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 14:46:13 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 14:46:13 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 14:46:13 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 14:46:13 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 14:46:13 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 14:47:40 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:47:40 [I] http server Running on http://:9700
-2017/08/25 14:47:43 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:47:43 [C] the request url is  /api/getdata
-2017/08/25 14:47:43 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 14:47:43 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:47:43 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 14:47:43 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 14:47:43 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:83
-2017/08/25 14:47:43 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:47
-2017/08/25 14:47:43 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:47:43 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 14:47:43 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 14:47:43 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 14:47:43 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 14:47:43 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 14:47:43 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 14:49:25 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:49:25 [I] http server Running on http://:9700
-2017/08/25 14:49:29 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:49:29 [I] http server Running on http://:9700
-2017/08/25 14:49:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:49:52 [I] http server Running on http://:9700
-2017/08/25 14:49:53 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:49:53 [C] the request url is  /api/getdata
-2017/08/25 14:49:53 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 14:49:53 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:49:53 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 14:49:53 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 14:49:53 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:82
-2017/08/25 14:49:53 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 14:49:53 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:49:53 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 14:49:53 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 14:49:53 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 14:49:53 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 14:49:53 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 14:49:53 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 14:54:50 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 14:54:50 [I] http server Running on http://:9700
-2017/08/25 14:54:56 [D] [BaseFilter /api/getdata] 
-2017/08/25 14:54:56 [C] the request url is  /api/getdata
-2017/08/25 14:54:56 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 14:54:56 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:54:56 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 14:54:56 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 14:54:56 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:82
-2017/08/25 14:54:56 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 14:54:56 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 14:54:56 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 14:54:56 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 14:54:56 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 14:54:56 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 14:54:56 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 14:54:56 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 15:18:21 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 15:18:21 [I] http server Running on http://:9700
-2017/08/25 15:18:35 [D] [BaseFilter /api/getdata] 
-2017/08/25 15:18:35 [C] the request url is  /api/getdata
-2017/08/25 15:18:35 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 15:18:35 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:18:35 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 15:18:35 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 15:18:35 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:82
-2017/08/25 15:18:35 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 15:18:35 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:18:35 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 15:18:35 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 15:18:35 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 15:18:35 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 15:18:35 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 15:18:35 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 15:19:10 [D] [BaseFilter /api/getdata] 
-2017/08/25 15:19:10 [C] the request url is  /api/getdata
-2017/08/25 15:19:10 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 15:19:10 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:19:10 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 15:19:10 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 15:19:10 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:82
-2017/08/25 15:19:10 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 15:19:10 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:19:10 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 15:19:10 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 15:19:10 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 15:19:10 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 15:19:10 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 15:19:10 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 15:19:13 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 15:19:13 [I] http server Running on http://:9700
-2017/08/25 15:19:14 [D] [BaseFilter /api/getdata] 
-2017/08/25 15:19:15 [C] the request url is  /api/getdata
-2017/08/25 15:19:15 [C] Handler crashed with error runtime error: slice bounds out of range
-2017/08/25 15:19:15 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:19:15 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 15:19:15 [C] C:/Go/src/runtime/panic.go:34
-2017/08/25 15:19:15 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:76
-2017/08/25 15:19:15 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 15:19:15 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:19:15 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 15:19:15 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 15:19:15 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 15:19:15 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 15:19:15 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 15:19:15 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 15:19:31 [D] [BaseFilter /api/getdata] 
-2017/08/25 15:19:31 [C] the request url is  /api/getdata
-2017/08/25 15:19:31 [C] Handler crashed with error runtime error: slice bounds out of range
-2017/08/25 15:19:31 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:19:31 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 15:19:31 [C] C:/Go/src/runtime/panic.go:34
-2017/08/25 15:19:31 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:76
-2017/08/25 15:19:31 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 15:19:31 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:19:31 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 15:19:31 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 15:19:31 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 15:19:31 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 15:19:31 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 15:19:31 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 15:19:40 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 15:19:40 [I] http server Running on http://:9700
-2017/08/25 15:24:15 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 15:24:15 [I] http server Running on http://:9700
-2017/08/25 15:24:17 [D] [BaseFilter /api/getdata] 
-2017/08/25 15:25:31 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 15:25:31 [I] http server Running on http://:9700
-2017/08/25 15:25:33 [D] [BaseFilter /api/getdata] 
-2017/08/25 15:25:33 [C] the request url is  /api/getdata
-2017/08/25 15:25:33 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 15:25:33 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:25:33 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 15:25:33 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 15:25:33 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:84
-2017/08/25 15:25:33 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 15:25:33 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:25:33 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 15:25:33 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 15:25:33 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 15:25:33 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 15:25:33 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 15:25:33 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 15:26:16 [D] [BaseFilter /api/getdata] 
-2017/08/25 15:26:16 [C] the request url is  /api/getdata
-2017/08/25 15:26:16 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 15:26:16 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:26:16 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 15:26:16 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 15:26:16 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:84
-2017/08/25 15:26:16 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 15:26:16 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:26:16 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 15:26:16 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 15:26:16 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 15:26:16 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 15:26:16 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 15:26:16 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 15:26:50 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 15:26:50 [I] http server Running on http://:9700
-2017/08/25 15:28:32 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 15:28:32 [I] http server Running on http://:9700
-2017/08/25 15:28:35 [D] [BaseFilter /api/getdata] 
-2017/08/25 15:28:35 [C] the request url is  /api/getdata
-2017/08/25 15:28:35 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 15:28:35 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:28:35 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 15:28:35 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 15:28:35 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:84
-2017/08/25 15:28:35 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 15:28:35 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:28:35 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 15:28:35 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 15:28:35 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 15:28:35 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 15:28:35 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 15:28:35 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 15:29:19 [D] [BaseFilter /api/getdata] 
-2017/08/25 15:29:19 [C] the request url is  /api/getdata
-2017/08/25 15:29:19 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 15:29:19 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:29:19 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 15:29:20 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 15:29:20 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:84
-2017/08/25 15:29:20 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 15:29:20 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 15:29:20 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 15:29:20 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 15:29:20 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 15:29:20 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 15:29:20 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 15:29:20 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 15:29:20 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 15:29:20 [I] http server Running on http://:9700
-2017/08/25 15:29:36 [D] [BaseFilter /api/getdata] 
-2017/08/25 15:29:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 15:29:52 [I] http server Running on http://:9700
-2017/08/25 15:30:26 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 15:30:27 [I] http server Running on http://:9700
-2017/08/25 15:30:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 15:30:39 [I] http server Running on http://:9700
-2017/08/25 16:03:15 [D] [BaseFilter /api/getdata] 
-2017/08/25 16:03:15 [C] the request url is  /api/getdata
-2017/08/25 16:03:15 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 16:03:15 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:03:15 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 16:03:15 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 16:03:15 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:82
-2017/08/25 16:03:15 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 16:03:15 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:03:15 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 16:03:15 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 16:03:15 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 16:03:15 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 16:03:15 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 16:03:15 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 16:14:57 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 16:14:57 [I] http server Running on http://:9700
-2017/08/25 16:15:02 [D] [BaseFilter /api/getdata] 
-2017/08/25 16:15:02 [C] the request url is  /api/getdata
-2017/08/25 16:15:02 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 16:15:02 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:15:02 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 16:15:02 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 16:15:02 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:82
-2017/08/25 16:15:02 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 16:15:02 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:15:02 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 16:15:02 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 16:15:02 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 16:15:02 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 16:15:02 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 16:15:02 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 16:22:49 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 16:22:49 [I] http server Running on http://:9700
-2017/08/25 16:22:52 [D] [BaseFilter /api/getdata] 
-2017/08/25 16:22:52 [C] the request url is  /api/getdata
-2017/08/25 16:22:52 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 16:22:52 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:22:52 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 16:22:52 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 16:22:52 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:77
-2017/08/25 16:22:52 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 16:22:52 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:22:52 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 16:22:52 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 16:22:52 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 16:22:52 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 16:22:52 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 16:22:52 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 16:24:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 16:24:53 [I] http server Running on http://:9700
-2017/08/25 16:25:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 16:25:10 [I] http server Running on http://:9700
-2017/08/25 16:25:12 [D] [BaseFilter /api/getdata] 
-2017/08/25 16:25:12 [C] the request url is  /api/getdata
-2017/08/25 16:25:12 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 16:25:12 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:25:12 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 16:25:12 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 16:25:12 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:78
-2017/08/25 16:25:12 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 16:25:12 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:25:12 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 16:25:12 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 16:25:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 16:25:12 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 16:25:12 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 16:25:12 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 16:26:02 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 16:26:02 [I] http server Running on http://:9700
-2017/08/25 16:26:13 [D] [BaseFilter /api/getdata] 
-2017/08/25 16:26:13 [C] the request url is  /api/getdata
-2017/08/25 16:26:13 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 16:26:13 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:26:13 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 16:26:13 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 16:26:13 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:79
-2017/08/25 16:26:13 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 16:26:13 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:26:13 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 16:26:13 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 16:26:13 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 16:26:13 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 16:26:13 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 16:26:13 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 16:28:22 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 16:28:22 [I] http server Running on http://:9700
-2017/08/25 16:28:25 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 16:28:25 [I] http server Running on http://:9700
-2017/08/25 16:28:26 [D] [BaseFilter /api/getdata] 
-2017/08/25 16:28:26 [C] the request url is  /api/getdata
-2017/08/25 16:28:26 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 16:28:26 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:28:26 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 16:28:26 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 16:28:26 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:82
-2017/08/25 16:28:26 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 16:28:26 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:28:26 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 16:28:26 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 16:28:26 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 16:28:26 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 16:28:26 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 16:28:26 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 16:28:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 16:28:53 [I] http server Running on http://:9700
-2017/08/25 16:28:54 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 16:28:54 [I] http server Running on http://:9700
-2017/08/25 16:28:58 [D] [BaseFilter /api/getdata] 
-2017/08/25 16:28:58 [C] the request url is  /api/getdata
-2017/08/25 16:28:58 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 16:28:58 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:28:58 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 16:28:58 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 16:28:58 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:82
-2017/08/25 16:28:58 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 16:28:58 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:28:58 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 16:28:58 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 16:28:58 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 16:28:58 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 16:28:58 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 16:28:58 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 16:29:40 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 16:29:41 [I] http server Running on http://:9700
-2017/08/25 16:29:42 [D] [BaseFilter /api/getdata] 
-2017/08/25 16:29:43 [C] the request url is  /api/getdata
-2017/08/25 16:29:43 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 16:29:43 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:29:43 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 16:29:43 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 16:29:43 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:79
-2017/08/25 16:29:43 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 16:29:43 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:29:43 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 16:29:43 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 16:29:43 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 16:29:43 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 16:29:43 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 16:29:43 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 16:33:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 16:33:42 [I] http server Running on http://:9700
-2017/08/25 16:33:56 [D] [BaseFilter /api/getdata] 
-2017/08/25 16:33:56 [C] the request url is  /api/getdata
-2017/08/25 16:33:56 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 16:33:56 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:33:56 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 16:33:56 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 16:33:56 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:80
-2017/08/25 16:33:56 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 16:33:56 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 16:33:56 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 16:33:56 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 16:33:56 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 16:33:56 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 16:33:56 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 16:33:56 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:05:24 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:05:24 [I] http server Running on http://:9700
-2017/08/25 17:05:34 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:05:34 [C] the request url is  /api/getdata
-2017/08/25 17:05:34 [C] Handler crashed with error crypto/cipher: input not full blocks
-2017/08/25 17:05:34 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:05:34 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:05:34 [C] C:/Go/src/crypto/cipher/cbc.go:114
-2017/08/25 17:05:34 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:79
-2017/08/25 17:05:34 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:45
-2017/08/25 17:05:34 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:05:34 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:05:34 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:05:34 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:05:34 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:05:34 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:05:34 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:05:38 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:05:38 [C] the request url is  /api/getdata
-2017/08/25 17:05:38 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:05:38 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:05:38 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:05:38 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:05:38 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:80
-2017/08/25 17:05:38 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:45
-2017/08/25 17:05:38 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:05:38 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:05:38 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:05:38 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:05:38 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:05:38 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:05:38 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:05:38 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:05:38 [C] the request url is  /api/getdata
-2017/08/25 17:05:38 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:05:38 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:05:38 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:05:38 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:05:38 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:80
-2017/08/25 17:05:38 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:45
-2017/08/25 17:05:38 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:05:38 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:05:38 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:05:38 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:05:38 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:05:38 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:05:38 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:05:39 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:05:39 [C] the request url is  /api/getdata
-2017/08/25 17:05:39 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:05:39 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:05:39 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:05:39 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:05:39 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:80
-2017/08/25 17:05:39 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:45
-2017/08/25 17:05:39 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:05:39 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:05:39 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:05:39 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:05:39 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:05:39 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:05:39 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:05:57 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:05:57 [I] http server Running on http://:9700
-2017/08/25 17:06:19 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:06:19 [I] http server Running on http://:9700
-2017/08/25 17:06:25 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:06:50 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:06:51 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:06:51 [I] http server Running on http://:9700
-2017/08/25 17:06:54 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:11:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:11:53 [I] http server Running on http://:9700
-2017/08/25 17:12:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:12:04 [I] http server Running on http://:9700
-2017/08/25 17:13:34 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:13:34 [I] http server Running on http://:9700
-2017/08/25 17:18:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:18:17 [I] http server Running on http://:9700
-2017/08/25 17:18:51 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:18:51 [I] http server Running on http://:9700
-2017/08/25 17:25:34 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:25:34 [I] http server Running on http://:9700
-2017/08/25 17:28:36 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:28:36 [I] http server Running on http://:9700
-2017/08/25 17:29:31 [D] [BaseFilter /api/getdata%EF%BC%9Fstartdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:30:00 [D] [BaseFilter /api/getdata%EF%BC%9Fstartdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:30:31 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:30:34 [C] the request url is  /api/getdata
-2017/08/25 17:30:34 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:30:34 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:30:34 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:30:34 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:30:34 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:30:34 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:45
-2017/08/25 17:30:34 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:30:34 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:30:34 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:30:34 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:30:34 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:30:34 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:30:34 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:30:57 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:30:57 [I] http server Running on http://:9700
-2017/08/25 17:31:00 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:31:00 [C] the request url is  /api/getdata
-2017/08/25 17:31:00 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:31:00 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:31:00 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:31:00 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:31:00 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:31:00 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 17:31:00 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:31:00 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:31:00 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:31:00 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:31:00 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:31:00 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:31:00 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:31:55 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:31:55 [I] http server Running on http://:9700
-2017/08/25 17:32:04 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:32:04 [C] the request url is  /api/getdata
-2017/08/25 17:32:04 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:32:04 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:32:04 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:32:04 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:32:04 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:32:04 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:36
-2017/08/25 17:32:04 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:32:04 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:32:04 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:32:04 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:32:04 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:32:04 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:32:04 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:32:27 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:32:27 [I] http server Running on http://:9700
-2017/08/25 17:32:28 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:32:28 [C] the request url is  /api/getdata
-2017/08/25 17:32:28 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:32:28 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:32:28 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:32:28 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:32:28 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:32:28 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:35
-2017/08/25 17:32:28 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:32:28 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:32:28 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:32:28 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:32:28 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:32:28 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:32:28 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:32:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:32:43 [I] http server Running on http://:9700
-2017/08/25 17:33:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:33:10 [I] http server Running on http://:9700
-2017/08/25 17:33:12 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:33:12 [C] the request url is  /api/getdata
-2017/08/25 17:33:12 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:33:12 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:33:12 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:33:12 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:33:12 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:33:12 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:34
-2017/08/25 17:33:12 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:33:12 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:33:12 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:33:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:33:12 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:33:12 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:33:12 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:33:13 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:33:13 [I] http server Running on http://:9700
-2017/08/25 17:33:15 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:33:15 [C] the request url is  /api/getdata
-2017/08/25 17:33:15 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:33:15 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:33:15 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:33:15 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:33:15 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:33:15 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:34
-2017/08/25 17:33:15 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:33:15 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:33:15 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:33:15 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:33:15 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:33:15 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:33:15 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:33:28 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:33:28 [C] the request url is  /api/getdata
-2017/08/25 17:33:28 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:33:28 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:33:28 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:33:28 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:33:28 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:33:28 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:34
-2017/08/25 17:33:28 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:33:28 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:33:28 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:33:28 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:33:28 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:33:28 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:33:28 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:33:35 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:33:35 [C] the request url is  /api/getdata
-2017/08/25 17:33:35 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:33:35 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:33:35 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:33:35 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:33:35 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:33:35 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:34
-2017/08/25 17:33:35 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:33:35 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:33:35 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:33:35 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:33:35 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:33:35 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:33:35 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:34:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:34:09 [I] http server Running on http://:9700
-2017/08/25 17:34:18 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:34:18 [I] http server Running on http://:9700
-2017/08/25 17:35:18 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:35:18 [I] http server Running on http://:9700
-2017/08/25 17:35:20 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:35:31 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:35:32 [I] http server Running on http://:9700
-2017/08/25 17:36:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:36:04 [I] http server Running on http://:9700
-2017/08/25 17:36:11 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:36:18 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:36:18 [C] the request url is  /api/getdata
-2017/08/25 17:36:18 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:36:18 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:36:18 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:36:18 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:36:18 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:36:18 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:45
-2017/08/25 17:36:18 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:36:18 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:36:18 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:36:18 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:36:18 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:36:18 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:36:18 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:36:51 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:36:51 [C] the request url is  /api/getdata
-2017/08/25 17:36:51 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:36:51 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:36:51 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:36:51 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:36:51 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:36:51 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:45
-2017/08/25 17:36:51 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:36:51 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:36:51 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:36:51 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:36:51 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:36:51 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:36:51 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:36:51 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:36:51 [I] http server Running on http://:9700
-2017/08/25 17:37:17 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:37:28 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:37:28 [C] the request url is  /api/getdata
-2017/08/25 17:37:28 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:37:28 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:37:28 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:37:28 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:37:28 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:37:28 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 17:37:28 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:37:28 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:37:28 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:37:28 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:37:28 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:37:28 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:37:28 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:38:47 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:38:47 [I] http server Running on http://:9700
-2017/08/25 17:38:48 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:38:55 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:38:55 [C] the request url is  /api/getdata
-2017/08/25 17:38:55 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:38:55 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:38:55 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:38:55 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:38:55 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:38:55 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 17:38:55 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:38:55 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:38:55 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:38:55 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:38:55 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:38:55 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:38:55 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:39:03 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:39:03 [C] the request url is  /api/getdata
-2017/08/25 17:39:03 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:39:03 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:03 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:39:03 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:39:03 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:39:03 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 17:39:03 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:03 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:39:03 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:39:03 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:39:03 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:39:03 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:39:03 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:39:05 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:39:05 [C] the request url is  /api/getdata
-2017/08/25 17:39:05 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:39:05 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:05 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:39:05 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:39:05 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:39:05 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 17:39:05 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:05 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:39:05 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:39:05 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:39:05 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:39:05 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:39:05 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:39:05 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:39:05 [C] the request url is  /api/getdata
-2017/08/25 17:39:05 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:39:05 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:05 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:39:05 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:39:05 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:39:05 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 17:39:05 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:05 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:39:05 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:39:05 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:39:05 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:39:05 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:39:05 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:39:06 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:39:06 [C] the request url is  /api/getdata
-2017/08/25 17:39:06 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:06 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:39:06 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:39:06 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:39:06 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:39:06 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:39:06 [C] the request url is  /api/getdata
-2017/08/25 17:39:06 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:06 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:39:06 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:39:06 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:39:06 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:39:06 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:39:06 [C] the request url is  /api/getdata
-2017/08/25 17:39:06 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:06 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:39:06 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:39:06 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:39:06 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:39:06 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:39:06 [C] the request url is  /api/getdata
-2017/08/25 17:39:06 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:06 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:39:06 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:39:06 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:39:06 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:39:06 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 17:39:06 [C] the request url is  /api/getdata
-2017/08/25 17:39:06 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:06 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:39:06 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:39:06 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:39:06 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:39:06 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:39:06 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:39:22 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:39:22 [C] the request url is  /api/getdata
-2017/08/25 17:39:22 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:39:22 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:22 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:39:22 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:39:22 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:39:22 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 17:39:22 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:22 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:39:22 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:39:22 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:39:22 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:39:22 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:39:22 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:39:32 [D] [BaseFilter /api/getdata] 
-2017/08/25 17:39:32 [C] the request url is  /api/getdata
-2017/08/25 17:39:32 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 17:39:32 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:32 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 17:39:32 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 17:39:32 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 17:39:32 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 17:39:32 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 17:39:32 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 17:39:32 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 17:39:32 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 17:39:32 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 17:39:32 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 17:39:32 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 17:40:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 17:40:53 [I] http server Running on http://:9700
-2017/08/25 17:40:54 [D] [BaseFilter /api/getdata] 
-2017/08/25 18:07:37 [D] [BaseFilter /api/getdata] 
-2017/08/25 18:07:37 [C] the request url is  /api/getdata
-2017/08/25 18:07:37 [C] Handler crashed with error runtime error: index out of range
-2017/08/25 18:07:37 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 18:07:37 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 18:07:37 [C] C:/Go/src/runtime/panic.go:27
-2017/08/25 18:07:37 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:849
-2017/08/25 18:07:37 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:46
-2017/08/25 18:07:37 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 18:07:37 [C] C:/Go/src/reflect/value.go:434
-2017/08/25 18:07:37 [C] C:/Go/src/reflect/value.go:302
-2017/08/25 18:07:37 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/08/25 18:07:37 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 18:07:37 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 18:07:37 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 18:07:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 18:07:38 [I] http server Running on http://:9700
-2017/08/25 18:07:49 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 18:07:49 [C] the request url is  /api/getdata
-2017/08/25 18:07:49 [C] Handler crashed with error can't find templatefile in the path:apicontroller/getdata.tpl
-2017/08/25 18:07:49 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 18:07:49 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 18:07:49 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
-2017/08/25 18:07:49 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
-2017/08/25 18:07:49 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
-2017/08/25 18:07:49 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
-2017/08/25 18:07:49 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
-2017/08/25 18:07:49 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 18:07:49 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 18:07:49 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 18:08:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 18:08:10 [I] http server Running on http://:9700
-2017/08/25 18:08:19 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 18:08:19 [C] the request url is  /api/getdata
-2017/08/25 18:08:19 [C] Handler crashed with error can't find templatefile in the path:apicontroller/getdata.tpl
-2017/08/25 18:08:19 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 18:08:19 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 18:08:19 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
-2017/08/25 18:08:19 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
-2017/08/25 18:08:19 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
-2017/08/25 18:08:19 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
-2017/08/25 18:08:19 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
-2017/08/25 18:08:19 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 18:08:19 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 18:08:19 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 18:08:44 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 18:08:44 [I] http server Running on http://:9700
-2017/08/25 18:08:45 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 18:08:45 [C] the request url is  /api/getdata
-2017/08/25 18:08:45 [C] Handler crashed with error can't find templatefile in the path:apicontroller/getdata.tpl
-2017/08/25 18:08:45 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 18:08:45 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 18:08:45 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
-2017/08/25 18:08:45 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
-2017/08/25 18:08:45 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
-2017/08/25 18:08:45 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
-2017/08/25 18:08:45 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
-2017/08/25 18:08:45 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 18:08:45 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 18:08:45 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 18:09:31 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 18:09:31 [I] http server Running on http://:9700
-2017/08/25 18:09:34 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 18:09:34 [C] the request url is  /api/getdata
-2017/08/25 18:09:34 [C] Handler crashed with error can't find templatefile in the path:apicontroller/getdata.tpl
-2017/08/25 18:09:34 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/08/25 18:09:34 [C] C:/Go/src/runtime/panic.go:458
-2017/08/25 18:09:34 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
-2017/08/25 18:09:34 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
-2017/08/25 18:09:34 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
-2017/08/25 18:09:34 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
-2017/08/25 18:09:34 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
-2017/08/25 18:09:34 [C] C:/Go/src/net/http/server.go:2202
-2017/08/25 18:09:34 [C] C:/Go/src/net/http/server.go:1579
-2017/08/25 18:09:34 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/08/25 18:13:21 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 18:13:21 [I] http server Running on http://:9700
-2017/08/25 18:13:26 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 18:13:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 18:13:41 [I] http server Running on http://:9700
-2017/08/25 18:13:48 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-05-30] 
-2017/08/25 18:14:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/25 18:14:06 [I] http server Running on http://:9700
-2017/08/25 18:31:10 [D] [BaseFilter /api/getdata?startdate=2017-03-01&enddate=2017-05-30] 
-2017/08/28 10:10:16 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 10:10:16 [I] http server Running on http://:9700
-2017/08/28 11:08:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:08:17 [I] http server Running on http://:9700
-2017/08/28 11:08:36 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:08:36 [I] http server Running on http://:9700
-2017/08/28 11:08:49 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:08:49 [I] http server Running on http://:9700
-2017/08/28 11:09:27 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:09:27 [I] http server Running on http://:9700
-2017/08/28 11:11:18 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:11:18 [I] http server Running on http://:9700
-2017/08/28 11:11:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:11:41 [I] http server Running on http://:9700
-2017/08/28 11:13:15 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:13:15 [I] http server Running on http://:9700
-2017/08/28 11:13:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:13:17 [I] http server Running on http://:9700
-2017/08/28 11:16:45 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:16:45 [I] http server Running on http://:9700
-2017/08/28 11:19:30 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:19:30 [I] http server Running on http://:9700
-2017/08/28 11:20:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:20:05 [I] http server Running on http://:9700
-2017/08/28 11:20:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:20:17 [I] http server Running on http://:9700
-2017/08/28 11:29:49 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:29:49 [I] http server Running on http://:9700
-2017/08/28 11:30:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:30:32 [I] http server Running on http://:9700
-2017/08/28 11:31:49 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:31:50 [I] http server Running on http://:9700
-2017/08/28 11:31:51 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:31:52 [I] http server Running on http://:9700
-2017/08/28 11:32:56 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 11:32:58 [I] http server Running on http://:9700
-2017/08/28 14:04:27 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 14:04:29 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 14:04:32 [I] http server Running on http://:9700
-2017/08/28 15:00:40 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 16:43:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 16:43:33 [I] http server Running on http://:9700
-2017/08/28 16:45:07 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 16:45:08 [I] http server Running on http://:9700
-2017/08/28 16:45:34 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 16:45:36 [I] http server Running on http://:9700
-2017/08/28 16:49:51 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/28 16:49:53 [I] http server Running on http://:9700
-2017/08/29 15:14:24 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:14:25 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:14:27 [I] http server Running on http://:9700
-2017/08/29 15:14:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:14:40 [I] http server Running on http://:9700
-2017/08/29 15:15:25 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:15:27 [I] http server Running on http://:9700
-2017/08/29 15:19:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:19:07 [I] http server Running on http://:9700
-2017/08/29 15:20:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:20:19 [I] http server Running on http://:9700
-2017/08/29 15:20:54 [D] [BaseFilter /api/getdaopan?dungou=STA19] 
-2017/08/29 15:20:54 [D] [BaseFilter /favicon.ico] 
-2017/08/29 15:21:50 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:21:52 [I] http server Running on http://:9700
-2017/08/29 15:21:52 [D] [BaseFilter /api/getdaopan?dungou=STA19] 
-2017/08/29 15:21:59 [D] [BaseFilter /api/getdaopan?dungou=STA19] 
-2017/08/29 15:22:47 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:22:48 [I] http server Running on http://:9700
-2017/08/29 15:22:55 [D] [BaseFilter /api/getdaopan?dungou=STA19] 
-2017/08/29 15:23:29 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:24:00 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:24:02 [I] http server Running on http://:9700
-2017/08/29 15:24:03 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:24:04 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:25:33 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:25:35 [I] http server Running on http://:9700
-2017/08/29 15:25:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:25:42 [I] http server Running on http://:9700
-2017/08/29 15:25:44 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:25:46 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:26:03 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:26:04 [I] http server Running on http://:9700
-2017/08/29 15:26:05 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:26:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:26:28 [I] http server Running on http://:9700
-2017/08/29 15:26:30 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:26:45 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:26:45 [I] http server Running on http://:9700
-2017/08/29 15:26:46 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:26:56 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:26:56 [I] http server Running on http://:9700
-2017/08/29 15:27:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:27:06 [I] http server Running on http://:9700
-2017/08/29 15:27:07 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:27:24 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:27:24 [I] http server Running on http://:9700
-2017/08/29 15:27:27 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:27:28 [I] http server Running on http://:9700
-2017/08/29 15:27:37 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:28:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:28:09 [I] http server Running on http://:9700
-2017/08/29 15:28:11 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:28:21 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:28:21 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:28:22 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:28:22 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 15:28:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 15:28:54 [I] http server Running on http://:9700
-2017/08/29 15:28:58 [D] [BaseFilter /api/getdaopan?dungou=STA20] 
-2017/08/29 16:49:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 16:50:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 18:11:59 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/29 18:12:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/30 10:25:55 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/30 10:26:00 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 10:20:11 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 10:20:18 [I] http server Running on http://:9700
-2017/08/31 10:22:16 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 10:22:18 [I] http server Running on http://:9700
-2017/08/31 10:22:18 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 10:23:22 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 10:23:23 [I] http server Running on http://:9700
-2017/08/31 10:23:23 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 10:26:22 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 10:26:23 [I] http server Running on http://:9700
-2017/08/31 10:26:23 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 10:26:58 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 10:27:00 [I] http server Running on http://:9700
-2017/08/31 10:27:00 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 10:40:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 10:40:47 [I] http server Running on http://:9700
-2017/08/31 10:40:47 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 11:04:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 11:04:23 [I] http server Running on http://:9700
-2017/08/31 11:04:23 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 11:56:31 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 11:56:42 [I] http server Running on http://:9700
-2017/08/31 11:56:42 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 11:58:35 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 11:58:44 [I] http server Running on http://:9700
-2017/08/31 11:58:44 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 13:43:34 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 13:43:45 [I] http server Running on http://:9700
-2017/08/31 13:43:45 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 13:50:24 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 13:50:59 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 13:51:13 [I] http server Running on http://:9700
-2017/08/31 13:51:13 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 14:00:00 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 14:00:35 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 14:00:47 [I] http server Running on http://:9700
-2017/08/31 14:00:47 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 15:15:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 15:16:06 [I] http server Running on http://:9700
-2017/08/31 15:16:06 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 15:16:49 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 15:17:03 [I] http server Running on http://:9700
-2017/08/31 15:17:03 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 15:18:05 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 15:18:18 [I] http server Running on http://:9700
-2017/08/31 15:18:18 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 15:35:30 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 15:35:43 [I] http server Running on http://:9700
-2017/08/31 15:35:43 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 15:38:51 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 15:39:02 [I] http server Running on http://:9700
-2017/08/31 15:39:02 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 15:39:46 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 15:39:57 [I] http server Running on http://:9700
-2017/08/31 15:39:57 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 15:40:32 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 15:40:45 [I] http server Running on http://:9700
-2017/08/31 15:40:45 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 15:41:23 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 15:41:37 [I] http server Running on http://:9700
-2017/08/31 15:41:37 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 15:42:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 15:42:55 [I] http server Running on http://:9700
-2017/08/31 15:42:55 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/08/31 15:43:49 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/08/31 15:44:01 [I] http server Running on http://:9700
-2017/08/31 15:44:01 [C] ListenAndServe:  listen tcp :9700: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
-2017/09/05 10:56:26 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/05 17:08:45 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/05 17:09:31 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/05 17:10:00 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/05 17:10:13 [I] http server Running on http://:9700
-2017/09/05 17:10:18 [D] [BaseFilter /api/getdata?startdate=2017-03-01&enddate=2017-05-30] 
-2017/09/05 17:10:18 [D] [BaseFilter /favicon.ico] 
-2017/09/05 17:25:19 [D] [BaseFilter /ws/rpc] 
-2017/09/05 17:25:34 [D] [BaseFilter /rpc] 
-2017/09/05 17:25:34 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:25:56 [D] [BaseFilter /rpc] 
-2017/09/05 17:25:56 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:27:34 [D] [BaseFilter /rpc] 
-2017/09/05 17:27:34 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:27:59 [D] [BaseFilter /rpc] 
-2017/09/05 17:27:59 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:28:15 [D] [BaseFilter /rpc] 
-2017/09/05 17:28:15 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:29:48 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/05 17:30:02 [I] http server Running on http://:9700
-2017/09/05 17:30:02 [D] [BaseFilter /rpc] 
-2017/09/05 17:30:02 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:30:08 [D] [BaseFilter /rpc] 
-2017/09/05 17:30:08 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:30:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/05 17:30:56 [I] http server Running on http://:9700
-2017/09/05 17:31:01 [D] [BaseFilter /rpc] 
-2017/09/05 17:31:01 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:31:03 [D] [BaseFilter /rpc] 
-2017/09/05 17:31:03 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:31:04 [D] [BaseFilter /rpc] 
-2017/09/05 17:31:04 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:31:50 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/05 17:32:19 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/05 17:32:32 [I] http server Running on http://:9700
-2017/09/05 17:32:39 [D] [BaseFilter /rpc] 
-2017/09/05 17:32:39 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:32:46 [D] [BaseFilter /rpc] 
-2017/09/05 17:32:46 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:36:50 [D] [BaseFilter /rpc] 
-2017/09/05 17:36:50 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:36:56 [D] [BaseFilter /rpc] 
-2017/09/05 17:36:56 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:36:59 [D] [BaseFilter /rpc] 
-2017/09/05 17:36:59 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:36:59 [D] [BaseFilter /rpc] 
-2017/09/05 17:36:59 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:37:00 [D] [BaseFilter /rpc] 
-2017/09/05 17:37:00 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:37:00 [D] [BaseFilter /rpc] 
-2017/09/05 17:37:00 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:37:54 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/05 17:38:06 [I] http server Running on http://:9700
-2017/09/05 17:38:11 [D] [BaseFilter /rpc] 
-2017/09/05 17:38:11 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/05 17:50:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/05 17:50:17 [I] http server Running on http://:9700
-2017/09/05 17:50:24 [D] [BaseFilter /rpc] 
-2017/09/05 17:50:24 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/08 11:10:50 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/08 11:14:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/08 11:15:00 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/08 11:15:14 [I] http server Running on http://:9700
-2017/09/08 11:15:15 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-01-01] 
-2017/09/08 11:15:15 [D] [BaseFilter /favicon.ico] 
-2017/09/08 11:15:20 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-01-01] 
-2017/09/08 11:15:20 [C] the request url is  /api/getdata
-2017/09/08 11:15:20 [C] Handler crashed with error runtime error: index out of range
-2017/09/08 11:15:20 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/09/08 11:15:20 [C] C:/Go/src/runtime/panic.go:458
-2017/09/08 11:15:20 [C] C:/Go/src/runtime/panic.go:27
-2017/09/08 11:15:20 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:964
-2017/09/08 11:15:20 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:51
-2017/09/08 11:15:20 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/09/08 11:15:20 [C] C:/Go/src/reflect/value.go:434
-2017/09/08 11:15:20 [C] C:/Go/src/reflect/value.go:302
-2017/09/08 11:15:20 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/09/08 11:15:20 [C] C:/Go/src/net/http/server.go:2202
-2017/09/08 11:15:20 [C] C:/Go/src/net/http/server.go:1579
-2017/09/08 11:15:20 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/09/08 11:15:32 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/08 11:15:43 [I] http server Running on http://:9700
-2017/09/08 11:15:48 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-01-01] 
-2017/09/08 11:16:12 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-01-01] 
-2017/09/08 11:16:12 [C] the request url is  /api/getdata
-2017/09/08 11:16:12 [C] Handler crashed with error runtime error: index out of range
-2017/09/08 11:16:12 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/09/08 11:16:12 [C] C:/Go/src/runtime/panic.go:458
-2017/09/08 11:16:12 [C] C:/Go/src/runtime/panic.go:27
-2017/09/08 11:16:12 [C] D:/gogit/gopath/src/dungou.cn/util/util.go:964
-2017/09/08 11:16:12 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:51
-2017/09/08 11:16:12 [C] C:/Go/src/runtime/asm_amd64.s:479
-2017/09/08 11:16:12 [C] C:/Go/src/reflect/value.go:434
-2017/09/08 11:16:12 [C] C:/Go/src/reflect/value.go:302
-2017/09/08 11:16:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
-2017/09/08 11:16:12 [C] C:/Go/src/net/http/server.go:2202
-2017/09/08 11:16:12 [C] C:/Go/src/net/http/server.go:1579
-2017/09/08 11:16:12 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/09/08 11:21:21 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/08 11:21:32 [I] http server Running on http://:9700
-2017/09/08 11:21:37 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-01-01] 
-2017/09/08 11:21:38 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-01-01] 
-2017/09/08 11:21:39 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-01-01] 
-2017/09/08 11:21:40 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-01-01] 
-2017/09/08 11:21:40 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-01-01] 
-2017/09/08 11:21:40 [D] [BaseFilter /api/getdata?startdate=2017-01-01&enddate=2017-01-01] 
-2017/09/11 10:52:47 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/11 10:53:14 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/11 10:53:28 [I] http server Running on http://:9700
-2017/09/11 10:53:49 [D] [BaseFilter /rpc] 
-2017/09/11 10:53:49 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/11 10:57:12 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/11 10:57:25 [I] http server Running on http://:9700
-2017/09/11 10:57:39 [D] [BaseFilter /rpc] 
-2017/09/11 10:57:39 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/11 11:19:16 [D] [BaseFilter /rpc] 
-2017/09/11 11:19:16 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/11 11:21:44 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/11 11:21:58 [I] http server Running on http://:9700
-2017/09/11 11:22:03 [D] [BaseFilter /rpc] 
-2017/09/11 11:22:03 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/11 11:22:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/11 11:22:28 [I] http server Running on http://:9700
-2017/09/11 11:26:35 [D] [BaseFilter /rpc] 
-2017/09/11 11:26:35 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/11 11:27:35 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/11 11:27:35 [I] http server Running on http://:9700
-2017/09/11 11:27:40 [D] [BaseFilter /rpc] 
-2017/09/11 11:27:40 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/11 11:29:31 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/11 11:29:31 [I] http server Running on http://:9700
-2017/09/11 11:29:36 [D] [BaseFilter /rpc] 
-2017/09/11 11:29:36 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/11 11:30:03 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/11 11:30:03 [I] http server Running on http://:9700
-2017/09/11 11:30:08 [D] [BaseFilter /rpc] 
-2017/09/11 11:30:08 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/11 11:34:16 [D] [BaseFilter /rpc] 
-2017/09/11 11:34:16 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/11 11:35:04 [D] [BaseFilter /rpc] 
-2017/09/11 11:35:04 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/11 11:42:23 [D] [BaseFilter /rpc] 
-2017/09/11 11:42:23 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/11 11:43:54 [D] [BaseFilter /rpc] 
-2017/09/11 11:43:54 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/11 11:44:05 [D] [BaseFilter /rpc] 
-2017/09/11 11:44:05 [E] [JsonDecode  unexpected end of JSON input] 
-2017/09/11 14:12:22 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/09/11 14:12:22 [I] http server Running on http://:9700
-2017/09/11 14:12:27 [D] [BaseFilter /rpc] 
-2017/09/11 14:12:27 [D] [BaseFilter /corp/list] 
-2017/09/11 14:13:40 [D] [BaseFilter /rpc] 
-2017/09/11 14:13:40 [D] [BaseFilter /api/getdata] 
-2017/09/11 14:15:36 [D] [BaseFilter /rpc] 
-2017/09/11 14:15:36 [D] [BaseFilter /api/getdata] 
-2017/09/11 14:54:52 [D] [BaseFilter /rpc] 
-2017/09/11 14:54:52 [D] [BaseFilter /api/getdata] 
+2017/09/27 15:11:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 15:11:37 [I] http server Running on http://:9700
+2017/09/27 15:12:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 15:12:38 [I] http server Running on http://:9700
+2017/09/27 15:16:36 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 15:16:36 [I] http server Running on http://:9700
+2017/09/27 16:22:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 16:22:39 [D] [Post 106.75.33.170:16680/api/upload: unsupported protocol scheme ""] 
+2017/09/27 16:22:39 [D] [<nil>] 
+2017/09/27 16:22:39 [I] http server Running on http://:9700
+2017/09/27 16:23:03 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 16:23:03 [D] [{"code":200,"msg":{"ext":"xlsx","files":[":/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx"],"sheets":[],"size":9246,"url":":/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx"}}] 
+2017/09/27 16:23:03 [I] http server Running on http://:9700
+2017/09/27 16:27:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 16:27:41 [D] [{"code":200,"msg":{"ext":"xlsx","files":[":/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx"],"sheets":[],"size":9246,"url":":/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx"}}] 
+2017/09/27 16:27:41 [I] http server Running on http://:9700
+2017/09/27 16:28:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 16:28:52 [D] [open D:aa.xlsx: The filename, directory name, or volume label syntax is incorrect.] 
+2017/09/27 16:28:52 [D] [] 
+2017/09/27 16:28:52 [I] http server Running on http://:9700
+2017/09/27 16:29:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 16:29:07 [D] [{"code":200,"msg":{"ext":"xlsx","files":[":/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx"],"sheets":[],"size":11624,"url":":/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx"}}] 
+2017/09/27 16:29:07 [I] http server Running on http://:9700
+2017/09/27 16:31:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 16:31:17 [D] [{"code":200,"msg":{"ext":"xlsx","files":[":/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx"],"sheets":[],"size":11624,"url":":/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx"}}] 
+2017/09/27 16:31:18 [I] http server Running on http://:9700
+2017/09/27 16:58:51 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 16:58:51 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx"],"sheets":[],"size":11624,"url":"upload/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx"}}] 
+2017/09/27 16:58:51 [I] http server Running on http://:9700
+2017/09/27 16:59:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 16:59:43 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx.csv.0"],"sheets":[],"size":11624,"url":"upload/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx.csv.0"}}] 
+2017/09/27 16:59:43 [I] http server Running on http://:9700
+2017/09/27 17:02:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 17:02:43 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0"],"sheets":[],"size":9246,"url":"upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0"}}] 
+2017/09/27 17:02:43 [I] http server Running on http://:9700
+2017/09/27 17:06:37 [D] [BaseFilter /api/pub?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo] 
+2017/09/27 17:06:37 [D] [Csv2Db upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0] 
+2017/09/27 17:06:37 [D] [Exec: mysql --local-infile=1 -u root tdtg -e LOAD DATA LOCAL INFILE 'upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0' INTO TABLE rtinfo FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'] 
+2017/09/27 17:07:22 [D] [BaseFilter /api/pub?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo] 
+2017/09/27 17:07:22 [D] [Csv2Db upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0] 
+2017/09/27 17:07:22 [D] [Exec: mysql --local-infile=1 -u root tdtg -e LOAD DATA LOCAL INFILE 'upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0' INTO TABLE rtinfo FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'] 
+2017/09/27 17:08:08 [D] [BaseFilter /api/pub?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo] 
+2017/09/27 17:08:08 [D] [Csv2Db upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0] 
+2017/09/27 17:08:08 [D] [Exec: mysql --local-infile=1 -u root tdtg -e LOAD DATA LOCAL INFILE 'upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0' INTO TABLE rtinfo FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'] 
+2017/09/27 17:08:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 17:08:42 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0"],"sheets":[],"size":9246,"url":"upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0"}}] 
+2017/09/27 17:08:42 [I] http server Running on http://:9700
+2017/09/27 17:08:47 [D] [BaseFilter /api/pub?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo] 
+2017/09/27 17:08:47 [D] [Csv2Db upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0] 
+2017/09/27 17:08:47 [D] [Exec: mysql --local-infile=1 -u root tdtg -e LOAD DATA LOCAL INFILE 'upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0' INTO TABLE rtinfo FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'] 
+2017/09/27 17:24:16 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 17:24:16 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/cff4fe15b12336ee547134fa94f203a8.xlsx.csv.0"],"sheets":[],"size":9221,"url":"upload/cff4fe15b12336ee547134fa94f203a8.xlsx.csv.0"}}] 
+2017/09/27 17:24:16 [I] http server Running on http://:9700
+2017/09/27 21:51:58 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 21:52:19 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.] 
+2017/09/27 21:52:19 [D] [<nil>] 
+2017/09/27 21:52:19 [I] http server Running on http://:9700
+2017/09/27 22:12:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 22:12:58 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.] 
+2017/09/27 22:12:58 [D] [<nil>] 
+2017/09/27 22:13:02 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 22:13:23 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.] 
+2017/09/27 22:13:23 [D] [<nil>] 
+2017/09/27 22:13:23 [I] http server Running on http://:9700
+2017/09/27 22:13:29 [D] [BaseFilter /api/pub?url=D:%5Cdungou.xlsx&table=dungouset] 
+2017/09/27 22:13:29 [C] the request url is  /api/pub
+2017/09/27 22:13:29 [C] Handler crashed with error can't find templatefile in the path:apicontroller/pub.tpl
+2017/09/27 22:13:29 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/27 22:13:29 [C] C:/Go/src/runtime/panic.go:458
+2017/09/27 22:13:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/27 22:13:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/27 22:13:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/27 22:13:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/27 22:13:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/27 22:13:29 [C] C:/Go/src/net/http/server.go:2202
+2017/09/27 22:13:29 [C] C:/Go/src/net/http/server.go:1579
+2017/09/27 22:13:29 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/27 22:14:12 [D] [BaseFilter /api/pub?url=D:%5Cdungou.xlsx&table=dungouset] 
+2017/09/27 22:14:12 [C] the request url is  /api/pub
+2017/09/27 22:14:12 [C] Handler crashed with error can't find templatefile in the path:apicontroller/pub.tpl
+2017/09/27 22:14:12 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/27 22:14:12 [C] C:/Go/src/runtime/panic.go:458
+2017/09/27 22:14:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/27 22:14:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/27 22:14:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/27 22:14:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/27 22:14:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/27 22:14:12 [C] C:/Go/src/net/http/server.go:2202
+2017/09/27 22:14:12 [C] C:/Go/src/net/http/server.go:1579
+2017/09/27 22:14:12 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/27 22:15:09 [D] [BaseFilter /api/getdata] 
+2017/09/27 22:15:16 [D] [BaseFilter /api/getdata] 
+2017/09/27 22:16:02 [D] [BaseFilter /api/pub?url=D:/dungou.xlsx&table=dungouset] 
+2017/09/27 22:16:02 [C] the request url is  /api/pub
+2017/09/27 22:16:02 [C] Handler crashed with error can't find templatefile in the path:apicontroller/pub.tpl
+2017/09/27 22:16:02 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/27 22:16:02 [C] C:/Go/src/runtime/panic.go:458
+2017/09/27 22:16:02 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/27 22:16:02 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/27 22:16:02 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/27 22:16:02 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/27 22:16:02 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/27 22:16:02 [C] C:/Go/src/net/http/server.go:2202
+2017/09/27 22:16:02 [C] C:/Go/src/net/http/server.go:1579
+2017/09/27 22:16:02 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/27 22:16:14 [D] [BaseFilter /api/pub?url=D:/dungou.xlsx&table=dungouset] 
+2017/09/27 22:16:14 [C] the request url is  /api/pub
+2017/09/27 22:16:14 [C] Handler crashed with error can't find templatefile in the path:apicontroller/pub.tpl
+2017/09/27 22:16:14 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/27 22:16:14 [C] C:/Go/src/runtime/panic.go:458
+2017/09/27 22:16:14 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/27 22:16:14 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/27 22:16:14 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/27 22:16:14 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/27 22:16:14 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/27 22:16:14 [C] C:/Go/src/net/http/server.go:2202
+2017/09/27 22:16:14 [C] C:/Go/src/net/http/server.go:1579
+2017/09/27 22:16:14 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/27 22:17:40 [D] [BaseFilter /api?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo] 
+2017/09/27 22:17:52 [D] [BaseFilter /api?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo] 
+2017/09/27 22:18:14 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 22:18:35 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.] 
+2017/09/27 22:18:35 [D] [<nil>] 
+2017/09/27 22:18:36 [I] http server Running on http://:9700
+2017/09/27 22:18:51 [D] [BaseFilter /api?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo] 
+2017/09/27 22:19:57 [D] [BaseFilter /api?url=D:/dungou.xlsx&table=rtinfo] 
+2017/09/27 22:20:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 22:20:59 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.] 
+2017/09/27 22:20:59 [D] [<nil>] 
+2017/09/27 22:20:59 [I] http server Running on http://:9700
+2017/09/27 22:21:05 [D] [BaseFilter /api?url=D:/dungou.xlsx&table=rtinfo] 
+2017/09/27 22:21:29 [D] [BaseFilter /getdata] 
+2017/09/27 22:21:40 [D] [BaseFilter /api/getdata] 
+2017/09/27 22:22:12 [D] [BaseFilter /api?table=rtinfo&url=D:/dungou.xlsx] 
+2017/09/27 22:22:48 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 22:23:09 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.] 
+2017/09/27 22:23:09 [D] [<nil>] 
+2017/09/27 22:23:09 [I] http server Running on http://:9700
+2017/09/27 22:23:17 [D] [BaseFilter /api?table=rtinfo&url=D:/dungou.xlsx] 
+2017/09/27 22:44:05 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 22:44:26 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.] 
+2017/09/27 22:44:26 [D] [<nil>] 
+2017/09/27 22:44:26 [I] http server Running on http://:9700
+2017/09/27 22:44:31 [D] [BaseFilter /api?table=rtinfo&url=D:/dungou.xlsx] 
+2017/09/27 22:44:48 [D] [BaseFilter /api/pub?table=rtinfo&url=D:/dungou.xlsx] 
+2017/09/27 22:46:08 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 22:46:29 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.] 
+2017/09/27 22:46:29 [D] [<nil>] 
+2017/09/27 22:46:29 [I] http server Running on http://:9700
+2017/09/27 22:46:37 [D] [BaseFilter /api/pub?table=rtinfo&url=D:/dungou.xlsx] 
+2017/09/27 22:46:37 [D] [Exec: mysql --local-infile=1 -u root tdtg -e "LOAD DATA LOCAL INFILE 'D:/dungou.xlsx' replace INTO TABLE rtinfo FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'  ignore 1 lines "] 
+2017/09/27 22:47:29 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.xlsx] 
+2017/09/27 22:47:29 [C] the request url is  /api/pub
+2017/09/27 22:47:29 [C] Handler crashed with error can't find templatefile in the path:apicontroller/pub.tpl
+2017/09/27 22:47:29 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/27 22:47:29 [C] C:/Go/src/runtime/panic.go:458
+2017/09/27 22:47:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/27 22:47:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/27 22:47:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/27 22:47:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/27 22:47:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/27 22:47:29 [C] C:/Go/src/net/http/server.go:2202
+2017/09/27 22:47:29 [C] C:/Go/src/net/http/server.go:1579
+2017/09/27 22:47:29 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/27 22:49:00 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/27 22:49:32 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/27 22:49:57 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 22:50:18 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.] 
+2017/09/27 22:50:18 [D] [<nil>] 
+2017/09/27 22:50:18 [I] http server Running on http://:9700
+2017/09/27 22:50:34 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/27 22:51:25 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/27 22:51:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 22:51:59 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.] 
+2017/09/27 22:51:59 [D] [<nil>] 
+2017/09/27 22:52:00 [I] http server Running on http://:9700
+2017/09/27 22:52:05 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/27 22:52:25 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/27 22:52:25 [I] http server Running on http://:9700
+2017/09/27 22:52:35 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 09:57:08 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 09:57:08 [I] http server Running on http://:9700
+2017/09/28 09:58:26 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 09:58:27 [I] http server Running on http://:9700
+2017/09/28 09:59:46 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 09:59:46 [C] the request url is  /api/pub
+2017/09/28 09:59:46 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 09:59:46 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 09:59:46 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 09:59:46 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 09:59:46 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:182
+2017/09/28 09:59:46 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:159
+2017/09/28 09:59:46 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 09:59:46 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 09:59:46 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 09:59:46 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 09:59:46 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 09:59:46 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 09:59:46 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:00:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 10:00:37 [I] http server Running on http://:9700
+2017/09/28 10:00:49 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:00:49 [C] the request url is  /api/pub
+2017/09/28 10:00:49 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:00:49 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:00:49 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:00:49 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:00:49 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:182
+2017/09/28 10:00:49 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:159
+2017/09/28 10:00:49 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:00:49 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:00:49 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:00:49 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:00:49 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:00:49 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:00:49 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:01:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 10:01:39 [I] http server Running on http://:9700
+2017/09/28 10:01:48 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:01:48 [C] the request url is  /api/pub
+2017/09/28 10:01:48 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:01:48 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:01:48 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:01:48 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:01:48 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:183
+2017/09/28 10:01:48 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:159
+2017/09/28 10:01:48 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:01:48 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:01:48 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:01:48 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:01:48 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:01:48 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:01:48 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:05:22 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 10:05:22 [I] http server Running on http://:9700
+2017/09/28 10:05:27 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:05:27 [C] the request url is  /api/pub
+2017/09/28 10:05:27 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:05:27 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:05:27 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:05:27 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:05:27 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:186
+2017/09/28 10:05:27 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:159
+2017/09/28 10:05:27 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:05:27 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:05:27 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:05:27 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:05:27 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:05:27 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:05:27 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:06:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 10:06:28 [I] http server Running on http://:9700
+2017/09/28 10:06:33 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:06:33 [C] the request url is  /api/pub
+2017/09/28 10:06:33 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:06:33 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:06:33 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:06:33 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:06:33 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:186
+2017/09/28 10:06:33 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:159
+2017/09/28 10:06:33 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:06:33 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:06:33 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:06:33 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:06:33 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:06:33 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:06:33 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:07:14 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 10:07:14 [I] http server Running on http://:9700
+2017/09/28 10:07:19 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:07:19 [C] the request url is  /api/pub
+2017/09/28 10:07:19 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:07:19 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:07:19 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:07:19 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:07:19 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:185
+2017/09/28 10:07:19 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:159
+2017/09/28 10:07:19 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:07:19 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:07:19 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:07:19 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:07:19 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:07:19 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:07:19 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:09:08 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 10:09:08 [I] http server Running on http://:9700
+2017/09/28 10:09:14 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:09:14 [C] the request url is  /api/pub
+2017/09/28 10:09:14 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:09:14 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:09:14 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:09:14 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:09:14 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:185
+2017/09/28 10:09:14 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:161
+2017/09/28 10:09:14 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:09:14 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:09:14 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:09:14 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:09:14 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:09:14 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:09:14 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:11:45 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:11:45 [C] the request url is  /api/pub
+2017/09/28 10:11:45 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:11:45 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:11:45 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:11:45 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:11:45 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:208
+2017/09/28 10:11:45 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:161
+2017/09/28 10:11:45 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:11:45 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:11:45 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:11:45 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:11:45 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:11:45 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:11:45 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:13:30 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 10:13:31 [I] http server Running on http://:9700
+2017/09/28 10:13:37 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:15:14 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:16:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 10:16:04 [I] http server Running on http://:9700
+2017/09/28 10:17:42 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:34:22 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 10:34:22 [I] http server Running on http://:9700
+2017/09/28 10:34:32 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:35:12 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:35:38 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:35:43 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:36:10 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:36:24 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:43:19 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 10:43:19 [I] http server Running on http://:9700
+2017/09/28 10:43:24 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:43:47 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:43:48 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 10:55:48 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 10:55:48 [I] http server Running on http://:9700
+2017/09/28 10:55:59 [D] [BaseFilter /api/getpath] 
+2017/09/28 11:03:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 11:03:37 [I] http server Running on http://:9700
+2017/09/28 11:03:41 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/28 11:03:52 [D] [BaseFilter /api/getpath] 
+2017/09/28 11:13:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 11:13:52 [I] http server Running on http://:9700
+2017/09/28 11:13:57 [D] [BaseFilter /api/getpath] 
+2017/09/28 14:21:47 [D] [BaseFilter /api/upload] 
+2017/09/28 14:21:47 [E] [Upload http: no such file] 
+2017/09/28 14:22:02 [D] [BaseFilter /api/upload] 
+2017/09/28 14:22:02 [E] [Upload http: no such file] 
+2017/09/28 14:23:54 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 14:23:54 [I] http server Running on http://:9700
+2017/09/28 14:24:00 [D] [BaseFilter /api/upload] 
+2017/09/28 14:24:00 [E] [Upload http: no such file] 
+2017/09/28 14:49:45 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 14:49:45 [I] http server Running on http://:9700
+2017/09/28 16:12:16 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/28 16:12:16 [I] http server Running on http://:9700
+2017/09/28 16:12:19 [D] [BaseFilter /api/getdata] 
+2017/09/29 10:09:12 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 10:09:12 [I] http server Running on http://:9700
+2017/09/29 10:09:42 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/29 10:11:13 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 10:11:13 [I] http server Running on http://:9700
+2017/09/29 10:11:20 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv] 
+2017/09/29 10:11:54 [D] [BaseFilter /api/] 
+2017/09/29 10:12:02 [D] [BaseFilter /api/map] 
+2017/09/29 10:12:19 [D] [BaseFilter /api/map] 
+2017/09/29 10:12:21 [D] [BaseFilter /api/maps] 
+2017/09/29 10:12:45 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 10:12:45 [I] http server Running on http://:9700
+2017/09/29 10:12:51 [D] [BaseFilter /api/maps] 
+2017/09/29 10:14:30 [D] [BaseFilter /api/maps?type=5] 
+2017/09/29 10:30:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 10:30:53 [I] http server Running on http://:9700
+2017/09/29 10:30:59 [D] [BaseFilter /api/maps?type=5] 
+2017/09/29 10:37:02 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 10:37:02 [I] http server Running on http://:9700
+2017/09/29 10:37:15 [D] [BaseFilter /api/maps?type=5] 
+2017/09/29 10:38:49 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 10:38:49 [I] http server Running on http://:9700
+2017/09/29 10:38:52 [D] [BaseFilter /api/maps?type=5] 
+2017/09/29 10:40:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 10:40:10 [I] http server Running on http://:9700
+2017/09/29 10:40:12 [D] [BaseFilter /api/maps?type=5] 
+2017/09/29 10:41:18 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 10:41:18 [I] http server Running on http://:9700
+2017/09/29 10:41:23 [D] [BaseFilter /api/maps?type=5] 
+2017/09/29 10:42:16 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 10:42:16 [I] http server Running on http://:9700
+2017/09/29 10:42:22 [D] [BaseFilter /api/maps?type=5] 
+2017/09/29 10:46:14 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 10:46:14 [I] http server Running on http://:9700
+2017/09/29 10:46:18 [D] [BaseFilter /api/maps?type=5] 
+2017/09/29 10:59:42 [D] [BaseFilter /api/maps?dungo=4] 
+2017/09/29 11:00:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 11:00:44 [I] http server Running on http://:9700
+2017/09/29 11:00:47 [D] [BaseFilter /api/maps?dungo=4] 
+2017/09/29 11:01:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 11:01:42 [I] http server Running on http://:9700
+2017/09/29 11:02:06 [D] [BaseFilter /api/maps?dungo=4] 
+2017/09/29 11:03:44 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 11:03:44 [I] http server Running on http://:9700
+2017/09/29 11:03:51 [D] [BaseFilter /api/maps?dungo=4] 
+2017/09/29 11:04:04 [D] [BaseFilter /api/maps?dungou=4] 
+2017/09/29 11:12:46 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 11:12:46 [I] http server Running on http://:9700
+2017/09/29 11:12:57 [D] [BaseFilter /api/upload] 
+2017/09/29 11:12:57 [E] [Upload http: no such file] 
+2017/09/29 11:13:05 [D] [BaseFilter /api/maps?dungou=4] 
+2017/09/29 14:38:19 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 14:38:20 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/a7efa4eeb397c26a18f3124ab960669b.xlsx.csv.0"],"sheets":[],"size":9522,"url":"upload/a7efa4eeb397c26a18f3124ab960669b.xlsx.csv.0"}}] 
+2017/09/29 14:38:20 [I] http server Running on http://:9700
+2017/09/29 15:02:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 15:02:10 [I] http server Running on http://:9700
+2017/09/29 15:02:23 [D] [BaseFilter /api/pub?url=D:/a7efa4eeb397c26a18f3124ab960669b.xlsx.csv.0&table=dungouset] 
+2017/09/29 15:02:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 15:02:52 [I] http server Running on http://:9700
+2017/09/29 15:02:58 [D] [BaseFilter /api/pub?url=D:/a7efa4eeb397c26a18f3124ab960669b.xlsx.csv.0&table=dungouset] 
+2017/09/29 15:17:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 15:17:23 [D] [{"code":200,"msg":{"ext":"jpg","size":556588,"url":"upload/2cb89fe1ad38b4fede466077242c8dcd.jpg"}}] 
+2017/09/29 15:17:23 [I] http server Running on http://:9700
+2017/09/29 16:26:32 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 16:31:15 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 16:32:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 16:33:50 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 16:33:50 [I] http server Running on http://:9700
+2017/09/29 16:47:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 16:47:37 [I] http server Running on http://:9700
+2017/09/29 16:48:48 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 16:48:48 [I] http server Running on http://:9700
+2017/09/29 16:49:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 16:49:39 [I] http server Running on http://:9700
+2017/09/29 16:51:32 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 16:51:32 [I] http server Running on http://:9700
+2017/09/29 16:51:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 16:51:53 [I] http server Running on http://:9700
+2017/09/29 16:53:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 16:53:11 [I] http server Running on http://:9700
+2017/09/29 17:00:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 17:00:42 [I] http server Running on http://:9700
+2017/09/29 17:00:48 [D] [BaseFilter /api/getsediment] 
+2017/09/29 17:01:11 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 17:01:11 [I] http server Running on http://:9700
+2017/09/29 17:01:17 [D] [BaseFilter /api/getsediment] 
+2017/09/29 17:03:20 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 17:03:21 [I] http server Running on http://:9700
+2017/09/29 17:03:26 [D] [BaseFilter /api/getsediment] 
+2017/09/29 17:17:46 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 17:17:46 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}] 
+2017/09/29 17:17:46 [I] http server Running on http://:9700
+2017/09/29 17:19:27 [D] [BaseFilter /api/pub?table=seclonlat&url=D:/lon.csv] 
+2017/09/29 17:19:27 [D] [Exec: mysql --local-infile=1 -u root tdtg -e "LOAD DATA LOCAL INFILE 'D:/lon.csv' replace INTO TABLE seclonlat FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'  ignore 1 lines "] 
+2017/09/29 17:48:05 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 17:48:05 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}] 
+2017/09/29 17:48:05 [I] http server Running on http://:9700
+2017/09/29 17:52:09 [D] [BaseFilter /api/pub?url=D:/sets.csv&table=dungouset] 
+2017/09/29 17:53:45 [D] [BaseFilter /api/getseclonlat?dungou=SMSC33] 
+2017/09/29 17:58:47 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 17:59:05 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}] 
+2017/09/29 17:59:05 [I] http server Running on http://:9700
+2017/09/29 17:59:05 [D] [BaseFilter /api/getprolonlat?dungou=SMSC33] 
+2017/09/29 18:02:41 [D] [BaseFilter /api/getprofile?dungou=SMSC33] 
+2017/09/29 18:02:56 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/09/29 18:03:06 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}] 
+2017/09/29 18:03:06 [I] http server Running on http://:9700
+2017/09/29 18:03:11 [D] [BaseFilter /api/getprofile?dungou=SMSC33] 
+2017/09/29 18:17:03 [D] [BaseFilter /api/map?dungou=SMSC33] 
+2017/09/29 18:17:23 [D] [BaseFilter /api/maps?dungou=SMSC33] 
+2017/10/02 10:49:23 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 10:49:23 [I] http server Running on http://:9700
+2017/10/02 10:50:05 [D] [BaseFilter /api/pub?table=dungouset&url=C:%5CUsers%5CThink%5CDesktop%E3%80%8189777d60e81ce6c29166b4afdfb9edd1.xlsx.csv.0] 
+2017/10/02 10:50:05 [C] the request url is  /api/pub
+2017/10/02 10:50:05 [C] Handler crashed with error can't find templatefile in the path:apicontroller/pub.tpl
+2017/10/02 10:50:05 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/10/02 10:50:05 [C] C:/Go/src/runtime/panic.go:458
+2017/10/02 10:50:05 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
+2017/10/02 10:50:05 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/10/02 10:50:05 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/10/02 10:50:05 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/10/02 10:50:05 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
+2017/10/02 10:50:05 [C] C:/Go/src/net/http/server.go:2202
+2017/10/02 10:50:05 [C] C:/Go/src/net/http/server.go:1579
+2017/10/02 10:50:05 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/10/02 10:50:28 [D] [BaseFilter /api/pub?table=dungouset&url=C:%5CUsers%5CThink%5CDesktop%5C89777d60e81ce6c29166b4afdfb9edd1.xlsx.csv.0] 
+2017/10/02 10:51:12 [D] [BaseFilter /api/pub?table=dungouset&url=C:%5CUsers%5CThink%5CDesktop%5C89777d60e81ce6c29166b4afdfb9edd1.xlsx.csv.0] 
+2017/10/02 10:51:29 [D] [BaseFilter /api/pub?table=dungouset&url=C:%5CUsers%5CThink%5CDesktop%5C89777d60e81ce6c29166b4afdfb9edd1.xlsx.csv.0] 
+2017/10/02 17:03:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:03:57 [I] http server Running on http://:9700
+2017/10/02 17:04:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:04:39 [I] http server Running on http://:9700
+2017/10/02 17:04:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:04:53 [I] http server Running on http://:9700
+2017/10/02 17:05:03 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:05:08 [I] http server Running on http://:9700
+2017/10/02 17:06:54 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:06:58 [I] http server Running on http://:9700
+2017/10/02 17:08:27 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:08:32 [I] http server Running on http://:9700
+2017/10/02 17:10:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:10:43 [I] http server Running on http://:9700
+2017/10/02 17:11:49 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:11:51 [I] http server Running on http://:9700
+2017/10/02 17:12:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:12:45 [I] http server Running on http://:9700
+2017/10/02 17:12:57 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:12:59 [I] http server Running on http://:9700
+2017/10/02 17:13:18 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:13:21 [I] http server Running on http://:9700
+2017/10/02 17:13:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:13:40 [I] http server Running on http://:9700
+2017/10/02 17:14:05 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:14:07 [I] http server Running on http://:9700
+2017/10/02 17:14:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:14:30 [I] http server Running on http://:9700
+2017/10/02 17:15:59 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:16:03 [I] http server Running on http://:9700
+2017/10/02 17:17:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:17:45 [I] http server Running on http://:9700
+2017/10/02 17:18:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:18:13 [I] http server Running on http://:9700
+2017/10/02 17:20:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:20:21 [I] http server Running on http://:9700
+2017/10/02 17:20:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:20:47 [I] http server Running on http://:9700
+2017/10/02 17:22:13 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:22:17 [I] http server Running on http://:9700
+2017/10/02 17:23:58 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:24:02 [I] http server Running on http://:9700
+2017/10/02 17:24:33 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:24:37 [I] http server Running on http://:9700
+2017/10/02 17:28:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:28:08 [I] http server Running on http://:9700
+2017/10/02 17:28:58 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:29:02 [I] http server Running on http://:9700
+2017/10/02 17:29:35 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:29:39 [I] http server Running on http://:9700
+2017/10/02 17:30:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:30:08 [I] http server Running on http://:9700
+2017/10/02 17:30:35 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:30:40 [I] http server Running on http://:9700
+2017/10/02 17:31:21 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:31:25 [I] http server Running on http://:9700
+2017/10/02 17:31:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:31:43 [I] http server Running on http://:9700
+2017/10/02 17:31:55 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:31:59 [I] http server Running on http://:9700
+2017/10/02 17:32:12 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:32:15 [I] http server Running on http://:9700
+2017/10/02 17:34:18 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:34:22 [I] http server Running on http://:9700
+2017/10/02 17:34:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:34:45 [I] http server Running on http://:9700
+2017/10/02 17:35:03 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:35:07 [I] http server Running on http://:9700
+2017/10/02 17:35:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:35:32 [I] http server Running on http://:9700
+2017/10/02 17:36:12 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:36:16 [I] http server Running on http://:9700
+2017/10/02 17:39:50 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:39:54 [I] http server Running on http://:9700
+2017/10/02 17:40:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:40:32 [I] http server Running on http://:9700
+2017/10/02 17:41:00 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:41:04 [I] http server Running on http://:9700
+2017/10/02 17:41:30 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:41:34 [I] http server Running on http://:9700
+2017/10/02 17:42:32 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:42:37 [I] http server Running on http://:9700
+2017/10/02 17:44:34 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:44:38 [I] http server Running on http://:9700
+2017/10/02 17:48:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:48:56 [I] http server Running on http://:9700
+2017/10/02 17:49:16 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:49:20 [I] http server Running on http://:9700
+2017/10/02 17:49:54 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 17:49:58 [I] http server Running on http://:9700
+2017/10/02 20:37:30 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 20:37:35 [I] http server Running on http://:9700
+2017/10/02 20:39:11 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 20:39:15 [I] http server Running on http://:9700
+2017/10/02 20:41:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 20:41:11 [I] http server Running on http://:9700
+2017/10/02 20:49:06 [D] [BaseFilter /api/%20etcommu] 
+2017/10/02 20:49:06 [D] [BaseFilter /api/getcommu] 
+2017/10/02 20:49:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 20:49:47 [I] http server Running on http://:9700
+2017/10/02 20:49:50 [D] [BaseFilter /api/getcommu] 
+2017/10/02 20:53:06 [D] [BaseFilter /api/getcommu] 
+2017/10/02 21:00:57 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 21:00:58 [I] http server Running on http://:9700
+2017/10/02 21:02:24 [D] [BaseFilter /:/api/pub?url=d:/set.csv&table=dungouset] 
+2017/10/02 21:02:34 [D] [BaseFilter /:/api/pub?url=d:/sets.csv&table=dungouset] 
+2017/10/02 21:03:26 [D] [BaseFilter /:/api/pub?url=D:/sets.csv&table=dungouset] 
+2017/10/02 21:04:01 [D] [BaseFilter /:/api/pub?url=D:%5Csets.csv&table=dungouset] 
+2017/10/02 21:04:19 [D] [BaseFilter /:/api/pub?url=D:/sets.csv&table=dungouset] 
+2017/10/02 21:05:18 [D] [BaseFilter /api/pub?url=D:/sets.csv&table=dungouset] 
+2017/10/02 21:07:08 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 21:07:12 [I] http server Running on http://:9700
+2017/10/02 21:07:17 [D] [BaseFilter /api/pub?url=D:/sets.csv&table=dungouset] 
+2017/10/02 21:09:22 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 21:09:22 [I] http server Running on http://:9700
+2017/10/02 21:09:25 [D] [BaseFilter /api/pub?url=D:/sets.csv&table=dungouset] 
