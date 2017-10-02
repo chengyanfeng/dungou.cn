@@ -10,10 +10,11 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"os"
+	"strconv"
 	"strings"
-	"log"
 )
 
 type ApiController struct {
@@ -22,6 +23,7 @@ type ApiController struct {
 
 const MAX_UPLOAD int64 = 50 * 1024 * 1024
 const OWNCOMPANY string = "上海地铁盾构设备工程有限公司"
+
 var url = "http://www.metroshield.com:7070"
 var key = []byte("qzQpyDAGqDDaHiOY")
 
@@ -61,13 +63,12 @@ func (this *ApiController) Getdata() {
 	this.EchoJsonMsg(jd)
 }
 
-
 func (this *ApiController) Maps() {
-	param :=this.FormToP("city","company","type","path","section","own","dungou")
+	param := this.FormToP("city", "company", "type", "path", "section", "own", "dungou")
 	p := make(map[string]interface{})
-	for k,v:=range param{
+	for k, v := range param {
 		if v != nil {
-			p[k]=v
+			p[k] = v
 		}
 	}
 	sets := []Dungouset{}
@@ -77,18 +78,18 @@ func (this *ApiController) Maps() {
 
 func (this *ApiController) Getcommu() {
 	commum := []Commum{}
-	sets :=[]Dungouset{}
+	sets := []Dungouset{}
 	Db.Find(&commum)
-	for _,v := range commum {
+	for _, v := range commum {
 		set := Dungouset{}
-		name :=v.Dungou
-		Db.Where("datano = ?" ,name).Find(&set)
-		sets = append(sets,set)
+		name := v.Dungou
+		Db.Where("datano = ?", name).Find(&set)
+		sets = append(sets, set)
 	}
 	this.EchoJsonMsg(sets)
 }
 
-func (this *ApiController) Getcompany(){
+func (this *ApiController) Getcompany() {
 	sets := []Dungouset{}
 	companys := make([]string, 0)
 	Db.Where("status = ?", 1).Find(&sets)
@@ -100,7 +101,7 @@ func (this *ApiController) Getcompany(){
 	this.EchoJson(companys)
 }
 
-func (this *ApiController) Gettype(){
+func (this *ApiController) Gettype() {
 	sets := []Dungouset{}
 	typelist := make([]string, 0)
 	Db.Where("status = ?", 1).Find(&sets)
@@ -118,41 +119,52 @@ func (this *ApiController) Getdaopan() {
 	Db.Where("dungou = ? ", dungou).First(&daopan)
 	this.EchoJsonMsg(daopan)
 }
+
 //登陆
-func (this *ApiController)Login(){
+func (this *ApiController) Login() {
 	username := this.GetString("username")
 	password := this.GetString("password")
 	/*password = Md5(password, Md5Salt)*/
-	user:=User{}
-	p:=make(map[string]string)
-	p["username"]=username
+	user := User{}
+	p := make(map[string]string)
+	p["username"] = username
 	Db.Where("username = ? ", username).First(&user)
-	if user.Username==""{
+	if user.Username == "" {
 		this.EchoJsonErr("用户不存在")
 		this.StopRun()
 	}
 
-	if user.Password!=password{
+	if user.Password != password {
 		fmt.Println(user.Password)
 		fmt.Println(password)
 		this.EchoJsonErr("密码错误")
 		this.StopRun()
 	}
-	this.SetSession("username",username)
-	this.SetSession("grade",user.Grade)
+	this.SetSession("username", username)
+	this.SetSession("grade", user.Grade)
 	this.GetSession("username")
-	this.Ctx.SetCookie("username",username)
-	fmt.Println("username:",username)
+	this.Ctx.SetCookie("username", username)
+	fmt.Println("username:", username)
 	this.EchoJsonMsg(user)
 }
-
+func (this *ApiController) Getpath() {
+	sets := []Dungouset{}
+	paths := make([]string, 0)
+	Db.Where("status = ?", 1).Find(&sets)
+	for _, v := range sets {
+		path := v.Path
+		paths = append(paths, path)
+	}
+	paths = RemoveDuplicatesAndEmpty(paths)
+	this.EchoJson(paths)
+}
 func (this *ApiController) Getseclonlat() {
 	dungou := this.GetString("dungou")
 	set := Dungouset{}
 	Db.Where("dungou = ?", dungou).Find(&set)
 	section := set.Section
 	sec := []Seclonlat{}
-	Db.Where("section = ?",section).Find(&sec)
+	Db.Where("section = ?", section).Find(&sec)
 	this.EchoJson(sec)
 }
 
@@ -162,7 +174,7 @@ func (this *ApiController) Getprolonlat() {
 	Db.Where("dungou = ?", dungou).Find(&set)
 	section := set.Section
 	prolonlat := []Prolonlat{}
-	Db.Where("section = ?",section).Find(&prolonlat)
+	Db.Where("section = ?", section).Find(&prolonlat)
 	this.EchoJson(prolonlat)
 }
 
@@ -172,7 +184,7 @@ func (this *ApiController) Getprofile() {
 	Db.Where("dungou = ?", dungou).Find(&set)
 	section := set.Section
 	profile := Profile{}
-	Db.Where("section = ?",section).Find(&profile)
+	Db.Where("section = ?", section).Find(&profile)
 	this.EchoJson(profile)
 }
 
@@ -188,97 +200,106 @@ func (this *ApiController) Getsection() {
 	for _, v := range sets {
 		section := v.Section
 		sections = append(sections, section)
+	}
+	sections = RemoveDuplicatesAndEmpty(sections)
+	this.EchoJson(sections)
+}
+
 //添加
-func (this *ApiController)Adduser(){
-	user:=User{}
-	userfind:=User{}
+func (this *ApiController) Adduser() {
+	user := User{}
+	userfind := User{}
 	username := this.GetString("username")
 	Db.Where("username = ? ", username).First(&user)
 	if !IsEmpty(user.Username) {
 		this.EchoJsonErr("用户已注册")
-	}else {
+	} else {
 		password := this.GetString("password")
 		/*password = Md5(password, Md5Salt)*/
-		role:=this.GetString("role")
-		companyid:=this.GetString("companyid")
-		id:=ToInt(this.GetString("id"))
-		user.Id=id
-		user.Username=username
-		user.Password=password
-		user.Role=role
-		user.Companyid=companyid
+		role := this.GetString("role")
+		companyid := this.GetString("companyid")
+		id := ToInt(this.GetString("id"))
+		user.Id = id
+		user.Username = username
+		user.Password = password
+		user.Role = role
+		user.Companyid = companyid
 		Db.Create(&user)
 		Db.Where("username = ? ", username).First(&userfind)
 		if !IsEmpty(userfind.Username) {
 			this.EchoJsonMsg("插入成功")
-		}else {
+		} else {
 			this.EchoJsonErr("插入失败")
 		}
 	}
 }
+
 //修改
-func (this *ApiController)Updateuser(){
-	user:=User{}
-	param:=make(map[string]interface{})
-	p := this.FormToP("password", "role","companyid","username")
-	for k,v:=range p{
-		if v!=nil{
-			param[k]=v
+func (this *ApiController) Updateuser() {
+	user := User{}
+	param := make(map[string]interface{})
+	p := this.FormToP("password", "role", "companyid", "username")
+	for k, v := range p {
+		if v != nil {
+			param[k] = v
 		}
 	}
-	db:=Db.Model(&user).Where("username = ?", p["username"]).Updates(param)
-	if strings.Fields(ToString(db))[1]=="<nil>"{
-		if strings.Fields(ToString(db))[2]!="0" {
+	db := Db.Model(&user).Where("username = ?", p["username"]).Updates(param)
+	if strings.Fields(ToString(db))[1] == "<nil>" {
+		if strings.Fields(ToString(db))[2] != "0" {
 			this.EchoJsonMsg("更新成功")
-		}else{
+		} else {
 			this.EchoJsonErr("更新失败")
 		}
 
-	}else
-	{this.EchoJsonErr("更新失败")}
-
-
+	} else {
+		this.EchoJsonErr("更新失败")
+	}
 
 }
+
 //查询
-func (this *ApiController)Finduser(){
-	users:=[]User{}
-	p := this.FormToP("username","role","companyid","id")
-	param:=make(map[string]interface{})
-	for k,v :=range p{
-		if v!=nil{
-			param[k]=v
+func (this *ApiController) Finduser() {
+	users := []User{}
+	p := this.FormToP("username", "role", "companyid", "id")
+	param := make(map[string]interface{})
+	for k, v := range p {
+		if v != nil {
+			param[k] = v
 		}
 	}
-	db:=Db.Where(param).Find(&users)
+	db := Db.Where(param).Find(&users)
 	fmt.Println(db)
 
-	if strings.Fields(ToString(db))[1]=="<nil>"{
-		if strings.Fields(ToString(db))[2]!="0" {
+	if strings.Fields(ToString(db))[1] == "<nil>" {
+		if strings.Fields(ToString(db))[2] != "0" {
 
 			this.EchoJsonMsg(users)
-		}else{
+		} else {
 			this.EchoJsonErr("查询失败")
 		}
 
-	}else
-	{this.EchoJsonErr("查询失败")}
+	} else {
+		this.EchoJsonErr("查询失败")
+	}
 }
+
 //删除
-func (this * ApiController)Deletuser(){
+func (this *ApiController) Deletuser() {
 
 	username := this.GetString("username")
-	db:=Db.Where("username = ?", username).Delete(User{})
+	db := Db.Where("username = ?", username).Delete(User{})
 	fmt.Println(db)
-	if strings.Fields(ToString(db))[2]=="<nil>"{
-		if strings.Fields(ToString(db))[3]!="0" {
+	if strings.Fields(ToString(db))[2] == "<nil>" {
+		if strings.Fields(ToString(db))[3] != "0" {
 			this.EchoJsonMsg("删除成功")
-		}else{
+		} else {
 			this.EchoJsonErr("删除失败")
 		}
 
-	}else
-	{this.EchoJsonErr("删除失败")}
+	} else {
+		this.EchoJsonErr("删除失败")
+	}
 }
 func (this *ApiController) Upload() {
 	f, h, err := this.GetFile("bin")
@@ -341,17 +362,17 @@ func (this *ApiController) Upload() {
 	}
 }
 
-func (this *ApiController) Getrisk() {//TODO
+func (this *ApiController) Getrisk() { //TODO
 	sets := []Dungouset{}
 	Db.Find(&sets)
-	for _,v := range sets {
-		section :=v.Section
+	for _, v := range sets {
+		section := v.Section
 		risks := []Risk{}
 		Db.Find(&risks).Where("section = ?", section)
 	}
 
 }
-func (this *ApiController) Getsediment()  {
+func (this *ApiController) Getsediment() {
 	sediment := []Sediment{}
 	Db.Find(&sediment)
 	this.EchoJsonMsg(sediment)
@@ -391,7 +412,7 @@ func (this *ApiController) Pub() {
 			}
 			k++
 		}
-	}else if table == "rtinfo"||table =="seclonlat"||table=="prolonlat"||table=="risk" {
+	} else if table == "rtinfo" || table == "seclonlat" || table == "prolonlat" || table == "risk" {
 		_, e := pg.LoadCsv(url, table, ",")
 		if e != nil {
 			this.EchoJsonErr(e)
@@ -410,24 +431,25 @@ func encrypt(param string) string {
 	param = strings.Replace(param, "/", "-", -1)
 	return param
 }
-func (this *ApiController) Upmessage(){
-	message:=Message{}
-	message.Username=this.GetString("username")
-	message.Companyid=this.GetString("companyid")
-	message.Img=this.GetString("img")
-	message.Text=this.GetString("text")
-	message.Date=this.GetString("date")
-	db:=Db.Create(&message)
+func (this *ApiController) Upmessage() {
+	message := Message{}
+	message.Username = this.GetString("username")
+	message.Companyid = this.GetString("companyid")
+	message.Img = this.GetString("img")
+	message.Text = this.GetString("text")
+	message.Date = this.GetString("date")
+	db := Db.Create(&message)
 	fmt.Println(db)
-	if strings.Fields(ToString(db))[1]=="<nil>"{
-		if strings.Fields(ToString(db))[2]!="0" {
+	if strings.Fields(ToString(db))[1] == "<nil>" {
+		if strings.Fields(ToString(db))[2] != "0" {
 			this.EchoJsonMsg("上报成功")
-		}else{
+		} else {
 			this.EchoJsonErr("上报失败")
 		}
-	}else
-	{this.EchoJsonErr("上报失败")}
-
+	} else {
+		this.EchoJsonErr("上报失败")
+	}
+}
 func inserSet(record []string) {
 	set := Dungouset{}
 	p := P{}
@@ -456,28 +478,30 @@ func inserSet(record []string) {
 	set.Status = status
 	if record[5] == OWNCOMPANY {
 		set.Own = "1"
-	}else{
+	} else {
 		set.Own = "0"
 	}
 
 	Db.Create(set)
 }
+
 //上传
-func (this *ApiController) Upremark(){
-	remark:=Remark{}
-	remark.Username=this.GetString("username")
-	remark.Companyid=this.GetString("companyid")
-	remark.Messageid,_=strconv.Atoi((this.GetString("messageid")))
-	remark.Text=this.GetString("text")
-	remark.Date=this.GetString("date")
-	db:=Db.Create(&remark)
-	if strings.Fields(ToString(db))[1]=="<nil>"{
-		if strings.Fields(ToString(db))[2]!="0" {
+func (this *ApiController) Upremark() {
+	remark := Remark{}
+	remark.Username = this.GetString("username")
+	remark.Companyid = this.GetString("companyid")
+	remark.Messageid, _ = strconv.Atoi((this.GetString("messageid")))
+	remark.Text = this.GetString("text")
+	remark.Date = this.GetString("date")
+	db := Db.Create(&remark)
+	if strings.Fields(ToString(db))[1] == "<nil>" {
+		if strings.Fields(ToString(db))[2] != "0" {
 			this.EchoJsonMsg("添加备注成功")
-		}else{
+		} else {
 			this.EchoJsonErr("添加备注失败")
 		}
-	}else
-	{this.EchoJsonErr("添加备注失败")}
+	} else {
+		this.EchoJsonErr("添加备注失败")
+	}
 
 }

@@ -76,7 +76,7 @@ func initConf() {
 	ADMINISTRATOR = config["administrator"]
 	ROOT = config["root"]
 	SUPERROOT = config["superroot"]
-
+}
 func a() {
 	jd,err :=Upload("http://106.75.33.170:16680/api/upload","D:/lon.xlsx")
 	if err != nil {
@@ -84,7 +84,4 @@ func a() {
 	}
 	//json := *JsonDecode([]byte(jd))
 	Debug(string(jd))
-}
-
-
 }
