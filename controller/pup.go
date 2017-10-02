@@ -35,6 +35,7 @@ func tjinsert() {
 			sediment.Groundlr1 = ToString(v["groundRossRate1"])
 			sediment.Loop1 = ToString(v["loop1"])
 			sediment.Groundlr2 = ToString(v["groundLossRate2"])
+			sediment.Batch = 1
 			Db.Create(&sediment)
 		}
 	}
@@ -85,6 +86,7 @@ func commum(v map[string]interface{}, name string) {
 			commum.Jilutime = time
 			commum.Shike = shike
 			commum.Dungou = name
+			commum.Batch = 1
 			Db.Create(&commum)
 		} else {
 			return
@@ -115,6 +117,7 @@ func daopan(v map[string]interface{}, name string) {
 	daopan.Youzhuan = ToString(v["A23"])
 	daopan.Chaowali = ToString(v["A25"])
 	daopan.Huixuansudu = ToString(v["A31"])
+	daopan.Batch = 1
 	Db.Create(&daopan)
 }
 
@@ -147,6 +150,7 @@ func jingbao(v map[string]interface{}, name string) {
 	jingbao.Hzj = ToString(v["D68"])
 	jingbao.Mf = ToString(v["D69"])
 	jingbao.Dpss = ToString(v["D70"])
+	jingbao.Batch = 1
 	Db.Create(&jingbao)
 }
 
@@ -166,6 +170,7 @@ func jiaojie(v map[string]interface{}, name string) {
 	jiaojie.Yl4 = ToString(v["A71"])
 	jiaojie.Jdsx = ToString(v["A72"])
 	jiaojie.Jdzy = ToString(v["A73"])
+	jiaojie.Batch = 1
 	Db.Create(&jiaojie)
 }
 
@@ -179,6 +184,7 @@ func luoxuanji(v map[string]interface{}, name string) {
 	luoxuanji.Yl = ToString(v["A19"])
 	luoxuanji.Zt = ToString(v["A36"])
 	luoxuanji.Sd = ToString(v["A8"])
+	luoxuanji.Batch = 1
 	Db.Create(&luoxuanji)
 }
 
@@ -208,6 +214,7 @@ func juejin(v map[string]interface{}, name string) {
 	juejin.Jjjxz = ToString(v["D37"])
 	juejin.Jjms = ToString(v["D38"])
 	juejin.Zzms = ToString(v["D39"])
+	juejin.Batch = 1
 	Db.Create(&juejin)
 }
 
@@ -237,6 +244,7 @@ func tuya(v map[string]interface{}, name string, q string, t string) {
 	tuya.Tuya4 = ToString(v["A4"])
 	tuya.Tuya5 = ""
 	tuya.Ztl = ToString(v["A30"])
+	tuya.Batch = 1
 	Db.Create(&tuya)
 
 }
@@ -251,11 +259,50 @@ func getname(name string) string {
 }
 
 func change() {
-	Db.Delete(&Jingbao{})
-	Db.Delete(&Jiaojie{})
-	Db.Delete(&Daopan{})
-	Db.Delete(&Juejin{})
-	Db.Delete(&Luoxuanji{})
-	Db.Delete(&Tuya{})
-	Db.Delete(&Sediment{})
+	num := 0
+	Db.Where("batch = ?", 1).Find(&Jingbao{}).Count(&num)
+	if num!=0 {
+		Db.Where(&Jingbao{Batch: 2, }).Delete(&Jingbao{})
+		Db.Table("jingbao").Where("batch = ?", 1).Updates(P{"batch": 2})
+	}
+	num =0
+	Db.Where("batch = ?", 1).Find(&Jiaojie{}).Count(&num)
+	if num!=0 {
+		Db.Where(&Jiaojie{Batch: 2, }).Delete(&Jiaojie{})
+		Db.Table("jiaojie").Where("batch = ?", 1).Updates(P{"batch": 2})
+	}
+	num =0
+	Db.Where("batch = ?", 1).Find(&Daopan{}).Count(&num)
+	if num!=0 {
+		Db.Where(&Daopan{Batch: 2, }).Delete(&Daopan{})
+		Db.Table("daopan").Where("batch = ?", 1).Updates(P{"batch": 2})
+	}
+
+	num =0
+	Db.Where("batch = ?", 1).Find(&Juejin{}).Count(&num)
+	if num!=0 {
+		Db.Where(&Juejin{Batch: 2, }).Delete(&Juejin{})
+		Db.Table("juejin").Where("batch = ?", 1).Updates(P{"batch": 2})
+	}
+
+	num =0
+	Db.Where("batch = ?", 1).Find(&Luoxuanji{}).Count(&num)
+	if num!=0 {
+		Db.Where(&Luoxuanji{Batch: 2, }).Delete(&Luoxuanji{})
+		Db.Table("luoxuanji").Where("batch = ?", 1).Updates(P{"batch": 2})
+	}
+
+	num =0
+	Db.Where("batch = ?", 1).Find(&Tuya{}).Count(&num)
+	if num!=0 {
+		Db.Where(&Tuya{Batch: 2, }).Delete(&Tuya{})
+		Db.Table("tuya").Where("batch = ?", 1).Updates(P{"batch": 2})
+	}
+
+	num =0
+	Db.Where("batch = ?", 1).Find(&Sediment{}).Count(&num)
+	if num!=0 {
+		Db.Where(&Sediment{Batch: 2, }).Delete(&Sediment{})
+		Db.Table("sediment").Where("batch = ?", 1).Updates(P{"batch": 2})
+	}
 }

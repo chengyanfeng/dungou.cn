@@ -61,6 +61,7 @@ type Daopan struct {
 	Youzhuan    string `gorm:"size:512;column:youzhuan"`
 	Chaowali    string `gorm:"size:512;column:chaowali"`
 	Huixuansudu string `gorm:"size:512;column:huixuansudu"`
+	Batch 	 int    `gorm:"column:batch"`
 }
 
 type Jingbao struct {
@@ -82,7 +83,7 @@ type Jingbao struct {
 	Xh       string `gorm:"size:512;column:xh"`
 	Pdcfh    string `gorm:"size:512;column:pdcfh"`
 	Zzdy     string `gorm:"size:512;column:zzdy"`
-	Pddy     string `gorm:"size:512;column:pddy`
+	Pddy     string `gorm:"size:512;column:pddy"`
 	Dpdy     string `gorm:"size:512;column:dpdy"`
 	Zzhl     string `gorm:"size:512;column:zzhl"`
 	Yxhl     string `gorm:"size:512;column:yxhl"`
@@ -90,6 +91,7 @@ type Jingbao struct {
 	Hzj      string `gorm:"size:512;column:hzj"`
 	Mf       string `gorm:"size:512;column:mf"`
 	Dpss     string `gorm:"size:512;column:dpss"`
+	Batch 	 int    `gorm:"column:batch"`
 }
 
 type Jiaojie struct {
@@ -106,6 +108,7 @@ type Jiaojie struct {
 	Yl4      string `gorm:"size:512;column:yl4"`
 	Jdsx     string `gorm:"size:512;column:jdsx"`
 	Jdzy     string `gorm:"size:512;column:jdzy"`
+	Batch 	 int    `gorm:"column:batch"`
 }
 
 type Luoxuanji struct {
@@ -116,6 +119,7 @@ type Luoxuanji struct {
 	Yl       string `gorm:"size:512;column:yl"`
 	Zt       string `gorm:"size:512;column:zt"`
 	Sd       string `gorm:"size:512;column:sd"`
+	Batch 	 int    `gorm:"column:batch"`
 }
 
 type Juejin struct {
@@ -142,6 +146,7 @@ type Juejin struct {
 	Jjjxz    string `gorm:"size:512;column:jjjxz"`
 	Jjms     string `gorm:"size:512;column:jjms"`
 	Zzms     string `gorm:"size:512;column:zzms"`
+	Batch 	 int    `gorm:"column:batch"`
 }
 
 type Tuya struct {
@@ -168,11 +173,13 @@ type Tuya struct {
 	Tuya4    string `gorm:"size:512;column:tuya4"`
 	Tuya5    string `gorm:"size:512;column:tuya5"`
 	Ztl      string `gorm:"size:512;column:ztl"`
+	Batch 	 int    `gorm:"column:batch"`
 }
 type  Commum struct {
 	Dungou   string `gorm:"size:512;column:dungou"`
 	Jilutime string `gorm:"size:512;column:Jilutime"`
 	Shike    string `gorm:"size:512;column:shike"`
+	Batch 	 int    `gorm:"column:batch"`
 }
 
 type Sediment struct {
@@ -183,6 +190,7 @@ type Sediment struct {
 	Groundlr1    string `gorm:"size:512;column:groundlr1"`
 	Loop1    string `gorm:"size:512;column:loop1"`
 	Groundlr2    string `gorm:"size:512;column:groundlr2"`
+	Batch 	 int    `gorm:"column:batch"`
 }
 type User struct {
 
