@@ -14,7 +14,11 @@ var Num = []string{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
 type BaseController struct {
 	beego.Controller
 }
+func (this *BaseController)Prepare(){
+	fmt.Println("thisdsfdsafsadfa:")
+	fmt.Println(this.GetSession("username"))
 
+}
 func (this *BaseController) Echo(msg ...interface{}) {
 	var out string = ""
 	for _, v := range msg {
@@ -24,32 +28,34 @@ func (this *BaseController) Echo(msg ...interface{}) {
 }
 
 func (this *BaseController) EchoJson(m interface{}) {
-	//this.Ctx.Output.Header("Access-Control-Allow-Origin", "*")
-	//this.Ctx.Output.Header("Access-Control-Allow-Headers", "Content-Type")
+	this.Ctx.Output.Header("Access-Control-Allow-Origin", "*")
+	this.Ctx.Output.Header("Access-Control-Allow-Headers", "Content-Type")
 	this.Ctx.Output.Header("Content-Type", "application/json; charset=utf-8")
 	this.Ctx.WriteString(JsonEncode(P{"code": 200, "msg": m}))
 }
 
 func (this *BaseController) EchoErr(m interface{}, n string) {
-	//this.Ctx.Output.Header("Access-Control-Allow-Origin", "*")
-	//this.Ctx.Output.Header("Access-Control-Allow-Headers", "Content-Type")
+	this.Ctx.Output.Header("Access-Control-Allow-Origin", "*")
+	this.Ctx.Output.Header("Access-Control-Allow-Headers", "Content-Type")
 	this.Ctx.Output.Header("Content-Type", "application/json; charset=utf-8")
 	this.Ctx.WriteString(JsonEncode(P{"code": 400, "msg": m, "sql":n}))
 }
 
 func (this *BaseController) EchoJsonMsg(msg interface{}) {
-	//this.Ctx.Output.Header("Access-Control-Allow-Origin", "*")
-	//this.Ctx.Output.Header("Access-Control-Allow-Headers", "Content-Type")
+	this.Ctx.Output.Header("Access-Control-Allow-Origin", "*")
+	this.Ctx.Output.Header("Access-Control-Allow-Headers", "Content-Type")
 	this.Ctx.Output.Header("Content-Type", "application/json; charset=utf-8")
 	this.Ctx.WriteString(JsonEncode(P{"code": 200, "msg": msg}))
+	fmt.Println("head:")
+	fmt.Println(ToString(this.Ctx.Output.Header))
 }
 
 func (this *BaseController) EchoJsonOk(msg ...interface{}) {
 	if msg == nil {
 		msg = []interface{}{"ok"}
 	}
-	//this.Ctx.Output.Header("Access-Control-Allow-Origin", "*")
-	//this.Ctx.Output.Header("Access-Control-Allow-Headers", "Content-Type")
+	this.Ctx.Output.Header("Access-Control-Allow-Origin", "*")
+	this.Ctx.Output.Header("Access-Control-Allow-Headers", "Content-Type")
 	this.Ctx.Output.Header("Content-Type", "application/json; charset=utf-8")
 	this.Ctx.WriteString(JsonEncode(P{"code": 200, "msg": msg[0]}))
 }
@@ -61,8 +67,8 @@ func (this *BaseController) EchoJsonErr(msg ...interface{}) {
 			out = JoinStr(out, v)
 		}
 	}
-	//this.Ctx.Output.Header("Access-Control-Allow-Origin", "*")
-	//this.Ctx.Output.Header("Access-Control-Allow-Headers", "Content-Type")
+	this.Ctx.Output.Header("Access-Control-Allow-Origin", "*")
+	this.Ctx.Output.Header("Access-Control-Allow-Headers", "Content-Type")
 	this.Ctx.Output.Header("Content-Type", "application/json; charset=utf-8")
 	this.Ctx.WriteString(JsonEncode(P{"code": GENERAL_ERR, "msg": out}))
 }

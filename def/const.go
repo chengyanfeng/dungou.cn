@@ -1,14 +1,23 @@
 package def
 
 import "time"
-
+var Md5Salt string = "Dh@)!^o5l3!%Op0"
 var MODE string = ""
 var UPTIME = time.Now().UnixNano() / int64(time.Millisecond)
 var PUNCTUATION []string = []string{".", ";", ",", "(", ")", "%"}
-
+var (
+	VISITOR string
+	VISITORS string
+	ORDINARYUSER string
+	LEADERUSER string
+	ADMINISTRATOR string
+	ROOT string
+	SUPERROOT string
+)
 const (
 	ROW_LIMIT_PREVIEW int = 50
 	ROW_LIMIT_MAX     int = 1000
+
 )
 
 const (

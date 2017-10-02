@@ -102,6 +102,16 @@ func (this *Orm) Init() {
 	} else {
 		Db.CreateTable(&Jingbao{})
 	}
+	if Db.HasTable("user") {
+
+	} else {
+		Db.CreateTable(&User{})
+	}
+	if Db.HasTable("message") {
+
+	} else {
+		Db.CreateTable(&Message{})
+	}
 	if Db.HasTable("jiaojie") {
 
 	} else {
@@ -151,6 +161,12 @@ func (this *Orm) Init() {
 
 	} else {
 		Db.CreateTable(&Risk{})
+	}
+
+	if Db.HasTable("remark") {
+
+	} else {
+		Db.CreateTable(&Remark{})
 	}
 }
 

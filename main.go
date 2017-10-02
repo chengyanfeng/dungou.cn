@@ -9,22 +9,34 @@ import (
 	. "dungou.cn/task"
 	. "dungou.cn/util"
 	"os"
+	"github.com/astaxie/beego/plugins/cors"
 )
 
 var orm Orm
 var mssql Mssql
 var tjMssql TjMssql
 func main() {
+	beego.InsertFilter("http://192.168.1.70", beego.BeforeRouter, cors.Allow(&cors.Options{
 
+		AllowAllOrigins:  true,
+		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+		AllowHeaders:     []string{"Origin", "Authorization", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type","Access-Control-Allow-Credentials"},
+
+		ExposeHeaders:    []string{"Content-Length", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type","Access-Control-Allow-Credentials"},
+		AllowCredentials: true,
+	}))
+	beego.BConfig.WebConfig.Session.SessionOn = true
 	MODE = Trim(os.Getenv("mode"))
 	beego.BConfig.Listen.HTTPPort = 9700                     //端口设置
 	beego.BConfig.RecoverPanic = true                        //开启异常捕获
 	beego.BConfig.EnableErrorsShow = true
 	beego.BConfig.CopyRequestBody = true
-	beego.InsertFilter("/*", beego.BeforeRouter, BaseFilter) //路由过滤
+	beego.BConfig.WebConfig.Session.SessionAutoSetCookie =true
 
-	//自动匹配路由
+	beego.InsertFilter("/*", beego.BeforeRouter, BaseFilter) //路由过滤
 	beego.AutoRouter(&ApiController{})
+	//自动匹配路由
+
 	beego.InsertFilter("/rpc", beego.BeforeRouter, RpcFilter)
 	//beego.InsertFilter("/api/*", beego.BeforeRouter, WhiteListFilter)
 	Mkdir("./logs")                                        //创建日志文件夹
@@ -54,6 +66,16 @@ func crontab() {
 	}))
 	toolbox.StartTask() //开启定时任务
 }
+func initConf() {
+	myConfig := new(Config)
+	config := myConfig.InitConfig("./", "privilege.ini", "nats")
+	VISITOR = config["visitor"]
+	VISITORS = config["visitors"]
+	ORDINARYUSER = config["ordinaryuser"]
+	LEADERUSER = config["leaderuser"]
+	ADMINISTRATOR = config["administrator"]
+	ROOT = config["root"]
+	SUPERROOT = config["superroot"]
 
 func a() {
 	jd,err :=Upload("http://106.75.33.170:16680/api/upload","D:/lon.xlsx")
@@ -62,4 +84,7 @@ func a() {
 	}
 	//json := *JsonDecode([]byte(jd))
 	Debug(string(jd))
+}
+
+
 }

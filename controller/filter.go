@@ -6,8 +6,11 @@ import (
 	. "dungou.cn/util"
 	"github.com/astaxie/beego"
 	"fmt"
+
 	"errors"
 	."github.com/casbin/casbin"
+
+
 )
 
 
@@ -17,28 +20,71 @@ var BaseFilter = func(ctx *context.Context) {
 		//ctx.Output.Header("Access-Control-Allow-Headers", "Origin,X-Requested-With,Content-Type,Accept")
 		//ctx.Output.Header("Access-Control-Allow-Methods", "GET,POST,OPTIONS")
 	}
+	fmt.Println("url:"+ctx.Request.RequestURI)
+	fmt.Println("session1:")
+
+	fmt.Println(ctx.Input.Cookie("beegosessionID"))
+	//a:=ctx.Input.CruSession().SessionID()
+	//fmt.Println(a)
+	  ctx.Input.Cookie("beegosessionID")
+	 aa:=ctx.Input.Session("beegosessionID")
+	fmt.Println(aa)
+	fmt.Println("ok:")
+	fmt.Println(ctx.Input.CruSession.Get("username"))
+	/*if ctx.Request.RequestURI!="/rpc"&&ctx.Request.RequestURI!="/api/login"{
+		_, ok := ctx.Input.Session("uid").(int)
+
+		fmt.Println(ok)
+		fmt.Println("ok:")
+		if !ok{
+		ctx.Output.Header("Content-Type", "application/json; charset=utf-8")
+		ctx.WriteString(JsonEncode(P{"code": GENERAL_ERR, "msg": "请先登录1"}))
+
+	}
+	}*/
 	Debug("BaseFilter", ctx.Request.RequestURI)
 }
 
 var RpcFilter = func(ctx *context.Context) {
 	fmt.Println("ctx",ctx.Input)
 	p := *JsonDecode(ctx.Input.RequestBody)
+	fmt.Println("p:")
+	fmt.Println(p)
+	fmt.Println("cooki:")
+	fmt.Println(ctx.GetCookie("username"))
+
 	var err error
 	body := ""
 	if IsEmpty(p) {
 		err = errors.New("无效的请求参数格式")
 	} else {
-		act := p["act"]
+		fmt.Println(111111111111111)
+
+		act := p["act"].(string)
 		args := ToP(p["args"])
-		role("","")
-		url := fmt.Sprintf("http://localhost:%v/%v", beego.BConfig.Listen.HTTPPort, act)
-		header := ctx.Request.Header
-		hp := P{}
-		for k, v := range header {
-			hp[k] = v
-		}
-		hp["Hostname"] = ctx.Request.Host
-		body, err = HttpPost(url, &hp, &args)
+
+		fmt.Println("act；"+act)
+			if IsEmpty(ctx.Input.CruSession.Get("username"))&&act!="api/login" {
+				fmt.Println("session2:")
+				fmt.Print(ctx.Input.CruSession.Get("username"))
+				err = errors.New("请先登录2")
+			} else {
+
+				if IsEmpty(ctx.Input.CruSession.Get("username"))&&act!="api/login"{
+					err = errors.New("请先登录3")
+
+				} else {
+					url := fmt.Sprintf("http://localhost:%v/%v", beego.BConfig.Listen.HTTPPort, act)
+					header := ctx.Request.Header
+					hp := P{}
+					for k, v := range header {
+						hp[k] = v
+					}
+					hp["Hostname"] = ctx.Request.Host
+					body, err = HttpPost(url, &hp, &args)
+				}
+			}
+
 	}
 	if err != nil {
 		body = JsonEncode(P{"code": GENERAL_ERR, "msg": err.Error()})
@@ -47,14 +93,17 @@ var RpcFilter = func(ctx *context.Context) {
 	}
 	ctx.Output.Body([]byte(body))
 }
+func shior(role string)(api string){
 
-func role(role string,api string) {
-	e := NewEnforcer("path/to/rbac_model.conf", "path/to/rbac_policy.csv")
-	testEnforceWithoutUsers( e, "alice", "read", true)
-}
-
-func testEnforceWithoutUsers(e *Enforcer, obj string, act string, res bool) {
-	if e.Enforce(obj, act) != res {
-		fmt.Println("%s, %s: %t, supposed to be %t", obj, act, !res, res)
+	switch role {
+	case "visitor":api=VISITOR
+	case "visitors":api=VISITORS
+	case "ordinaryuser":api=ORDINARYUSER
+	case "leaderuser":api=LEADERUSER
+	case "administrator":api=ADMINISTRATOR
+	case "root":api=ROOT
+	case "superroot":api=SUPERROOT
 	}
+
+	return api
 }
