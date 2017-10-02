@@ -65,9 +65,22 @@ func (Sediment) TableName() string {
 	return "sediment"
 }
 
+func (Message) TableName() string {
+	return "message"
+}
+
+func (User)TableName() string  {
+	return "user"
+}
+
 func (Risk) TableName() string {
 	return "risk"
 }
+
+func (Remark) TableName() string {
+	return "remark"
+}
+
 func (this *Orm) Init() {
 	var err error
 	conn := fmt.Sprintf("%v:%v@tcp(%v:%v)/%v?charset=utf8&parseTime=True&loc=Local",
