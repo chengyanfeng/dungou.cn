@@ -3,7 +3,6 @@ package datasource
 import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	//"time"
 	. "dungou.cn/util"
 	"fmt"
 	"errors"
@@ -66,6 +65,9 @@ func (Sediment) TableName() string {
 	return "sediment"
 }
 
+func (Risk) TableName() string {
+	return "risk"
+}
 func (this *Orm) Init() {
 	var err error
 	conn := fmt.Sprintf("%v:%v@tcp(%v:%v)/%v?charset=utf8&parseTime=True&loc=Local",
@@ -145,22 +147,26 @@ func (this *Orm) Init() {
 	} else {
 		Db.CreateTable(&Sediment{})
 	}
+	if Db.HasTable("risk") {
+
+	} else {
+		Db.CreateTable(&Risk{})
+	}
 }
 
 func (this *Orm) GetIdList() []map[string]interface{} {
 	set := new([]Dungouset)
 	Db.Where("status = ?", 1).Find(&set)
 	list := make([]map[string]interface{}, 0)
-	//for _, v := range *set {
-	//	a :=make(map[string]interface{},0)
-	//	a["id"]=v.Id
-	//	a["type"]=v.Type
-	//	a["status"]=v.Status
-	//	a["nowsta"]=v.Nowsta
-	//	a["jacks"]=v.Jacks
-	//	a["pressures"]=v.Pressures
-	//	list = append(list, a)
-	//}
+	for _, v := range *set {
+		a :=make(map[string]interface{},0)
+		a["id"]=v.Datano
+		a["type"]=v.Type
+		a["status"]=v.Status
+		a["jacks"]=v.Jack
+		a["pressures"]=v.Pressures
+		list = append(list, a)
+	}
 	return list
 }
 

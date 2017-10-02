@@ -55,7 +55,7 @@ func Insert() {
 		if len(a) == 0 {
 			continue
 		} else {
-			for _, v := range a {
+			for i, v := range a {
 				name = getname(name)
 				daopan(v, name)
 				jingbao(v, name)
@@ -63,7 +63,9 @@ func Insert() {
 				luoxuanji(v, name)
 				juejin(v, name)
 				tuya(v, name, q, t)
-				commum(v, name)
+				if i==len(a)-1 {
+					commum(v, name)
+				}
 			}
 		}
 	}
@@ -71,11 +73,14 @@ func Insert() {
 
 func commum(v map[string]interface{}, name string) {
 	commum := Commum{}
-	pcl := v["PCL通讯"]
+	pcl := v["PLC通讯"].(int64)
 	num := 0
-	Db.Where("dungou = ?", name).Count(&num)
-	if pcl == "0" {
+	Db.Where("dungou = ?", name).Find(&commum).Count(&num)
+	if pcl == 0 {
 		if num == 0 {
+			com := Commum{}
+			com.Dungou = name
+			Db.Delete(&com)
 			time, shike := dateParse(ToString(v["时间"]))
 			commum.Jilutime = time
 			commum.Shike = shike
@@ -84,7 +89,7 @@ func commum(v map[string]interface{}, name string) {
 		} else {
 			return
 		}
-	} else if pcl == "2" {
+	} else if pcl == 2 {
 		if num == 0 {
 			return
 		} else {
@@ -92,6 +97,7 @@ func commum(v map[string]interface{}, name string) {
 		}
 	}
 }
+
 func daopan(v map[string]interface{}, name string) {
 	daopan := Daopan{}
 	daopan.Dungou = name

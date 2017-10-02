@@ -17,18 +17,25 @@ type Dungouset struct {
 	Lat        string `gorm:"size:512;column:latitude"`
 	City   	   string `gorm:"size:512;column:city"`
 	Status     string `gorm:"size:512;column:status"`
+	Schedule   string `gorm:"size:512;column:schedule"`
 	Own        string `gorm:"size:512;column:own"`
 }
-
+type Risk struct {
+	Section string `gorm:"size:512;column:section"`
+	Risks string `gorm:"size:512;column:risks"`
+	Ringnum    string `gorm:"size:512;column:ringnum"`
+}
 type Rtinfo struct {
 	Line string `gorm:"size:512;column:line"`
 	Name string `gorm:"size:512;column:name"`
 }
+
 type Seclonlat struct {
 	Section string `gorm:"size:512;column:section"`
 	Lon     string `gorm:"size:512;column:lon"`
 	Lat     string `gorm:"size:512;column:lat"`
 }
+
 type Prolonlat struct {
 	Section string `gorm:"size:512;column:section"`
 	Lon     string `gorm:"size:512;column:lon"`

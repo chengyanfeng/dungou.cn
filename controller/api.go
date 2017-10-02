@@ -13,6 +13,7 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"log"
 )
 
 type ApiController struct {
@@ -81,7 +82,7 @@ func (this *ApiController) Getcommu() {
 	for _,v := range commum {
 		set := Dungouset{}
 		name :=v.Dungou
-		Db.Where("dungou = ?" ,name).Find(&set)
+		Db.Where("datano = ?" ,name).Find(&set)
 		sets = append(sets,set)
 	}
 	this.EchoJsonMsg(sets)
@@ -238,6 +239,16 @@ func (this *ApiController) Upload() {
 	}
 }
 
+func (this *ApiController) Getrisk() {//TODO
+	sets := []Dungouset{}
+	Db.Find(&sets)
+	for _,v := range sets {
+		section :=v.Section
+		risks := []Risk{}
+		Db.Find(&risks).Where("section = ?", section)
+	}
+
+}
 func (this *ApiController) Getsediment()  {
 	sediment := []Sediment{}
 	Db.Find(&sediment)
@@ -278,7 +289,7 @@ func (this *ApiController) Pub() {
 			}
 			k++
 		}
-	}else if table == "rtinfo"||table =="seclonlat"||table=="prolonlat" {
+	}else if table == "rtinfo"||table =="seclonlat"||table=="prolonlat"||table=="risk" {
 		_, e := pg.LoadCsv(url, table, ",")
 		if e != nil {
 			this.EchoJsonErr(e)
@@ -306,6 +317,7 @@ func inserSet(record []string) {
 	p["dungou"] = dungou
 	p["status"] = status
 	Db.Table("dungouset").Where("dungou = ? and status = ?", dungou, status).Updates(P{"status": "0"})
+	log.Println(record[0])
 	set.Project = record[0]
 	set.Path = record[1]
 	set.Section = record[2]
@@ -320,13 +332,9 @@ func inserSet(record []string) {
 	set.Ringnum = record[11]
 	set.Lon = record[12]
 	set.Lat = record[13]
-	city :=record[14]
+	set.Schedule = record[15]
+	set.City = record[14]
 	set.Status = status
-	if city == "是" {
-		set.City = "1"
-	}else if city == "否" {
-		set.City = "0"
-	}
 	if record[5] == OWNCOMPANY {
 		set.Own = "1"
 	}else{

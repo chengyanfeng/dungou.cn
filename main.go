@@ -35,7 +35,7 @@ func main() {
 	mssql.Init()
 	tjMssql.Init()
 	//a()
-	//Insert()
+	Insert()
 	go func() {
 		//开启协程
 		InitCache() //初始化
