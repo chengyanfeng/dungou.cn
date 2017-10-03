@@ -76,12 +76,11 @@ func commum(v map[string]interface{}, name string) {
 	commum := Commum{}
 	pcl := v["PLC通讯"].(int64)
 	num := 0
-	Db.Where("dungou = ?", name).Find(&commum).Count(&num)
+	Db.Model(&Commum{}).Where("dungou = ? and batch = ?", name,1).Count(&num)
 	if pcl == 0 {
 		if num == 0 {
 			com := Commum{}
 			com.Dungou = name
-			Db.Delete(&com)
 			time, shike := dateParse(ToString(v["时间"]))
 			commum.Jilutime = time
 			commum.Shike = shike
@@ -91,7 +90,7 @@ func commum(v map[string]interface{}, name string) {
 		} else {
 			return
 		}
-	} else if pcl == 2 {
+	}else if pcl == 2 {
 		if num == 0 {
 			return
 		} else {
@@ -304,5 +303,12 @@ func change() {
 	if num!=0 {
 		Db.Where(&Sediment{Batch: 2, }).Delete(&Sediment{})
 		Db.Table("sediment").Where("batch = ?", 1).Updates(P{"batch": 2})
+	}
+
+	num =0
+	Db.Where("batch = ?", 1).Find(&Commum{}).Count(&num)
+	if num!=0 {
+		Db.Where(&Commum{Batch: 2, }).Delete(&Commum{})
+		Db.Table("commum").Where("batch = ?", 1).Updates(P{"batch": 2})
 	}
 }
