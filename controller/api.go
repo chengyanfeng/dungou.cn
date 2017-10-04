@@ -116,37 +116,55 @@ func (this *ApiController) Gettype() {
 func (this *ApiController) Getdaopan() {
 	dungou := this.GetString("dungou")
 	daopan := Daopan{}
-	Db.Where("dungou = ? ", dungou).First(&daopan)
+	Db.Where("dungou = ? and batch = ?", dungou,1).First(&daopan)
+	if daopan.Dungou == ""  {
+		Db.Where("dungou = ? and batch = ?", dungou,2).First(&daopan)
+	}
 	this.EchoJsonMsg(daopan)
 }
 func (this *ApiController) Getjiaojie() {
 	dungou := this.GetString("dungou")
 	jiaojie := Jiaojie{}
-	Db.Where("dungou = ? ", dungou).First(&jiaojie)
+	Db.Where("dungou = ? and batch = ?", dungou,1).First(&jiaojie)
+	if jiaojie.Dungou == ""  {
+		Db.Where("dungou = ? and batch = ?", dungou,2).First(&jiaojie)
+	}
 	this.EchoJsonMsg(jiaojie)
 }
 func (this *ApiController) Getjingbao() {
 	dungou := this.GetString("dungou")
 	jingbao := Jingbao{}
-	Db.Where("dungou = ? ", dungou).First(&jingbao)
+	Db.Where("dungou = ? and batch = ?", dungou,1).First(&jingbao)
+	if jingbao.Dungou == "" {
+		Db.Where("dungou = ? and batch = ?", dungou,2).First(&jingbao)
+	}
 	this.EchoJsonMsg(jingbao)
 }
 func (this *ApiController) Getjuejin() {
 	dungou := this.GetString("dungou")
 	juejin := Juejin{}
-	Db.Where("dungou = ? ", dungou).First(&juejin)
+	Db.Where("dungou = ? and batch = ?", dungou,1).First(&juejin)
+	if juejin.Dungou == "" {
+		Db.Where("dungou = ? and batch = ?", dungou,2).First(&juejin)
+	}
 	this.EchoJsonMsg(juejin)
 }
 func (this *ApiController) Getluoxuanji() {
 	dungou := this.GetString("dungou")
 	luoxuanji := Luoxuanji{}
-	Db.Where("dungou = ? ", dungou).First(&luoxuanji)
+	Db.Where("dungou = ? and batch = ?", dungou,1).First(&luoxuanji)
+	if luoxuanji.Dungou == "" {
+		Db.Where("dungou = ? and batch = ?", dungou,2).First(&luoxuanji)
+	}
 	this.EchoJsonMsg(luoxuanji)
 }
 func (this *ApiController) Gettuya() {
 	dungou := this.GetString("dungou")
 	tuya := Tuya{}
-	Db.Where("dungou = ? ", dungou).First(&tuya)
+	Db.Where("dungou = ? and batch = ?", dungou,1).First(&tuya)
+	if tuya.Dungou == "" {
+		Db.Where("dungou = ? and batch = ?", dungou,2).First(&tuya)
+	}
 	this.EchoJsonMsg(tuya)
 }
 
