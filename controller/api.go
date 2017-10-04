@@ -119,6 +119,36 @@ func (this *ApiController) Getdaopan() {
 	Db.Where("dungou = ? ", dungou).First(&daopan)
 	this.EchoJsonMsg(daopan)
 }
+func (this *ApiController) Getjiaojie() {
+	dungou := this.GetString("dungou")
+	jiaojie := Jiaojie{}
+	Db.Where("dungou = ? ", dungou).First(&jiaojie)
+	this.EchoJsonMsg(jiaojie)
+}
+func (this *ApiController) Getjingbao() {
+	dungou := this.GetString("dungou")
+	jingbao := Jingbao{}
+	Db.Where("dungou = ? ", dungou).First(&jingbao)
+	this.EchoJsonMsg(jingbao)
+}
+func (this *ApiController) Getjuejin() {
+	dungou := this.GetString("dungou")
+	juejin := Juejin{}
+	Db.Where("dungou = ? ", dungou).First(&juejin)
+	this.EchoJsonMsg(juejin)
+}
+func (this *ApiController) Getluoxuanji() {
+	dungou := this.GetString("dungou")
+	luoxuanji := Luoxuanji{}
+	Db.Where("dungou = ? ", dungou).First(&luoxuanji)
+	this.EchoJsonMsg(luoxuanji)
+}
+func (this *ApiController) Gettuya() {
+	dungou := this.GetString("dungou")
+	tuya := Tuya{}
+	Db.Where("dungou = ? ", dungou).First(&tuya)
+	this.EchoJsonMsg(tuya)
+}
 
 //登陆
 func (this *ApiController) Login() {
