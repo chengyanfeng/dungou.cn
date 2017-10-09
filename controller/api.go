@@ -15,6 +15,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"code.google.com/p/mahonia"
 )
 
 type ApiController struct {
@@ -71,6 +72,7 @@ func (this *ApiController) Maps() {
 			p[k] = v
 		}
 	}
+	p["status"]= "1"
 	sets := []Dungouset{}
 	Db.Where(p).Find(&sets)
 	this.EchoJsonMsg(sets)
@@ -79,7 +81,11 @@ func (this *ApiController) Maps() {
 func (this *ApiController) Getcommu() {
 	commum := []Commum{}
 	sets := []Dungouset{}
-	Db.Find(&commum)
+	Db.Where("batch = ?", 1).Find(&commum)
+	if len(commum) == 0 {
+		Db.Where(" batch = ?",2).Find(&commum)
+	}
+	fmt.Println(commum)
 	for _, v := range commum {
 		set := Dungouset{}
 		name := v.Dungou
@@ -113,99 +119,15 @@ func (this *ApiController) Gettype() {
 	this.EchoJson(typelist)
 }
 
-func (this *ApiController) Getdaopan() {
-	dungou := this.GetString("dungou")
-	daopan := Daopan{}
-	Db.Where("dungou = ? and batch = ?", dungou,1).First(&daopan)
-	if daopan.Dungou == ""  {
-		Db.Where("dungou = ? and batch = ?", dungou,2).First(&daopan)
+func (this *ApiController) Uploads() {
+	url:="http://106.75.33.170:16680/api/upload"
+	path :=this.GetString("path")
+	jd,err :=Upload(url,path)
+	if err != nil {
+		Debug(err)
 	}
-	this.EchoJsonMsg(daopan)
-}
-func (this *ApiController) Getjiaojie() {
-	dungou := this.GetString("dungou")
-	jiaojie := Jiaojie{}
-	Db.Where("dungou = ? and batch = ?", dungou,1).First(&jiaojie)
-	if jiaojie.Dungou == ""  {
-		Db.Where("dungou = ? and batch = ?", dungou,2).First(&jiaojie)
-	}
-	this.EchoJsonMsg(jiaojie)
-}
-func (this *ApiController) Getjingbao() {
-	dungou := this.GetString("dungou")
-	jingbao := Jingbao{}
-	Db.Where("dungou = ? and batch = ?", dungou,1).First(&jingbao)
-	if jingbao.Dungou == "" {
-		Db.Where("dungou = ? and batch = ?", dungou,2).First(&jingbao)
-	}
-	this.EchoJsonMsg(jingbao)
-}
-func (this *ApiController) Getjuejin() {
-	dungou := this.GetString("dungou")
-	juejin := Juejin{}
-	Db.Where("dungou = ? and batch = ?", dungou,1).First(&juejin)
-	if juejin.Dungou == "" {
-		Db.Where("dungou = ? and batch = ?", dungou,2).First(&juejin)
-	}
-	this.EchoJsonMsg(juejin)
-}
-func (this *ApiController) Getluoxuanji() {
-	dungou := this.GetString("dungou")
-	luoxuanji := Luoxuanji{}
-	Db.Where("dungou = ? and batch = ?", dungou,1).First(&luoxuanji)
-	if luoxuanji.Dungou == "" {
-		Db.Where("dungou = ? and batch = ?", dungou,2).First(&luoxuanji)
-	}
-	this.EchoJsonMsg(luoxuanji)
-}
-func (this *ApiController) Gettuya() {
-	dungou := this.GetString("dungou")
-	tuya := Tuya{}
-	Db.Where("dungou = ? and batch = ?", dungou,1).First(&tuya)
-	if tuya.Dungou == "" {
-		Db.Where("dungou = ? and batch = ?", dungou,2).First(&tuya)
-	}
-	this.EchoJsonMsg(tuya)
-}
-
-//登陆
-func (this *ApiController) Login() {
-	username := this.GetString("username")
-	password := this.GetString("password")
-	/*password = Md5(password, Md5Salt)*/
-	user := User{}
-	p := make(map[string]string)
-	p["username"] = username
-	Db.Where("username = ? ", username).First(&user)
-	if user.Username == "" {
-		this.EchoJsonErr("用户不存在")
-		this.StopRun()
-	}
-
-	if user.Password != password {
-		fmt.Println(user.Password)
-		fmt.Println(password)
-		this.EchoJsonErr("密码错误")
-		this.StopRun()
-	}
-	this.SetSession("username", username)
-	this.SetSession("grade", user.Grade)
-	this.GetSession("username")
-	this.Ctx.SetCookie("username", username)
-	fmt.Println("username:", username)
-	this.EchoJsonMsg(user)
-}
-func (this *ApiController)Exit() {
-	grade := this.GetString("grade")
-	log := Del(grade)
-	if log == "ok" {
-		this.EchoJsonMsg("ok")
-	} else {
-		this.EchoJsonErr("error")
-	}
-
-	fmt.Println(log)
-
+	s := *JsonDecode(jd)
+	this.EchoJsonMsg(s)
 }
 func (this *ApiController) Getpath() {
 	sets := []Dungouset{}
@@ -218,6 +140,7 @@ func (this *ApiController) Getpath() {
 	paths = RemoveDuplicatesAndEmpty(paths)
 	this.EchoJson(paths)
 }
+
 func (this *ApiController) Getseclonlat() {
 	dungou := this.GetString("dungou")
 	set := Dungouset{}
@@ -263,6 +186,135 @@ func (this *ApiController) Getsection() {
 	}
 	sections = RemoveDuplicatesAndEmpty(sections)
 	this.EchoJson(sections)
+}
+
+func (this *ApiController) Getrisk() {
+	dungou := this.GetString("dungou")
+	param := P{}
+	if dungou != "" {
+		param["dungou"] = dungou
+	}
+	param["status"]="1"
+	sets := []Dungouset{}
+	Db.Where(param).Find(&sets)
+	p := []P{}
+	for _, v := range sets {
+		m := P{}
+		section := v.Section
+		risks := []Risk{}
+		Db.Find(&risks).Where("section = ?", section)
+		m["set"] = v
+		m["risk"] = risks
+		p = append(p,m)
+	}
+	this.EchoJsonMsg(p)
+}
+
+func (this *ApiController) Getsediment() {
+	sediment := []Sediment{}
+	Db.Find(&sediment)
+	this.EchoJsonMsg(sediment)
+}
+
+func (this *ApiController) Getdaopan() {
+	dungou := this.GetString("dungou")
+	daopan := Daopan{}
+	Db.Where("dungou = ? and batch = ?", dungou,1).First(&daopan)
+	if daopan.Dungou == ""  {
+		Db.Where("dungou = ? and batch = ?", dungou,2).First(&daopan)
+	}
+	this.EchoJsonMsg(daopan)
+}
+
+func (this *ApiController) Getjiaojie() {
+	dungou := this.GetString("dungou")
+	jiaojie := Jiaojie{}
+	Db.Where("dungou = ? and batch = ?", dungou,1).First(&jiaojie)
+	if jiaojie.Dungou == ""  {
+		Db.Where("dungou = ? and batch = ?", dungou,2).First(&jiaojie)
+	}
+	this.EchoJsonMsg(jiaojie)
+}
+
+func (this *ApiController) Getjingbao() {
+	dungou := this.GetString("dungou")
+	jingbao := Jingbao{}
+	Db.Where("dungou = ? and batch = ?", dungou,1).First(&jingbao)
+	if jingbao.Dungou == "" {
+		Db.Where("dungou = ? and batch = ?", dungou,2).First(&jingbao)
+	}
+	this.EchoJsonMsg(jingbao)
+}
+
+func (this *ApiController) Getjuejin() {
+	dungou := this.GetString("dungou")
+	juejin := Juejin{}
+	Db.Where("dungou = ? and batch = ?", dungou,1).First(&juejin)
+	if juejin.Dungou == "" {
+		Db.Where("dungou = ? and batch = ?", dungou,2).First(&juejin)
+	}
+	this.EchoJsonMsg(juejin)
+}
+
+func (this *ApiController) Getluoxuanji() {
+	dungou := this.GetString("dungou")
+	luoxuanji := Luoxuanji{}
+	Db.Where("dungou = ? and batch = ?", dungou,1).First(&luoxuanji)
+	if luoxuanji.Dungou == "" {
+		Db.Where("dungou = ? and batch = ?", dungou,2).First(&luoxuanji)
+	}
+	this.EchoJsonMsg(luoxuanji)
+}
+
+func (this *ApiController) Gettuya() {
+	dungou := this.GetString("dungou")
+	tuya := Tuya{}
+	Db.Where("dungou = ? and batch = ?", dungou,1).First(&tuya)
+	if tuya.Dungou == "" {
+		Db.Where("dungou = ? and batch = ?", dungou,2).First(&tuya)
+	}
+	this.EchoJsonMsg(tuya)
+}
+
+//登陆
+func (this *ApiController) Login() {
+	username := this.GetString("username")
+	password := this.GetString("password")
+	/*password = Md5(password, Md5Salt)*/
+	user := User{}
+	p := make(map[string]string)
+	p["username"] = username
+	Db.Where("username = ? ", username).First(&user)
+	if user.Username == "" {
+		this.EchoJsonErr("用户不存在")
+		this.StopRun()
+	}
+
+	if user.Password != password {
+		fmt.Println(user.Password)
+		fmt.Println(password)
+		this.EchoJsonErr("密码错误")
+		this.StopRun()
+	}
+	this.SetSession("username", username)
+	this.SetSession("grade", user.Grade)
+	this.GetSession("username")
+	this.Ctx.SetCookie("username", username)
+	fmt.Println("username:", username)
+	this.EchoJsonMsg(user)
+}
+
+func (this *ApiController)Exit() {
+	grade := this.GetString("grade")
+	log := Del(grade)
+	if log == "ok" {
+		this.EchoJsonMsg("ok")
+	} else {
+		this.EchoJsonErr("error")
+	}
+
+	fmt.Println(log)
+
 }
 
 //添加
@@ -361,6 +413,7 @@ func (this *ApiController) Deletuser() {
 		this.EchoJsonErr("删除失败")
 	}
 }
+
 func (this *ApiController) Upload() {
 	f, h, err := this.GetFile("bin")
 	defer func() {
@@ -422,22 +475,6 @@ func (this *ApiController) Upload() {
 	}
 }
 
-func (this *ApiController) Getrisk() { //TODO
-	sets := []Dungouset{}
-	Db.Find(&sets)
-	for _, v := range sets {
-		section := v.Section
-		risks := []Risk{}
-		Db.Find(&risks).Where("section = ?", section)
-	}
-
-}
-func (this *ApiController) Getsediment() {
-	sediment := []Sediment{}
-	Db.Find(&sediment)
-	this.EchoJsonMsg(sediment)
-}
-
 func (this *ApiController) Pub() {
 	url := this.GetString("url")
 	table := this.GetString("table")
@@ -491,6 +528,7 @@ func encrypt(param string) string {
 	param = strings.Replace(param, "/", "-", -1)
 	return param
 }
+
 func (this *ApiController) Upmessage() {
 	message := Message{}
 	message.Username = this.GetString("username")
@@ -510,39 +548,39 @@ func (this *ApiController) Upmessage() {
 		this.EchoJsonErr("上报失败")
 	}
 }
-func inserSet(record []string) {
-	set := Dungouset{}
 
+func inserSet(record []string) {
+	enc := mahonia.NewEncoder("UTF-8")
+	set := Dungouset{}
 	p := P{}
-	dungou := record[3]
+	dungou := enc.ConvertString(record[3])
 	status := "1"
 	p["dungou"] = dungou
 	p["status"] = status
 	Db.Table("dungouset").Where("dungou = ? and status = ?", dungou, status).Updates(P{"status": "0"})
-	log.Println(record[0])
-	set.Project = record[0]
-	set.Path = record[1]
-	set.Section = record[2]
-	set.Dungou = record[3]
-	set.Type = record[4]
-	set.Company1 = record[5]
-	set.Company2 = record[6]
-	set.Client = record[7]
-	set.Datano = record[8]
-	set.Pressures = record[9]
-	set.Jack = record[10]
-	set.Ringnum = record[11]
-	set.Lon = record[12]
-	set.Lat = record[13]
-	set.Schedule = record[15]
-	set.City = record[14]
+	log.Println(enc.ConvertString(record[0]))
+	set.Project = enc.ConvertString(record[0])
+	set.Path = enc.ConvertString(record[1])
+	set.Section = enc.ConvertString(record[2])
+	set.Dungou = enc.ConvertString(record[3])
+	set.Type = enc.ConvertString(record[4])
+	set.Company1 = enc.ConvertString(record[5])
+	set.Company2 = enc.ConvertString(record[6])
+	set.Client = enc.ConvertString(record[7])
+	set.Datano = enc.ConvertString(record[8])
+	set.Pressures = enc.ConvertString(record[9])
+	set.Jack = enc.ConvertString(record[10])
+	set.Ringnum = enc.ConvertString(record[11])
+	set.Lon = enc.ConvertString(record[12])
+	set.Lat = enc.ConvertString(record[13])
+	set.Schedule = enc.ConvertString(record[15])
+	set.City = enc.ConvertString(record[14])
 	set.Status = status
-	if record[5] == OWNCOMPANY {
+	if enc.ConvertString(record[5]) == OWNCOMPANY {
 		set.Own = "1"
 	} else {
 		set.Own = "0"
 	}
-
 	Db.Create(set)
 }
 
