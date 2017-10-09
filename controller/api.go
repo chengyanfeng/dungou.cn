@@ -195,6 +195,18 @@ func (this *ApiController) Login() {
 	fmt.Println("username:", username)
 	this.EchoJsonMsg(user)
 }
+func (this *ApiController)Exit() {
+	grade := this.GetString("grade")
+	log := Del(grade)
+	if log == "ok" {
+		this.EchoJsonMsg("ok")
+	} else {
+		this.EchoJsonErr("error")
+	}
+
+	fmt.Println(log)
+
+}
 func (this *ApiController) Getpath() {
 	sets := []Dungouset{}
 	paths := make([]string, 0)

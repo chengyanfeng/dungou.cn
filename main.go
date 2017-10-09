@@ -16,7 +16,9 @@ var orm Orm
 var mssql Mssql
 var tjMssql TjMssql
 func main() {
-	beego.InsertFilter("http://192.168.1.70", beego.BeforeRouter, cors.Allow(&cors.Options{
+
+
+	beego.InsertFilter("*", beego.BeforeRouter, cors.Allow(&cors.Options{
 
 		AllowAllOrigins:  true,
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
@@ -43,6 +45,7 @@ func main() {
 	beego.SetLogger("file", `{"filename":"logs/run.log"}`) //定义日志文件
 	beego.BeeLogger.SetLogFuncCallDepth(4)
 	//调用以下函数处理接口数据
+	InitCache()
 	orm.Init()
 	mssql.Init()
 	tjMssql.Init()
