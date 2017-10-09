@@ -823,12 +823,23 @@ func S(key string, p ...interface{}) (v interface{}) {
 			}
 			localCache.Put(md5, p[0], time.Duration(ttl)*time.Second)
 		} else if len(p) == 1 {
-			localCache.Put(md5, p[0], 60*time.Second)
+			localCache.Put(md5, p[0], 24*time.Hour)
 		}
 		return p[0]
 	}
 }
+//删除缓存中的缓存grade
+func Del(key string)(log string) {
 
+	md5 := Md5(key)
+	err:=localCache.Delete(md5)
+	fmt.Println("err:")
+	fmt.Println(err)
+	if err!=nil{
+		return "nil"
+	}
+	return "ok"
+}
 func ExtractFile(path string, target string, ext string) {
 	err := filepath.Walk(path, func(path string, f os.FileInfo, err error) error {
 		Debug(path)
