@@ -456,6 +456,7 @@ func (this *ApiController) Upmessage() {
 }
 
 
+
 //显示上报信息
 func (this *ApiController) Findmessage(){
 
