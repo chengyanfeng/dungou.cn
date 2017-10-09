@@ -119,16 +119,6 @@ func (this *ApiController) Gettype() {
 	this.EchoJson(typelist)
 }
 
-func (this *ApiController) Uploads() {
-	url:="http://106.75.33.170:16680/api/upload"
-	path :=this.GetString("path")
-	jd,err :=Upload(url,path)
-	if err != nil {
-		Debug(err)
-	}
-	s := *JsonDecode(jd)
-	this.EchoJsonMsg(s)
-}
 func (this *ApiController) Getpath() {
 	sets := []Dungouset{}
 	paths := make([]string, 0)
