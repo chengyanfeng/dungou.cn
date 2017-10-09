@@ -225,7 +225,6 @@ func (this *ApiController) Getdaopan() {
 	}
 	this.EchoJsonMsg(daopan)
 }
-
 func (this *ApiController) Getjiaojie() {
 	dungou := this.GetString("dungou")
 	jiaojie := Jiaojie{}
@@ -296,20 +295,17 @@ func (this *ApiController) Login() {
 		this.EchoJsonErr("密码错误")
 		this.StopRun()
 	}
-	this.SetSession("username", username)
-	this.SetSession("grade", user.Grade)
-	this.GetSession("username")
-	this.Ctx.SetCookie("username", username)
-	fmt.Println("username:", username)
+	S("222","222")
+	S(user.Grade,user.Grade)
 	this.EchoJsonMsg(user)
 }
 
-func (this *ApiController)Exit() {
-	grade := this.GetString("grade")
-	log := Del(grade)
-	if log == "ok" {
+func (this *ApiController)Exit(){
+	grade:=this.GetString("grade")
+	log:=Del(grade)
+	if log=="ok"{
 		this.EchoJsonMsg("ok")
-	} else {
+	}else {
 		this.EchoJsonErr("error")
 	}
 
@@ -318,100 +314,98 @@ func (this *ApiController)Exit() {
 }
 
 //添加
-func (this *ApiController) Adduser() {
-	user := User{}
-	userfind := User{}
+func (this *ApiController)Adduser(){
+	user:=User{}
+	userfind:=User{}
 	username := this.GetString("username")
 	Db.Where("username = ? ", username).First(&user)
 	if !IsEmpty(user.Username) {
 		this.EchoJsonErr("用户已注册")
-	} else {
+	}else {
 		password := this.GetString("password")
 		/*password = Md5(password, Md5Salt)*/
-		role := this.GetString("role")
-		companyid := this.GetString("companyid")
-		id := ToInt(this.GetString("id"))
-		user.Id = id
-		user.Username = username
-		user.Password = password
-		user.Role = role
-		user.Companyid = companyid
+		role:=this.GetString("role")
+		companyid:=this.GetString("companyid")
+		id:=ToInt(this.GetString("id"))
+		user.Id=id
+		user.Username=username
+		user.Password=password
+		user.Role=role
+		user.Companyid=companyid
+		user.Grade=this.GetString("grade")
+		/*user.Grade= Md5(username, Md5Salt)*/
 		Db.Create(&user)
 		Db.Where("username = ? ", username).First(&userfind)
 		if !IsEmpty(userfind.Username) {
 			this.EchoJsonMsg("插入成功")
-		} else {
+		}else {
 			this.EchoJsonErr("插入失败")
 		}
 	}
 }
-
 //修改
-func (this *ApiController) Updateuser() {
-	user := User{}
-	param := make(map[string]interface{})
-	p := this.FormToP("password", "role", "companyid", "username")
-	for k, v := range p {
-		if v != nil {
-			param[k] = v
+func (this *ApiController)Updateuser(){
+	user:=User{}
+	param:=make(map[string]interface{})
+	p := this.FormToP("password", "role","companyid","username")
+	for k,v:=range p{
+		if v!=nil{
+			param[k]=v
 		}
 	}
-	db := Db.Model(&user).Where("username = ?", p["username"]).Updates(param)
-	if strings.Fields(ToString(db))[1] == "<nil>" {
-		if strings.Fields(ToString(db))[2] != "0" {
+	db:=Db.Model(&user).Where("username = ?", p["username"]).Updates(param)
+	if strings.Fields(ToString(db))[1]=="<nil>"{
+		if strings.Fields(ToString(db))[2]!="0" {
 			this.EchoJsonMsg("更新成功")
-		} else {
+		}else{
 			this.EchoJsonErr("更新失败")
 		}
 
-	} else {
-		this.EchoJsonErr("更新失败")
-	}
+	}else
+	{this.EchoJsonErr("更新失败")}
+
+
 
 }
-
 //查询
-func (this *ApiController) Finduser() {
-	users := []User{}
-	p := this.FormToP("username", "role", "companyid", "id")
-	param := make(map[string]interface{})
-	for k, v := range p {
-		if v != nil {
-			param[k] = v
+func (this *ApiController)Finduser(){
+	users:=[]User{}
+	p := this.FormToP("username","role","companyid","id")
+	param:=make(map[string]interface{})
+	for k,v :=range p{
+		if v!=nil{
+			param[k]=v
 		}
 	}
-	db := Db.Where(param).Find(&users)
+	db:=Db.Where(param).Find(&users)
 	fmt.Println(db)
 
-	if strings.Fields(ToString(db))[1] == "<nil>" {
-		if strings.Fields(ToString(db))[2] != "0" {
+	if strings.Fields(ToString(db))[1]=="<nil>"{
+		if strings.Fields(ToString(db))[2]!="0" {
 
 			this.EchoJsonMsg(users)
-		} else {
+		}else{
 			this.EchoJsonErr("查询失败")
 		}
 
-	} else {
-		this.EchoJsonErr("查询失败")
-	}
+	}else
+	{this.EchoJsonErr("查询失败")}
 }
-
 //删除
-func (this *ApiController) Deletuser() {
+func (this * ApiController)Deletuser(){
 
 	username := this.GetString("username")
-	db := Db.Where("username = ?", username).Delete(User{})
+	db:=Db.Where("username = ?", username).Delete(User{})
 	fmt.Println(db)
-	if strings.Fields(ToString(db))[2] == "<nil>" {
-		if strings.Fields(ToString(db))[3] != "0" {
+	if strings.Fields(ToString(db))[2]=="<nil>"{
+		if strings.Fields(ToString(db))[3]!="0" {
 			this.EchoJsonMsg("删除成功")
-		} else {
+		}else{
 			this.EchoJsonErr("删除失败")
 		}
 
-	} else {
-		this.EchoJsonErr("删除失败")
-	}
+	}else
+	{this.EchoJsonErr("删除失败")}
 }
 
 func (this *ApiController) Upload() {
