@@ -71,6 +71,7 @@ func (this *ApiController) Maps() {
 			p[k] = v
 		}
 	}
+	p["status"]= "1"
 	sets := []Dungouset{}
 	Db.Where(p).Find(&sets)
 	this.EchoJsonMsg(sets)
@@ -79,7 +80,11 @@ func (this *ApiController) Maps() {
 func (this *ApiController) Getcommu() {
 	commum := []Commum{}
 	sets := []Dungouset{}
-	Db.Find(&commum)
+	Db.Where("batch = ?", 1).Find(&commum)
+	if len(commum) == 0 {
+		Db.Where(" batch = ?",2).Find(&commum)
+	}
+	fmt.Println(commum)
 	for _, v := range commum {
 		set := Dungouset{}
 		name := v.Dungou
@@ -113,6 +118,103 @@ func (this *ApiController) Gettype() {
 	this.EchoJson(typelist)
 }
 
+func (this *ApiController) Uploads() {
+	url:="http://106.75.33.170:16680/api/upload"
+	path :=this.GetString("path")
+	jd,err :=Upload(url,path)
+	if err != nil {
+		Debug(err)
+	}
+	s := *JsonDecode(jd)
+	this.EchoJsonMsg(s)
+}
+func (this *ApiController) Getpath() {
+	sets := []Dungouset{}
+	paths := make([]string, 0)
+	Db.Where("status = ?", 1).Find(&sets)
+	for _, v := range sets {
+		path := v.Path
+		paths = append(paths, path)
+	}
+	paths = RemoveDuplicatesAndEmpty(paths)
+	this.EchoJson(paths)
+}
+
+func (this *ApiController) Getseclonlat() {
+	dungou := this.GetString("dungou")
+	set := Dungouset{}
+	Db.Where("dungou = ?", dungou).Find(&set)
+	section := set.Section
+	sec := []Seclonlat{}
+	Db.Where("section = ?", section).Find(&sec)
+	this.EchoJson(sec)
+}
+
+func (this *ApiController) Getprolonlat() {
+	dungou := this.GetString("dungou")
+	set := Dungouset{}
+	Db.Where("dungou = ?", dungou).Find(&set)
+	section := set.Section
+	prolonlat := []Prolonlat{}
+	Db.Where("section = ?", section).Find(&prolonlat)
+	this.EchoJson(prolonlat)
+}
+
+func (this *ApiController) Getprofile() {
+	dungou := this.GetString("dungou")
+	set := Dungouset{}
+	Db.Where("dungou = ?", dungou).Find(&set)
+	section := set.Section
+	profile := Profile{}
+	Db.Where("section = ?", section).Find(&profile)
+	this.EchoJson(profile)
+}
+
+func (this *ApiController) Getsection() {
+	sets := []Dungouset{}
+	path := this.GetString("path")
+	sections := make([]string, 0)
+	if path == "" {
+		Db.Where("status = ?", 1).Find(&sets)
+	} else {
+		Db.Where("status = ? and path = ?", 1, path).Find(&sets)
+	}
+	for _, v := range sets {
+		section := v.Section
+		sections = append(sections, section)
+	}
+	sections = RemoveDuplicatesAndEmpty(sections)
+	this.EchoJson(sections)
+}
+
+func (this *ApiController) Getrisk() {
+	dungou := this.GetString("dungou")
+	param := P{}
+	if dungou != "" {
+		param["dungou"] = dungou
+	}
+	param["status"]="1"
+	sets := []Dungouset{}
+	Db.Where(param).Find(&sets)
+	p := []P{}
+	for _, v := range sets {
+		m := P{}
+		section := v.Section
+		risks := []Risk{}
+		Db.Find(&risks).Where("section = ?", section)
+		m["set"] = v
+		m["risk"] = risks
+		p = append(p,m)
+	}
+	this.EchoJsonMsg(p)
+}
+
+func (this *ApiController) Getsediment() {
+	sediment := []Sediment{}
+	Db.Find(&sediment)
+	this.EchoJsonMsg(sediment)
+}
+
 func (this *ApiController) Getdaopan() {
 	dungou := this.GetString("dungou")
 	daopan := Daopan{}
@@ -131,6 +233,7 @@ func (this *ApiController) Getjiaojie() {
 	}
 	this.EchoJsonMsg(jiaojie)
 }
+
 func (this *ApiController) Getjingbao() {
 	dungou := this.GetString("dungou")
 	jingbao := Jingbao{}
@@ -140,6 +243,7 @@ func (this *ApiController) Getjingbao() {
 	}
 	this.EchoJsonMsg(jingbao)
 }
+
 func (this *ApiController) Getjuejin() {
 	dungou := this.GetString("dungou")
 	juejin := Juejin{}
@@ -149,6 +253,7 @@ func (this *ApiController) Getjuejin() {
 	}
 	this.EchoJsonMsg(juejin)
 }
+
 func (this *ApiController) Getluoxuanji() {
 	dungou := this.GetString("dungou")
 	luoxuanji := Luoxuanji{}
@@ -158,6 +263,7 @@ func (this *ApiController) Getluoxuanji() {
 	}
 	this.EchoJsonMsg(luoxuanji)
 }
+
 func (this *ApiController) Gettuya() {
 	dungou := this.GetString("dungou")
 	tuya := Tuya{}
@@ -300,6 +406,7 @@ func (this * ApiController)Deletuser(){
 	}else
 	{this.EchoJsonErr("删除失败")}
 }
+
 func (this *ApiController) Upload() {
 	f, h, err := this.GetFile("bin")
 	defer func() {
@@ -326,7 +433,7 @@ func (this *ApiController) Upload() {
 		} else {
 			md5 := Md5(buff.Bytes())
 			filename := JoinStr(md5, ".", ext)
-			updir := ":"
+			updir := "upload"
 			locfile := updir + "/" + filename
 			exist := FileExists(locfile)
 			if !exist {
@@ -359,22 +466,6 @@ func (this *ApiController) Upload() {
 			this.EchoJsonMsg(r)
 		}
 	}
-}
-
-func (this *ApiController) Getrisk() { //TODO
-	sets := []Dungouset{}
-	Db.Find(&sets)
-	for _, v := range sets {
-		section := v.Section
-		risks := []Risk{}
-		Db.Find(&risks).Where("section = ?", section)
-	}
-
-}
-func (this *ApiController) Getsediment() {
-	sediment := []Sediment{}
-	Db.Find(&sediment)
-	this.EchoJsonMsg(sediment)
 }
 
 func (this *ApiController) Pub() {
@@ -479,39 +570,39 @@ func (this *ApiController) Findmessage(){
 	}else
 	{this.EchoJsonErr("查询失败")}
 }
+
 func inserSet(record []string) {
+	enc := mahonia.NewEncoder("UTF-8")
 	set := Dungouset{}
-	
 	p := P{}
-	dungou := record[3]
+	dungou := enc.ConvertString(record[3])
 	status := "1"
 	p["dungou"] = dungou
 	p["status"] = status
 	Db.Table("dungouset").Where("dungou = ? and status = ?", dungou, status).Updates(P{"status": "0"})
-	log.Println(record[0])
-	set.Project = record[0]
-	set.Path = record[1]
-	set.Section = record[2]
-	set.Dungou = record[3]
-	set.Type = record[4]
-	set.Company1 = record[5]
-	set.Company2 = record[6]
-	set.Client = record[7]
-	set.Datano = record[8]
-	set.Pressures = record[9]
-	set.Jack = record[10]
-	set.Ringnum = record[11]
-	set.Lon = record[12]
-	set.Lat = record[13]
-	set.Schedule = record[15]
-	set.City = record[14]
+	log.Println(enc.ConvertString(record[0]))
+	set.Project = enc.ConvertString(record[0])
+	set.Path = enc.ConvertString(record[1])
+	set.Section = enc.ConvertString(record[2])
+	set.Dungou = enc.ConvertString(record[3])
+	set.Type = enc.ConvertString(record[4])
+	set.Company1 = enc.ConvertString(record[5])
+	set.Company2 = enc.ConvertString(record[6])
+	set.Client = enc.ConvertString(record[7])
+	set.Datano = enc.ConvertString(record[8])
+	set.Pressures = enc.ConvertString(record[9])
+	set.Jack = enc.ConvertString(record[10])
+	set.Ringnum = enc.ConvertString(record[11])
+	set.Lon = enc.ConvertString(record[12])
+	set.Lat = enc.ConvertString(record[13])
+	set.Schedule = enc.ConvertString(record[15])
+	set.City = enc.ConvertString(record[14])
 	set.Status = status
-	if record[5] == OWNCOMPANY {
+	if enc.ConvertString(record[5]) == OWNCOMPANY {
 		set.Own = "1"
 	} else {
 		set.Own = "0"
 	}
-
 	Db.Create(set)
 }
 //显示备注
