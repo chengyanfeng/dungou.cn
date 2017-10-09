@@ -33,8 +33,6 @@ var RpcFilter = func(ctx *context.Context) {
 	if IsEmpty(p) {
 		err = errors.New("无效的请求参数格式")
 	} else {
-		fmt.Println(111111111111111)
-
 		act := p["act"].(string)
 		args := ToP(p["args"])
 
