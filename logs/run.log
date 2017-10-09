@@ -1455,3 +1455,42 @@
 2017/09/30 09:55:42 [I] http server Running on http://:9700
 2017/09/30 09:55:55 [D] [BaseFilter /rpc]
 2017/09/30 09:55:55 [D] [BaseFilter /api/login]
+2017/10/09 10:33:00 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 10:34:40 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 10:35:33 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 10:35:33 [I] http server Running on http://:9700
+2017/10/09 10:39:27 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 10:39:44 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 10:39:45 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 10:40:06 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 10:40:06 [I] http server Running on http://:9700
+2017/10/09 10:40:21 [D] [BaseFilter /rpc] 
+2017/10/09 10:40:21 [D] [BaseFilter /api/login] 
+2017/10/09 10:41:59 [D] [BaseFilter /rpc] 
+2017/10/09 10:41:59 [D] [BaseFilter /api/login] 
+2017/10/09 10:42:04 [D] [BaseFilter /rpc] 
+2017/10/09 10:42:04 [D] [BaseFilter /api/login] 
+2017/10/09 14:22:39 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 14:22:39 [I] http server Running on http://:9700
+2017/10/09 14:23:05 [D] [BaseFilter /rpc] 
+2017/10/09 14:23:05 [D] [BaseFilter /api/login] 
+2017/10/09 14:23:20 [D] [BaseFilter /rpc] 
+2017/10/09 14:26:19 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 14:26:19 [I] http server Running on http://:9700
+2017/10/09 14:26:24 [D] [BaseFilter /rpc] 
+2017/10/09 14:26:33 [D] [BaseFilter /rpc] 
+2017/10/09 14:26:38 [D] [BaseFilter /rpc] 
+2017/10/09 14:26:38 [D] [BaseFilter /api/login] 
+2017/10/09 14:26:48 [D] [BaseFilter /rpc] 
+2017/10/09 14:27:48 [D] [BaseFilter /rpc] 
+2017/10/09 14:28:04 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 14:28:04 [I] http server Running on http://:9700
+2017/10/09 14:28:14 [D] [BaseFilter /rpc] 
+2017/10/09 14:28:25 [D] [BaseFilter /rpc] 
+2017/10/09 14:28:25 [D] [BaseFilter /api/login] 
+2017/10/09 14:32:49 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 14:32:49 [I] http server Running on http://:9700
+2017/10/09 14:32:54 [D] [BaseFilter /rpc] 
+2017/10/09 14:32:54 [D] [BaseFilter /api/login] 
+2017/10/09 14:33:02 [D] [BaseFilter /rpc] 
+2017/10/09 14:33:02 [D] [BaseFilter /api/adduser] 

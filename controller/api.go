@@ -188,178 +188,117 @@ func (this *ApiController) Login() {
 		this.EchoJsonErr("密码错误")
 		this.StopRun()
 	}
-	this.SetSession("username", username)
-	this.SetSession("grade", user.Grade)
-	this.GetSession("username")
-	this.Ctx.SetCookie("username", username)
-	fmt.Println("username:", username)
+	S("222","222")
+	S(user.Grade,user.Grade)
 	this.EchoJsonMsg(user)
 }
-func (this *ApiController)Exit() {
-	grade := this.GetString("grade")
-	log := Del(grade)
-	if log == "ok" {
+
+func (this *ApiController)Exit(){
+	grade:=this.GetString("grade")
+	log:=Del(grade)
+	if log=="ok"{
 		this.EchoJsonMsg("ok")
-	} else {
+	}else {
 		this.EchoJsonErr("error")
 	}
 
 	fmt.Println(log)
 
 }
-func (this *ApiController) Getpath() {
-	sets := []Dungouset{}
-	paths := make([]string, 0)
-	Db.Where("status = ?", 1).Find(&sets)
-	for _, v := range sets {
-		path := v.Path
-		paths = append(paths, path)
-	}
-	paths = RemoveDuplicatesAndEmpty(paths)
-	this.EchoJson(paths)
-}
-func (this *ApiController) Getseclonlat() {
-	dungou := this.GetString("dungou")
-	set := Dungouset{}
-	Db.Where("dungou = ?", dungou).Find(&set)
-	section := set.Section
-	sec := []Seclonlat{}
-	Db.Where("section = ?", section).Find(&sec)
-	this.EchoJson(sec)
-}
-
-func (this *ApiController) Getprolonlat() {
-	dungou := this.GetString("dungou")
-	set := Dungouset{}
-	Db.Where("dungou = ?", dungou).Find(&set)
-	section := set.Section
-	prolonlat := []Prolonlat{}
-	Db.Where("section = ?", section).Find(&prolonlat)
-	this.EchoJson(prolonlat)
-}
-
-func (this *ApiController) Getprofile() {
-	dungou := this.GetString("dungou")
-	set := Dungouset{}
-	Db.Where("dungou = ?", dungou).Find(&set)
-	section := set.Section
-	profile := Profile{}
-	Db.Where("section = ?", section).Find(&profile)
-	this.EchoJson(profile)
-}
-
-func (this *ApiController) Getsection() {
-	sets := []Dungouset{}
-	path := this.GetString("path")
-	sections := make([]string, 0)
-	if path == "" {
-		Db.Where("status = ?", 1).Find(&sets)
-	} else {
-		Db.Where("status = ? and path = ?", 1, path).Find(&sets)
-	}
-	for _, v := range sets {
-		section := v.Section
-		sections = append(sections, section)
-	}
-	sections = RemoveDuplicatesAndEmpty(sections)
-	this.EchoJson(sections)
-}
 
 //添加
-func (this *ApiController) Adduser() {
-	user := User{}
-	userfind := User{}
+func (this *ApiController)Adduser(){
+	user:=User{}
+	userfind:=User{}
 	username := this.GetString("username")
 	Db.Where("username = ? ", username).First(&user)
 	if !IsEmpty(user.Username) {
 		this.EchoJsonErr("用户已注册")
-	} else {
+	}else {
 		password := this.GetString("password")
 		/*password = Md5(password, Md5Salt)*/
-		role := this.GetString("role")
-		companyid := this.GetString("companyid")
-		id := ToInt(this.GetString("id"))
-		user.Id = id
-		user.Username = username
-		user.Password = password
-		user.Role = role
-		user.Companyid = companyid
+		role:=this.GetString("role")
+		companyid:=this.GetString("companyid")
+		id:=ToInt(this.GetString("id"))
+		user.Id=id
+		user.Username=username
+		user.Password=password
+		user.Role=role
+		user.Companyid=companyid
+		user.Grade=this.GetString("grade")
+		/*user.Grade= Md5(username, Md5Salt)*/
 		Db.Create(&user)
 		Db.Where("username = ? ", username).First(&userfind)
 		if !IsEmpty(userfind.Username) {
 			this.EchoJsonMsg("插入成功")
-		} else {
+		}else {
 			this.EchoJsonErr("插入失败")
 		}
 	}
 }
-
 //修改
-func (this *ApiController) Updateuser() {
-	user := User{}
-	param := make(map[string]interface{})
-	p := this.FormToP("password", "role", "companyid", "username")
-	for k, v := range p {
-		if v != nil {
-			param[k] = v
+func (this *ApiController)Updateuser(){
+	user:=User{}
+	param:=make(map[string]interface{})
+	p := this.FormToP("password", "role","companyid","username")
+	for k,v:=range p{
+		if v!=nil{
+			param[k]=v
 		}
 	}
-	db := Db.Model(&user).Where("username = ?", p["username"]).Updates(param)
-	if strings.Fields(ToString(db))[1] == "<nil>" {
-		if strings.Fields(ToString(db))[2] != "0" {
+	db:=Db.Model(&user).Where("username = ?", p["username"]).Updates(param)
+	if strings.Fields(ToString(db))[1]=="<nil>"{
+		if strings.Fields(ToString(db))[2]!="0" {
 			this.EchoJsonMsg("更新成功")
-		} else {
+		}else{
 			this.EchoJsonErr("更新失败")
 		}
 
-	} else {
-		this.EchoJsonErr("更新失败")
-	}
+	}else
+	{this.EchoJsonErr("更新失败")}
+
+
 
 }
-
 //查询
-func (this *ApiController) Finduser() {
-	users := []User{}
-	p := this.FormToP("username", "role", "companyid", "id")
-	param := make(map[string]interface{})
-	for k, v := range p {
-		if v != nil {
-			param[k] = v
+func (this *ApiController)Finduser(){
+	users:=[]User{}
+	p := this.FormToP("username","role","companyid","id")
+	param:=make(map[string]interface{})
+	for k,v :=range p{
+		if v!=nil{
+			param[k]=v
 		}
 	}
-	db := Db.Where(param).Find(&users)
+	db:=Db.Where(param).Find(&users)
 	fmt.Println(db)
 
-	if strings.Fields(ToString(db))[1] == "<nil>" {
-		if strings.Fields(ToString(db))[2] != "0" {
+	if strings.Fields(ToString(db))[1]=="<nil>"{
+		if strings.Fields(ToString(db))[2]!="0" {
 
 			this.EchoJsonMsg(users)
-		} else {
+		}else{
 			this.EchoJsonErr("查询失败")
 		}
 
-	} else {
-		this.EchoJsonErr("查询失败")
-	}
+	}else
+	{this.EchoJsonErr("查询失败")}
 }
-
 //删除
-func (this *ApiController) Deletuser() {
+func (this * ApiController)Deletuser(){
 
 	username := this.GetString("username")
-	db := Db.Where("username = ?", username).Delete(User{})
+	db:=Db.Where("username = ?", username).Delete(User{})
 	fmt.Println(db)
-	if strings.Fields(ToString(db))[2] == "<nil>" {
-		if strings.Fields(ToString(db))[3] != "0" {
+	if strings.Fields(ToString(db))[2]=="<nil>"{
+		if strings.Fields(ToString(db))[3]!="0" {
 			this.EchoJsonMsg("删除成功")
-		} else {
+		}else{
 			this.EchoJsonErr("删除失败")
 		}
 
-	} else {
-		this.EchoJsonErr("删除失败")
-	}
+	}else
+	{this.EchoJsonErr("删除失败")}
 }
 func (this *ApiController) Upload() {
 	f, h, err := this.GetFile("bin")
@@ -387,7 +326,7 @@ func (this *ApiController) Upload() {
 		} else {
 			md5 := Md5(buff.Bytes())
 			filename := JoinStr(md5, ".", ext)
-			updir := "upload"
+			updir := ":"
 			locfile := updir + "/" + filename
 			exist := FileExists(locfile)
 			if !exist {
