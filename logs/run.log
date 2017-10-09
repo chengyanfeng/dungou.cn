@@ -1494,12 +1494,12 @@
 2017/10/09 14:32:54 [D] [BaseFilter /api/login] 
 2017/10/09 14:33:02 [D] [BaseFilter /rpc] 
 2017/10/09 14:33:02 [D] [BaseFilter /api/adduser] 
-2017/10/09 15:16:59 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 15:16:59 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
 2017/10/09 15:16:59 [I] http server Running on http://:9700
-2017/10/09 15:17:03 [D] [BaseFilter /api/getpath] 
-2017/10/09 15:20:00 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 15:17:03 [D] [BaseFilter /api/getpath]
+2017/10/09 15:20:00 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
 2017/10/09 15:20:00 [I] http server Running on http://:9700
-2017/10/09 15:20:07 [D] [BaseFilter /api/getpath] 
+2017/10/09 15:20:07 [D] [BaseFilter /api/getpath]
 2017/10/09 15:20:07 [C] the request url is  /api/getpath
 2017/10/09 15:20:07 [C] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
 2017/10/09 15:20:07 [C] C:/Go/src/runtime/asm_amd64.s:479
@@ -1512,9 +1512,9 @@
 2017/10/09 15:20:07 [C] C:/Go/src/net/http/server.go:2202
 2017/10/09 15:20:07 [C] C:/Go/src/net/http/server.go:1579
 2017/10/09 15:20:07 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/10/09 15:20:25 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 15:20:25 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
 2017/10/09 15:20:25 [I] http server Running on http://:9700
-2017/10/09 15:20:28 [D] [BaseFilter /api/getpath] 
+2017/10/09 15:20:28 [D] [BaseFilter /api/getpath]
 2017/10/09 15:20:28 [C] the request url is  /api/getpath
 2017/10/09 15:20:28 [C] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
 2017/10/09 15:20:28 [C] C:/Go/src/runtime/asm_amd64.s:479
@@ -1527,18 +1527,58 @@
 2017/10/09 15:20:28 [C] C:/Go/src/net/http/server.go:2202
 2017/10/09 15:20:28 [C] C:/Go/src/net/http/server.go:1579
 2017/10/09 15:20:28 [C] C:/Go/src/runtime/asm_amd64.s:2086
-2017/10/09 15:21:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 15:21:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
 2017/10/09 15:21:52 [I] http server Running on http://:9700
-2017/10/09 15:21:55 [D] [BaseFilter /api/getpath] 
-2017/10/09 16:37:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/10/09 16:37:53 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}] 
+2017/10/09 15:21:55 [D] [BaseFilter /api/getpath]
+2017/10/09 16:37:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/09 16:37:53 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}]
 2017/10/09 16:37:53 [I] http server Running on http://:9700
-2017/10/09 17:18:07 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/10/09 17:18:07 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}] 
+2017/10/09 17:18:07 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/09 17:18:07 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}]
 2017/10/09 17:18:07 [I] http server Running on http://:9700
-2017/10/09 17:30:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/10/09 17:30:17 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}] 
+2017/10/09 17:30:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/09 17:30:17 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}]
 2017/10/09 17:30:17 [I] http server Running on http://:9700
-2017/10/09 17:37:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
-2017/10/09 17:37:28 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}] 
+2017/10/09 17:37:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/09 17:37:28 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}]
 2017/10/09 17:37:28 [I] http server Running on http://:9700
+2017/10/09 14:35:11 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/10/09 14:35:11 [I] http server Running on http://:9700
+2017/10/09 14:35:13 [D] [BaseFilter /rpc]
+2017/10/09 14:35:15 [D] [BaseFilter /rpc]
+2017/10/09 14:35:16 [D] [BaseFilter /rpc]
+2017/10/09 14:35:16 [D] [BaseFilter /rpc]
+2017/10/09 14:35:17 [D] [BaseFilter /rpc]
+2017/10/09 14:35:18 [D] [BaseFilter /rpc]
+2017/10/09 14:35:19 [D] [BaseFilter /rpc]
+2017/10/09 14:35:29 [D] [BaseFilter /rpc]
+2017/10/09 14:35:29 [D] [BaseFilter /api/login]
+2017/10/09 14:35:43 [D] [BaseFilter /rpc]
+2017/10/09 14:35:43 [D] [BaseFilter /api/login]
+2017/10/09 14:35:48 [D] [BaseFilter /rpc]
+2017/10/09 14:35:48 [D] [BaseFilter /api/login]
+2017/10/09 14:57:06 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/10/09 14:57:07 [I] http server Running on http://:9700
+2017/10/09 14:57:14 [D] [BaseFilter /rpc]
+2017/10/09 14:57:14 [D] [BaseFilter /api/login]
+2017/10/09 14:57:23 [D] [BaseFilter /rpc]
+2017/10/09 14:57:23 [D] [BaseFilter /api/login]
+2017/10/09 16:58:16 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/10/09 16:58:16 [I] http server Running on http://:9700
+2017/10/09 16:58:23 [D] [BaseFilter /rpc]
+2017/10/09 16:58:23 [D] [BaseFilter /api/login]
+2017/10/09 16:58:26 [D] [BaseFilter /rpc]
+2017/10/09 16:58:26 [D] [BaseFilter /api/findmessage]
+2017/10/09 16:59:14 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/10/09 16:59:15 [I] http server Running on http://:9700
+2017/10/09 16:59:19 [D] [BaseFilter /rpc]
+2017/10/09 16:59:19 [D] [BaseFilter /api/login]
+2017/10/09 16:59:22 [D] [BaseFilter /rpc]
+2017/10/09 16:59:22 [D] [BaseFilter /api/findmessage]
+2017/10/09 17:01:02 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/10/09 17:01:02 [I] http server Running on http://:9700
+2017/10/09 17:01:08 [D] [BaseFilter /rpc]
+2017/10/09 17:01:13 [D] [BaseFilter /rpc]
+2017/10/09 17:01:13 [D] [BaseFilter /api/login]
+2017/10/09 17:01:18 [D] [BaseFilter /rpc]
+2017/10/09 17:01:18 [D] [BaseFilter /api/findmessage]

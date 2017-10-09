@@ -35,7 +35,7 @@ func main() {
 	orm.Init()
 	mssql.Init()
 	tjMssql.Init()
-	a()
+	//a()
 	//Insert()
 	go func() {
 		//开启协程

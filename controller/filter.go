@@ -33,15 +33,14 @@ var RpcFilter = func(ctx *context.Context) {
 	if IsEmpty(p) {
 		err = errors.New("无效的请求参数格式")
 	} else {
-		fmt.Println(111111111111111)
-
 		act := p["act"].(string)
 		args := ToP(p["args"])
 
-		fmt.Println("act；"+act)
-			if 	ToString(S(args["grade"].(string)))=="nil"&&act!="api/login" {
-				fmt.Println("session2:")
-				fmt.Print(ctx.Input.CruSession.Get("username"))
+		fmt.Println("act:"+act)
+		fmt.Println("gradecookie:")
+		fmt.Println(ToString(S(args["grade"].(string))))
+			if 	ToString(S(args["grade"].(string)))==""&&act!="api/login" {
+
 				err = errors.New("请先登录1")
 			} else {
 

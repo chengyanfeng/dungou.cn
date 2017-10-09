@@ -207,6 +207,10 @@ type User struct {
 type Message struct {
 	Id        int    `json:"size:32;column:id;auto_increment"`
 	Username  string `json:"size:512;column:username"`
+	Dungou     string `json:"size:512;column:dungou"`
+	Type 	   string `json:"size:512;column:type"`
+	Ringnum    string `json:"size:512;column:ringnum"`
+	Schedule   string `json:"size:512;column:schedule"`
 	Companyid string `json:"size:512;column:companyid"`
 	Date      string `json:"size:512;column:date"`
 	Text      string `json:"size:1024;column:text"`
