@@ -430,12 +430,17 @@ func encrypt(param string) string {
 	param = strings.Replace(param, "/", "-", -1)
 	return param
 }
+//上报信息
 func (this *ApiController) Upmessage() {
 	message := Message{}
 	message.Username = this.GetString("username")
 	message.Companyid = this.GetString("companyid")
 	message.Img = this.GetString("img")
 	message.Text = this.GetString("text")
+	message.Dungou=this.GetString("dungou")
+	message.Ringnum=this.GetString("ringnum")
+	message.Type=this.GetString("type")
+	message.Schedule=this.GetString("schedule")
 	message.Date = this.GetString("date")
 	db := Db.Create(&message)
 	fmt.Println(db)
@@ -448,6 +453,31 @@ func (this *ApiController) Upmessage() {
 	} else {
 		this.EchoJsonErr("上报失败")
 	}
+}
+//显示上报信息
+func (this *ApiController) Findmessage(){
+
+	message:=[]Message{}
+	p := this.FormToP("username","dungou","type","ringnum")
+	param:=make(map[string]interface{})
+	for k,v :=range p{
+		if v!=nil{
+			param[k]=v
+		}
+	}
+	db:=Db.Where(param).Find(&message)
+	fmt.Println(db)
+
+	if strings.Fields(ToString(db))[1]=="<nil>"{
+		if strings.Fields(ToString(db))[2]!="0" {
+
+			this.EchoJsonMsg(message)
+		}else{
+			this.EchoJsonErr("查询失败")
+		}
+
+	}else
+	{this.EchoJsonErr("查询失败")}
 }
 func inserSet(record []string) {
 	set := Dungouset{}
@@ -484,8 +514,31 @@ func inserSet(record []string) {
 
 	Db.Create(set)
 }
+//显示备注
+func (this *ApiController)Findremark(){
+	remark:=[]Remark{}
+	p := this.FormToP("username","companyid","messageid","text")
+	param:=make(map[string]interface{})
+	for k,v :=range p{
+		if v!=nil{
+			param[k]=v
+		}
+	}
+	db:=Db.Where(param).Find(&remark)
+	fmt.Println(db)
 
-//上传
+	if strings.Fields(ToString(db))[1]=="<nil>"{
+		if strings.Fields(ToString(db))[2]!="0" {
+
+			this.EchoJsonMsg(remark)
+		}else{
+			this.EchoJsonErr("查询失败")
+		}
+
+	}else
+	{this.EchoJsonErr("查询失败")}
+}
+//添加备注
 func (this *ApiController) Upremark() {
 	remark := Remark{}
 	remark.Username = this.GetString("username")
@@ -505,3 +558,4 @@ func (this *ApiController) Upremark() {
 	}
 
 }
+
