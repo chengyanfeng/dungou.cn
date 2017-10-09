@@ -1515,3 +1515,22 @@
 2017/10/09 14:57:14 [D] [BaseFilter /api/login] 
 2017/10/09 14:57:23 [D] [BaseFilter /rpc] 
 2017/10/09 14:57:23 [D] [BaseFilter /api/login] 
+2017/10/09 16:58:16 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 16:58:16 [I] http server Running on http://:9700
+2017/10/09 16:58:23 [D] [BaseFilter /rpc] 
+2017/10/09 16:58:23 [D] [BaseFilter /api/login] 
+2017/10/09 16:58:26 [D] [BaseFilter /rpc] 
+2017/10/09 16:58:26 [D] [BaseFilter /api/findmessage] 
+2017/10/09 16:59:14 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 16:59:15 [I] http server Running on http://:9700
+2017/10/09 16:59:19 [D] [BaseFilter /rpc] 
+2017/10/09 16:59:19 [D] [BaseFilter /api/login] 
+2017/10/09 16:59:22 [D] [BaseFilter /rpc] 
+2017/10/09 16:59:22 [D] [BaseFilter /api/findmessage] 
+2017/10/09 17:01:02 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local] 
+2017/10/09 17:01:02 [I] http server Running on http://:9700
+2017/10/09 17:01:08 [D] [BaseFilter /rpc] 
+2017/10/09 17:01:13 [D] [BaseFilter /rpc] 
+2017/10/09 17:01:13 [D] [BaseFilter /api/login] 
+2017/10/09 17:01:18 [D] [BaseFilter /rpc] 
+2017/10/09 17:01:18 [D] [BaseFilter /api/findmessage] 
