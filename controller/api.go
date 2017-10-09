@@ -454,6 +454,7 @@ func (this *ApiController) Upmessage() {
 		this.EchoJsonErr("上报失败")
 	}
 }
+
 //显示上报信息
 func (this *ApiController) Findmessage(){
 
