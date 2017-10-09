@@ -1,0 +1,1463 @@
+2017/09/27 15:11:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 15:11:37 [I] http server Running on http://:9700
+2017/09/27 15:12:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 15:12:38 [I] http server Running on http://:9700
+2017/09/27 15:16:36 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 15:16:36 [I] http server Running on http://:9700
+2017/09/27 16:22:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 16:22:39 [D] [Post 106.75.33.170:16680/api/upload: unsupported protocol scheme ""]
+2017/09/27 16:22:39 [D] [<nil>]
+2017/09/27 16:22:39 [I] http server Running on http://:9700
+2017/09/27 16:23:03 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 16:23:03 [D] [{"code":200,"msg":{"ext":"xlsx","files":[":/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx"],"sheets":[],"size":9246,"url":":/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx"}}]
+2017/09/27 16:23:03 [I] http server Running on http://:9700
+2017/09/27 16:27:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 16:27:41 [D] [{"code":200,"msg":{"ext":"xlsx","files":[":/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx"],"sheets":[],"size":9246,"url":":/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx"}}]
+2017/09/27 16:27:41 [I] http server Running on http://:9700
+2017/09/27 16:28:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 16:28:52 [D] [open D:aa.xlsx: The filename, directory name, or volume label syntax is incorrect.]
+2017/09/27 16:28:52 [D] []
+2017/09/27 16:28:52 [I] http server Running on http://:9700
+2017/09/27 16:29:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 16:29:07 [D] [{"code":200,"msg":{"ext":"xlsx","files":[":/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx"],"sheets":[],"size":11624,"url":":/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx"}}]
+2017/09/27 16:29:07 [I] http server Running on http://:9700
+2017/09/27 16:31:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 16:31:17 [D] [{"code":200,"msg":{"ext":"xlsx","files":[":/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx"],"sheets":[],"size":11624,"url":":/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx"}}]
+2017/09/27 16:31:18 [I] http server Running on http://:9700
+2017/09/27 16:58:51 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 16:58:51 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx"],"sheets":[],"size":11624,"url":"upload/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx"}}]
+2017/09/27 16:58:51 [I] http server Running on http://:9700
+2017/09/27 16:59:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 16:59:43 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx.csv.0"],"sheets":[],"size":11624,"url":"upload/6497b1d1a1c05a3122a6a3b30fdab4ca.xlsx.csv.0"}}]
+2017/09/27 16:59:43 [I] http server Running on http://:9700
+2017/09/27 17:02:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 17:02:43 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0"],"sheets":[],"size":9246,"url":"upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0"}}]
+2017/09/27 17:02:43 [I] http server Running on http://:9700
+2017/09/27 17:06:37 [D] [BaseFilter /api/pub?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo]
+2017/09/27 17:06:37 [D] [Csv2Db upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0]
+2017/09/27 17:06:37 [D] [Exec: mysql --local-infile=1 -u root tdtg -e LOAD DATA LOCAL INFILE 'upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0' INTO TABLE rtinfo FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n']
+2017/09/27 17:07:22 [D] [BaseFilter /api/pub?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo]
+2017/09/27 17:07:22 [D] [Csv2Db upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0]
+2017/09/27 17:07:22 [D] [Exec: mysql --local-infile=1 -u root tdtg -e LOAD DATA LOCAL INFILE 'upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0' INTO TABLE rtinfo FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n']
+2017/09/27 17:08:08 [D] [BaseFilter /api/pub?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo]
+2017/09/27 17:08:08 [D] [Csv2Db upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0]
+2017/09/27 17:08:08 [D] [Exec: mysql --local-infile=1 -u root tdtg -e LOAD DATA LOCAL INFILE 'upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0' INTO TABLE rtinfo FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n']
+2017/09/27 17:08:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 17:08:42 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0"],"sheets":[],"size":9246,"url":"upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0"}}]
+2017/09/27 17:08:42 [I] http server Running on http://:9700
+2017/09/27 17:08:47 [D] [BaseFilter /api/pub?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo]
+2017/09/27 17:08:47 [D] [Csv2Db upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0]
+2017/09/27 17:08:47 [D] [Exec: mysql --local-infile=1 -u root tdtg -e LOAD DATA LOCAL INFILE 'upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0' INTO TABLE rtinfo FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n']
+2017/09/27 17:24:16 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 17:24:16 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/cff4fe15b12336ee547134fa94f203a8.xlsx.csv.0"],"sheets":[],"size":9221,"url":"upload/cff4fe15b12336ee547134fa94f203a8.xlsx.csv.0"}}]
+2017/09/27 17:24:16 [I] http server Running on http://:9700
+2017/09/27 21:51:58 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 21:52:19 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.]
+2017/09/27 21:52:19 [D] [<nil>]
+2017/09/27 21:52:19 [I] http server Running on http://:9700
+2017/09/27 22:12:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 22:12:58 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.]
+2017/09/27 22:12:58 [D] [<nil>]
+2017/09/27 22:13:02 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 22:13:23 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.]
+2017/09/27 22:13:23 [D] [<nil>]
+2017/09/27 22:13:23 [I] http server Running on http://:9700
+2017/09/27 22:13:29 [D] [BaseFilter /api/pub?url=D:%5Cdungou.xlsx&table=dungouset]
+2017/09/27 22:13:29 [C] the request url is  /api/pub
+2017/09/27 22:13:29 [C] Handler crashed with error can't find templatefile in the path:apicontroller/pub.tpl
+2017/09/27 22:13:29 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/27 22:13:29 [C] C:/Go/src/runtime/panic.go:458
+2017/09/27 22:13:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/27 22:13:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/27 22:13:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/27 22:13:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/27 22:13:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/27 22:13:29 [C] C:/Go/src/net/http/server.go:2202
+2017/09/27 22:13:29 [C] C:/Go/src/net/http/server.go:1579
+2017/09/27 22:13:29 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/27 22:14:12 [D] [BaseFilter /api/pub?url=D:%5Cdungou.xlsx&table=dungouset]
+2017/09/27 22:14:12 [C] the request url is  /api/pub
+2017/09/27 22:14:12 [C] Handler crashed with error can't find templatefile in the path:apicontroller/pub.tpl
+2017/09/27 22:14:12 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/27 22:14:12 [C] C:/Go/src/runtime/panic.go:458
+2017/09/27 22:14:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/27 22:14:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/27 22:14:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/27 22:14:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/27 22:14:12 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/27 22:14:12 [C] C:/Go/src/net/http/server.go:2202
+2017/09/27 22:14:12 [C] C:/Go/src/net/http/server.go:1579
+2017/09/27 22:14:12 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/27 22:15:09 [D] [BaseFilter /api/getdata]
+2017/09/27 22:15:16 [D] [BaseFilter /api/getdata]
+2017/09/27 22:16:02 [D] [BaseFilter /api/pub?url=D:/dungou.xlsx&table=dungouset]
+2017/09/27 22:16:02 [C] the request url is  /api/pub
+2017/09/27 22:16:02 [C] Handler crashed with error can't find templatefile in the path:apicontroller/pub.tpl
+2017/09/27 22:16:02 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/27 22:16:02 [C] C:/Go/src/runtime/panic.go:458
+2017/09/27 22:16:02 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/27 22:16:02 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/27 22:16:02 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/27 22:16:02 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/27 22:16:02 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/27 22:16:02 [C] C:/Go/src/net/http/server.go:2202
+2017/09/27 22:16:02 [C] C:/Go/src/net/http/server.go:1579
+2017/09/27 22:16:02 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/27 22:16:14 [D] [BaseFilter /api/pub?url=D:/dungou.xlsx&table=dungouset]
+2017/09/27 22:16:14 [C] the request url is  /api/pub
+2017/09/27 22:16:14 [C] Handler crashed with error can't find templatefile in the path:apicontroller/pub.tpl
+2017/09/27 22:16:14 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/27 22:16:14 [C] C:/Go/src/runtime/panic.go:458
+2017/09/27 22:16:14 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/27 22:16:14 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/27 22:16:14 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/27 22:16:14 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/27 22:16:14 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/27 22:16:14 [C] C:/Go/src/net/http/server.go:2202
+2017/09/27 22:16:14 [C] C:/Go/src/net/http/server.go:1579
+2017/09/27 22:16:14 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/27 22:17:40 [D] [BaseFilter /api?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo]
+2017/09/27 22:17:52 [D] [BaseFilter /api?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo]
+2017/09/27 22:18:14 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 22:18:35 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.]
+2017/09/27 22:18:35 [D] [<nil>]
+2017/09/27 22:18:36 [I] http server Running on http://:9700
+2017/09/27 22:18:51 [D] [BaseFilter /api?url=upload/b6b8d3e12b69cb201748e0e0bc9698d5.xlsx.csv.0&table=rtinfo]
+2017/09/27 22:19:57 [D] [BaseFilter /api?url=D:/dungou.xlsx&table=rtinfo]
+2017/09/27 22:20:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 22:20:59 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.]
+2017/09/27 22:20:59 [D] [<nil>]
+2017/09/27 22:20:59 [I] http server Running on http://:9700
+2017/09/27 22:21:05 [D] [BaseFilter /api?url=D:/dungou.xlsx&table=rtinfo]
+2017/09/27 22:21:29 [D] [BaseFilter /getdata]
+2017/09/27 22:21:40 [D] [BaseFilter /api/getdata]
+2017/09/27 22:22:12 [D] [BaseFilter /api?table=rtinfo&url=D:/dungou.xlsx]
+2017/09/27 22:22:48 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 22:23:09 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.]
+2017/09/27 22:23:09 [D] [<nil>]
+2017/09/27 22:23:09 [I] http server Running on http://:9700
+2017/09/27 22:23:17 [D] [BaseFilter /api?table=rtinfo&url=D:/dungou.xlsx]
+2017/09/27 22:44:05 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 22:44:26 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.]
+2017/09/27 22:44:26 [D] [<nil>]
+2017/09/27 22:44:26 [I] http server Running on http://:9700
+2017/09/27 22:44:31 [D] [BaseFilter /api?table=rtinfo&url=D:/dungou.xlsx]
+2017/09/27 22:44:48 [D] [BaseFilter /api/pub?table=rtinfo&url=D:/dungou.xlsx]
+2017/09/27 22:46:08 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 22:46:29 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.]
+2017/09/27 22:46:29 [D] [<nil>]
+2017/09/27 22:46:29 [I] http server Running on http://:9700
+2017/09/27 22:46:37 [D] [BaseFilter /api/pub?table=rtinfo&url=D:/dungou.xlsx]
+2017/09/27 22:46:37 [D] [Exec: mysql --local-infile=1 -u root tdtg -e "LOAD DATA LOCAL INFILE 'D:/dungou.xlsx' replace INTO TABLE rtinfo FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'  ignore 1 lines "]
+2017/09/27 22:47:29 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.xlsx]
+2017/09/27 22:47:29 [C] the request url is  /api/pub
+2017/09/27 22:47:29 [C] Handler crashed with error can't find templatefile in the path:apicontroller/pub.tpl
+2017/09/27 22:47:29 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/27 22:47:29 [C] C:/Go/src/runtime/panic.go:458
+2017/09/27 22:47:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/27 22:47:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/27 22:47:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/27 22:47:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/27 22:47:29 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/27 22:47:29 [C] C:/Go/src/net/http/server.go:2202
+2017/09/27 22:47:29 [C] C:/Go/src/net/http/server.go:1579
+2017/09/27 22:47:29 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/27 22:49:00 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/27 22:49:32 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/27 22:49:57 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 22:50:18 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.]
+2017/09/27 22:50:18 [D] [<nil>]
+2017/09/27 22:50:18 [I] http server Running on http://:9700
+2017/09/27 22:50:34 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/27 22:51:25 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/27 22:51:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 22:51:59 [D] [Post http://106.75.33.170:16680/api/upload: dial tcp 106.75.33.170:16680: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.]
+2017/09/27 22:51:59 [D] [<nil>]
+2017/09/27 22:52:00 [I] http server Running on http://:9700
+2017/09/27 22:52:05 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/27 22:52:25 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/27 22:52:25 [I] http server Running on http://:9700
+2017/09/27 22:52:35 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 09:57:08 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 09:57:08 [I] http server Running on http://:9700
+2017/09/28 09:58:26 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 09:58:27 [I] http server Running on http://:9700
+2017/09/28 09:59:46 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 09:59:46 [C] the request url is  /api/pub
+2017/09/28 09:59:46 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 09:59:46 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 09:59:46 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 09:59:46 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 09:59:46 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:182
+2017/09/28 09:59:46 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:159
+2017/09/28 09:59:46 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 09:59:46 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 09:59:46 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 09:59:46 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 09:59:46 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 09:59:46 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 09:59:46 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:00:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 10:00:37 [I] http server Running on http://:9700
+2017/09/28 10:00:49 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:00:49 [C] the request url is  /api/pub
+2017/09/28 10:00:49 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:00:49 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:00:49 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:00:49 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:00:49 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:182
+2017/09/28 10:00:49 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:159
+2017/09/28 10:00:49 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:00:49 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:00:49 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:00:49 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:00:49 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:00:49 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:00:49 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:01:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 10:01:39 [I] http server Running on http://:9700
+2017/09/28 10:01:48 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:01:48 [C] the request url is  /api/pub
+2017/09/28 10:01:48 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:01:48 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:01:48 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:01:48 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:01:48 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:183
+2017/09/28 10:01:48 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:159
+2017/09/28 10:01:48 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:01:48 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:01:48 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:01:48 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:01:48 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:01:48 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:01:48 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:05:22 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 10:05:22 [I] http server Running on http://:9700
+2017/09/28 10:05:27 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:05:27 [C] the request url is  /api/pub
+2017/09/28 10:05:27 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:05:27 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:05:27 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:05:27 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:05:27 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:186
+2017/09/28 10:05:27 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:159
+2017/09/28 10:05:27 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:05:27 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:05:27 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:05:27 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:05:27 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:05:27 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:05:27 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:06:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 10:06:28 [I] http server Running on http://:9700
+2017/09/28 10:06:33 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:06:33 [C] the request url is  /api/pub
+2017/09/28 10:06:33 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:06:33 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:06:33 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:06:33 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:06:33 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:186
+2017/09/28 10:06:33 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:159
+2017/09/28 10:06:33 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:06:33 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:06:33 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:06:33 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:06:33 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:06:33 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:06:33 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:07:14 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 10:07:14 [I] http server Running on http://:9700
+2017/09/28 10:07:19 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:07:19 [C] the request url is  /api/pub
+2017/09/28 10:07:19 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:07:19 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:07:19 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:07:19 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:07:19 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:185
+2017/09/28 10:07:19 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:159
+2017/09/28 10:07:19 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:07:19 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:07:19 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:07:19 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:07:19 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:07:19 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:07:19 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:09:08 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 10:09:08 [I] http server Running on http://:9700
+2017/09/28 10:09:14 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:09:14 [C] the request url is  /api/pub
+2017/09/28 10:09:14 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:09:14 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:09:14 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:09:14 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:09:14 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:185
+2017/09/28 10:09:14 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:161
+2017/09/28 10:09:14 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:09:14 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:09:14 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:09:14 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:09:14 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:09:14 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:09:14 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:11:45 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:11:45 [C] the request url is  /api/pub
+2017/09/28 10:11:45 [C] Handler crashed with error runtime error: index out of range
+2017/09/28 10:11:45 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:11:45 [C] C:/Go/src/runtime/panic.go:458
+2017/09/28 10:11:45 [C] C:/Go/src/runtime/panic.go:27
+2017/09/28 10:11:45 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:208
+2017/09/28 10:11:45 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:161
+2017/09/28 10:11:45 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/09/28 10:11:45 [C] C:/Go/src/reflect/value.go:434
+2017/09/28 10:11:45 [C] C:/Go/src/reflect/value.go:302
+2017/09/28 10:11:45 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/28 10:11:45 [C] C:/Go/src/net/http/server.go:2202
+2017/09/28 10:11:45 [C] C:/Go/src/net/http/server.go:1579
+2017/09/28 10:11:45 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/09/28 10:13:30 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 10:13:31 [I] http server Running on http://:9700
+2017/09/28 10:13:37 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:15:14 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:16:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 10:16:04 [I] http server Running on http://:9700
+2017/09/28 10:17:42 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:34:22 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 10:34:22 [I] http server Running on http://:9700
+2017/09/28 10:34:32 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:35:12 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:35:38 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:35:43 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:36:10 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:36:24 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:43:19 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 10:43:19 [I] http server Running on http://:9700
+2017/09/28 10:43:24 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:43:47 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:43:48 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 10:55:48 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 10:55:48 [I] http server Running on http://:9700
+2017/09/28 10:55:59 [D] [BaseFilter /api/getpath]
+2017/09/28 11:03:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 11:03:37 [I] http server Running on http://:9700
+2017/09/28 11:03:41 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/28 11:03:52 [D] [BaseFilter /api/getpath]
+2017/09/28 11:13:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 11:13:52 [I] http server Running on http://:9700
+2017/09/28 11:13:57 [D] [BaseFilter /api/getpath]
+2017/09/28 14:21:47 [D] [BaseFilter /api/upload]
+2017/09/28 14:21:47 [E] [Upload http: no such file]
+2017/09/28 14:22:02 [D] [BaseFilter /api/upload]
+2017/09/28 14:22:02 [E] [Upload http: no such file]
+2017/09/28 14:23:54 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 14:23:54 [I] http server Running on http://:9700
+2017/09/28 14:24:00 [D] [BaseFilter /api/upload]
+2017/09/28 14:24:00 [E] [Upload http: no such file]
+2017/09/28 14:49:45 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 14:49:45 [I] http server Running on http://:9700
+2017/09/28 16:12:16 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/28 16:12:16 [I] http server Running on http://:9700
+2017/09/28 16:12:19 [D] [BaseFilter /api/getdata]
+2017/09/29 10:09:12 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:09:12 [I] http server Running on http://:9700
+2017/09/29 10:09:42 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/29 10:11:13 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:11:13 [I] http server Running on http://:9700
+2017/09/29 10:11:20 [D] [BaseFilter /api/pub?table=dungouset&url=D:/dungou.csv]
+2017/09/29 10:11:54 [D] [BaseFilter /api/]
+2017/09/29 10:12:02 [D] [BaseFilter /api/map]
+2017/09/29 10:12:19 [D] [BaseFilter /api/map]
+2017/09/29 10:12:21 [D] [BaseFilter /api/maps]
+2017/09/29 10:12:45 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:12:45 [I] http server Running on http://:9700
+2017/09/29 10:12:51 [D] [BaseFilter /api/maps]
+2017/09/29 10:14:30 [D] [BaseFilter /api/maps?type=5]
+2017/09/29 10:30:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:30:53 [I] http server Running on http://:9700
+2017/09/29 10:30:59 [D] [BaseFilter /api/maps?type=5]
+2017/09/29 10:37:02 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:37:02 [I] http server Running on http://:9700
+2017/09/29 10:37:15 [D] [BaseFilter /api/maps?type=5]
+2017/09/29 10:38:49 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:38:49 [I] http server Running on http://:9700
+2017/09/29 10:38:52 [D] [BaseFilter /api/maps?type=5]
+2017/09/29 10:40:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:40:10 [I] http server Running on http://:9700
+2017/09/29 10:40:12 [D] [BaseFilter /api/maps?type=5]
+2017/09/29 10:41:18 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:41:18 [I] http server Running on http://:9700
+2017/09/29 10:41:23 [D] [BaseFilter /api/maps?type=5]
+2017/09/29 10:42:16 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:42:16 [I] http server Running on http://:9700
+2017/09/29 10:42:22 [D] [BaseFilter /api/maps?type=5]
+2017/09/29 10:46:14 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:46:14 [I] http server Running on http://:9700
+2017/09/29 10:46:18 [D] [BaseFilter /api/maps?type=5]
+2017/09/29 10:59:42 [D] [BaseFilter /api/maps?dungo=4]
+2017/09/29 11:00:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 11:00:44 [I] http server Running on http://:9700
+2017/09/29 11:00:47 [D] [BaseFilter /api/maps?dungo=4]
+2017/09/29 11:01:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 11:01:42 [I] http server Running on http://:9700
+2017/09/29 11:02:06 [D] [BaseFilter /api/maps?dungo=4]
+2017/09/29 11:03:44 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 11:03:44 [I] http server Running on http://:9700
+2017/09/29 11:03:51 [D] [BaseFilter /api/maps?dungo=4]
+2017/09/29 11:04:04 [D] [BaseFilter /api/maps?dungou=4]
+2017/09/29 11:12:46 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 11:12:46 [I] http server Running on http://:9700
+2017/09/29 11:12:57 [D] [BaseFilter /api/upload]
+2017/09/29 11:12:57 [E] [Upload http: no such file]
+2017/09/29 11:13:05 [D] [BaseFilter /api/maps?dungou=4]
+2017/09/29 14:38:19 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:38:20 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/a7efa4eeb397c26a18f3124ab960669b.xlsx.csv.0"],"sheets":[],"size":9522,"url":"upload/a7efa4eeb397c26a18f3124ab960669b.xlsx.csv.0"}}]
+2017/09/29 14:38:20 [I] http server Running on http://:9700
+2017/09/29 15:02:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:02:10 [I] http server Running on http://:9700
+2017/09/29 15:02:23 [D] [BaseFilter /api/pub?url=D:/a7efa4eeb397c26a18f3124ab960669b.xlsx.csv.0&table=dungouset]
+2017/09/29 15:02:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:02:52 [I] http server Running on http://:9700
+2017/09/29 15:02:58 [D] [BaseFilter /api/pub?url=D:/a7efa4eeb397c26a18f3124ab960669b.xlsx.csv.0&table=dungouset]
+2017/09/29 15:17:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:17:23 [D] [{"code":200,"msg":{"ext":"jpg","size":556588,"url":"upload/2cb89fe1ad38b4fede466077242c8dcd.jpg"}}]
+2017/09/29 15:17:23 [I] http server Running on http://:9700
+2017/09/29 16:26:32 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:31:15 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:32:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:33:50 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:33:50 [I] http server Running on http://:9700
+2017/09/29 16:47:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:47:37 [I] http server Running on http://:9700
+2017/09/29 16:48:48 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:48:48 [I] http server Running on http://:9700
+2017/09/29 16:49:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:49:39 [I] http server Running on http://:9700
+2017/09/29 16:51:32 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:51:32 [I] http server Running on http://:9700
+2017/09/29 16:51:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:51:53 [I] http server Running on http://:9700
+2017/09/29 16:53:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:53:11 [I] http server Running on http://:9700
+2017/09/29 17:00:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:00:42 [I] http server Running on http://:9700
+2017/09/29 17:00:48 [D] [BaseFilter /api/getsediment]
+2017/09/29 17:01:11 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:01:11 [I] http server Running on http://:9700
+2017/09/29 17:01:17 [D] [BaseFilter /api/getsediment]
+2017/09/29 17:03:20 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:03:21 [I] http server Running on http://:9700
+2017/09/29 17:03:26 [D] [BaseFilter /api/getsediment]
+2017/09/29 17:17:46 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:17:46 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}]
+2017/09/29 17:17:46 [I] http server Running on http://:9700
+2017/09/29 17:19:27 [D] [BaseFilter /api/pub?table=seclonlat&url=D:/lon.csv]
+2017/09/29 17:19:27 [D] [Exec: mysql --local-infile=1 -u root tdtg -e "LOAD DATA LOCAL INFILE 'D:/lon.csv' replace INTO TABLE seclonlat FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'  ignore 1 lines "]
+2017/09/29 17:48:05 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:48:05 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}]
+2017/09/29 17:48:05 [I] http server Running on http://:9700
+2017/09/29 17:52:09 [D] [BaseFilter /api/pub?url=D:/sets.csv&table=dungouset]
+2017/09/29 17:53:45 [D] [BaseFilter /api/getseclonlat?dungou=SMSC33]
+2017/09/29 17:58:47 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:59:05 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}]
+2017/09/29 17:59:05 [I] http server Running on http://:9700
+2017/09/29 17:59:05 [D] [BaseFilter /api/getprolonlat?dungou=SMSC33]
+2017/09/29 18:02:41 [D] [BaseFilter /api/getprofile?dungou=SMSC33]
+2017/09/29 18:02:56 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 18:03:06 [D] [{"code":200,"msg":{"ext":"xlsx","files":["upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"],"sheets":[],"size":8984,"url":"upload/02295ffe73f3cce45c43fc09e73159dd.xlsx.csv.0"}}]
+2017/09/29 18:03:06 [I] http server Running on http://:9700
+2017/09/29 18:03:11 [D] [BaseFilter /api/getprofile?dungou=SMSC33]
+2017/09/29 18:17:03 [D] [BaseFilter /api/map?dungou=SMSC33]
+2017/09/29 18:17:23 [D] [BaseFilter /api/maps?dungou=SMSC33]
+2017/10/02 10:49:23 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 10:49:23 [I] http server Running on http://:9700
+2017/10/02 10:50:05 [D] [BaseFilter /api/pub?table=dungouset&url=C:%5CUsers%5CThink%5CDesktop%E3%80%8189777d60e81ce6c29166b4afdfb9edd1.xlsx.csv.0]
+2017/10/02 10:50:05 [C] the request url is  /api/pub
+2017/10/02 10:50:05 [C] Handler crashed with error can't find templatefile in the path:apicontroller/pub.tpl
+2017/10/02 10:50:05 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/10/02 10:50:05 [C] C:/Go/src/runtime/panic.go:458
+2017/10/02 10:50:05 [C] D:/gogit/gopath/src/github.com/astaxie/beego/template.go:64
+2017/10/02 10:50:05 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/10/02 10:50:05 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/10/02 10:50:05 [C] D:/gogit/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/10/02 10:50:05 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:809
+2017/10/02 10:50:05 [C] C:/Go/src/net/http/server.go:2202
+2017/10/02 10:50:05 [C] C:/Go/src/net/http/server.go:1579
+2017/10/02 10:50:05 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/10/02 10:50:28 [D] [BaseFilter /api/pub?table=dungouset&url=C:%5CUsers%5CThink%5CDesktop%5C89777d60e81ce6c29166b4afdfb9edd1.xlsx.csv.0]
+2017/10/02 10:51:12 [D] [BaseFilter /api/pub?table=dungouset&url=C:%5CUsers%5CThink%5CDesktop%5C89777d60e81ce6c29166b4afdfb9edd1.xlsx.csv.0]
+2017/10/02 10:51:29 [D] [BaseFilter /api/pub?table=dungouset&url=C:%5CUsers%5CThink%5CDesktop%5C89777d60e81ce6c29166b4afdfb9edd1.xlsx.csv.0]
+2017/10/02 17:03:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:03:57 [I] http server Running on http://:9700
+2017/10/02 17:04:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:04:39 [I] http server Running on http://:9700
+2017/10/02 17:04:53 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:04:53 [I] http server Running on http://:9700
+2017/10/02 17:05:03 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:05:08 [I] http server Running on http://:9700
+2017/10/02 17:06:54 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:06:58 [I] http server Running on http://:9700
+2017/10/02 17:08:27 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:08:32 [I] http server Running on http://:9700
+2017/10/02 17:10:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:10:43 [I] http server Running on http://:9700
+2017/10/02 17:11:49 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:11:51 [I] http server Running on http://:9700
+2017/10/02 17:12:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:12:45 [I] http server Running on http://:9700
+2017/10/02 17:12:57 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:12:59 [I] http server Running on http://:9700
+2017/10/02 17:13:18 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:13:21 [I] http server Running on http://:9700
+2017/10/02 17:13:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:13:40 [I] http server Running on http://:9700
+2017/10/02 17:14:05 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:14:07 [I] http server Running on http://:9700
+2017/10/02 17:14:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:14:30 [I] http server Running on http://:9700
+2017/10/02 17:15:59 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:16:03 [I] http server Running on http://:9700
+2017/10/02 17:17:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:17:45 [I] http server Running on http://:9700
+2017/10/02 17:18:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:18:13 [I] http server Running on http://:9700
+2017/10/02 17:20:17 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:20:21 [I] http server Running on http://:9700
+2017/10/02 17:20:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:20:47 [I] http server Running on http://:9700
+2017/10/02 17:22:13 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:22:17 [I] http server Running on http://:9700
+2017/10/02 17:23:58 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:24:02 [I] http server Running on http://:9700
+2017/10/02 17:24:33 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:24:37 [I] http server Running on http://:9700
+2017/10/02 17:28:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:28:08 [I] http server Running on http://:9700
+2017/10/02 17:28:58 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:29:02 [I] http server Running on http://:9700
+2017/10/02 17:29:35 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:29:39 [I] http server Running on http://:9700
+2017/10/02 17:30:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:30:08 [I] http server Running on http://:9700
+2017/10/02 17:30:35 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:30:40 [I] http server Running on http://:9700
+2017/10/02 17:31:21 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:31:25 [I] http server Running on http://:9700
+2017/10/02 17:31:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:31:43 [I] http server Running on http://:9700
+2017/10/02 17:31:55 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:31:59 [I] http server Running on http://:9700
+2017/10/02 17:32:12 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:32:15 [I] http server Running on http://:9700
+2017/10/02 17:34:18 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:34:22 [I] http server Running on http://:9700
+2017/10/02 17:34:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:34:45 [I] http server Running on http://:9700
+2017/10/02 17:35:03 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:35:07 [I] http server Running on http://:9700
+2017/10/02 17:35:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:35:32 [I] http server Running on http://:9700
+2017/10/02 17:36:12 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:36:16 [I] http server Running on http://:9700
+2017/10/02 17:39:50 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:39:54 [I] http server Running on http://:9700
+2017/10/02 17:40:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:40:32 [I] http server Running on http://:9700
+2017/10/02 17:41:00 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:41:04 [I] http server Running on http://:9700
+2017/10/02 17:41:30 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:41:34 [I] http server Running on http://:9700
+2017/10/02 17:42:32 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:42:37 [I] http server Running on http://:9700
+2017/10/02 17:44:34 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:44:38 [I] http server Running on http://:9700
+2017/10/02 17:48:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:48:56 [I] http server Running on http://:9700
+2017/10/02 17:49:16 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:49:20 [I] http server Running on http://:9700
+2017/10/02 17:49:54 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 17:49:58 [I] http server Running on http://:9700
+2017/10/02 20:37:30 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 20:37:35 [I] http server Running on http://:9700
+2017/10/02 20:39:11 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 20:39:15 [I] http server Running on http://:9700
+2017/10/02 20:41:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 20:41:11 [I] http server Running on http://:9700
+2017/10/02 20:49:06 [D] [BaseFilter /api/%20etcommu]
+2017/10/02 20:49:06 [D] [BaseFilter /api/getcommu]
+2017/10/02 20:49:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 20:49:47 [I] http server Running on http://:9700
+2017/10/02 20:49:50 [D] [BaseFilter /api/getcommu]
+2017/10/02 20:53:06 [D] [BaseFilter /api/getcommu]
+2017/10/02 21:00:57 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 21:00:58 [I] http server Running on http://:9700
+2017/10/02 21:02:24 [D] [BaseFilter /:/api/pub?url=d:/set.csv&table=dungouset]
+2017/10/02 21:02:34 [D] [BaseFilter /:/api/pub?url=d:/sets.csv&table=dungouset]
+2017/10/02 21:03:26 [D] [BaseFilter /:/api/pub?url=D:/sets.csv&table=dungouset]
+2017/10/02 21:04:01 [D] [BaseFilter /:/api/pub?url=D:%5Csets.csv&table=dungouset]
+2017/10/02 21:04:19 [D] [BaseFilter /:/api/pub?url=D:/sets.csv&table=dungouset]
+2017/10/02 21:05:18 [D] [BaseFilter /api/pub?url=D:/sets.csv&table=dungouset]
+2017/10/02 21:07:08 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 21:07:12 [I] http server Running on http://:9700
+2017/10/02 21:07:17 [D] [BaseFilter /api/pub?url=D:/sets.csv&table=dungouset]
+2017/10/02 21:09:22 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local]
+2017/10/02 21:09:22 [I] http server Running on http://:9700
+2017/10/02 21:09:25 [D] [BaseFilter /api/pub?url=D:/sets.csv&table=dungouset]
+2017/09/29 09:36:15 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 09:36:15 [I] http server Running on http://:9700
+2017/09/29 09:36:17 [D] [BaseFilter /api/finduser]
+2017/09/29 09:36:55 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 09:36:56 [I] http server Running on http://:9700
+2017/09/29 09:36:59 [D] [BaseFilter /api/finduser]
+2017/09/29 09:36:59 [E] [JsonDecode [{"id":1,"username":"chengyanfeng","password":"232322","role":"108988989","grade":"1","companyid":"122","t1":"","t2":""},{"id":2,"username":"hell1111","password":"123","role":"root","grade":"0","companyid":"122","t1":"","t2":""},{"id":3,"username":"hell1111","password":"123","role":"root","grade":"0","companyid":"2","t1":"","t2":""}] json: cannot unmarshal array into Go value of type util.P]
+2017/09/29 09:44:24 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 09:44:24 [I] http server Running on http://:9700
+2017/09/29 09:44:36 [D] [BaseFilter /rpc]
+2017/09/29 09:45:17 [D] [BaseFilter /rpc]
+2017/09/29 09:45:17 [D] [BaseFilter /api/upmessage]
+2017/09/29 09:45:17 [C] the request url is  /api/upmessage
+2017/09/29 09:45:17 [C] Handler crashed with error can't find templatefile in the path:apicontroller/upmessage.tpl
+2017/09/29 09:45:17 [C] C:/Go/src/runtime/asm_amd64.s:514
+2017/09/29 09:45:17 [C] C:/Go/src/runtime/panic.go:489
+2017/09/29 09:45:17 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/29 09:45:17 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/29 09:45:17 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/29 09:45:17 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/29 09:45:17 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/29 09:45:17 [C] C:/Go/src/net/http/server.go:2568
+2017/09/29 09:45:17 [C] C:/Go/src/net/http/server.go:1825
+2017/09/29 09:45:17 [C] C:/Go/src/runtime/asm_amd64.s:2197
+2017/09/29 09:46:27 [D] [BaseFilter /rpc]
+2017/09/29 09:46:27 [D] [BaseFilter /api/upmessage]
+2017/09/29 09:46:27 [C] the request url is  /api/upmessage
+2017/09/29 09:46:27 [C] Handler crashed with error can't find templatefile in the path:apicontroller/upmessage.tpl
+2017/09/29 09:46:27 [C] C:/Go/src/runtime/asm_amd64.s:514
+2017/09/29 09:46:27 [C] C:/Go/src/runtime/panic.go:489
+2017/09/29 09:46:27 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/29 09:46:27 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/29 09:46:27 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/29 09:46:27 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/29 09:46:27 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/29 09:46:27 [C] C:/Go/src/net/http/server.go:2568
+2017/09/29 09:46:27 [C] C:/Go/src/net/http/server.go:1825
+2017/09/29 09:46:27 [C] C:/Go/src/runtime/asm_amd64.s:2197
+2017/09/29 09:48:37 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 09:48:37 [I] http server Running on http://:9700
+2017/09/29 09:48:43 [D] [BaseFilter /rpc]
+2017/09/29 09:48:43 [D] [BaseFilter /api/upmessage]
+2017/09/29 09:48:58 [D] [BaseFilter /rpc]
+2017/09/29 09:48:58 [D] [BaseFilter /api/upmessage]
+2017/09/29 09:49:25 [D] [BaseFilter /rpc]
+2017/09/29 09:49:25 [D] [BaseFilter /api/upmessage]
+2017/09/29 09:49:35 [D] [BaseFilter /rpc]
+2017/09/29 09:49:35 [E] [JsonDecode {"act":"api/upmessage","args":{"startdate":"2017-01-01","companyid":"vi3324sit@$3@43@4#@$#@$#@or,"username":"chengyanfeng","img":"afdsaf","text":"213221","date":"dafaew","grade":"1"}} invalid character 'u' after object key:value pair]
+2017/09/29 09:49:50 [D] [BaseFilter /rpc]
+2017/09/29 09:49:50 [D] [BaseFilter /api/upmessage]
+2017/09/29 09:50:57 [D] [BaseFilter /rpc]
+2017/09/29 09:50:57 [D] [BaseFilter /api/upmessage]
+2017/09/29 09:51:53 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 09:51:53 [I] http server Running on http://:9700
+2017/09/29 09:51:59 [D] [BaseFilter /rpc]
+2017/09/29 09:51:59 [D] [BaseFilter /api/upmessage]
+2017/09/29 09:52:59 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 09:52:59 [I] http server Running on http://:9700
+2017/09/29 09:53:01 [D] [BaseFilter /rpc]
+2017/09/29 09:53:01 [D] [BaseFilter /api/upmessage]
+2017/09/29 09:53:47 [D] [BaseFilter /rpc]
+2017/09/29 09:53:47 [D] [BaseFilter /api/upmessage]
+2017/09/29 10:01:19 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:01:19 [I] http server Running on http://:9700
+2017/09/29 10:01:22 [D] [BaseFilter /rpc]
+2017/09/29 10:01:22 [D] [BaseFilter /api/upmessage]
+2017/09/29 10:01:33 [D] [BaseFilter /rpc]
+2017/09/29 10:01:33 [D] [BaseFilter /api/upmessage]
+2017/09/29 10:04:11 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:04:11 [I] http server Running on http://:9700
+2017/09/29 10:07:50 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:07:50 [I] http server Running on http://:9700
+2017/09/29 10:07:54 [D] [BaseFilter /rpc]
+2017/09/29 10:07:54 [D] [BaseFilter /api/upmessage]
+2017/09/29 10:08:27 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:08:27 [I] http server Running on http://:9700
+2017/09/29 10:08:30 [D] [BaseFilter /rpc]
+2017/09/29 10:08:30 [D] [BaseFilter /api/upmessage]
+2017/09/29 10:09:01 [D] [BaseFilter /rpc]
+2017/09/29 10:09:01 [D] [BaseFilter /api/upmessage]
+2017/09/29 10:11:13 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:11:14 [I] http server Running on http://:9700
+2017/09/29 10:11:26 [D] [BaseFilter /api/finduser]
+2017/09/29 10:11:26 [E] [JsonDecode [{"id":1,"username":"chengyanfeng","password":"232322","role":"108988989","grade":"1","companyid":"122","t1":"","t2":""},{"id":2,"username":"hell1111","password":"123","role":"root","grade":"0","companyid":"122","t1":"","t2":""},{"id":3,"username":"hell1111","password":"123","role":"root","grade":"0","companyid":"2","t1":"","t2":""}] json: cannot unmarshal array into Go value of type util.P]
+2017/09/29 10:11:34 [D] [BaseFilter /api/finduser]
+2017/09/29 10:11:34 [E] [JsonDecode [{"id":1,"username":"chengyanfeng","password":"232322","role":"108988989","grade":"1","companyid":"122","t1":"","t2":""},{"id":2,"username":"hell1111","password":"123","role":"root","grade":"0","companyid":"122","t1":"","t2":""},{"id":3,"username":"hell1111","password":"123","role":"root","grade":"0","companyid":"2","t1":"","t2":""}] json: cannot unmarshal array into Go value of type util.P]
+2017/09/29 10:11:37 [D] [BaseFilter /api/finduser]
+2017/09/29 10:11:37 [E] [JsonDecode [{"id":1,"username":"chengyanfeng","password":"232322","role":"108988989","grade":"1","companyid":"122","t1":"","t2":""},{"id":2,"username":"hell1111","password":"123","role":"root","grade":"0","companyid":"122","t1":"","t2":""},{"id":3,"username":"hell1111","password":"123","role":"root","grade":"0","companyid":"2","t1":"","t2":""}] json: cannot unmarshal array into Go value of type util.P]
+2017/09/29 10:13:09 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:13:09 [I] http server Running on http://:9700
+2017/09/29 10:13:16 [D] [BaseFilter /api/updateuser?username=cheng15ya6n1feng&password=1234578&companyid=2&role=root&id=3]
+2017/09/29 10:14:06 [D] [BaseFilter /api/updateuser?username=chengyanfeng&password=1234578&companyid=2&role=root]
+2017/09/29 10:14:31 [D] [BaseFilter /api/updateuser?username=chengyanfeng&password=32432432432&companyid=2&role=root]
+2017/09/29 10:38:23 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:38:23 [I] http server Running on http://:9700
+2017/09/29 10:38:37 [D] [BaseFilter /api/deletuser?username=chengyanfeng]
+2017/09/29 10:38:56 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:38:56 [I] http server Running on http://:9700
+2017/09/29 10:39:05 [D] [BaseFilter /api/deletuser?username=chengyanfeng]
+2017/09/29 10:39:36 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:39:36 [I] http server Running on http://:9700
+2017/09/29 10:39:44 [D] [BaseFilter /api/deletuser?username=hell1111]
+2017/09/29 10:55:17 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 10:55:17 [I] http server Running on http://:9700
+2017/09/29 10:55:21 [D] [BaseFilter /api/deletuser?username=hell1111]
+2017/09/29 10:56:02 [D] [BaseFilter /api/deletuser?username=fdf]
+2017/09/29 11:18:17 [D] [BaseFilter /rpc]
+2017/09/29 11:18:17 [E] [JsonDecode {"act":"api/upmessage","args":{"startdate":"2017-01-01","companyid":"vu",username":"chengyanfeng","grade":"1","password":"123"}} invalid character 'u' looking for beginning of object key string]
+2017/09/29 11:18:34 [D] [BaseFilter /rpc]
+2017/09/29 11:18:34 [E] [JsonDecode {"act":"api/upmessage","args":{"startdate":"2017-01-01","companyid":"vu",username:"chengyanfeng","grade":"1","password":"123"}} invalid character 'u' looking for beginning of object key string]
+2017/09/29 11:19:29 [D] [BaseFilter /api/login]
+2017/09/29 11:19:30 [D] [BaseFilter /favicon.ico]
+2017/09/29 11:19:44 [D] [BaseFilter /rpc]
+2017/09/29 11:19:44 [E] [JsonDecode {"act":"api/login","args":{"startdate":"2017-01-01","companyid":"vaau",username:"chengyanfeng","grade":"1","password":"123"}} invalid character 'u' looking for beginning of object key string]
+2017/09/29 11:19:46 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 11:20:11 [D] [BaseFilter /rpc]
+2017/09/29 11:20:11 [D] [BaseFilter /api/upmessage]
+2017/09/29 11:20:57 [D] [BaseFilter /rpc]
+2017/09/29 11:20:57 [D] [BaseFilter /api/login]
+2017/09/29 11:21:08 [D] [BaseFilter /rpc]
+2017/09/29 11:21:08 [D] [BaseFilter /api/login]
+2017/09/29 11:30:45 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 11:30:46 [I] http server Running on http://:9700
+2017/09/29 11:31:50 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 11:31:51 [I] http server Running on http://:9700
+2017/09/29 11:33:48 [D] [BaseFilter /rpc]
+2017/09/29 11:33:48 [D] [BaseFilter /api/upremark]
+2017/09/29 11:35:46 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 11:35:46 [I] http server Running on http://:9700
+2017/09/29 11:35:53 [D] [BaseFilter /rpc]
+2017/09/29 11:35:53 [D] [BaseFilter /api/upremark]
+2017/09/29 11:39:45 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 11:39:45 [I] http server Running on http://:9700
+2017/09/29 11:39:52 [D] [BaseFilter /rpc]
+2017/09/29 11:39:52 [D] [BaseFilter /api/upremark]
+2017/09/29 11:40:01 [D] [BaseFilter /rpc]
+2017/09/29 11:40:01 [D] [BaseFilter /api/upremark]
+2017/09/29 11:40:24 [D] [BaseFilter /api/login]
+2017/09/29 11:40:48 [D] [BaseFilter /api/login]
+2017/09/29 11:42:28 [D] [BaseFilter /api/login]
+2017/09/29 11:43:35 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:14:25 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:14:25 [I] http server Running on http://:9700
+2017/09/29 13:14:30 [D] [BaseFilter /rpc]
+2017/09/29 13:14:30 [D] [BaseFilter /api/upremark]
+2017/09/29 13:15:03 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:15:03 [I] http server Running on http://:9700
+2017/09/29 13:15:06 [D] [BaseFilter /rpc]
+2017/09/29 13:15:06 [D] [BaseFilter /api/upremark]
+2017/09/29 13:15:39 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:15:39 [I] http server Running on http://:9700
+2017/09/29 13:16:15 [D] [BaseFilter /rpc]
+2017/09/29 13:16:15 [D] [BaseFilter /api/upremark]
+2017/09/29 13:16:30 [D] [BaseFilter /rpc]
+2017/09/29 13:16:30 [D] [BaseFilter /api/login]
+2017/09/29 13:17:05 [D] [BaseFilter /rpc]
+2017/09/29 13:17:05 [D] [BaseFilter /api/login]
+2017/09/29 13:17:05 [C] the request url is  /api/login
+2017/09/29 13:17:05 [C] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2017/09/29 13:17:05 [C] C:/Go/src/runtime/asm_amd64.s:514
+2017/09/29 13:17:05 [C] C:/Go/src/runtime/panic.go:489
+2017/09/29 13:17:05 [C] C:/Go/src/runtime/panic.go:63
+2017/09/29 13:17:05 [C] C:/Go/src/runtime/signal_windows.go:161
+2017/09/29 13:17:05 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:558
+2017/09/29 13:17:05 [C] D:/GOjar/gopath/src/dungou.cn/controller/api.go:89
+2017/09/29 13:17:05 [C] C:/Go/src/runtime/asm_amd64.s:514
+2017/09/29 13:17:05 [C] C:/Go/src/reflect/value.go:434
+2017/09/29 13:17:05 [C] C:/Go/src/reflect/value.go:302
+2017/09/29 13:17:05 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/29 13:17:05 [C] C:/Go/src/net/http/server.go:2568
+2017/09/29 13:17:05 [C] C:/Go/src/net/http/server.go:1825
+2017/09/29 13:17:05 [C] C:/Go/src/runtime/asm_amd64.s:2197
+2017/09/29 13:17:13 [D] [BaseFilter /rpc]
+2017/09/29 13:17:13 [D] [BaseFilter /api/login]
+2017/09/29 13:17:13 [C] the request url is  /api/login
+2017/09/29 13:17:13 [C] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2017/09/29 13:17:13 [C] C:/Go/src/runtime/asm_amd64.s:514
+2017/09/29 13:17:13 [C] C:/Go/src/runtime/panic.go:489
+2017/09/29 13:17:13 [C] C:/Go/src/runtime/panic.go:63
+2017/09/29 13:17:13 [C] C:/Go/src/runtime/signal_windows.go:161
+2017/09/29 13:17:13 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:558
+2017/09/29 13:17:13 [C] D:/GOjar/gopath/src/dungou.cn/controller/api.go:89
+2017/09/29 13:17:13 [C] C:/Go/src/runtime/asm_amd64.s:514
+2017/09/29 13:17:13 [C] C:/Go/src/reflect/value.go:434
+2017/09/29 13:17:13 [C] C:/Go/src/reflect/value.go:302
+2017/09/29 13:17:13 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/29 13:17:13 [C] C:/Go/src/net/http/server.go:2568
+2017/09/29 13:17:13 [C] C:/Go/src/net/http/server.go:1825
+2017/09/29 13:17:13 [C] C:/Go/src/runtime/asm_amd64.s:2197
+2017/09/29 13:18:04 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:18:05 [I] http server Running on http://:9700
+2017/09/29 13:18:12 [D] [BaseFilter /rpc]
+2017/09/29 13:18:12 [D] [BaseFilter /api/login]
+2017/09/29 13:18:27 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:18:27 [I] http server Running on http://:9700
+2017/09/29 13:18:29 [D] [BaseFilter /rpc]
+2017/09/29 13:18:29 [D] [BaseFilter /api/login]
+2017/09/29 13:18:29 [C] the request url is  /api/login
+2017/09/29 13:18:29 [C] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2017/09/29 13:18:29 [C] C:/Go/src/runtime/asm_amd64.s:514
+2017/09/29 13:18:29 [C] C:/Go/src/runtime/panic.go:489
+2017/09/29 13:18:29 [C] C:/Go/src/runtime/panic.go:63
+2017/09/29 13:18:29 [C] C:/Go/src/runtime/signal_windows.go:161
+2017/09/29 13:18:29 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:558
+2017/09/29 13:18:29 [C] D:/GOjar/gopath/src/dungou.cn/controller/api.go:89
+2017/09/29 13:18:29 [C] C:/Go/src/runtime/asm_amd64.s:514
+2017/09/29 13:18:29 [C] C:/Go/src/reflect/value.go:434
+2017/09/29 13:18:29 [C] C:/Go/src/reflect/value.go:302
+2017/09/29 13:18:29 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/29 13:18:29 [C] C:/Go/src/net/http/server.go:2568
+2017/09/29 13:18:29 [C] C:/Go/src/net/http/server.go:1825
+2017/09/29 13:18:29 [C] C:/Go/src/runtime/asm_amd64.s:2197
+2017/09/29 13:18:44 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:18:44 [I] http server Running on http://:9700
+2017/09/29 13:18:47 [D] [BaseFilter /rpc]
+2017/09/29 13:18:47 [D] [BaseFilter /api/login]
+2017/09/29 13:18:47 [C] the request url is  /api/login
+2017/09/29 13:18:47 [C] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2017/09/29 13:18:47 [C] C:/Go/src/runtime/asm_amd64.s:514
+2017/09/29 13:18:47 [C] C:/Go/src/runtime/panic.go:489
+2017/09/29 13:18:47 [C] C:/Go/src/runtime/panic.go:63
+2017/09/29 13:18:47 [C] C:/Go/src/runtime/signal_windows.go:161
+2017/09/29 13:18:47 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:558
+2017/09/29 13:18:47 [C] D:/GOjar/gopath/src/dungou.cn/controller/api.go:89
+2017/09/29 13:18:47 [C] C:/Go/src/runtime/asm_amd64.s:514
+2017/09/29 13:18:47 [C] C:/Go/src/reflect/value.go:434
+2017/09/29 13:18:47 [C] C:/Go/src/reflect/value.go:302
+2017/09/29 13:18:47 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/router.go:802
+2017/09/29 13:18:47 [C] C:/Go/src/net/http/server.go:2568
+2017/09/29 13:18:47 [C] C:/Go/src/net/http/server.go:1825
+2017/09/29 13:18:47 [C] C:/Go/src/runtime/asm_amd64.s:2197
+2017/09/29 13:19:58 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:19:58 [I] http server Running on http://:9700
+2017/09/29 13:20:08 [D] [BaseFilter /rpc]
+2017/09/29 13:20:08 [D] [BaseFilter /api/login]
+2017/09/29 13:20:27 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:20:27 [I] http server Running on http://:9700
+2017/09/29 13:20:30 [D] [BaseFilter /rpc]
+2017/09/29 13:20:30 [D] [BaseFilter /api/login]
+2017/09/29 13:25:49 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:25:50 [I] http server Running on http://:9700
+2017/09/29 13:26:04 [D] [BaseFilter /rpc]
+2017/09/29 13:26:04 [D] [BaseFilter /api/login]
+2017/09/29 13:26:08 [D] [BaseFilter /rpc]
+2017/09/29 13:26:08 [D] [BaseFilter /api/login]
+2017/09/29 13:26:09 [D] [BaseFilter /rpc]
+2017/09/29 13:26:09 [D] [BaseFilter /api/login]
+2017/09/29 13:26:10 [D] [BaseFilter /rpc]
+2017/09/29 13:26:10 [D] [BaseFilter /api/login]
+2017/09/29 13:26:11 [D] [BaseFilter /rpc]
+2017/09/29 13:26:11 [D] [BaseFilter /api/login]
+2017/09/29 13:26:54 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:26:54 [I] http server Running on http://:9700
+2017/09/29 13:26:57 [D] [BaseFilter /rpc]
+2017/09/29 13:26:57 [D] [BaseFilter /api/login]
+2017/09/29 13:28:03 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:28:16 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:28:39 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:31:04 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:31:19 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:31:20 [I] http server Running on http://:9700
+2017/09/29 13:31:23 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:32:05 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:32:05 [I] http server Running on http://:9700
+2017/09/29 13:32:25 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:32:57 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:32:57 [I] http server Running on http://:9700
+2017/09/29 13:33:04 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:33:42 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:35:00 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:35:00 [D] [BaseFilter /favicon.ico]
+2017/09/29 13:35:00 [D] [BaseFilter /favicon.ico]
+2017/09/29 13:36:03 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:36:03 [I] http server Running on http://:9700
+2017/09/29 13:36:08 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:36:46 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:36:46 [I] http server Running on http://:9700
+2017/09/29 13:36:55 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:38:28 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:38:28 [I] http server Running on http://:9700
+2017/09/29 13:39:07 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:39:07 [I] http server Running on http://:9700
+2017/09/29 13:39:14 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:39:55 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:39:55 [I] http server Running on http://:9700
+2017/09/29 13:40:15 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:43:36 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:43:36 [I] http server Running on http://:9700
+2017/09/29 13:43:37 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:43:58 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:44:01 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:47:13 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:47:13 [I] http server Running on http://:9700
+2017/09/29 13:47:16 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:53:15 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:53:16 [I] http server Running on http://:9700
+2017/09/29 13:53:26 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:55:16 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:55:16 [I] http server Running on http://:9700
+2017/09/29 13:55:26 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:55:38 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 13:59:37 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 13:59:38 [I] http server Running on http://:9700
+2017/09/29 14:00:02 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:00:12 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:01:00 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:01:00 [I] http server Running on http://:9700
+2017/09/29 14:01:05 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:02:53 [D] [BaseFilter /api/login]
+2017/09/29 14:02:59 [D] [BaseFilter /api/login]
+2017/09/29 14:03:07 [D] [BaseFilter /api/login]
+2017/09/29 14:04:13 [D] [BaseFilter /api/login]
+2017/09/29 14:05:32 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:05:34 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:05:35 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:05:37 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:05:38 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:05:39 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:05:40 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:06:28 [D] [BaseFilter /rpc]
+2017/09/29 14:07:08 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:07:08 [I] http server Running on http://:9700
+2017/09/29 14:07:12 [D] [BaseFilter /rpc]
+2017/09/29 14:07:51 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:07:51 [I] http server Running on http://:9700
+2017/09/29 14:07:53 [D] [BaseFilter /rpc]
+2017/09/29 14:08:59 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:09:00 [I] http server Running on http://:9700
+2017/09/29 14:09:04 [D] [BaseFilter /rpc]
+2017/09/29 14:09:28 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:09:29 [I] http server Running on http://:9700
+2017/09/29 14:09:36 [D] [BaseFilter /rpc]
+2017/09/29 14:10:23 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:10:24 [I] http server Running on http://:9700
+2017/09/29 14:10:26 [D] [BaseFilter /rpc]
+2017/09/29 14:11:40 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:11:41 [I] http server Running on http://:9700
+2017/09/29 14:11:45 [D] [BaseFilter /rpc]
+2017/09/29 14:13:21 [D] [BaseFilter /rpc]
+2017/09/29 14:13:31 [D] [BaseFilter /rpc]
+2017/09/29 14:15:20 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:15:20 [I] http server Running on http://:9700
+2017/09/29 14:15:35 [D] [BaseFilter /rpc]
+2017/09/29 14:15:58 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:15:59 [I] http server Running on http://:9700
+2017/09/29 14:16:02 [D] [BaseFilter /rpc]
+2017/09/29 14:16:02 [D] [BaseFilter /api/login]
+2017/09/29 14:18:07 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:18:08 [I] http server Running on http://:9700
+2017/09/29 14:18:10 [D] [BaseFilter /rpc]
+2017/09/29 14:18:10 [D] [BaseFilter /api/login]
+2017/09/29 14:18:44 [D] [BaseFilter /rpc]
+2017/09/29 14:18:44 [D] [BaseFilter /api/login]
+2017/09/29 14:19:36 [D] [BaseFilter /rpc]
+2017/09/29 14:19:36 [D] [BaseFilter /api/login]
+2017/09/29 14:19:43 [D] [BaseFilter /rpc]
+2017/09/29 14:19:43 [D] [BaseFilter /api/login]
+2017/09/29 14:20:06 [D] [BaseFilter /rpc]
+2017/09/29 14:20:27 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:20:31 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:20:34 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:20:59 [D] [BaseFilter /api/login]
+2017/09/29 14:21:03 [D] [BaseFilter /api/login]
+2017/09/29 14:21:22 [D] [BaseFilter /api/login]
+2017/09/29 14:25:21 [D] [BaseFilter /api/login]
+2017/09/29 14:25:31 [D] [BaseFilter /api/login?username=chengyanfeng&password=232322]
+2017/09/29 14:25:56 [D] [BaseFilter /api/login]
+2017/09/29 14:27:20 [D] [BaseFilter /api/login]
+2017/09/29 14:27:24 [D] [BaseFilter /api/login?username=chengyanfeng&password=232322]
+2017/09/29 14:27:28 [D] [BaseFilter /api/login?username=chengyanfeng&password=232322]
+2017/09/29 14:27:34 [D] [BaseFilter /api/login?username=chengyanfeng&password=232322]
+2017/09/29 14:27:49 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 14:53:02 [D] [BaseFilter /api/login]
+2017/09/29 14:53:13 [D] [BaseFilter /api/login?username=chengyanfeng]
+2017/09/29 14:53:44 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:53:44 [I] http server Running on http://:9700
+2017/09/29 14:56:03 [D] [BaseFilter /api/login?username=chengyanfeng]
+2017/09/29 14:56:07 [D] [BaseFilter /api/login?username=chengyanfeng]
+2017/09/29 14:56:09 [D] [BaseFilter /api/login?username=chengyanfeng]
+2017/09/29 14:58:01 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:58:01 [I] http server Running on http://:9700
+2017/09/29 14:58:23 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 14:58:23 [I] http server Running on http://:9700
+2017/09/29 14:58:40 [D] [BaseFilter /api/login?username=chengyanfeng]
+2017/09/29 14:58:42 [D] [BaseFilter /api/login?username=chengyanfeng]
+2017/09/29 14:58:43 [D] [BaseFilter /api/login?username=chengyanfeng]
+2017/09/29 14:58:47 [D] [BaseFilter /api/login?username=chengyanfeng]
+2017/09/29 14:58:48 [D] [BaseFilter /api/login?username=chengyanfeng]
+2017/09/29 14:58:55 [D] [BaseFilter /rpc]
+2017/09/29 14:58:59 [D] [BaseFilter /rpc]
+2017/09/29 14:59:02 [D] [BaseFilter /rpc]
+2017/09/29 14:59:03 [D] [BaseFilter /rpc]
+2017/09/29 14:59:23 [D] [BaseFilter /rpc]
+2017/09/29 14:59:32 [D] [BaseFilter /rpc]
+2017/09/29 14:59:43 [D] [BaseFilter /rpc]
+2017/09/29 14:59:47 [D] [BaseFilter /rpc]
+2017/09/29 15:00:28 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:00:28 [I] http server Running on http://:9700
+2017/09/29 15:00:31 [D] [BaseFilter /rpc]
+2017/09/29 15:00:59 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:01:00 [I] http server Running on http://:9700
+2017/09/29 15:01:04 [D] [BaseFilter /rpc]
+2017/09/29 15:01:25 [D] [BaseFilter /api/login?username=chengyanfeng]
+2017/09/29 15:01:28 [D] [BaseFilter /api/login?username=chengyanfeng]
+2017/09/29 15:01:35 [D] [BaseFilter /api/login]
+2017/09/29 15:02:50 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:02:50 [I] http server Running on http://:9700
+2017/09/29 15:02:55 [D] [BaseFilter /rpc]
+2017/09/29 15:02:55 [D] [BaseFilter /api/login]
+2017/09/29 15:03:28 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:03:29 [I] http server Running on http://:9700
+2017/09/29 15:03:30 [D] [BaseFilter /rpc]
+2017/09/29 15:03:30 [D] [BaseFilter /api/login]
+2017/09/29 15:04:31 [D] [BaseFilter /rpc]
+2017/09/29 15:05:32 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:05:32 [I] http server Running on http://:9700
+2017/09/29 15:05:42 [D] [BaseFilter /rpc]
+2017/09/29 15:05:48 [D] [BaseFilter /rpc]
+2017/09/29 15:08:31 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:08:31 [I] http server Running on http://:9700
+2017/09/29 15:08:35 [D] [BaseFilter /rpc]
+2017/09/29 15:10:39 [D] [BaseFilter /rpc]
+2017/09/29 15:10:39 [D] [BaseFilter /api/login]
+2017/09/29 15:10:51 [D] [BaseFilter /rpc]
+2017/09/29 15:18:09 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 15:18:53 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:18:53 [I] http server Running on http://:9700
+2017/09/29 15:19:07 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 15:19:28 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 15:19:28 [E] [JsonDecode [{"id":1,"username":"chuanchuan","password":"123","role":"1","grade":"1","companyid":"","t1":"","t2":""}] json: cannot unmarshal array into Go value of type util.P]
+2017/09/29 15:20:36 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:20:36 [I] http server Running on http://:9700
+2017/09/29 15:20:36 [D] [BaseFilter /rpc]
+2017/09/29 15:20:36 [E] [JsonDecode  unexpected end of JSON input]
+2017/09/29 15:20:38 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 15:21:02 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 15:21:22 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 15:21:31 [D] [BaseFilter /rpc]
+2017/09/29 15:21:31 [E] [JsonDecode  unexpected end of JSON input]
+2017/09/29 15:21:47 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 15:22:41 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:22:41 [I] http server Running on http://:9700
+2017/09/29 15:22:45 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 15:23:13 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:23:13 [I] http server Running on http://:9700
+2017/09/29 15:23:25 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 15:24:00 [D] [BaseFilter /rpc]
+2017/09/29 15:24:00 [E] [JsonDecode  unexpected end of JSON input]
+2017/09/29 15:24:27 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:24:27 [I] http server Running on http://:9700
+2017/09/29 15:25:44 [D] [BaseFilter /rpc]
+2017/09/29 15:25:44 [E] [JsonDecode  unexpected end of JSON input]
+2017/09/29 15:27:40 [D] [BaseFilter /rpc]
+2017/09/29 15:27:40 [E] [JsonDecode  unexpected end of JSON input]
+2017/09/29 15:29:03 [D] [BaseFilter /rpc]
+2017/09/29 15:29:03 [E] [JsonDecode  unexpected end of JSON input]
+2017/09/29 15:30:09 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:30:09 [I] http server Running on http://:9700
+2017/09/29 15:30:14 [D] [BaseFilter /rpc]
+2017/09/29 15:30:14 [E] [JsonDecode  unexpected end of JSON input]
+2017/09/29 15:34:46 [D] [BaseFilter /rpc]
+2017/09/29 15:34:46 [E] [JsonDecode  unexpected end of JSON input]
+2017/09/29 15:37:49 [D] [BaseFilter /rpc]
+2017/09/29 15:37:49 [E] [JsonDecode  unexpected end of JSON input]
+2017/09/29 15:38:31 [D] [BaseFilter /rpc]
+2017/09/29 15:38:31 [E] [JsonDecode  unexpected end of JSON input]
+2017/09/29 15:38:35 [D] [BaseFilter /rpc]
+2017/09/29 15:38:35 [E] [JsonDecode  unexpected end of JSON input]
+2017/09/29 15:39:20 [D] [BaseFilter /rpc]
+2017/09/29 15:39:20 [E] [JsonDecode  unexpected end of JSON input]
+2017/09/29 15:40:13 [D] [BaseFilter /rpc]
+2017/09/29 15:40:13 [D] [BaseFilter /api/login]
+2017/09/29 15:44:21 [D] [BaseFilter /rpc]
+2017/09/29 15:44:21 [D] [BaseFilter /api/login]
+2017/09/29 15:45:07 [D] [BaseFilter /rpc]
+2017/09/29 15:45:07 [D] [BaseFilter /api/login]
+2017/09/29 15:50:20 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:50:21 [I] http server Running on http://:9700
+2017/09/29 15:50:54 [D] [BaseFilter /rpc]
+2017/09/29 15:50:54 [D] [BaseFilter /api/login]
+2017/09/29 15:51:50 [D] [BaseFilter /rpc]
+2017/09/29 15:51:50 [D] [BaseFilter /api/login]
+2017/09/29 15:53:01 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:53:01 [I] http server Running on http://:9700
+2017/09/29 15:53:24 [D] [BaseFilter /rpc]
+2017/09/29 15:53:24 [D] [BaseFilter /api/login]
+2017/09/29 15:53:24 [C] the request url is  /api/login
+2017/09/29 15:53:24 [C] Handler crashed with error can't find templatefile in the path:apicontroller/login.tpl
+2017/09/29 15:53:24 [C] C:/Go/src/runtime/asm_amd64.s:514
+2017/09/29 15:53:24 [C] C:/Go/src/runtime/panic.go:489
+2017/09/29 15:53:24 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/29 15:53:24 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/29 15:53:24 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/29 15:53:24 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/29 15:53:24 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/29 15:53:24 [C] C:/Go/src/net/http/server.go:2568
+2017/09/29 15:53:24 [C] C:/Go/src/net/http/server.go:1825
+2017/09/29 15:53:24 [C] C:/Go/src/runtime/asm_amd64.s:2197
+2017/09/29 15:53:36 [D] [BaseFilter /rpc]
+2017/09/29 15:53:36 [D] [BaseFilter /api/login]
+2017/09/29 15:53:36 [C] the request url is  /api/login
+2017/09/29 15:53:36 [C] Handler crashed with error can't find templatefile in the path:apicontroller/login.tpl
+2017/09/29 15:53:36 [C] C:/Go/src/runtime/asm_amd64.s:514
+2017/09/29 15:53:36 [C] C:/Go/src/runtime/panic.go:489
+2017/09/29 15:53:36 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/template.go:64
+2017/09/29 15:53:36 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:249
+2017/09/29 15:53:36 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:200
+2017/09/29 15:53:36 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/controller.go:184
+2017/09/29 15:53:36 [C] D:/GOjar/gopath/src/github.com/astaxie/beego/router.go:809
+2017/09/29 15:53:36 [C] C:/Go/src/net/http/server.go:2568
+2017/09/29 15:53:36 [C] C:/Go/src/net/http/server.go:1825
+2017/09/29 15:53:36 [C] C:/Go/src/runtime/asm_amd64.s:2197
+2017/09/29 15:55:19 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:55:20 [I] http server Running on http://:9700
+2017/09/29 15:55:40 [D] [BaseFilter /rpc]
+2017/09/29 15:55:40 [E] [JsonDecode  unexpected end of JSON input]
+2017/09/29 15:56:10 [D] [BaseFilter /rpc]
+2017/09/29 15:56:10 [D] [BaseFilter /api/login]
+2017/09/29 15:57:07 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 15:57:08 [I] http server Running on http://:9700
+2017/09/29 15:57:17 [D] [BaseFilter /rpc]
+2017/09/29 15:57:17 [D] [BaseFilter /api/login]
+2017/09/29 16:03:11 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:03:12 [I] http server Running on http://:9700
+2017/09/29 16:03:18 [D] [BaseFilter /rpc]
+2017/09/29 16:03:18 [D] [BaseFilter /api/login]
+2017/09/29 16:03:19 [D] [BaseFilter /rpc]
+2017/09/29 16:03:19 [D] [BaseFilter /api/login]
+2017/09/29 16:03:19 [D] [BaseFilter /rpc]
+2017/09/29 16:03:19 [D] [BaseFilter /api/login]
+2017/09/29 16:03:20 [D] [BaseFilter /rpc]
+2017/09/29 16:03:20 [D] [BaseFilter /api/login]
+2017/09/29 16:03:20 [D] [BaseFilter /rpc]
+2017/09/29 16:03:20 [D] [BaseFilter /api/login]
+2017/09/29 16:03:20 [D] [BaseFilter /rpc]
+2017/09/29 16:03:20 [D] [BaseFilter /api/login]
+2017/09/29 16:03:20 [D] [BaseFilter /rpc]
+2017/09/29 16:03:20 [D] [BaseFilter /api/login]
+2017/09/29 16:03:20 [D] [BaseFilter /rpc]
+2017/09/29 16:03:20 [D] [BaseFilter /api/login]
+2017/09/29 16:03:20 [D] [BaseFilter /rpc]
+2017/09/29 16:03:20 [D] [BaseFilter /api/login]
+2017/09/29 16:03:21 [D] [BaseFilter /rpc]
+2017/09/29 16:03:21 [D] [BaseFilter /api/login]
+2017/09/29 16:03:21 [D] [BaseFilter /rpc]
+2017/09/29 16:03:21 [D] [BaseFilter /api/login]
+2017/09/29 16:03:21 [D] [BaseFilter /rpc]
+2017/09/29 16:03:21 [D] [BaseFilter /api/login]
+2017/09/29 16:03:21 [D] [BaseFilter /rpc]
+2017/09/29 16:03:21 [D] [BaseFilter /api/login]
+2017/09/29 16:04:13 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:04:13 [I] http server Running on http://:9700
+2017/09/29 16:04:22 [D] [BaseFilter /rpc]
+2017/09/29 16:04:22 [D] [BaseFilter /api/login]
+2017/09/29 16:12:12 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:12:12 [I] http server Running on http://:9700
+2017/09/29 16:14:31 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:14:32 [I] http server Running on http://:9700
+2017/09/29 16:16:11 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:16:11 [I] http server Running on http://:9700
+2017/09/29 16:16:59 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:16:59 [I] http server Running on http://:9700
+2017/09/29 16:17:27 [D] [BaseFilter /rpc]
+2017/09/29 16:17:27 [D] [BaseFilter /api/login]
+2017/09/29 16:18:29 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:18:29 [I] http server Running on http://:9700
+2017/09/29 16:18:45 [D] [BaseFilter /rpc]
+2017/09/29 16:18:45 [D] [BaseFilter /api/login]
+2017/09/29 16:20:59 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:20:59 [I] http server Running on http://:9700
+2017/09/29 16:21:18 [D] [BaseFilter /rpc]
+2017/09/29 16:21:18 [D] [BaseFilter /api/login]
+2017/09/29 16:22:13 [D] [BaseFilter /rpc]
+2017/09/29 16:22:13 [D] [BaseFilter /api/login]
+2017/09/29 16:23:20 [D] [BaseFilter /rpc]
+2017/09/29 16:23:20 [D] [BaseFilter /api/login]
+2017/09/29 16:23:46 [D] [BaseFilter /rpc]
+2017/09/29 16:23:46 [D] [BaseFilter /api/login]
+2017/09/29 16:25:06 [D] [BaseFilter /rpc]
+2017/09/29 16:25:06 [D] [BaseFilter /api/login]
+2017/09/29 16:26:46 [D] [BaseFilter /rpc]
+2017/09/29 16:26:46 [D] [BaseFilter /api/login]
+2017/09/29 16:28:41 [D] [BaseFilter /rpc]
+2017/09/29 16:28:41 [D] [BaseFilter /api/login]
+2017/09/29 16:28:41 [D] [BaseFilter /rpc]
+2017/09/29 16:28:41 [D] [BaseFilter /api/login]
+2017/09/29 16:28:43 [D] [BaseFilter /rpc]
+2017/09/29 16:28:43 [D] [BaseFilter /api/login]
+2017/09/29 16:29:42 [D] [BaseFilter /rpc]
+2017/09/29 16:29:42 [D] [BaseFilter /api/login]
+2017/09/29 16:30:40 [D] [BaseFilter /rpc]
+2017/09/29 16:35:10 [D] [BaseFilter /rpc]
+2017/09/29 16:35:55 [D] [BaseFilter /rpc]
+2017/09/29 16:35:55 [D] [BaseFilter /api/login]
+2017/09/29 16:40:56 [D] [BaseFilter /rpc]
+2017/09/29 16:40:56 [D] [BaseFilter /api/login]
+2017/09/29 16:41:24 [D] [BaseFilter /rpc]
+2017/09/29 16:41:24 [D] [BaseFilter /api/login]
+2017/09/29 16:41:43 [D] [BaseFilter /rpc]
+2017/09/29 16:41:43 [D] [BaseFilter /api/login]
+2017/09/29 16:43:34 [D] [BaseFilter /rpc]
+2017/09/29 16:46:10 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:46:10 [I] http server Running on http://:9700
+2017/09/29 16:46:29 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 16:46:46 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 16:46:52 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 16:47:20 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 16:47:32 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 16:47:58 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 16:48:23 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 16:48:23 [I] http server Running on http://:9700
+2017/09/29 16:48:38 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 16:48:51 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 16:49:08 [D] [BaseFilter /api/finduser?username=chuanchuan&password=123]
+2017/09/29 16:49:42 [D] [BaseFilter /api/finduser?username=chuanchuan&password=123]
+2017/09/29 16:49:51 [D] [BaseFilter /api/finduser?username=chuanchuan&password=123]
+2017/09/29 16:50:02 [D] [BaseFilter /api/finduser?username=chuanchuan&password=123]
+2017/09/29 16:51:23 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 16:51:57 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 16:52:26 [D] [BaseFilter /api/log?username=chuanchuan]
+2017/09/29 16:52:44 [D] [BaseFilter /api/login?username=chuanchuan]
+2017/09/29 16:52:58 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 16:53:27 [D] [BaseFilter /api/userfind?username=chuanchuan]
+2017/09/29 16:53:35 [D] [BaseFilter /api/userfind?username=chuanchuan]
+2017/09/29 16:54:03 [D] [BaseFilter /api/finduser?username=chuanchuan]
+2017/09/29 17:02:37 [D] [BaseFilter /rpc]
+2017/09/29 17:03:12 [D] [BaseFilter /rpc]
+2017/09/29 17:03:12 [D] [BaseFilter /api/login]
+2017/09/29 17:09:39 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:09:40 [I] http server Running on http://:9700
+2017/09/29 17:10:18 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:10:19 [I] http server Running on http://:9700
+2017/09/29 17:10:51 [D] [BaseFilter /rpc]
+2017/09/29 17:10:51 [D] [BaseFilter /api/login]
+2017/09/29 17:11:19 [D] [BaseFilter /rpc]
+2017/09/29 17:13:05 [D] [BaseFilter /rpc]
+2017/09/29 17:21:22 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:21:22 [I] http server Running on http://:9700
+2017/09/29 17:22:05 [D] [BaseFilter /rpc]
+2017/09/29 17:22:05 [D] [BaseFilter /api/login]
+2017/09/29 17:22:34 [D] [BaseFilter /rpc]
+2017/09/29 17:24:44 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:24:44 [I] http server Running on http://:9700
+2017/09/29 17:26:17 [D] [BaseFilter /rpc]
+2017/09/29 17:29:55 [D] [BaseFilter /rpc]
+2017/09/29 17:30:26 [D] [BaseFilter /rpc]
+2017/09/29 17:44:38 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:44:38 [I] http server Running on http://:9700
+2017/09/29 17:44:39 [D] [BaseFilter /rpc]
+2017/09/29 17:44:39 [D] [BaseFilter /api/login]
+2017/09/29 17:44:39 [D] [BaseFilter /rpc]
+2017/09/29 17:44:39 [D] [BaseFilter /api/login]
+2017/09/29 17:45:12 [D] [BaseFilter /rpc]
+2017/09/29 17:45:22 [D] [BaseFilter /rpc]
+2017/09/29 17:48:59 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:48:59 [I] http server Running on http://:9700
+2017/09/29 17:51:27 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:51:27 [I] http server Running on http://:9700
+2017/09/29 17:51:51 [D] [BaseFilter /api/updateuser?username=cheng15ya6n1feng&password=1234578&companyid=2&role=root&id=3]
+2017/09/29 17:54:04 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:54:05 [I] http server Running on http://:9700
+2017/09/29 17:54:12 [D] [BaseFilter /api/updateuser?username=cheng15ya6n1feng&password=1234578&companyid=2&role=root&id=3]
+2017/09/29 17:54:13 [D] [BaseFilter /api/updateuser?username=cheng15ya6n1feng&password=1234578&companyid=2&role=root&id=3]
+2017/09/29 17:54:18 [D] [BaseFilter /api/login?username=cheng15ya6n1feng&password=1234578&companyid=2&role=root&id=3]
+2017/09/29 17:54:22 [D] [BaseFilter /api/login]
+2017/09/29 17:55:25 [D] [BaseFilter /rpc]
+2017/09/29 17:56:19 [D] [BaseFilter /rpc]
+2017/09/29 17:57:59 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 17:57:59 [I] http server Running on http://:9700
+2017/09/29 17:59:12 [D] [BaseFilter /api/login]
+2017/09/29 17:59:12 [D] [BaseFilter /favicon.ico]
+2017/09/29 18:01:12 [D] [BaseFilter /rpc]
+2017/09/29 18:01:12 [D] [BaseFilter /api/login]
+2017/09/29 18:01:57 [D] [BaseFilter /rpc]
+2017/09/29 18:01:57 [D] [BaseFilter /api/login]
+2017/09/29 18:02:56 [D] [BaseFilter /rpc]
+2017/09/29 18:02:56 [D] [BaseFilter /api/login]
+2017/09/29 18:02:56 [D] [BaseFilter /rpc]
+2017/09/29 18:02:56 [D] [BaseFilter /api/login]
+2017/09/29 18:02:57 [D] [BaseFilter /rpc]
+2017/09/29 18:02:57 [D] [BaseFilter /api/login]
+2017/09/29 18:02:57 [D] [BaseFilter /rpc]
+2017/09/29 18:02:57 [D] [BaseFilter /api/login]
+2017/09/29 18:02:57 [D] [BaseFilter /rpc]
+2017/09/29 18:02:57 [D] [BaseFilter /api/login]
+2017/09/29 18:05:25 [D] [BaseFilter /rpc]
+2017/09/29 18:05:25 [D] [BaseFilter /api/login]
+2017/09/29 18:05:43 [D] [BaseFilter /rpc]
+2017/09/29 18:05:43 [D] [BaseFilter /api/login]
+2017/09/29 18:07:49 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 18:07:49 [I] http server Running on http://:9700
+2017/09/29 18:07:55 [D] [BaseFilter /rpc]
+2017/09/29 18:07:55 [D] [BaseFilter /api/login]
+2017/09/29 18:08:34 [D] [BaseFilter /rpc]
+2017/09/29 18:08:34 [D] [BaseFilter /api/login]
+2017/09/29 18:09:01 [D] [BaseFilter /rpc]
+2017/09/29 18:09:01 [D] [BaseFilter /api/login]
+2017/09/29 18:09:41 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 18:09:41 [I] http server Running on http://:9700
+2017/09/29 18:09:53 [D] [BaseFilter /rpc]
+2017/09/29 18:09:53 [D] [BaseFilter /api/login]
+2017/09/29 18:10:24 [D] [BaseFilter /rpc]
+2017/09/29 18:10:24 [D] [BaseFilter /api/login]
+2017/09/29 18:10:25 [D] [BaseFilter /rpc]
+2017/09/29 18:10:25 [D] [BaseFilter /api/login]
+2017/09/29 18:10:26 [D] [BaseFilter /rpc]
+2017/09/29 18:10:26 [D] [BaseFilter /api/login]
+2017/09/29 18:10:27 [D] [BaseFilter /rpc]
+2017/09/29 18:10:27 [D] [BaseFilter /api/login]
+2017/09/29 18:10:31 [D] [BaseFilter /rpc]
+2017/09/29 18:10:31 [D] [BaseFilter /api/login]
+2017/09/29 18:10:34 [D] [BaseFilter /rpc]
+2017/09/29 18:10:34 [D] [BaseFilter /api/login]
+2017/09/29 18:18:07 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 18:18:08 [I] http server Running on http://:9700
+2017/09/29 18:18:15 [D] [BaseFilter /rpc]
+2017/09/29 18:18:15 [D] [BaseFilter /api/login]
+2017/09/29 18:18:20 [D] [BaseFilter /rpc]
+2017/09/29 18:18:20 [D] [BaseFilter /api/login]
+2017/09/29 18:18:39 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 18:18:39 [I] http server Running on http://:9700
+2017/09/29 18:18:43 [D] [BaseFilter /rpc]
+2017/09/29 18:18:43 [D] [BaseFilter /api/login]
+2017/09/29 18:19:36 [D] [BaseFilter /rpc]
+2017/09/29 18:19:36 [D] [BaseFilter /api/login]
+2017/09/29 18:19:54 [D] [BaseFilter /rpc]
+2017/09/29 18:19:54 [D] [BaseFilter /api/login]
+2017/09/29 18:20:08 [D] [BaseFilter /rpc]
+2017/09/29 18:20:08 [D] [BaseFilter /api/login]
+2017/09/29 18:20:55 [D] [BaseFilter /rpc]
+2017/09/29 18:20:55 [D] [BaseFilter /api/login]
+2017/09/29 18:22:29 [D] [BaseFilter /rpc]
+2017/09/29 18:22:29 [D] [BaseFilter /api/login]
+2017/09/29 18:25:43 [D] [BaseFilter /rpc]
+2017/09/29 18:25:43 [D] [BaseFilter /api/login]
+2017/09/29 18:26:55 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 18:26:55 [I] http server Running on http://:9700
+2017/09/29 18:26:59 [D] [BaseFilter /rpc]
+2017/09/29 18:26:59 [D] [BaseFilter /api/login]
+2017/09/29 18:27:02 [D] [BaseFilter /rpc]
+2017/09/29 18:27:02 [D] [BaseFilter /api/login]
+2017/09/29 18:28:03 [D] [BaseFilter /rpc]
+2017/09/29 18:28:03 [D] [BaseFilter /api/login]
+2017/09/29 18:28:32 [D] [BaseFilter /rpc]
+2017/09/29 18:28:32 [D] [BaseFilter /api/login]
+2017/09/29 18:55:08 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 18:55:08 [I] http server Running on http://:9700
+2017/09/29 18:56:02 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 18:56:02 [I] http server Running on http://:9700
+2017/09/29 18:56:07 [D] [BaseFilter /rpc]
+2017/09/29 18:56:07 [D] [BaseFilter /api/login]
+2017/09/29 18:57:18 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 18:57:18 [I] http server Running on http://:9700
+2017/09/29 18:57:23 [D] [BaseFilter /rpc]
+2017/09/29 18:57:23 [D] [BaseFilter /api/login]
+2017/09/29 19:04:52 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 19:04:53 [I] http server Running on http://:9700
+2017/09/29 19:04:58 [D] [BaseFilter /rpc]
+2017/09/29 19:04:58 [D] [BaseFilter /api/login]
+2017/09/29 19:05:01 [D] [BaseFilter /rpc]
+2017/09/29 19:05:01 [D] [BaseFilter /api/login]
+2017/09/29 19:07:39 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:07:39 [D] [BaseFilter /favicon.ico]
+2017/09/29 19:09:07 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:09:07 [D] [BaseFilter /favicon.ico]
+2017/09/29 19:10:21 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:14:34 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 19:14:34 [I] http server Running on http://:9700
+2017/09/29 19:14:40 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:14:59 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:15:26 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 19:15:26 [I] http server Running on http://:9700
+2017/09/29 19:15:42 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:16:12 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:16:38 [D] [BaseFilter /api/findeuser?username=chuanchuan&password=123]
+2017/09/29 19:16:46 [D] [BaseFilter /api/finduser?username=chuanchuan&password=123]
+2017/09/29 19:19:42 [D] [BaseFilter /api/finduser?password=123]
+2017/09/29 19:20:17 [D] [BaseFilter /rpc]
+2017/09/29 19:20:17 [D] [BaseFilter /api/login]
+2017/09/29 19:20:28 [D] [BaseFilter /rpc]
+2017/09/29 19:20:28 [D] [BaseFilter /api/login]
+2017/09/29 19:20:50 [D] [BaseFilter /rpc]
+2017/09/29 19:20:50 [D] [BaseFilter /api/login]
+2017/09/29 19:21:37 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:21:48 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:23:57 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 19:23:57 [I] http server Running on http://:9700
+2017/09/29 19:24:27 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 19:24:27 [I] http server Running on http://:9700
+2017/09/29 19:24:49 [D] [BaseFilter /rpc]
+2017/09/29 19:24:49 [D] [BaseFilter /api/login]
+2017/09/29 19:25:09 [D] [BaseFilter /rpc]
+2017/09/29 19:25:09 [D] [BaseFilter /api/login]
+2017/09/29 19:25:19 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:25:26 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:26:26 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 19:26:26 [I] http server Running on http://:9700
+2017/09/29 19:26:30 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:26:48 [D] [BaseFilter /api/finduser?password=123]
+2017/09/29 19:29:50 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 19:29:50 [I] http server Running on http://:9700
+2017/09/29 19:29:53 [D] [BaseFilter /rpc]
+2017/09/29 19:29:53 [D] [BaseFilter /api/login]
+2017/09/29 19:30:00 [D] [BaseFilter /rpc]
+2017/09/29 19:30:00 [D] [BaseFilter /api/login]
+2017/09/29 19:30:15 [D] [BaseFilter /api/finduser?password=123]
+2017/09/29 19:30:21 [D] [BaseFilter /api/finduser?password=123]
+2017/09/29 19:30:36 [D] [BaseFilter /api/finduser?password=123]
+2017/09/29 19:31:03 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 19:31:03 [I] http server Running on http://:9700
+2017/09/29 19:31:04 [D] [BaseFilter /api/finduser?password=123]
+2017/09/29 19:31:08 [D] [BaseFilter /api/finduser?password=123]
+2017/09/29 19:31:22 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 19:31:23 [I] http server Running on http://:9700
+2017/09/29 19:31:52 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 19:31:52 [I] http server Running on http://:9700
+2017/09/29 19:31:55 [D] [BaseFilter /rpc]
+2017/09/29 19:31:55 [D] [BaseFilter /api/login]
+2017/09/29 19:31:57 [D] [BaseFilter /rpc]
+2017/09/29 19:31:57 [D] [BaseFilter /api/login]
+2017/09/29 19:31:58 [D] [BaseFilter /rpc]
+2017/09/29 19:31:58 [D] [BaseFilter /api/login]
+2017/09/29 19:32:18 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:32:23 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:39:35 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/29 19:39:35 [I] http server Running on http://:9700
+2017/09/29 19:39:40 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:39:50 [D] [BaseFilter /api/login?username=chuanchuan&password=123]
+2017/09/29 19:40:03 [D] [BaseFilter /rpc]
+2017/09/29 19:40:03 [D] [BaseFilter /api/login]
+2017/09/29 19:40:18 [D] [BaseFilter /rpc]
+2017/09/29 19:40:18 [D] [BaseFilter /api/login]
+2017/09/30 09:41:48 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/30 09:41:48 [I] http server Running on http://:9700
+2017/09/30 09:41:51 [D] [BaseFilter /rpc]
+2017/09/30 09:41:51 [D] [BaseFilter /api/login]
+2017/09/30 09:41:58 [D] [BaseFilter /rpc]
+2017/09/30 09:41:58 [D] [BaseFilter /api/login]
+2017/09/30 09:42:11 [D] [BaseFilter /rpc]
+2017/09/30 09:42:11 [D] [BaseFilter /api/login]
+2017/09/30 09:42:45 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/30 09:42:45 [I] http server Running on http://:9700
+2017/09/30 09:42:53 [D] [BaseFilter /rpc]
+2017/09/30 09:42:53 [D] [BaseFilter /api/login]
+2017/09/30 09:44:02 [D] [BaseFilter /rpc]
+2017/09/30 09:44:02 [D] [BaseFilter /api/login]
+2017/09/30 09:48:53 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/30 09:48:54 [I] http server Running on http://:9700
+2017/09/30 09:48:56 [D] [BaseFilter /rpc]
+2017/09/30 09:48:56 [D] [BaseFilter /api/login]
+2017/09/30 09:55:42 [D] [db conn root:root@tcp(localhost:3306)/test?charset=utf8&parseTime=True&loc=Local]
+2017/09/30 09:55:42 [I] http server Running on http://:9700
+2017/09/30 09:55:55 [D] [BaseFilter /rpc]
+2017/09/30 09:55:55 [D] [BaseFilter /api/login]
+2017/10/02 23:00:30 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 23:00:34 [I] http server Running on http://:9700
+2017/10/02 23:06:24 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 23:06:28 [I] http server Running on http://:9700
+2017/10/02 23:10:54 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/02 23:10:58 [I] http server Running on http://:9700
