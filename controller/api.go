@@ -500,6 +500,7 @@ func (this *ApiController) Upmessage() {
 }
 func inserSet(record []string) {
 	set := Dungouset{}
+	
 	p := P{}
 	dungou := record[3]
 	status := "1"
