@@ -9,7 +9,7 @@ import (
 	. "dungou.cn/task"
 	. "dungou.cn/util"
 	"os"
-	"github.com/astaxie/beego/plugins/cors"
+	//"github.com/astaxie/beego/plugins/cors"
 )
 
 var orm Orm
@@ -18,7 +18,7 @@ var tjMssql TjMssql
 func main() {
 
 
-	beego.InsertFilter("*", beego.BeforeRouter, cors.Allow(&cors.Options{
+	/*beego.InsertFilter("*", beego.BeforeRouter, cors.Allow(&cors.Options{
 
 		AllowAllOrigins:  true,
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
@@ -26,7 +26,7 @@ func main() {
 
 		ExposeHeaders:    []string{"Content-Length", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type","Access-Control-Allow-Credentials"},
 		AllowCredentials: true,
-	}))
+	}))*/
 	beego.BConfig.WebConfig.Session.SessionOn = true
 	MODE = Trim(os.Getenv("mode"))
 	beego.BConfig.Listen.HTTPPort = 9700                     //端口设置
