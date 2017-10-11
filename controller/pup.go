@@ -116,6 +116,7 @@ func daopan(v map[string]interface{}, name string) {
 	daopan.Youzhuan = ToString(v["A23"])
 	daopan.Chaowali = ToString(v["A25"])
 	daopan.Huixuansudu = ToString(v["A31"])
+	daopan.Ringnum = ToInt(v["A36"])
 	daopan.Batch = 1
 	Db.Create(&daopan)
 }

@@ -10,14 +10,15 @@ type Dungouset struct {
 	Company2   string `gorm:"size:512;column:company2"`
 	Client     string `gorm:"size:512;column:client"`
 	Datano     string `gorm:"size:512;column:datano"`
-	Pressures  string `gorm:"size:512;column:pressures"`
-	Jack       string `gorm:"size:512;column:jack"`
-	Ringnum    string `gorm:"size:512;column:ringnum"`
+	Pressures  int    `gorm:"column:pressures"`
+	Jack       int    `gorm:"column:jack"`
+	Ringnum    int    `gorm:"column:ringnum"`
 	Lon        string `gorm:"size:512;column:longitude"`
 	Lat        string `gorm:"size:512;column:latitude"`
 	City   	   string `gorm:"size:512;column:city"`
 	Status     string `gorm:"size:512;column:status"`
 	Schedule   string `gorm:"size:512;column:schedule"`
+	Persent    string `gorm:"size:512;column:persent"`
 	Own        string `gorm:"size:512;column:own"`
 }
 type Risk struct {
@@ -61,11 +62,12 @@ type Daopan struct {
 	Youzhuan    string `gorm:"size:512;column:youzhuan"`
 	Chaowali    string `gorm:"size:512;column:chaowali"`
 	Huixuansudu string `gorm:"size:512;column:huixuansudu"`
-	Batch 	 int    `gorm:"column:batch"`
+	Ringnum		int    `gorm:"column:ringnum"`
+	Batch 	 	int    `gorm:"column:batch"`
 }
 
 type Jingbao struct {
-	Dungou   string `gorm:"size:512;column:dungou"`
+	Dungou   string `gorm:"siz:512;column:dungou"`
 	Jilutime string `gorm:"size:512;column:Jilutime"`
 	Shike    string `gorm:"size:512;column:shike"`
 	Dyfx     string `gorm:"size:512;column:dyfx"`

@@ -76,9 +76,30 @@ func (this *ApiController) Maps() {
 	p["status"]= "1"
 	sets := []Dungouset{}
 	Db.Where(p).Find(&sets)
-	this.EchoJsonMsg(sets)
+	this.EchoJsonMsg(putper(sets))
 }
-
+func putper(sets []Dungouset)[]Dungouset{
+	re :=[]Dungouset{}
+	for _,set:=range sets{
+		dungou :=set.Datano
+		ring :=set.Ringnum
+		daopan :=Daopan{}
+		p :=P{}
+		p["dungou"] = dungou
+		p["batch"] =1
+		Db.Where(p).First(&daopan)
+		ringnum :=daopan.Ringnum
+		percent := 0.0
+		if ringnum>0 {
+			percent =float64(ring)/float64(ringnum)*100
+		}
+		fmt.Println(percent)
+		s := fmt.Sprintf("%0.1f", percent)
+		set.Persent = string(s)+"%"
+		re = append(re,set)
+	}
+	return re
+}
 func (this *ApiController) Getcommu() {
 	commum := []Commum{}
 	sets := []Dungouset{}
@@ -464,6 +485,8 @@ func (this *ApiController) Pub() {
 	url := this.GetString("url")
 	table := this.GetString("table")
 	section := this.GetString("section")
+	enc := mahonia.NewEncoder("UTF-8")
+	section = enc.ConvertString(section)
 	pg := Mysql{}
 
 	if table == "profile" {
@@ -471,6 +494,7 @@ func (this *ApiController) Pub() {
 		profile.Section = section
 		Db.Where("section = ?", section).Delete(Profile{})
 		profile.Url = url
+		fmt.Println(profile)
 		Db.Create(profile)
 	} else if table == "dungouset" {
 		file, err := os.Open(url)
@@ -498,6 +522,7 @@ func (this *ApiController) Pub() {
 		_, e := pg.LoadCsv(url, table, ",")
 		if e != nil {
 			this.EchoJsonErr(e)
+			return
 		}
 	}
 	this.EchoJson("200")
@@ -582,14 +607,19 @@ func inserSet(record []string) {
 	set.Company2 = enc.ConvertString(record[6])
 	set.Client = enc.ConvertString(record[7])
 	set.Datano = enc.ConvertString(record[8])
-	set.Pressures = enc.ConvertString(record[9])
-	set.Jack = enc.ConvertString(record[10])
-	set.Ringnum = enc.ConvertString(record[11])
+	set.Pressures =  ToInt(record[9])
+	set.Jack =  ToInt(record[10])
+	set.Ringnum =  ToInt(record[11])
 	set.Lon = enc.ConvertString(record[12])
 	set.Lat = enc.ConvertString(record[13])
 	set.Schedule = enc.ConvertString(record[15])
-	set.City = enc.ConvertString(record[14])
+
 	set.Status = status
+	if record[14]=="上海" {
+		set.City = enc.ConvertString(record[14])
+	}else {
+		set.City = "全国"
+	}
 	if enc.ConvertString(record[5]) == OWNCOMPANY {
 		set.Own = "1"
 	} else {
@@ -597,6 +627,7 @@ func inserSet(record []string) {
 	}
 	Db.Create(set)
 }
+
 //显示备注
 func (this *ApiController)Findremark(){
 	remark:=[]Remark{}
