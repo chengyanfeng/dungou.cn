@@ -1875,3 +1875,128 @@
 2017/10/11 10:24:19 [I] http server Running on http://:9700
 2017/10/11 10:24:21 [D] [BaseFilter /api/getrisk?dungou=smsc36] 
 2017/10/11 10:24:29 [D] [BaseFilter /api/getrisk] 
+2017/10/11 10:27:24 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:27:24 [I] http server Running on http://:9700
+2017/10/11 10:27:27 [D] [BaseFilter /api/getrisk] 
+2017/10/11 11:22:28 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:22:45 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:22:45 [I] http server Running on http://:9700
+2017/10/11 11:23:08 [D] [BaseFilter /api/maps] 
+2017/10/11 11:23:24 [D] [BaseFilter /api/maps] 
+2017/10/11 11:33:23 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:33:23 [I] http server Running on http://:9700
+2017/10/11 11:33:29 [D] [BaseFilter /api/maps] 
+2017/10/11 11:34:55 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:34:55 [I] http server Running on http://:9700
+2017/10/11 11:34:58 [D] [BaseFilter /api/maps] 
+2017/10/11 11:36:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:36:41 [I] http server Running on http://:9700
+2017/10/11 11:36:46 [D] [BaseFilter /api/maps] 
+2017/10/11 11:39:05 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:39:05 [I] http server Running on http://:9700
+2017/10/11 11:39:10 [D] [BaseFilter /api/map] 
+2017/10/11 11:39:29 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:39:29 [I] http server Running on http://:9700
+2017/10/11 11:39:36 [D] [BaseFilter /api/map] 
+2017/10/11 11:40:46 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:40:46 [I] http server Running on http://:9700
+2017/10/11 11:41:26 [D] [BaseFilter /api/map] 
+2017/10/11 11:41:47 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:41:48 [I] http server Running on http://:9700
+2017/10/11 11:41:50 [D] [BaseFilter /api/map] 
+2017/10/11 11:42:07 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:42:07 [I] http server Running on http://:9700
+2017/10/11 11:42:09 [D] [BaseFilter /api/map] 
+2017/10/11 11:43:05 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:43:05 [I] http server Running on http://:9700
+2017/10/11 11:43:09 [D] [BaseFilter /api/map] 
+2017/10/11 11:43:25 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:43:25 [I] http server Running on http://:9700
+2017/10/11 11:43:26 [D] [BaseFilter /api/map] 
+2017/10/11 11:43:59 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:44:00 [I] http server Running on http://:9700
+2017/10/11 11:44:07 [D] [BaseFilter /api/map] 
+2017/10/11 11:45:18 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:45:33 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 11:45:37 [I] http server Running on http://:9700
+2017/10/11 11:45:52 [D] [BaseFilter /api/map] 
+2017/10/11 11:46:03 [D] [BaseFilter /api/maps] 
+2017/10/11 11:50:39 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 12:16:10 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 12:16:30 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 12:16:30 [I] http server Running on http://:9700
+2017/10/11 12:16:54 [D] [BaseFilter /api/getcommu] 
+2017/10/11 13:19:19 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 13:19:19 [I] http server Running on http://:9700
+2017/10/11 13:19:44 [D] [BaseFilter /rpc] 
+2017/10/11 13:19:57 [D] [BaseFilter /api/getsediment] 
+2017/10/11 13:25:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 13:25:06 [I] http server Running on http://:9700
+2017/10/11 13:25:12 [D] [BaseFilter /api/getsediment] 
+2017/10/11 13:39:34 [D] [BaseFilter /api/getdaopan] 
+2017/10/11 13:40:33 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 13:40:33 [I] http server Running on http://:9700
+2017/10/11 13:40:37 [D] [BaseFilter /api/getdaopan] 
+2017/10/11 13:41:31 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 13:41:31 [I] http server Running on http://:9700
+2017/10/11 13:41:39 [D] [BaseFilter /api/getdaopan] 
+2017/10/11 13:42:26 [D] [BaseFilter /api/getdaopan?dungou=STA36] 
+2017/10/11 13:44:43 [D] [BaseFilter /api/getjiaojie?dungou=STA36] 
+2017/10/11 13:45:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 13:45:42 [I] http server Running on http://:9700
+2017/10/11 13:45:46 [D] [BaseFilter /api/getjiaojie?dungou=STA36] 
+2017/10/11 13:51:30 [D] [BaseFilter /api/getjiuejin?dungou=STA36] 
+2017/10/11 13:51:45 [D] [BaseFilter /api/getjuejin?dungou=STA36] 
+2017/10/11 13:52:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 13:52:38 [I] http server Running on http://:9700
+2017/10/11 13:52:42 [D] [BaseFilter /api/getjuejin?dungou=STA36] 
+2017/10/11 13:53:48 [D] [BaseFilter /api/getluoxuanji?dungou=STA36] 
+2017/10/11 13:54:25 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 13:54:25 [I] http server Running on http://:9700
+2017/10/11 13:54:26 [D] [BaseFilter /api/getluoxuanji?dungou=STA36] 
+2017/10/11 13:55:09 [D] [BaseFilter /api/getluoxuanji?dungou=STA36] 
+2017/10/11 13:55:53 [D] [BaseFilter /api/gettuya?dungou=STA36] 
+2017/10/11 13:56:26 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 13:56:26 [I] http server Running on http://:9700
+2017/10/11 13:56:28 [D] [BaseFilter /api/gettuya?dungou=STA36] 
+2017/10/11 13:57:10 [D] [BaseFilter /api/getjingbao?dungou=STA36] 
+2017/10/11 13:57:47 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 13:57:47 [I] http server Running on http://:9700
+2017/10/11 13:57:48 [D] [BaseFilter /api/getjingbao?dungou=STA36] 
+2017/10/11 14:09:06 [D] [BaseFilter /api/getcompany] 
+2017/10/11 14:09:44 [D] [BaseFilter /api/getcompany] 
+2017/10/11 14:16:27 [D] [BaseFilter /api/gettype] 
+2017/10/11 14:16:43 [D] [BaseFilter /api/gettype] 
+2017/10/11 14:19:06 [D] [BaseFilter /api/getpath] 
+2017/10/11 14:21:30 [D] [BaseFilter /api/getsection] 
+2017/10/11 14:24:16 [D] [BaseFilter /api/getprofile] 
+2017/10/11 14:24:48 [D] [BaseFilter /api/getprofile?section=%E8%BF%8E%E6%98%A5%E8%B7%AF-%E8%BF%8E%E9%BE%99%E9%A3%8E%E4%BA%95] 
+2017/10/11 14:25:50 [D] [BaseFilter /api/getprofile?dungou=STA36] 
+2017/10/11 14:26:08 [D] [BaseFilter /api/getprofile?dungou=STA33] 
+2017/10/11 14:26:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 14:26:38 [I] http server Running on http://:9700
+2017/10/11 14:26:41 [D] [BaseFilter /api/getprofile?dungou=STA33] 
+2017/10/11 14:26:58 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 14:26:58 [I] http server Running on http://:9700
+2017/10/11 14:27:00 [D] [BaseFilter /api/getprofile?dungou=STA33] 
+2017/10/11 14:27:47 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 14:27:47 [I] http server Running on http://:9700
+2017/10/11 14:27:50 [D] [BaseFilter /api/getprofile?dungou=STA33] 
+2017/10/11 14:35:41 [D] [BaseFilter /api/getprofile?dungou=STA33] 
+2017/10/11 14:36:18 [D] [BaseFilter /api/getprofile?dungou=SMSC33] 
+2017/10/11 15:29:45 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 15:29:45 [I] http server Running on http://:9700
+2017/10/11 15:30:08 [D] [BaseFilter /rpc] 
+2017/10/11 15:30:20 [D] [BaseFilter /api/prosafe] 
+2017/10/11 15:47:24 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 15:47:25 [I] http server Running on http://:9700
+2017/10/11 15:50:21 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 15:50:21 [I] http server Running on http://:9700
+2017/10/11 15:50:37 [D] [BaseFilter /api/getsedimen] 
+2017/10/11 15:50:59 [D] [BaseFilter /api/getsedimen] 
+2017/10/11 15:51:11 [D] [BaseFilter /api/getsedimen] 
+2017/10/11 15:52:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 15:52:09 [I] http server Running on http://:9700
+2017/10/11 15:52:16 [D] [BaseFilter /api/getsedimen] 
+2017/10/11 15:52:43 [D] [BaseFilter /api/getsediment] 
+2017/10/11 15:53:03 [D] [BaseFilter /api/getsediment?dungou=SMSC33] 

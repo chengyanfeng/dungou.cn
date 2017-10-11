@@ -76,24 +76,25 @@ func (this *ApiController) Maps() {
 	p["status"]= "1"
 	sets := []Dungouset{}
 	Db.Where(p).Find(&sets)
-	this.EchoJsonMsg(putper(sets))
+	this.EchoJsonMsg(persent(sets))
 }
-func putper(sets []Dungouset)[]Dungouset{
+
+func persent(sets []Dungouset)[]Dungouset{
 	re :=[]Dungouset{}
 	for _,set:=range sets{
 		dungou :=set.Datano
 		ring :=set.Ringnum
 		daopan :=Daopan{}
-		p :=P{}
+		p := make(map[string]interface{})
 		p["dungou"] = dungou
 		p["batch"] =1
 		Db.Where(p).First(&daopan)
 		ringnum :=daopan.Ringnum
 		percent := 0.0
 		if ringnum>0 {
-			percent =float64(ring)/float64(ringnum)*100
+			percent =float64(ringnum)/float64(ring)*100
 		}
-		fmt.Println(percent)
+
 		s := fmt.Sprintf("%0.1f", percent)
 		set.Persent = string(s)+"%"
 		re = append(re,set)
@@ -102,19 +103,25 @@ func putper(sets []Dungouset)[]Dungouset{
 }
 func (this *ApiController) Getcommu() {
 	commum := []Commum{}
-	sets := []Dungouset{}
+	p:=[]P{}
 	Db.Where("batch = ?", 1).Find(&commum)
 	if len(commum) == 0 {
 		Db.Where(" batch = ?",2).Find(&commum)
 	}
-	fmt.Println(commum)
 	for _, v := range commum {
+		s := P{}
 		set := Dungouset{}
 		name := v.Dungou
 		Db.Where("datano = ?", name).Find(&set)
-		sets = append(sets, set)
+		s["dungou"] = set.Dungou
+		s["section"] = set.Section
+		s["company"] = set.Company2
+		s["date"] = v.Jilutime
+		s["time"] = v.Shike
+		s["status"] = "断开"
+		p = append(p, s)
 	}
-	this.EchoJsonMsg(sets)
+	this.EchoJsonMsg(p)
 }
 
 func (this *ApiController) Getcompany() {
@@ -175,11 +182,13 @@ func (this *ApiController) Getprolonlat() {
 
 func (this *ApiController) Getprofile() {
 	dungou := this.GetString("dungou")
+	fmt.Println(dungou)
 	set := Dungouset{}
-	Db.Where("dungou = ?", dungou).Find(&set)
+	Db.Where("dungou = ?", dungou).First(&set)
+	fmt.Println(set)
 	section := set.Section
 	profile := Profile{}
-	Db.Where("section = ?", section).Find(&profile)
+	Db.Where("section = ?", section).First(&profile)
 	this.EchoJson(profile)
 }
 
@@ -199,10 +208,30 @@ func (this *ApiController) Getsection() {
 	sections = RemoveDuplicatesAndEmpty(sections)
 	this.EchoJson(sections)
 }
-
+func (this *ApiController) Prosafe() {
+	dungou := this.GetString("risk")
+	param := make(map[string]interface{})
+	if dungou != "" {
+		param["dungou"] = dungou
+	}
+	sets := []Dungouset{}
+	Db.Find(&sets)
+	p := []P{}
+	sets = persent(sets)
+	for _, v := range sets {
+		m := P{}
+		section := v.Section
+		risks := []Risk{}
+		Db.Where("section = ?", section).Find(&risks)
+		m["set"] = v
+		m["risk"] = risks
+		p = append(p,m)
+	}
+	this.EchoJsonMsg(p)
+}
 func (this *ApiController) Getrisk() {
 	dungou := this.GetString("dungou")
-	param := P{}
+	param := make(map[string]interface{})
 	if dungou != "" {
 		param["dungou"] = dungou
 	}
@@ -210,11 +239,12 @@ func (this *ApiController) Getrisk() {
 	sets := []Dungouset{}
 	Db.Where(param).Find(&sets)
 	p := []P{}
+	sets = persent(sets)
 	for _, v := range sets {
 		m := P{}
 		section := v.Section
 		risks := []Risk{}
-		Db.Find(&risks).Where("section = ?", section)
+		Db.Where("section = ?", section).Find(&risks)
 		m["set"] = v
 		m["risk"] = risks
 		p = append(p,m)
@@ -223,66 +253,78 @@ func (this *ApiController) Getrisk() {
 }
 
 func (this *ApiController) Getsediment() {
+	dungou := this.GetString("dungou")
 	sediment := []Sediment{}
-	Db.Find(&sediment)
+	if dungou != "" {
+		Db.Where("batch = ? and dungou =? ", 1,dungou).Find(&sediment)
+		if len(sediment) == 0  {
+			Db.Where("batch = ? and dungou =?",2,dungou).Find(&sediment)
+		}
+	}else{
+		Db.Where("batch = ?", 1).Find(&sediment)
+		if len(sediment) == 0  {
+			Db.Where("batch = ?",2).Find(&sediment)
+		}
+	}
 	this.EchoJsonMsg(sediment)
 }
 
 func (this *ApiController) Getdaopan() {
 	dungou := this.GetString("dungou")
-	daopan := Daopan{}
-	Db.Where("dungou = ? and batch = ?", dungou,1).First(&daopan)
-	if daopan.Dungou == ""  {
-		Db.Where("dungou = ? and batch = ?", dungou,2).First(&daopan)
+	daopan := []Daopan{}
+	Db.Where("dungou = ? and batch = ?", dungou,1).Find(&daopan)
+	if len(daopan) == 0  {
+		fmt.Println(111111111)
+		Db.Where("dungou = ? and batch = ?", dungou,2).Find(&daopan)
 	}
 	this.EchoJsonMsg(daopan)
 }
 func (this *ApiController) Getjiaojie() {
 	dungou := this.GetString("dungou")
-	jiaojie := Jiaojie{}
-	Db.Where("dungou = ? and batch = ?", dungou,1).First(&jiaojie)
-	if jiaojie.Dungou == ""  {
-		Db.Where("dungou = ? and batch = ?", dungou,2).First(&jiaojie)
+	jiaojie := []Jiaojie{}
+	Db.Where("dungou = ? and batch = ?", dungou,1).Find(&jiaojie)
+	if len(jiaojie) == 0  {
+		Db.Where("dungou = ? and batch = ?", dungou,2).Find(&jiaojie)
 	}
 	this.EchoJsonMsg(jiaojie)
 }
 
 func (this *ApiController) Getjingbao() {
 	dungou := this.GetString("dungou")
-	jingbao := Jingbao{}
-	Db.Where("dungou = ? and batch = ?", dungou,1).First(&jingbao)
-	if jingbao.Dungou == "" {
-		Db.Where("dungou = ? and batch = ?", dungou,2).First(&jingbao)
+	jingbao := []Jingbao{}
+	Db.Where("dungou = ? and batch = ?", dungou,1).Find(&jingbao)
+	if len(jingbao) == 0 {
+		Db.Where("dungou = ? and batch = ?", dungou,2).Find(&jingbao)
 	}
 	this.EchoJsonMsg(jingbao)
 }
 
 func (this *ApiController) Getjuejin() {
 	dungou := this.GetString("dungou")
-	juejin := Juejin{}
-	Db.Where("dungou = ? and batch = ?", dungou,1).First(&juejin)
-	if juejin.Dungou == "" {
-		Db.Where("dungou = ? and batch = ?", dungou,2).First(&juejin)
+	juejin := []Juejin{}
+	Db.Where("dungou = ? and batch = ?", dungou,1).Find(&juejin)
+	if len(juejin) == 0 {
+		Db.Where("dungou = ? and batch = ?", dungou,2).Find(&juejin)
 	}
 	this.EchoJsonMsg(juejin)
 }
 
 func (this *ApiController) Getluoxuanji() {
 	dungou := this.GetString("dungou")
-	luoxuanji := Luoxuanji{}
-	Db.Where("dungou = ? and batch = ?", dungou,1).First(&luoxuanji)
-	if luoxuanji.Dungou == "" {
-		Db.Where("dungou = ? and batch = ?", dungou,2).First(&luoxuanji)
+	luoxuanji := []Luoxuanji{}
+	Db.Where("dungou = ? and batch = ?", dungou,1).Find(&luoxuanji)
+	if len(luoxuanji) == 0 {
+		Db.Where("dungou = ? and batch = ?", dungou,2).Find(&luoxuanji)
 	}
 	this.EchoJsonMsg(luoxuanji)
 }
 
 func (this *ApiController) Gettuya() {
 	dungou := this.GetString("dungou")
-	tuya := Tuya{}
-	Db.Where("dungou = ? and batch = ?", dungou,1).First(&tuya)
-	if tuya.Dungou == "" {
-		Db.Where("dungou = ? and batch = ?", dungou,2).First(&tuya)
+	tuya := []Tuya{}
+	Db.Where("dungou = ? and batch = ?", dungou,1).Find(&tuya)
+	if len(tuya) == 0 {
+		Db.Where("dungou = ? and batch = ?", dungou,2).Find(&tuya)
 	}
 	this.EchoJsonMsg(tuya)
 }
