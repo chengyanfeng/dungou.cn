@@ -1805,3 +1805,73 @@
 2017/10/10 21:51:56 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
 2017/10/10 21:51:56 [I] http server Running on http://:9700
 2017/10/10 21:52:01 [D] [BaseFilter /api/maps] 
+2017/10/11 09:51:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 09:51:43 [I] http server Running on http://:9700
+2017/10/11 09:51:59 [D] [BaseFilter /api/maps] 
+2017/10/11 09:55:38 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 09:55:38 [I] http server Running on http://:9700
+2017/10/11 09:55:54 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 09:56:01 [I] http server Running on http://:9700
+2017/10/11 09:59:23 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 09:59:27 [I] http server Running on http://:9700
+2017/10/11 09:59:30 [D] [BaseFilter /api/getrisk] 
+2017/10/11 10:00:59 [D] [BaseFilter /api/getrisk] 
+2017/10/11 10:02:16 [D] [BaseFilter /api/getrisk?dungou=smsc36] 
+2017/10/11 10:02:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:02:42 [I] http server Running on http://:9700
+2017/10/11 10:02:46 [D] [BaseFilter /api/getrisk?dungou=smsc36] 
+2017/10/11 10:03:36 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:03:41 [I] http server Running on http://:9700
+2017/10/11 10:03:48 [D] [BaseFilter /api/getrisk?dungou=smsc36] 
+2017/10/11 10:05:58 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:06:03 [I] http server Running on http://:9700
+2017/10/11 10:06:09 [D] [BaseFilter /api/getrisk?dungou=smsc36] 
+2017/10/11 10:06:35 [D] [BaseFilter /api/getrisk?dungou=SMS36] 
+2017/10/11 10:09:23 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:09:23 [I] http server Running on http://:9700
+2017/10/11 10:09:36 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:09:56 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:10:03 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:10:03 [I] http server Running on http://:9700
+2017/10/11 10:10:30 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:10:59 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:11:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:11:04 [I] http server Running on http://:9700
+2017/10/11 10:11:06 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:11:12 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:11:13 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:11:13 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:11:13 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:11:19 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:11:19 [I] http server Running on http://:9700
+2017/10/11 10:11:25 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:11:34 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:11:34 [I] http server Running on http://:9700
+2017/10/11 10:11:38 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:16:44 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:16:44 [I] http server Running on http://:9700
+2017/10/11 10:16:51 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:17:15 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:17:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:17:43 [I] http server Running on http://:9700
+2017/10/11 10:17:48 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:18:26 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:18:26 [I] http server Running on http://:9700
+2017/10/11 10:18:28 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:19:05 [D] [BaseFilter /api/maps] 
+2017/10/11 10:19:17 [D] [BaseFilter /api/maps?dungou=SMSC33] 
+2017/10/11 10:19:59 [D] [BaseFilter /api/maps?dungou=smsc33] 
+2017/10/11 10:20:21 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:21:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:21:07 [I] http server Running on http://:9700
+2017/10/11 10:21:13 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:22:15 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:22:15 [I] http server Running on http://:9700
+2017/10/11 10:22:19 [D] [BaseFilter /api/getrisks] 
+2017/10/11 10:23:00 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:23:00 [I] http server Running on http://:9700
+2017/10/11 10:23:09 [D] [BaseFilter /api/getrisk?dungou=smsc36] 
+2017/10/11 10:24:19 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 10:24:19 [I] http server Running on http://:9700
+2017/10/11 10:24:21 [D] [BaseFilter /api/getrisk?dungou=smsc36] 
+2017/10/11 10:24:29 [D] [BaseFilter /api/getrisk] 

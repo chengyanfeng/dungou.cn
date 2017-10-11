@@ -185,6 +185,9 @@ func (this *Orm) Init() {
 
 func (this *Orm) GetIdList() []map[string]interface{} {
 	set := new([]Dungouset)
+	p:=P{}
+	p["status"] = 1
+	p["batch"] = 1
 	Db.Where("status = ?", 1).Find(&set)
 	list := make([]map[string]interface{}, 0)
 	for _, v := range *set {

@@ -1,30 +1,30 @@
 package datasource
 
 type Dungouset struct {
-	Project    string `gorm:"size:512;column:project"`
-	Path       string `gorm:"size:512;column:path"`
-	Section    string `gorm:"size:512;column:section"`
-	Dungou     string `gorm:"size:512;column:dungou"`
-	Type 	   string `gorm:"size:512;column:type"`
-	Company1   string `gorm:"size:512;column:company1"`
-	Company2   string `gorm:"size:512;column:company2"`
-	Client     string `gorm:"size:512;column:client"`
-	Datano     string `gorm:"size:512;column:datano"`
-	Pressures  int    `gorm:"column:pressures"`
-	Jack       int    `gorm:"column:jack"`
-	Ringnum    int    `gorm:"column:ringnum"`
-	Lon        string `gorm:"size:512;column:longitude"`
-	Lat        string `gorm:"size:512;column:latitude"`
-	City   	   string `gorm:"size:512;column:city"`
-	Status     string `gorm:"size:512;column:status"`
-	Schedule   string `gorm:"size:512;column:schedule"`
-	Persent    string `gorm:"size:512;column:persent"`
-	Own        string `gorm:"size:512;column:own"`
+	Project   string `gorm:"size:512;column:project"`
+	Path      string `gorm:"size:512;column:path"`
+	Section   string `gorm:"size:512;column:section"`
+	Dungou    string `gorm:"size:512;column:dungou"`
+	Type      string `gorm:"size:512;column:type"`
+	Company1  string `gorm:"size:512;column:company1"`
+	Company2  string `gorm:"size:512;column:company2"`
+	Client    string `gorm:"size:512;column:client"`
+	Datano    string `gorm:"size:512;column:datano"`
+	Pressures int    `gorm:"column:pressures"`
+	Jack      int    `gorm:"column:jack"`
+	Ringnum   int    `gorm:"column:ringnum"`
+	Lon       string `gorm:"size:512;column:longitude"`
+	Lat       string `gorm:"size:512;column:latitude"`
+	City      string `gorm:"size:512;column:city"`
+	Status    string `gorm:"size:512;column:status"`
+	Schedule  string `gorm:"size:512;column:schedule"`
+	Persent   string `gorm:"size:512;column:persent"`
+	Own       string `gorm:"size:512;column:own"`
 }
 type Risk struct {
 	Section string `gorm:"size:512;column:section"`
-	Risks string `gorm:"size:512;column:risks"`
-	Ringnum    string `gorm:"size:512;column:ringnum"`
+	Risks   string `gorm:"size:512;column:risks"`
+	Ringnum string `gorm:"size:512;column:ringnum"`
 }
 type Rtinfo struct {
 	Line string `gorm:"size:512;column:line"`
@@ -62,8 +62,8 @@ type Daopan struct {
 	Youzhuan    string `gorm:"size:512;column:youzhuan"`
 	Chaowali    string `gorm:"size:512;column:chaowali"`
 	Huixuansudu string `gorm:"size:512;column:huixuansudu"`
-	Ringnum		int    `gorm:"column:ringnum"`
-	Batch 	 	int    `gorm:"column:batch"`
+	Ringnum     int    `gorm:"column:ringnum"`
+	Batch       int    `gorm:"column:batch"`
 }
 
 type Jingbao struct {
@@ -93,7 +93,7 @@ type Jingbao struct {
 	Hzj      string `gorm:"size:512;column:hzj"`
 	Mf       string `gorm:"size:512;column:mf"`
 	Dpss     string `gorm:"size:512;column:dpss"`
-	Batch 	 int    `gorm:"column:batch"`
+	Batch    int    `gorm:"column:batch"`
 }
 
 type Jiaojie struct {
@@ -110,7 +110,7 @@ type Jiaojie struct {
 	Yl4      string `gorm:"size:512;column:yl4"`
 	Jdsx     string `gorm:"size:512;column:jdsx"`
 	Jdzy     string `gorm:"size:512;column:jdzy"`
-	Batch 	 int    `gorm:"column:batch"`
+	Batch    int    `gorm:"column:batch"`
 }
 
 type Luoxuanji struct {
@@ -121,7 +121,7 @@ type Luoxuanji struct {
 	Yl       string `gorm:"size:512;column:yl"`
 	Zt       string `gorm:"size:512;column:zt"`
 	Sd       string `gorm:"size:512;column:sd"`
-	Batch 	 int    `gorm:"column:batch"`
+	Batch    int    `gorm:"column:batch"`
 }
 
 type Juejin struct {
@@ -148,7 +148,7 @@ type Juejin struct {
 	Jjjxz    string `gorm:"size:512;column:jjjxz"`
 	Jjms     string `gorm:"size:512;column:jjms"`
 	Zzms     string `gorm:"size:512;column:zzms"`
-	Batch 	 int    `gorm:"column:batch"`
+	Batch    int    `gorm:"column:batch"`
 }
 
 type Tuya struct {
@@ -175,28 +175,28 @@ type Tuya struct {
 	Tuya4    string `gorm:"size:512;column:tuya4"`
 	Tuya5    string `gorm:"size:512;column:tuya5"`
 	Ztl      string `gorm:"size:512;column:ztl"`
-	Batch 	 int    `gorm:"column:batch"`
+	Batch    int    `gorm:"column:batch"`
 }
-type  Commum struct {
+type Commum struct {
 	Dungou   string `gorm:"size:512;column:dungou"`
 	Jilutime string `gorm:"size:512;column:Jilutime"`
 	Shike    string `gorm:"size:512;column:shike"`
-	Batch 	 int    `gorm:"column:batch"`
+	Batch    int    `gorm:"column:batch"`
 }
 
 type Sediment struct {
-	Line   string `gorm:"size:512;column:line"`
-	Project string `gorm:"size:512;column:project"`
-	Loopnum    string `gorm:"size:512;column:loopnum"`
-	Loop    string `gorm:"size:512;column:loop"`
-	Groundlr1    string `gorm:"size:512;column:groundlr1"`
-	Loop1    string `gorm:"size:512;column:loop1"`
-	Groundlr2    string `gorm:"size:512;column:groundlr2"`
-	Batch 	 int    `gorm:"column:batch"`
+	Dungou    string `gorm:"size:512;column:dungou"`
+	Line      string `gorm:"size:512;column:line"`
+	Project   string `gorm:"size:512;column:project"`
+	Loopnum   string `gorm:"size:512;column:loopnum"`
+	Loop      string `gorm:"size:512;column:loop"`
+	Groundlr1 string `gorm:"size:512;column:groundlr1"`
+	Loop1     string `gorm:"size:512;column:loop1"`
+	Groundlr2 string `gorm:"size:512;column:groundlr2"`
+	Batch     int    `gorm:"column:batch"`
 }
 type User struct {
-
-	Id        int `json:"size:32;column:id;auto_increment"`
+	Id        int    `json:"size:32;column:id;auto_increment"`
 	Username  string `json:"size:512;column:username"`
 	Password  string `json:"size:512;column:password"`
 	Role      string `json:"size:512;column:role"`
@@ -209,10 +209,10 @@ type User struct {
 type Message struct {
 	Id        int    `json:"size:32;column:id;auto_increment"`
 	Username  string `json:"size:512;column:username"`
-	Dungou     string `json:"size:512;column:dungou"`
-	Type 	   string `json:"size:512;column:type"`
-	Ringnum    string `json:"size:512;column:ringnum"`
-	Schedule   string `json:"size:512;column:schedule"`
+	Dungou    string `json:"size:512;column:dungou"`
+	Type      string `json:"size:512;column:type"`
+	Ringnum   string `json:"size:512;column:ringnum"`
+	Schedule  string `json:"size:512;column:schedule"`
 	Companyid string `json:"size:512;column:companyid"`
 	Date      string `json:"size:512;column:date"`
 	Text      string `json:"size:1024;column:text"`
@@ -224,5 +224,5 @@ type Remark struct {
 	Companyid string `json:"size:512;column:companyid"`
 	Date      string `json:"size:512;column:date"`
 	Text      string `json:"size:1024;column:text"`
-	Messageid      int `json:"size:64;column:messageid"`
+	Messageid int    `json:"size:64;column:messageid"`
 }
