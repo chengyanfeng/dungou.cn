@@ -162,6 +162,18 @@ func (this *ApiController) Getpath() {
 	this.EchoJson(paths)
 }
 
+func (this *ApiController) Getdungou() {
+	sets := []Dungouset{}
+	dungous := make([]string, 0)
+	Db.Where("status = ?", 1).Find(&sets)
+	for _, v := range sets {
+		dungou := v.Dungou
+		dungous = append(dungous, dungou)
+	}
+	dungous = RemoveDuplicatesAndEmpty(dungous)
+	this.EchoJson(dungous)
+}
+
 func (this *ApiController) Getseclonlat() {
 	dungou := this.GetString("dungou")
 	set := Dungouset{}

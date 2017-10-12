@@ -1952,3 +1952,18 @@
 2017/10/11 15:52:16 [D] [BaseFilter /api/getsedimen] 
 2017/10/11 15:52:43 [D] [BaseFilter /api/getsediment] 
 2017/10/11 15:53:03 [D] [BaseFilter /api/getsediment?dungou=SMSC33] 
+2017/10/12 18:08:07 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/12 18:08:07 [I] http server Running on http://:9700
+2017/10/12 18:53:15 [D] [BaseFilter /api/] 
+2017/10/12 18:53:18 [D] [BaseFilter /api/getdungou] 
+2017/10/12 18:53:49 [D] [BaseFilter /] 
+2017/10/12 18:53:58 [D] [BaseFilter /api/getdungou] 
+2017/10/12 18:54:09 [D] [BaseFilter /api/getdungou] 
+2017/10/12 18:54:48 [D] [BaseFilter /api/getdungou] 
+2017/10/12 18:55:04 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/12 18:55:04 [I] http server Running on http://:9700
+2017/10/12 18:55:09 [D] [BaseFilter /api/getdungou] 
+2017/10/12 18:55:15 [D] [BaseFilter /api/getdungou] 
+2017/10/12 18:55:27 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/12 18:55:27 [I] http server Running on http://:9700
+2017/10/12 18:55:31 [D] [BaseFilter /api/getdungou] 
