@@ -39,11 +39,11 @@ var RpcFilter = func(ctx *context.Context) {
 		fmt.Println(ToString(S(args["grade"].(string))))
 			if 	ToString(S(args["grade"].(string)))==""&&act!="api/login" {
 
-				err = errors.New("请先登录1")
+				err = errors.New("请先登录")
 			} else {
 
 				if ToString(S(args["grade"].(string)))!=args["grade"]&&act!="api/login"{
-					err = errors.New("请先登录2")
+					err = errors.New("请先登录")
 
 				} else {
 					url := fmt.Sprintf("http://localhost:%v/%v", beego.BConfig.Listen.HTTPPort, act)

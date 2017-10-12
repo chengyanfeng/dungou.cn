@@ -425,6 +425,31 @@ func (this *ApiController)Updateuser(){
 
 
 }
+
+//密码修改
+
+func (this *ApiController) Updatepassword(){
+	user:=User{}
+	grade:=this.GetString("grade")
+	passwordnew:=this.GetString("passwordnew")
+	passwordold:=this.GetString("passwordold")
+	passwordold = Md5(passwordold, Md5Salt)
+	passwordnew = Md5(passwordnew, Md5Salt)
+	if err:=Db.Where("grade = ?", grade).Find(&user).Error;err!=nil{
+		this.EchoJsonErr("修改失败")
+	}else{
+		if user.Password==passwordold{
+		if err:=Db.Model(&user).Where("grade = ?", grade).Update("password", passwordnew).Error; err != nil {
+			this.EchoJsonErr("修改失败")
+
+		} else {
+			this.EchoJsonMsg("修改成功")
+		}
+		}else {
+			this.EchoJsonMsg("原始密码错误，请重新输入")
+		}
+	}
+}
 //查询
 func (this *ApiController)Finduser(){
 	var db interface{}
@@ -444,14 +469,14 @@ func (this *ApiController)Finduser(){
 		}
 	}
 	fmt.Println(param)
-	if role=="6"{
+	if role=="2"{
 		if IsEmpty(chilrole){
 			if IsEmpty(username){
-				db=Db.Where("role in (?)", []string{"1", "2"}).Find(&users)
+				db=Db.Where("role in (?)", []string{"4", "5"}).Find(&users)
 			}else {
-		db=Db.Where("role in (?) AND username = ?  ", []string{"1", "2"},username).Find(&users)
+		db=Db.Where("role in (?) AND username = ?  ", []string{"4", "5"},username).Find(&users)
 		}}else {
-			if(chilrole=="1"||chilrole=="2"){
+			if(chilrole=="4"||chilrole=="5"){
 				db=Db.Where(param).Find(&users)
 			}else{
 				this.EchoJsonErr("没有权限访问")
@@ -656,7 +681,7 @@ func (this *ApiController) Findmessage(){
 
 			this.EchoJsonMsg(messages)
 		}else{
-			this.EchoJsonMsg(false)
+			this.EchoJsonMsg(messages)
 		}
 
 	}else
@@ -721,7 +746,7 @@ func (this *ApiController)Findremark(){
 
 			this.EchoJsonMsg(remark)
 		}else{
-			this.EchoJsonMsg(false)
+			this.EchoJsonMsg(remark)
 		}
 
 	}else
