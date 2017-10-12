@@ -8,10 +8,10 @@ import (
 var Conn = P{
 	/*JY正式*/
 	"username": "root",
-	"password": "root",
+	"password": "",
 	"host":     "localhost",
 	"port":     3306,
-	"name":     "test",
+	"name":     "tdtg",
 	/*JY备份*/
 	//"username": "sltx",
 	//"password": "sltx@2017",
