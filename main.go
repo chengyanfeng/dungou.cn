@@ -9,7 +9,6 @@ import (
 	. "dungou.cn/task"
 	. "dungou.cn/util"
 	"os"
-	"github.com/astaxie/beego/plugins/cors"
 )
 
 var orm Orm

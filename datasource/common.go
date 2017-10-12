@@ -22,17 +22,17 @@ var Conn = P{
 
 var SqlServerConn = P{
 	/*JY正式*/
-	//"username": "sa",
-	//"password": "sa63189188sa",
-	//"host":     "116.228.163.189",
-	//"name":     "dtdg",
-	//"port":     1433,
-	/*JY备份*/
 	"username": "sa",
-	"password": "datahunter",
-	"host":     "localhost",
-	"port":     1433,
+	"password": "sa63189188sa",
+	"host":     "116.228.163.189",
 	"name":     "dtdg",
+	"port":     1433,
+	/*JY备份*/
+	//"username": "sa",
+	//"password": "datahunter",
+	//"host":     "localhost",
+	//"port":     1433,
+	//"name":     "dtdg",
 }
 
 var TjConn = P{
