@@ -656,7 +656,7 @@ func (this *ApiController) Findmessage(){
 
 			this.EchoJsonMsg(messages)
 		}else{
-			this.EchoJsonErr("查询失败")
+			this.EchoJsonMsg(false)
 		}
 
 	}else
@@ -721,7 +721,7 @@ func (this *ApiController)Findremark(){
 
 			this.EchoJsonMsg(remark)
 		}else{
-			this.EchoJsonErr("查询失败")
+			this.EchoJsonMsg(false)
 		}
 
 	}else
