@@ -16,13 +16,15 @@ import (
 	"strconv"
 	"strings"
 	"code.google.com/p/mahonia"
+	."dungou.cn/def"
 
+	"time"
 )
 
 type ApiController struct {
 	BaseController
 }
-
+var ENC = mahonia.NewEncoder("utf8_general_ci")
 const MAX_UPLOAD int64 = 50 * 1024 * 1024
 const OWNCOMPANY string = "上海地铁盾构设备工程有限公司"
 
@@ -333,7 +335,7 @@ func (this *ApiController) Gettuya() {
 func (this *ApiController) Login() {
 	username := this.GetString("username")
 	password := this.GetString("password")
-	/*password = Md5(password, Md5Salt)*/
+	password = Md5(password, Md5Salt)
 	user := User{}
 	p := make(map[string]string)
 	p["username"] = username
@@ -349,8 +351,8 @@ func (this *ApiController) Login() {
 		this.EchoJsonErr("密码错误")
 		this.StopRun()
 	}
-	S("222","222")
 	S(user.Grade,user.Grade)
+	user.Password=""
 	this.EchoJsonMsg(user)
 }
 
@@ -369,6 +371,7 @@ func (this *ApiController)Exit(){
 
 //添加
 func (this *ApiController)Adduser(){
+
 	user:=User{}
 	userfind:=User{}
 	username := this.GetString("username")
@@ -377,7 +380,7 @@ func (this *ApiController)Adduser(){
 		this.EchoJsonErr("用户已注册")
 	}else {
 		password := this.GetString("password")
-		/*password = Md5(password, Md5Salt)*/
+		password = Md5(password, Md5Salt)
 		role:=this.GetString("role")
 		companyid:=this.GetString("companyid")
 		id:=ToInt(this.GetString("id"))
@@ -387,7 +390,7 @@ func (this *ApiController)Adduser(){
 		user.Role=role
 		user.Companyid=companyid
 		user.Grade=this.GetString("grade")
-		/*user.Grade= Md5(username, Md5Salt)*/
+		user.Grade= Md5(username+ToString(time.Now()), Md5Salt)
 		Db.Create(&user)
 		Db.Where("username = ? ", username).First(&userfind)
 		if !IsEmpty(userfind.Username) {
@@ -401,13 +404,14 @@ func (this *ApiController)Adduser(){
 func (this *ApiController)Updateuser(){
 	user:=User{}
 	param:=make(map[string]interface{})
+	id:=this.GetString("id")
 	p := this.FormToP("password", "role","companyid","username")
 	for k,v:=range p{
 		if v!=nil{
 			param[k]=v
 		}
 	}
-	db:=Db.Model(&user).Where("username = ?", p["username"]).Updates(param)
+	db:=Db.Model(&user).Where("id = ?", id).Updates(param)
 	if strings.Fields(ToString(db))[1]=="<nil>"{
 		if strings.Fields(ToString(db))[2]!="0" {
 			this.EchoJsonMsg("更新成功")
@@ -423,33 +427,61 @@ func (this *ApiController)Updateuser(){
 }
 //查询
 func (this *ApiController)Finduser(){
+	var db interface{}
 	users:=[]User{}
-	p := this.FormToP("username","role","companyid","id")
+	role := this.GetString("role")
+	chilrole := this.GetString("chilrole")
+	username:=this.GetString("username")
+	p := this.FormToP("username","chilrole")
 	param:=make(map[string]interface{})
 	for k,v :=range p{
 		if v!=nil{
-			param[k]=v
+			if k=="chilrole"{
+			param["role"]=v
+			}else {
+				param[k]=v
+			}
 		}
 	}
-	db:=Db.Where(param).Find(&users)
-	fmt.Println(db)
+	fmt.Println(param)
+	if role=="6"{
+		if IsEmpty(chilrole){
+			if IsEmpty(username){
+				db=Db.Where("role in (?)", []string{"1", "2"}).Find(&users)
+			}else {
+		db=Db.Where("role in (?) AND username = ?  ", []string{"1", "2"},username).Find(&users)
+		}}else {
+			if(chilrole=="1"||chilrole=="2"){
+				db=Db.Where(param).Find(&users)
+			}else{
+				this.EchoJsonErr("没有权限访问")
+				this.StopRun()
+			}
+
+		}
+		}else {
+		db=Db.Where(param).Find(&users)
+	}
+
 
 	if strings.Fields(ToString(db))[1]=="<nil>"{
 		if strings.Fields(ToString(db))[2]!="0" {
-
+			for k,_:=range users{
+				users[k].Password=""
+			}
 			this.EchoJsonMsg(users)
 		}else{
-			this.EchoJsonErr("查询失败")
+			this.EchoJsonMsg(false)
 		}
 
 	}else
-	{this.EchoJsonErr("查询失败")}
+	{this.EchoJsonMsg(false)}
 }
 //删除
 func (this * ApiController)Deletuser(){
+	id := this.GetString("id")
 
-	username := this.GetString("username")
-	db:=Db.Where("username = ?", username).Delete(User{})
+	db:=Db.Where("id = ?", id).Delete(User{})
 	fmt.Println(db)
 	if strings.Fields(ToString(db))[2]=="<nil>"{
 		if strings.Fields(ToString(db))[3]!="0" {
@@ -583,6 +615,8 @@ func encrypt(param string) string {
 func (this *ApiController) Upmessage() {
 	message := Message{}
 	message.Username = this.GetString("username")
+	message.Companyid = this.GetString("line")
+	message.Section=this.GetString("section")
 	message.Companyid = this.GetString("companyid")
 	message.Img = this.GetString("img")
 	message.Text = this.GetString("text")
@@ -606,7 +640,7 @@ func (this *ApiController) Upmessage() {
 //显示上报信息
 func (this *ApiController) Findmessage(){
 
-	message:=[]Message{}
+	messages:=[]Message{}
 	p := this.FormToP("username","dungou","type","ringnum")
 	param:=make(map[string]interface{})
 	for k,v :=range p{
@@ -614,13 +648,13 @@ func (this *ApiController) Findmessage(){
 			param[k]=v
 		}
 	}
-	db:=Db.Where(param).Find(&message)
+	db:=Db.Where(param).Find(&messages)
 	fmt.Println(db)
 
 	if strings.Fields(ToString(db))[1]=="<nil>"{
 		if strings.Fields(ToString(db))[2]!="0" {
 
-			this.EchoJsonMsg(message)
+			this.EchoJsonMsg(messages)
 		}else{
 			this.EchoJsonErr("查询失败")
 		}
