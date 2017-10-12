@@ -536,12 +536,11 @@ func (this *ApiController) Pub() {
 		profile.Section = section
 		Db.Where("section = ?", section).Delete(Profile{})
 		profile.Url = url
-		fmt.Println(profile)
 		Db.Create(profile)
 	} else if table == "dungouset" {
 		file, err := os.Open(url)
 		if err != nil {
-			fmt.Println("Error:", err)
+			this.EchoJsonErr("Error:", err)
 			return
 		}
 		defer file.Close()

@@ -35,7 +35,6 @@ func main() {
 	orm.Init()
 	mssql.Init()
 	tjMssql.Init()
-	//a()
 	//Insert()
 	go func() {
 		//开启协程
@@ -46,21 +45,12 @@ func main() {
 }
 
 func crontab() {
-	toolbox.AddTask("pd", toolbox.NewTask("pd", "0 */15 * * * *", func() error {
+	toolbox.AddTask("pd", toolbox.NewTask("pd", "0 */3 * * * *", func() error {
 		//每10分钟运行以下函数
 		Dhq <- func() {
-
+			//Insert()
 		}
 		return nil
 	}))
 	toolbox.StartTask() //开启定时任务
-}
-
-func a() {
-	jd,err :=Upload("http://106.75.33.170:16680/api/upload","D:/lon.xlsx")
-	if err != nil {
-		Debug(err)
-	}
-	//json := *JsonDecode([]byte(jd))
-	Debug(string(jd))
 }

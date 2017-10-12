@@ -2000,3 +2000,17 @@
 2017/10/11 15:52:16 [D] [BaseFilter /api/getsedimen] 
 2017/10/11 15:52:43 [D] [BaseFilter /api/getsediment] 
 2017/10/11 15:53:03 [D] [BaseFilter /api/getsediment?dungou=SMSC33] 
+2017/10/11 17:00:07 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 17:00:07 [I] http server Running on http://:9700
+2017/10/11 17:13:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 17:13:06 [I] http server Running on http://:9700
+2017/10/11 17:32:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 17:32:09 [I] http server Running on http://:9700
+2017/10/11 17:32:18 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/11 17:32:18 [I] http server Running on http://:9700
+2017/10/11 17:32:21 [D] [BaseFilter /api/getpath] 
+2017/10/11 17:33:09 [D] [BaseFilter /api/getsection] 
+2017/10/11 17:33:25 [D] [BaseFilter /api/getsection?path=14%E5%8F%B7%E7%BA%BF] 
+2017/10/11 17:34:16 [D] [BaseFilter /api/getsection?path=] 
+2017/10/11 17:34:40 [D] [BaseFilter /api/getsection] 
+2017/10/11 17:34:53 [D] [BaseFilter /api/getsection?path=14%E5%8F%B7%E7%BA%BF] 
