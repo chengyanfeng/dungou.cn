@@ -1,9 +1,8 @@
-package controller
+package datasource
 
 import (
 	"fmt"
 	."dungou.cn/util"
-	."dungou.cn/datasource"
 )
 var AppKey = "5edb69eb9f5540b8aefdd41ea49002f5"
 var AppSecret = "4c1ef3165da30ab01ba872c06ea9d86a"

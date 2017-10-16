@@ -2187,3 +2187,156 @@
 2017/10/16 12:11:42 [D] [BaseFilter /rpc] 
 2017/10/16 12:11:42 [D] [BaseFilter /api/getcompany] 
 2017/10/16 12:11:47 [D] [BaseFilter /rpc] 
+2017/10/16 13:38:24 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 13:38:24 [I] http server Running on http://:9700
+2017/10/16 13:38:43 [D] [BaseFilter /api/getdungou] 
+2017/10/16 13:38:54 [D] [BaseFilter /] 
+2017/10/16 13:38:57 [D] [BaseFilter /rpc] 
+2017/10/16 13:38:57 [D] [BaseFilter /api/login] 
+2017/10/16 13:39:36 [D] [BaseFilter /rpc] 
+2017/10/16 13:39:36 [D] [BaseFilter /api/getcompany] 
+2017/10/16 13:50:12 [D] [BaseFilter /api/r%27p%27c] 
+2017/10/16 13:51:58 [D] [BaseFilter /api/rpc] 
+2017/10/16 13:52:03 [D] [BaseFilter /rpc] 
+2017/10/16 13:52:03 [D] [BaseFilter /api/login] 
+2017/10/16 13:52:11 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 13:52:11 [I] http server Running on http://:9700
+2017/10/16 13:52:15 [D] [BaseFilter /rpc] 
+2017/10/16 13:52:15 [D] [BaseFilter /api/login] 
+2017/10/16 13:52:41 [D] [BaseFilter /api/rpc] 
+2017/10/16 13:52:58 [D] [BaseFilter /api/rpc] 
+2017/10/16 13:53:07 [D] [BaseFilter /rpc] 
+2017/10/16 13:53:22 [D] [BaseFilter /rpc] 
+2017/10/16 13:53:22 [D] [BaseFilter /api/getcompany] 
+2017/10/16 13:53:44 [D] [BaseFilter /rpc] 
+2017/10/16 13:54:00 [D] [BaseFilter /rpc] 
+2017/10/16 13:54:00 [D] [BaseFilter /api/getcompany] 
+2017/10/16 13:54:42 [D] [BaseFilter /rpc] 
+2017/10/16 13:54:42 [D] [BaseFilter /api/getcompany] 
+2017/10/16 13:54:52 [D] [BaseFilter /rpc] 
+2017/10/16 13:54:52 [D] [BaseFilter /api/getcompany] 
+2017/10/16 13:55:23 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 13:55:23 [I] http server Running on http://:9700
+2017/10/16 13:55:27 [D] [BaseFilter /rpc] 
+2017/10/16 13:55:32 [D] [BaseFilter /rpc] 
+2017/10/16 13:55:32 [D] [BaseFilter /api/login] 
+2017/10/16 13:55:34 [D] [BaseFilter /rpc] 
+2017/10/16 13:55:34 [D] [BaseFilter /api/getcompany] 
+2017/10/16 13:56:03 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 13:56:03 [I] http server Running on http://:9700
+2017/10/16 13:56:05 [D] [BaseFilter /rpc] 
+2017/10/16 13:56:05 [D] [BaseFilter /api/login] 
+2017/10/16 13:56:12 [D] [BaseFilter /rpc] 
+2017/10/16 13:56:12 [D] [BaseFilter /api/getcompany] 
+2017/10/16 13:56:34 [D] [BaseFilter /rpc] 
+2017/10/16 13:56:34 [D] [BaseFilter /api/getcompany] 
+2017/10/16 13:59:03 [D] [BaseFilter /rpc] 
+2017/10/16 13:59:03 [D] [BaseFilter /api/getcompany] 
+2017/10/16 13:59:55 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 13:59:55 [I] http server Running on http://:9700
+2017/10/16 14:00:02 [D] [BaseFilter /rpc] 
+2017/10/16 14:00:02 [D] [BaseFilter /api/login] 
+2017/10/16 14:00:04 [D] [BaseFilter /rpc] 
+2017/10/16 14:00:04 [D] [BaseFilter /api/getcompany] 
+2017/10/16 14:00:35 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 14:00:35 [I] http server Running on http://:9700
+2017/10/16 14:00:40 [D] [BaseFilter /rpc] 
+2017/10/16 14:00:40 [D] [BaseFilter /api/login] 
+2017/10/16 14:00:43 [D] [BaseFilter /rpc] 
+2017/10/16 14:00:43 [D] [BaseFilter /api/getcompany] 
+2017/10/16 14:01:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 14:01:09 [I] http server Running on http://:9700
+2017/10/16 14:01:12 [D] [BaseFilter /rpc] 
+2017/10/16 14:01:12 [D] [BaseFilter /api/login] 
+2017/10/16 14:01:16 [D] [BaseFilter /rpc] 
+2017/10/16 14:01:16 [D] [BaseFilter /api/getcompany] 
+2017/10/16 14:05:28 [D] [BaseFilter /rpc] 
+2017/10/16 14:05:28 [D] [BaseFilter /api/getcompany] 
+2017/10/16 14:11:38 [D] [BaseFilter /rpc] 
+2017/10/16 14:11:38 [D] [BaseFilter /api/getcompany] 
+2017/10/16 14:12:05 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 14:12:05 [I] http server Running on http://:9700
+2017/10/16 14:12:14 [D] [BaseFilter /rpc] 
+2017/10/16 14:12:19 [D] [BaseFilter /rpc] 
+2017/10/16 14:12:19 [D] [BaseFilter /api/login] 
+2017/10/16 14:12:21 [D] [BaseFilter /rpc] 
+2017/10/16 14:12:21 [D] [BaseFilter /api/getcompany] 
+2017/10/16 14:14:12 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 14:14:13 [I] http server Running on http://:9700
+2017/10/16 14:14:22 [D] [BaseFilter /rpc] 
+2017/10/16 14:14:22 [D] [BaseFilter /api/login] 
+2017/10/16 14:14:27 [D] [BaseFilter /rpc] 
+2017/10/16 14:14:27 [D] [BaseFilter /api/getcompany] 
+2017/10/16 14:14:27 [C] the request url is  /api/getcompany
+2017/10/16 14:14:27 [C] Handler crashed with error runtime error: index out of range
+2017/10/16 14:14:27 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/10/16 14:14:27 [C] C:/Go/src/runtime/panic.go:458
+2017/10/16 14:14:27 [C] C:/Go/src/runtime/panic.go:27
+2017/10/16 14:14:27 [C] D:/gogit/gopath/src/dungou.cn/controller/api.go:202
+2017/10/16 14:14:27 [C] C:/Go/src/runtime/asm_amd64.s:479
+2017/10/16 14:14:27 [C] C:/Go/src/reflect/value.go:434
+2017/10/16 14:14:27 [C] C:/Go/src/reflect/value.go:302
+2017/10/16 14:14:27 [C] D:/gogit/gopath/src/github.com/astaxie/beego/router.go:802
+2017/10/16 14:14:27 [C] C:/Go/src/net/http/server.go:2202
+2017/10/16 14:14:27 [C] C:/Go/src/net/http/server.go:1579
+2017/10/16 14:14:27 [C] C:/Go/src/runtime/asm_amd64.s:2086
+2017/10/16 14:15:03 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 14:15:03 [I] http server Running on http://:9700
+2017/10/16 14:15:29 [D] [BaseFilter /rpc] 
+2017/10/16 14:15:29 [D] [BaseFilter /api/login] 
+2017/10/16 14:15:32 [D] [BaseFilter /rpc] 
+2017/10/16 14:15:32 [D] [BaseFilter /api/getcompany] 
+2017/10/16 14:15:55 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 14:15:55 [I] http server Running on http://:9700
+2017/10/16 14:16:04 [D] [BaseFilter /rpc] 
+2017/10/16 14:16:04 [D] [BaseFilter /api/login] 
+2017/10/16 14:16:06 [D] [BaseFilter /rpc] 
+2017/10/16 14:16:06 [D] [BaseFilter /api/getcompany] 
+2017/10/16 14:16:47 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 14:16:47 [I] http server Running on http://:9700
+2017/10/16 14:16:53 [D] [BaseFilter /rpc] 
+2017/10/16 14:16:53 [D] [BaseFilter /api/login] 
+2017/10/16 14:16:56 [D] [BaseFilter /rpc] 
+2017/10/16 14:16:56 [D] [BaseFilter /api/getcompany] 
+2017/10/16 14:26:16 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 14:26:16 [I] http server Running on http://:9700
+2017/10/16 14:26:48 [D] [BaseFilter /rpc] 
+2017/10/16 14:26:48 [D] [BaseFilter /api/login] 
+2017/10/16 14:26:52 [D] [BaseFilter /rpc] 
+2017/10/16 14:26:52 [D] [BaseFilter /api/getcompany] 
+2017/10/16 14:27:12 [D] [BaseFilter /rpc] 
+2017/10/16 14:27:12 [D] [BaseFilter /api/gettype] 
+2017/10/16 14:30:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 14:30:09 [I] http server Running on http://:9700
+2017/10/16 14:30:12 [D] [BaseFilter /rpc] 
+2017/10/16 14:30:12 [D] [BaseFilter /api/login] 
+2017/10/16 14:30:14 [D] [BaseFilter /rpc] 
+2017/10/16 14:30:14 [D] [BaseFilter /api/getdungou] 
+2017/10/16 14:33:42 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 14:33:42 [I] http server Running on http://:9700
+2017/10/16 14:33:49 [D] [BaseFilter /rpc] 
+2017/10/16 14:33:49 [D] [BaseFilter /api/login] 
+2017/10/16 14:33:51 [D] [BaseFilter /rpc] 
+2017/10/16 14:33:51 [D] [BaseFilter /api/getdungou] 
+2017/10/16 14:34:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 14:34:06 [I] http server Running on http://:9700
+2017/10/16 14:34:09 [D] [BaseFilter /rpc] 
+2017/10/16 14:34:09 [D] [BaseFilter /api/login] 
+2017/10/16 14:34:11 [D] [BaseFilter /rpc] 
+2017/10/16 14:34:11 [D] [BaseFilter /api/getdungou] 
+2017/10/16 14:38:23 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 14:38:23 [I] http server Running on http://:9700
+2017/10/16 14:38:28 [D] [BaseFilter /rpc] 
+2017/10/16 14:38:28 [D] [BaseFilter /api/login] 
+2017/10/16 14:38:30 [D] [BaseFilter /rpc] 
+2017/10/16 14:38:30 [D] [BaseFilter /api/getdungou] 
+2017/10/16 15:34:31 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 15:34:31 [I] http server Running on http://:9700
+2017/10/16 15:34:53 [D] [BaseFilter /rpc] 
+2017/10/16 15:34:53 [D] [BaseFilter /api/login] 
+2017/10/16 15:35:01 [D] [BaseFilter /rpc] 
+2017/10/16 15:35:04 [D] [BaseFilter /rpc] 
+2017/10/16 15:35:56 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 15:35:56 [I] http server Running on http://:9700
+2017/10/16 15:35:58 [D] [BaseFilter /rpc] 
+2017/10/16 15:35:58 [D] [BaseFilter /user/login] 
