@@ -485,10 +485,12 @@ func (this *ApiController) Updatepassword(){
 }
 //查询
 func (this *ApiController)Finduser(){
+
+	role := this.GetString("role")
+	if role =="1"||role=="2"{
 	var db interface{}
 	users:=[]User{}
-	role := this.GetString("role")
-	chilrole := this.GetString("chilrole")
+		chilrole := this.GetString("chilrole")
 	username:=this.GetString("username")
 	p := this.FormToP("username","chilrole")
 	param:=make(map[string]interface{})
@@ -534,6 +536,10 @@ func (this *ApiController)Finduser(){
 
 	}else
 	{this.EchoJsonMsg(false)}
+
+	}else {
+		this.EchoJsonMsg("您无权限")
+}
 }
 //删除
 func (this * ApiController)Deletuser(){
