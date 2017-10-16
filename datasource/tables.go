@@ -209,11 +209,11 @@ type User struct {
 type Message struct {
 	Id        int    `json:"size:32;column:id;auto_increment"`
 	Username  string `json:"size:512;column:username"`
-	Line  	string `json:"size:512;column:line"`
-	Dungou     string `json:"size:512;column:dungou"`
-	Type 	   string `json:"size:512;column:type"`
-	Ringnum    string `json:"size:512;column:ringnum"`
-	Schedule   string `json:"size:512;column:schedule"`
+	Line      string `json:"size:512;column:line"`
+	Dungou    string `json:"size:512;column:dungou"`
+	Type      string `json:"size:512;column:type"`
+	Ringnum   string `json:"size:512;column:ringnum"`
+	Schedule  string `json:"size:512;column:schedule"`
 	Companyid string `json:"size:512;column:companyid"`
 	Date      string `json:"size:512;column:date"`
 	Text      string `json:"size:1024;column:text"`
@@ -226,5 +226,19 @@ type Remark struct {
 	Companyid string `json:"size:512;column:companyid"`
 	Date      string `json:"size:512;column:date"`
 	Text      string `json:"size:1024;column:text"`
-	Messageid      int `json:"size:64;column:messageid"`
+	Messageid int    `json:"size:64;column:messageid"`
+}
+
+type Video struct {
+	DeviceSerial string `json:"size:512;column:deviceSerial"`
+	DeviceName   string `json:"size:512;column:deviceName"`
+	ChannelNo    string `json:"size:512;column:channelNo"`
+	LiveAddress  string `json:"size:512;column:liveAddress"`
+	HdAddress    string `json:"size:512;column:hdAddress"`
+	Rtmp         string `json:"size:512;column:rtmp"`
+	RtmpHd       string `json:"size:512;column:rtmpHd"`
+	Status       string `json:"size:512;column:status"`
+	Exception    string `json:"size:512;column:exception"`
+	BeginTime    string `json:"size:512;column:beginTime"`
+	EndTime      string `json:"size:512;column:endTime"`
 }

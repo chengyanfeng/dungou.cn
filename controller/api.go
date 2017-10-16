@@ -126,10 +126,65 @@ func (this *ApiController) Getcommu() {
 	this.EchoJsonMsg(p)
 }
 
+func (this *ApiController) Getpath() {
+	dungou := strings.Split(this.GetString("dungou"),",")
+	sets := []Dungouset{}
+	paths := make([]string, 0)
+	Db.Where("status = ? and dungou in (?)", 1,dungou).Find(&sets)
+	for _, v := range sets {
+		path := v.Path
+		paths = append(paths, path)
+	}
+	paths = RemoveDuplicatesAndEmpty(paths)
+	this.EchoJson(paths)
+}
+
+func (this *ApiController) Getsection() {
+	dungou := strings.Split(this.GetString("dungou"),",")
+	sets := []Dungouset{}
+	path := this.GetString("path")
+	sections := make([]string, 0)
+	if path == "" {
+		Db.Where("status = ? and dungou in (?)", 1,dungou).Find(&sets)
+	} else {
+		Db.Where("status = ? and path = ? and dungou in (?)", 1, path,dungou).Find(&sets)
+	}
+	for _, v := range sets {
+		section := v.Section
+		sections = append(sections, section)
+	}
+	sections = RemoveDuplicatesAndEmpty(sections)
+	this.EchoJson(sections)
+}
+
+func (this *ApiController) Getdungou() {
+	param := this.FormToP("city", "company", "type", "path", "section", "own")
+	dungou := strings.Split(this.GetString("dungou"),",")
+	p := make(map[string]interface{})
+	for k, v := range param {
+		if v != nil {
+			p[k] = v
+		}
+	}
+	p["status"]= "1"
+	sets := []Dungouset{}
+	Db.Where(p).Find(&sets)
+	dungous := make([]string, 0)
+	for _, v := range sets {
+		d := v.Dungou
+		if InArray(d, dungou) {
+			dungous = append(dungous, d)
+		}
+	}
+	dungous = RemoveDuplicatesAndEmpty(dungous)
+	this.EchoJson(dungous)
+}
+
 func (this *ApiController) Getcompany() {
+	dungou := strings.Split(this.GetString("dungou"),",")
 	sets := []Dungouset{}
 	companys := make([]string, 0)
-	Db.Where("status = ?", 1).Find(&sets)
+	Db.Where("status = ? and dungou in (?)", 1,dungou).Find(&sets)
 	for _, v := range sets {
 		company := v.Company1
 		companys = append(companys, company)
@@ -139,9 +194,10 @@ func (this *ApiController) Getcompany() {
 }
 
 func (this *ApiController) Gettype() {
+	dungou := strings.Split(this.GetString("dungou"),",")
 	sets := []Dungouset{}
 	typelist := make([]string, 0)
-	Db.Where("status = ?", 1).Find(&sets)
+	Db.Where("status = ? and dungou in (?) ", 1,dungou).Find(&sets)
 	for _, v := range sets {
 		types := v.Type
 		typelist = append(typelist, types)
@@ -150,31 +206,8 @@ func (this *ApiController) Gettype() {
 	this.EchoJson(typelist)
 }
 
-func (this *ApiController) Getpath() {
-	sets := []Dungouset{}
-	paths := make([]string, 0)
-	Db.Where("status = ?", 1).Find(&sets)
-	for _, v := range sets {
-		path := v.Path
-		paths = append(paths, path)
-	}
-	paths = RemoveDuplicatesAndEmpty(paths)
-	this.EchoJson(paths)
-}
-
-func (this *ApiController) Getdungou() {
-	sets := []Dungouset{}
-	dungous := make([]string, 0)
-	Db.Where("status = ?", 1).Find(&sets)
-	for _, v := range sets {
-		dungou := v.Dungou
-		dungous = append(dungous, dungou)
-	}
-	dungous = RemoveDuplicatesAndEmpty(dungous)
-	this.EchoJson(dungous)
-}
-
 func (this *ApiController) Getseclonlat() {
+	this.Require("dungou")
 	dungou := this.GetString("dungou")
 	set := Dungouset{}
 	Db.Where("dungou = ?", dungou).Find(&set)
@@ -185,6 +218,7 @@ func (this *ApiController) Getseclonlat() {
 }
 
 func (this *ApiController) Getprolonlat() {
+	this.Require("dungou")
 	dungou := this.GetString("dungou")
 	set := Dungouset{}
 	Db.Where("dungou = ?", dungou).Find(&set)
@@ -195,6 +229,7 @@ func (this *ApiController) Getprolonlat() {
 }
 
 func (this *ApiController) Getprofile() {
+	this.Require("dungou")
 	dungou := this.GetString("dungou")
 	fmt.Println(dungou)
 	set := Dungouset{}
@@ -206,22 +241,6 @@ func (this *ApiController) Getprofile() {
 	this.EchoJson(profile)
 }
 
-func (this *ApiController) Getsection() {
-	sets := []Dungouset{}
-	path := this.GetString("path")
-	sections := make([]string, 0)
-	if path == "" {
-		Db.Where("status = ?", 1).Find(&sets)
-	} else {
-		Db.Where("status = ? and path = ?", 1, path).Find(&sets)
-	}
-	for _, v := range sets {
-		section := v.Section
-		sections = append(sections, section)
-	}
-	sections = RemoveDuplicatesAndEmpty(sections)
-	this.EchoJson(sections)
-}
 func (this *ApiController) Prosafe() {
 	dungou := this.GetString("risk")
 	param := make(map[string]interface{})
@@ -245,9 +264,10 @@ func (this *ApiController) Prosafe() {
 }
 func (this *ApiController) Getrisk() {
 	dungou := this.GetString("dungou")
+	d := strings.Split(dungou,",")
 	param := make(map[string]interface{})
 	if dungou != "" {
-		param["dungou"] = dungou
+		param["dungou"] = d
 	}
 	param["status"]="1"
 	sets := []Dungouset{}
@@ -267,12 +287,13 @@ func (this *ApiController) Getrisk() {
 }
 
 func (this *ApiController) Getsediment() {
-	dungou := this.GetString("dungou")
+	dungou := strings.Split(this.GetString("dungou"),",")
+
 	sediment := []Sediment{}
-	if dungou != "" {
-		Db.Where("batch = ? and dungou =? ", 1,dungou).Find(&sediment)
+	if len(dungou) > 0 {
+		Db.Where("batch = ? and dungou in (?) ", 1,dungou).Find(&sediment)
 		if len(sediment) == 0  {
-			Db.Where("batch = ? and dungou =?",2,dungou).Find(&sediment)
+			Db.Where("batch = ? and dungou in (?) ",2,dungou).Find(&sediment)
 		}
 	}else{
 		Db.Where("batch = ?", 1).Find(&sediment)
@@ -785,3 +806,10 @@ func (this *ApiController) Upremark() {
 
 }
 
+func Setcompany(args P) P {
+	id := args["id"]
+	user := User{}
+	Db.Where("id = ?",id).First(&user)
+	args["dungou"] = user.Companyid
+	return args
+}

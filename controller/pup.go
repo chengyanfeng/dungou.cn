@@ -5,6 +5,7 @@ import (
 	. "dungou.cn/util"
 	"github.com/astaxie/beego"
 	"strings"
+	"fmt"
 )
 
 type PupController struct {
@@ -45,19 +46,20 @@ func Insert() {
 	change()
 	tjinsert()
 	for _, v := range list {
-		name := ToString(v["id"])
+		id := ToString(v["id"])
+		name := ToString(v["name"])
 		q := ToString(v["jacks"])
 		t := ToString(v["pressures"])
-		if name == "" {
+		if id == "" {
 			continue
 		}
-		str := "select top 3 * from " + name + " order by AutoKey desc;"
+		str := "select top 3 * from " + id + " order by AutoKey desc;"
+		fmt.Println(str)
 		a := mssql.Query(str)
 		if len(a) == 0 {
 			continue
 		} else {
 			for i, v := range a {
-				name = getname(name)
 				daopan(v, name)
 				jingbao(v, name)
 				jiaojie(v, name)
@@ -252,10 +254,6 @@ func tuya(v map[string]interface{}, name string, q string, t string) {
 func dateParse(date string) (string, string) {
 	a := strings.Split(date, " ")
 	return a[0], a[1]
-}
-func getname(name string) string {
-	na := strings.Replace(name, "[dtdg].[dbo].[", "", -1)
-	return strings.Replace(na, "]", "", -1)
 }
 
 func change() {

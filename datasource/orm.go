@@ -81,6 +81,10 @@ func (Remark) TableName() string {
 	return "remark"
 }
 
+func (Video) TableName() string {
+	return "video"
+}
+
 func (this *Orm) Init() {
 	var err error
 	conn := fmt.Sprintf("%v:%v@tcp(%v:%v)/%v?charset=utf8&parseTime=True&loc=Local",
@@ -181,6 +185,12 @@ func (this *Orm) Init() {
 	} else {
 		Db.CreateTable(&Remark{})
 	}
+
+	if Db.HasTable("video") {
+
+	} else {
+		Db.CreateTable(&Video{})
+	}
 }
 
 func (this *Orm) GetIdList() []map[string]interface{} {
@@ -193,6 +203,7 @@ func (this *Orm) GetIdList() []map[string]interface{} {
 	for _, v := range *set {
 		a :=make(map[string]interface{},0)
 		a["id"]=v.Datano
+		a["name"] = v.Dungou
 		a["type"]=v.Type
 		a["status"]=v.Status
 		a["jacks"]=v.Jack

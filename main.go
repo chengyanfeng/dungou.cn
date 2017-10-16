@@ -9,6 +9,7 @@ import (
 	. "dungou.cn/task"
 	. "dungou.cn/util"
 	"os"
+	"fmt"
 )
 
 var orm Orm
@@ -36,6 +37,7 @@ func main() {
 	mssql.Init()
 	tjMssql.Init()
 	//Insert()
+	GetVideo(AppKey,AppSecret)
 	go func() {
 		//开启协程
 		InitCache() //初始化

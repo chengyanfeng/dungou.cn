@@ -24,7 +24,6 @@ var BaseFilter = func(ctx *context.Context) {
 }
 
 var RpcFilter = func(ctx *context.Context) {
-	fmt.Println("ctx",ctx.Input)
 	p := *JsonDecode(ctx.Input.RequestBody)
 	var err error
 	body := ""
@@ -33,10 +32,6 @@ var RpcFilter = func(ctx *context.Context) {
 	} else {
 		act := p["act"].(string)
 		args := ToP(p["args"])
-
-		fmt.Println("act:"+act)
-		fmt.Println("gradecookie:")
-		fmt.Println(ToString(S(args["grade"].(string))))
 			if 	ToString(S(args["grade"].(string)))==""&&act!="api/login" {
 
 				err = errors.New("请先登录")
@@ -53,6 +48,7 @@ var RpcFilter = func(ctx *context.Context) {
 						hp[k] = v
 					}
 					hp["Hostname"] = ctx.Request.Host
+					args = Setcompany(args)
 					body, err = HttpPost(url, &hp, &args)
 				}
 			}
