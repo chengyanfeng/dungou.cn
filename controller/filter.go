@@ -47,9 +47,11 @@ var RpcFilter = func(ctx *context.Context) {
 					for k, v := range header {
 						hp[k] = v
 					}
-					hp["Hostname"] = ctx.Request.Host
-					args = Setcompany(args)
-					body, err = HttpPost(url, &hp, &args)
+					args,err = Setcompany(args)
+					if err == nil {
+						hp["Hostname"] = ctx.Request.Host
+						body, err = HttpPost(url, &hp, &args)
+					}
 				}
 			}
 

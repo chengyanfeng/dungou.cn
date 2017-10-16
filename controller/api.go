@@ -19,6 +19,7 @@ import (
 	."dungou.cn/def"
 
 	"time"
+	"errors"
 )
 
 type ApiController struct {
@@ -404,7 +405,6 @@ func (this *ApiController)Exit(){
 
 //添加
 func (this *ApiController)Adduser(){
-
 	user:=User{}
 	userfind:=User{}
 	username := this.GetString("username")
@@ -816,10 +816,22 @@ func (this *ApiController) Getvideo() {
 
 }
 
-func Setcompany(args P) P {
+func Setcompany(args P) (P,error) {
+	dungou := args["dungou"]
 	grade := args["grade"]
+	var err error
 	user := User{}
 	Db.Where("grade = ?",grade).First(&user)
-	args["dungou"] = user.Companyid
-	return args
+	dglist := user.Companyid
+	if dungou != nil {
+		if strings.Contains(dglist,dungou.(string)){
+			args["dungou"] = dungou
+		}else {
+			err = errors.New("没有权限")
+			fmt.Println(err)
+		}
+	}else {
+		args["dungou"] = dglist
+	}
+	return args,err
 }
