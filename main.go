@@ -9,7 +9,6 @@ import (
 	. "dungou.cn/task"
 	. "dungou.cn/util"
 	"os"
-	"fmt"
 )
 
 var orm Orm
