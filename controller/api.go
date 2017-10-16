@@ -812,10 +812,14 @@ func (this *ApiController) Upremark() {
 
 }
 
+func (this *ApiController) Getvideo() {
+
+}
+
 func Setcompany(args P) P {
-	id := args["id"]
+	grade := args["grade"]
 	user := User{}
-	Db.Where("id = ?",id).First(&user)
+	Db.Where("grade = ?",grade).First(&user)
 	args["dungou"] = user.Companyid
 	return args
 }
