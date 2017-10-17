@@ -404,8 +404,16 @@ func (this *ApiController)Adduser(){
 //修改
 func (this *ApiController)Updateuser(){
 	user:=User{}
+
 	param:=make(map[string]interface{})
 	id:=this.GetString("id")
+	grade:=this.GetString("grade")
+	username:=this.GetString("username")
+	Db.Where("username = ? ", username).First(&user)
+	if user.Grade !=grade{
+		this.EchoJsonErr("用户已注册")
+		return
+	}
 	p := this.FormToP("password", "role","companyid","username")
 	for k,v:=range p{
 		if v!=nil{
