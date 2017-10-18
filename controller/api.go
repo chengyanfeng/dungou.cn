@@ -2,14 +2,11 @@ package controller
 
 import (
 	"bytes"
-	"code.google.com/p/mahonia"
 	. "dungou.cn/datasource"
-	. "dungou.cn/def"
 	. "dungou.cn/util"
 	"encoding/base64"
 	"encoding/csv"
 	"encoding/json"
-	"errors"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -18,13 +15,15 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"code.google.com/p/mahonia"
+	."dungou.cn/def"
 	"time"
+	"errors"
 )
 
 type ApiController struct {
 	BaseController
 }
-
 var ENC = mahonia.NewEncoder("utf8_general_ci")
 const MAX_UPLOAD int64 = 50 * 1024 * 1024
 const OWNCOMPANY string = "上海地铁盾构设备工程有限公司"
@@ -76,18 +75,40 @@ func (this *ApiController) Maps() {
 			p[k] = v
 		}
 	}
-	p["status"] = "1"
+	p["status"]= "1"
 	sets := []Dungouset{}
 	Db.Where(p).Find(&sets)
 	this.EchoJsonMsg(persent(sets))
 }
 
+func persent(sets []Dungouset)[]Dungouset{
+	re :=[]Dungouset{}
+	for _,set:=range sets{
+		dungou :=set.Datano
+		ring :=set.Ringnum
+		daopan :=Daopan{}
+		p := make(map[string]interface{})
+		p["dungou"] = dungou
+		p["batch"] =1
+		Db.Where(p).First(&daopan)
+		ringnum :=daopan.Ringnum
+		percent := 0.0
+		if ringnum>0 {
+			percent =float64(ringnum)/float64(ring)*100
+		}
+
+		s := fmt.Sprintf("%0.1f", percent)
+		set.Persent = string(s)+"%"
+		re = append(re,set)
+	}
+	return re
+}
 func (this *ApiController) Getcommu() {
 	commum := []Commum{}
-	p := []P{}
+	p:=[]P{}
 	Db.Where("batch = ?", 1).Find(&commum)
 	if len(commum) == 0 {
-		Db.Where(" batch = ?", 2).Find(&commum)
+		Db.Where(" batch = ?",2).Find(&commum)
 	}
 	for _, v := range commum {
 		s := P{}
@@ -106,12 +127,12 @@ func (this *ApiController) Getcommu() {
 }
 
 func (this *ApiController) Getpath() {
-	dungou := strings.Split(this.GetString("dungou"), ",")
+	dungou := strings.Split(this.GetString("dungou"),",")
 	sets := []Dungouset{}
 	paths := make([]string, 0)
 	if dungou[0] != "" {
-		Db.Where("status = ? and dungou in (?)", 1, dungou).Find(&sets)
-	} else {
+		Db.Where("status = ? and dungou in (?)", 1,dungou).Find(&sets)
+	}else {
 		Db.Where("status = ? ", 1).Find(&sets)
 	}
 	for _, v := range sets {
@@ -123,17 +144,17 @@ func (this *ApiController) Getpath() {
 }
 
 func (this *ApiController) Getsection() {
-	dungou := strings.Split(this.GetString("dungou"), ",")
+	dungou := strings.Split(this.GetString("dungou"),",")
 	sets := []Dungouset{}
 	path := this.GetString("path")
 	sections := make([]string, 0)
 	if dungou[0] != "" {
 		if path == "" {
-			Db.Where("status = ? and dungou in (?)", 1, dungou).Find(&sets)
+			Db.Where("status = ? and dungou in (?)", 1,dungou).Find(&sets)
 		} else {
-			Db.Where("status = ? and path = ? and dungou in (?)", 1, path, dungou).Find(&sets)
+			Db.Where("status = ? and path = ? and dungou in (?)", 1, path,dungou).Find(&sets)
 		}
-	} else {
+	}else{
 		if path == "" {
 			Db.Where("status = ? ", 1).Find(&sets)
 		} else {
@@ -150,14 +171,14 @@ func (this *ApiController) Getsection() {
 
 func (this *ApiController) Getdungou() {
 	param := this.FormToP("city", "company", "type", "path", "section", "own")
-	dungou := strings.Split(this.GetString("dungou"), ",")
+	dungou := strings.Split(this.GetString("dungou"),",")
 	p := make(map[string]interface{})
 	for k, v := range param {
 		if v != nil {
 			p[k] = v
 		}
 	}
-	p["status"] = "1"
+	p["status"]= "1"
 	sets := []Dungouset{}
 	Db.Where(p).Find(&sets)
 	dungous := make([]string, 0)
@@ -168,7 +189,7 @@ func (this *ApiController) Getdungou() {
 				dungous = append(dungous, d)
 			}
 		}
-	} else {
+	}else {
 		for _, v := range sets {
 			d := v.Dungou
 			dungous = append(dungous, d)
@@ -179,13 +200,13 @@ func (this *ApiController) Getdungou() {
 }
 
 func (this *ApiController) Getcompany() {
-	dungou := strings.Split(this.GetString("dungou"), ",")
+	dungou := strings.Split(this.GetString("dungou"),",")
 	sets := []Dungouset{}
 	companys := make([]string, 0)
 	if dungou[0] == "" {
 		Db.Where("status = ? ", 1).Find(&sets)
-	} else {
-		Db.Where("status = ? and dungou in (?)", 1, dungou).Find(&sets)
+	}else {
+		Db.Where("status = ? and dungou in (?)", 1,dungou).Find(&sets)
 	}
 	for _, v := range sets {
 		company := v.Company1
@@ -196,12 +217,12 @@ func (this *ApiController) Getcompany() {
 }
 
 func (this *ApiController) Gettype() {
-	dungou := strings.Split(this.GetString("dungou"), ",")
+	dungou := strings.Split(this.GetString("dungou"),",")
 	sets := []Dungouset{}
 	typelist := make([]string, 0)
 	if dungou[0] != "" {
-		Db.Where("status = ? and dungou in (?)", 1, dungou).Find(&sets)
-	} else {
+		Db.Where("status = ? and dungou in (?)", 1,dungou).Find(&sets)
+	}else {
 		Db.Where("status = ? ", 1).Find(&sets)
 	}
 	for _, v := range sets {
@@ -264,19 +285,19 @@ func (this *ApiController) Prosafe() {
 		Db.Where("section = ?", section).Find(&risks)
 		m["set"] = v
 		m["risk"] = risks
-		p = append(p, m)
+		p = append(p,m)
 	}
 	this.EchoJsonMsg(p)
 }
 
 func (this *ApiController) Getrisk() {
 	dungou := this.GetString("dungou")
-	d := strings.Split(dungou, ",")
+	d := strings.Split(dungou,",")
 	param := make(map[string]interface{})
 	if dungou != "" {
 		param["dungou"] = d
 	}
-	param["status"] = "1"
+	param["status"]="1"
 	sets := []Dungouset{}
 	Db.Where(param).Find(&sets)
 	p := []P{}
@@ -288,24 +309,24 @@ func (this *ApiController) Getrisk() {
 		Db.Where("section = ?", section).Find(&risks)
 		m["set"] = v
 		m["risk"] = risks
-		p = append(p, m)
+		p = append(p,m)
 	}
 	this.EchoJsonMsg(p)
 }
 
 func (this *ApiController) Getsediment() {
-	dungou := strings.Split(this.GetString("dungou"), ",")
+	dungou := strings.Split(this.GetString("dungou"),",")
 
 	sediment := []Sediment{}
 	if dungou[0] != "" {
-		Db.Where("batch = ? and dungou in (?) ", 1, dungou).Find(&sediment)
-		if len(sediment) == 0 {
-			Db.Where("batch = ? and dungou in (?) ", 2, dungou).Find(&sediment)
+		Db.Where("batch = ? and dungou in (?) ", 1,dungou).Find(&sediment)
+		if len(sediment) == 0  {
+			Db.Where("batch = ? and dungou in (?) ",2,dungou).Find(&sediment)
 		}
-	} else {
+	}else{
 		Db.Where("batch = ?", 1).Find(&sediment)
-		if len(sediment) == 0 {
-			Db.Where("batch = ?", 2).Find(&sediment)
+		if len(sediment) == 0  {
+			Db.Where("batch = ?",2).Find(&sediment)
 		}
 	}
 	this.EchoJsonMsg(sediment)
@@ -331,17 +352,17 @@ func (this *ApiController) Login() {
 		this.EchoJsonErr("密码错误")
 		this.StopRun()
 	}
-	S(user.Grade, user.Grade)
-	user.Password = ""
+	S(user.Grade,user.Grade)
+	user.Password=""
 	this.EchoJsonMsg(user)
 }
 
-func (this *ApiController) Exit() {
-	grade := this.GetString("grade")
-	log := Del(grade)
-	if log == "ok" {
+func (this *ApiController)Exit(){
+	grade:=this.GetString("grade")
+	log:=Del(grade)
+	if log=="ok"{
 		this.EchoJsonMsg("ok")
-	} else {
+	}else {
 		this.EchoJsonErr("error")
 	}
 
@@ -350,161 +371,168 @@ func (this *ApiController) Exit() {
 }
 
 //添加
-func (this *ApiController) Adduser() {
-	user := User{}
-	userfind := User{}
+func (this *ApiController)Adduser(){
+	user:=User{}
+	userfind:=User{}
 	username := this.GetString("username")
 	Db.Where("username = ? ", username).First(&user)
 	if !IsEmpty(user.Username) {
 		this.EchoJsonErr("用户已注册")
-	} else {
+	}else {
 		password := this.GetString("password")
 		password = Md5(password, Md5Salt)
-		role := this.GetString("role")
-		companyid := this.GetString("companyid")
-		id := ToInt(this.GetString("id"))
-		user.Id = id
-		user.Username = username
-		user.Password = password
-		user.Role = role
-		user.Companyid = companyid
-		user.Grade = this.GetString("grade")
-		user.Grade = Md5(username+ToString(time.Now()), Md5Salt)
+		role:=this.GetString("role")
+		companyid:=this.GetString("companyid")
+		id:=ToInt(this.GetString("id"))
+		user.Id=id
+		user.Username=username
+		user.Password=password
+		user.Role=role
+		user.Companyid=companyid
+		user.Grade=this.GetString("grade")
+		user.Grade= Md5(username+ToString(time.Now()), Md5Salt)
 		Db.Create(&user)
 		Db.Where("username = ? ", username).First(&userfind)
 		if !IsEmpty(userfind.Username) {
 			this.EchoJsonMsg("插入成功")
-		} else {
+		}else {
 			this.EchoJsonErr("插入失败")
 		}
 	}
 }
 
 //修改
-func (this *ApiController) Updateuser() {
-	user := User{}
-	param := make(map[string]interface{})
-	id := this.GetString("id")
-	p := this.FormToP("password", "role", "companyid", "username")
-	for k, v := range p {
-		if v != nil {
-			param[k] = v
+func (this *ApiController)Updateuser(){
+	user:=User{}
+
+	param:=make(map[string]interface{})
+	id:=this.GetString("id")
+	grade:=this.GetString("grade")
+	username:=this.GetString("username")
+	Db.Where("username = ? ", username).First(&user)
+	if user.Grade !=grade{
+		this.EchoJsonErr("用户已注册")
+		return
+	}
+	p := this.FormToP("password", "role","companyid","username")
+	for k,v:=range p{
+		if v!=nil{
+			param[k]=v
 		}
 	}
-	db := Db.Model(&user).Where("id = ?", id).Updates(param)
-	if strings.Fields(ToString(db))[1] == "<nil>" {
-		if strings.Fields(ToString(db))[2] != "0" {
+	db:=Db.Model(&user).Where("id = ?", id).Updates(param)
+	if strings.Fields(ToString(db))[1]=="<nil>"{
+		if strings.Fields(ToString(db))[2]!="0" {
 			this.EchoJsonMsg("更新成功")
-		} else {
+		}else{
 			this.EchoJsonErr("更新失败")
 		}
 
-	} else {
-		this.EchoJsonErr("更新失败")
-	}
+	}else
+	{this.EchoJsonErr("更新失败")}
+
+
 
 }
 
 //密码修改
-func (this *ApiController) Updatepassword() {
-	user := User{}
-	grade := this.GetString("grade")
-	passwordnew := this.GetString("passwordnew")
-	passwordold := this.GetString("passwordold")
+func (this *ApiController) Updatepassword(){
+	user:=User{}
+	grade:=this.GetString("grade")
+	passwordnew:=this.GetString("passwordnew")
+	passwordold:=this.GetString("passwordold")
 	passwordold = Md5(passwordold, Md5Salt)
 	passwordnew = Md5(passwordnew, Md5Salt)
-	if err := Db.Where("grade = ?", grade).Find(&user).Error; err != nil {
+	if err:=Db.Where("grade = ?", grade).Find(&user).Error;err!=nil{
 		this.EchoJsonErr("修改失败")
-	} else {
-		if user.Password == passwordold {
-			if err := Db.Model(&user).Where("grade = ?", grade).Update("password", passwordnew).Error; err != nil {
-				this.EchoJsonErr("修改失败")
+	}else{
+		if user.Password==passwordold{
+		if err:=Db.Model(&user).Where("grade = ?", grade).Update("password", passwordnew).Error; err != nil {
+			this.EchoJsonErr("修改失败")
 
-			} else {
-				this.EchoJsonMsg("修改成功")
-			}
 		} else {
+			this.EchoJsonMsg("修改成功")
+		}
+		}else {
 			this.EchoJsonMsg("原始密码错误，请重新输入")
 		}
 	}
 }
 
 //查询
-func (this *ApiController) Finduser() {
+func (this *ApiController)Finduser(){
 
 	role := this.GetString("role")
-	if role == "1" || role == "2" {
-		var db interface{}
-		users := []User{}
+	if role =="1"||role=="2"{
+	var db interface{}
+	users:=[]User{}
 		chilrole := this.GetString("chilrole")
-		username := this.GetString("username")
-		p := this.FormToP("username", "chilrole")
-		param := make(map[string]interface{})
-		for k, v := range p {
-			if v != nil {
-				if k == "chilrole" {
-					param["role"] = v
-				} else {
-					param[k] = v
-				}
+	username:=this.GetString("username")
+	p := this.FormToP("username","chilrole")
+	param:=make(map[string]interface{})
+	for k,v :=range p{
+		if v!=nil{
+			if k=="chilrole"{
+			param["role"]=v
+			}else {
+				param[k]=v
 			}
 		}
-		fmt.Println(param)
-		if role == "2" {
-			if IsEmpty(chilrole) {
-				if IsEmpty(username) {
-					db = Db.Where("role in (?)", []string{"4", "5"}).Find(&users)
-				} else {
-					db = Db.Where("role in (?) AND username = ?  ", []string{"4", "5"}, username).Find(&users)
-				}
-			} else {
-				if chilrole == "4" || chilrole == "5" {
-					db = Db.Where(param).Find(&users)
-				} else {
-					this.EchoJsonErr("没有权限访问")
-					this.StopRun()
-				}
-
+	}
+	fmt.Println(param)
+	if role=="2"{
+		if IsEmpty(chilrole){
+			if IsEmpty(username){
+				db=Db.Where("role in (?)", []string{"4", "5"}).Find(&users)
+			}else {
+		db=Db.Where("role in (?) AND username = ?  ", []string{"4", "5"},username).Find(&users)
+		}}else {
+			if(chilrole=="4"||chilrole=="5"){
+				db=Db.Where(param).Find(&users)
+			}else{
+				this.EchoJsonErr("没有权限访问")
+				this.StopRun()
 			}
-		} else {
-			db = Db.Where(param).Find(&users)
+
 		}
+		}else {
+		db=Db.Where(param).Find(&users)
+	}
 
-		if strings.Fields(ToString(db))[1] == "<nil>" {
-			if strings.Fields(ToString(db))[2] != "0" {
-				for k, _ := range users {
-					users[k].Password = ""
-				}
-				this.EchoJsonMsg(users)
-			} else {
-				this.EchoJsonMsg(false)
+
+	if strings.Fields(ToString(db))[1]=="<nil>"{
+		if strings.Fields(ToString(db))[2]!="0" {
+			for k,_:=range users{
+				users[k].Password=""
 			}
-
-		} else {
+			this.EchoJsonMsg(users)
+		}else{
 			this.EchoJsonMsg(false)
 		}
 
-	} else {
+	}else
+	{this.EchoJsonMsg(false)}
+
+	}else {
 		this.EchoJsonMsg("您无权限")
-	}
+}
 }
 
 //删除
-func (this *ApiController) Deletuser() {
+func (this * ApiController)Deletuser(){
 	id := this.GetString("id")
 
-	db := Db.Where("id = ?", id).Delete(User{})
+	db:=Db.Where("id = ?", id).Delete(User{})
 	fmt.Println(db)
-	if strings.Fields(ToString(db))[2] == "<nil>" {
-		if strings.Fields(ToString(db))[3] != "0" {
+	if strings.Fields(ToString(db))[2]=="<nil>"{
+		if strings.Fields(ToString(db))[3]!="0" {
 			this.EchoJsonMsg("删除成功")
-		} else {
+		}else{
 			this.EchoJsonErr("删除失败")
 		}
 
-	} else {
-		this.EchoJsonErr("删除失败")
-	}
+	}else
+	{this.EchoJsonErr("删除失败")}
 }
 
 func (this *ApiController) Upload() {
@@ -630,14 +658,14 @@ func (this *ApiController) Upmessage() {
 	message := Message{}
 	message.Username = this.GetString("username")
 	message.Companyid = this.GetString("line")
-	message.Section = this.GetString("section")
+	message.Section=this.GetString("section")
 	message.Companyid = this.GetString("companyid")
 	message.Img = this.GetString("img")
 	message.Text = this.GetString("text")
-	message.Dungou = this.GetString("dungou")
-	message.Ringnum = this.GetString("ringnum")
-	message.Type = this.GetString("type")
-	message.Schedule = this.GetString("schedule")
+	message.Dungou=this.GetString("dungou")
+	message.Ringnum=this.GetString("ringnum")
+	message.Type=this.GetString("type")
+	message.Schedule=this.GetString("schedule")
 	message.Date = this.GetString("date")
 	db := Db.Create(&message)
 	fmt.Println(db)
@@ -653,55 +681,94 @@ func (this *ApiController) Upmessage() {
 }
 
 //显示上报信息
-func (this *ApiController) Findmessage() {
-	messages := []Message{}
-	p := this.FormToP("username", "dungou", "type", "ringnum")
-	param := make(map[string]interface{})
-	for k, v := range p {
-		if v != nil {
-			param[k] = v
+func (this *ApiController) Findmessage(){
+
+	messages:=[]Message{}
+	p := this.FormToP("username","dungou","type","ringnum")
+	param:=make(map[string]interface{})
+	for k,v :=range p{
+		if v!=nil{
+			param[k]=v
 		}
 	}
-	db := Db.Where(param).Find(&messages)
+	db:=Db.Where(param).Find(&messages)
 	fmt.Println(db)
 
-	if strings.Fields(ToString(db))[1] == "<nil>" {
-		if strings.Fields(ToString(db))[2] != "0" {
+	if strings.Fields(ToString(db))[1]=="<nil>"{
+		if strings.Fields(ToString(db))[2]!="0" {
 
 			this.EchoJsonMsg(messages)
-		} else {
+		}else{
 			this.EchoJsonMsg(messages)
 		}
 
-	} else {
-		this.EchoJsonErr("查询失败")
+	}else
+	{this.EchoJsonErr("查询失败")}
+}
+
+func inserSet(record []string) {
+	enc := mahonia.NewEncoder("UTF-8")
+	set := Dungouset{}
+	p := P{}
+	dungou := enc.ConvertString(record[3])
+	status := "1"
+	p["dungou"] = dungou
+	p["status"] = status
+	Db.Table("dungouset").Where("dungou = ? and status = ?", dungou, status).Updates(P{"status": "0"})
+	log.Println(enc.ConvertString(record[0]))
+	set.Project = enc.ConvertString(record[0])
+	set.Path = enc.ConvertString(record[1])
+	set.Section = enc.ConvertString(record[2])
+	set.Dungou = enc.ConvertString(record[3])
+	set.Type = enc.ConvertString(record[4])
+	set.Company1 = enc.ConvertString(record[5])
+	set.Company2 = enc.ConvertString(record[6])
+	set.Client = enc.ConvertString(record[7])
+	set.Datano = enc.ConvertString(record[8])
+	set.Pressures =  ToInt(record[9])
+	set.Jack =  ToInt(record[10])
+	set.Ringnum =  ToInt(record[11])
+	set.Lon = enc.ConvertString(record[12])
+	set.Lat = enc.ConvertString(record[13])
+	set.Schedule = enc.ConvertString(record[15])
+
+	set.Status = status
+	if record[14]=="上海" {
+		set.City = enc.ConvertString(record[14])
+	}else {
+		set.City = "全国"
 	}
+	if enc.ConvertString(record[5]) == OWNCOMPANY {
+		set.Own = "1"
+	} else {
+		set.Own = "0"
+	}
+	Db.Create(set)
 }
 
 //显示备注
-func (this *ApiController) Findremark() {
-	remark := []Remark{}
-	p := this.FormToP("username", "companyid", "messageid", "text")
-	param := make(map[string]interface{})
-	for k, v := range p {
-		if v != nil {
-			param[k] = v
+func (this *ApiController)Findremark(){
+	remark:=[]Remark{}
+	p := this.FormToP("username","companyid","messageid","text")
+	param:=make(map[string]interface{})
+	for k,v :=range p{
+		if v!=nil{
+			param[k]=v
 		}
 	}
-	db := Db.Where(param).Find(&remark)
+	db:=Db.Where(param).Find(&remark)
 	fmt.Println(db)
 
-	if strings.Fields(ToString(db))[1] == "<nil>" {
-		if strings.Fields(ToString(db))[2] != "0" {
+	if strings.Fields(ToString(db))[1]=="<nil>"{
+		if strings.Fields(ToString(db))[2]!="0" {
 
 			this.EchoJsonMsg(remark)
-		} else {
+		}else{
 			this.EchoJsonMsg(remark)
 		}
 
-	} else {
-		this.EchoJsonErr("查询失败")
-	}
+	}else
+	{this.EchoJsonErr("查询失败")}
 }
 
 //添加备注
