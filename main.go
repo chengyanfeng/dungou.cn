@@ -24,7 +24,10 @@ func main() {
 	beego.InsertFilter("/*", beego.BeforeRouter, BaseFilter) //路由过滤
 
 	//自动匹配路由
+	beego.AutoRouter(&UserController{})
 	beego.AutoRouter(&ApiController{})
+	beego.AutoRouter(&RealController{})
+	beego.AutoRouter(&VideoController{})
 	beego.InsertFilter("/rpc", beego.BeforeRouter, RpcFilter)
 	//beego.InsertFilter("/api/*", beego.BeforeRouter, WhiteListFilter)
 	Mkdir("./logs")                                        //创建日志文件夹
@@ -35,8 +38,7 @@ func main() {
 	orm.Init()
 	mssql.Init()
 	tjMssql.Init()
-	//Insert()
-	//GetVideo(AppKey,AppSecret)
+	Insert()
 	go func() {
 		//开启协程
 		InitCache() //初始化

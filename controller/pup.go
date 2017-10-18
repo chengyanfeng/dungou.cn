@@ -44,7 +44,7 @@ func tjinsert() {
 func Insert() {
 	list := orm.GetIdList()
 	change()
-	tjinsert()
+	//tjinsert()
 	for _, v := range list {
 		id := ToString(v["id"])
 		name := ToString(v["name"])

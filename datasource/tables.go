@@ -231,7 +231,8 @@ type Remark struct {
 
 type Video struct {
 	DeviceSerial string `json:"size:512;column:deviceSerial"`
-	DeviceName   string `json:"size:512;column:deviceName"`
+	Dungou   string `json:"size:512;column:dungou"`
+	Section 	 string `json:"size:512;column:section"`
 	ChannelNo    string `json:"size:512;column:channelNo"`
 	LiveAddress  string `json:"size:512;column:liveAddress"`
 	HdAddress    string `json:"size:512;column:hdAddress"`
