@@ -49,7 +49,7 @@ var RpcFilter = func(ctx *context.Context) {
 		}else {
 			if 	ToString(S(args["grade"].(string)))==""&&act!="api/login" {
 
-				err = errors.New("请先登录1")
+				err = errors.New("请先登录")
 			} else {
 
 				if ToString(S(args["grade"].(string)))!=args["grade"]&&act!="api/login"{
