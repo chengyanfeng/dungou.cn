@@ -407,17 +407,25 @@ func (this *ApiController)Updateuser(){
 
 	param:=make(map[string]interface{})
 	id:=this.GetString("id")
-	grade:=this.GetString("grade")
+
 	username:=this.GetString("username")
 	Db.Where("username = ? ", username).First(&user)
-	if user.Grade !=grade{
+	fmt.Println("----------------------------")
+	fmt.Println(user.Id)
+
+	if ToString(user.Id)!=id&&user.Id!=0{
 		this.EchoJsonErr("用户已注册")
 		return
 	}
 	p := this.FormToP("password", "role","companyid","username")
 	for k,v:=range p{
 		if v!=nil{
+			if k=="password"{
+
+				param[k]=Md5(v, Md5Salt)
+			}else {
 			param[k]=v
+			}
 		}
 	}
 	db:=Db.Model(&user).Where("id = ?", id).Updates(param)
@@ -425,7 +433,8 @@ func (this *ApiController)Updateuser(){
 		if strings.Fields(ToString(db))[2]!="0" {
 			this.EchoJsonMsg("更新成功")
 		}else{
-			this.EchoJsonErr("更新失败")
+
+			this.EchoJsonMsg("更新成功")
 		}
 
 	}else
@@ -817,65 +826,4 @@ func Setcompany(args P) (P, error) {
 	return args, err
 }
 
-func inserSet(record []string) {
-	enc := mahonia.NewEncoder("UTF-8")
-	set := Dungouset{}
-	p := P{}
-	dungou := enc.ConvertString(record[3])
-	status := "1"
-	p["dungou"] = dungou
-	p["status"] = status
-	Db.Table("dungouset").Where("dungou = ? and status = ?", dungou, status).Updates(P{"status": "0"})
-	log.Println(enc.ConvertString(record[0]))
-	set.Project = enc.ConvertString(record[0])
-	set.Path = enc.ConvertString(record[1])
-	set.Section = enc.ConvertString(record[2])
-	set.Dungou = enc.ConvertString(record[3])
-	set.Type = enc.ConvertString(record[4])
-	set.Company1 = enc.ConvertString(record[5])
-	set.Company2 = enc.ConvertString(record[6])
-	set.Client = enc.ConvertString(record[7])
-	set.Datano = enc.ConvertString(record[8])
-	set.Pressures = ToInt(record[9])
-	set.Jack = ToInt(record[10])
-	set.Ringnum = ToInt(record[11])
-	set.Lon = enc.ConvertString(record[12])
-	set.Lat = enc.ConvertString(record[13])
-	set.Schedule = enc.ConvertString(record[15])
 
-	set.Status = status
-	if record[14] == "上海" {
-		set.City = enc.ConvertString(record[14])
-	} else {
-		set.City = "全国"
-	}
-	if enc.ConvertString(record[5]) == OWNCOMPANY {
-		set.Own = "1"
-	} else {
-		set.Own = "0"
-	}
-	Db.Create(set)
-}
-
-func persent(sets []Dungouset) []Dungouset {
-	re := []Dungouset{}
-	for _, set := range sets {
-		dungou := set.Datano
-		ring := set.Ringnum
-		daopan := Daopan{}
-		p := make(map[string]interface{})
-		p["dungou"] = dungou
-		p["batch"] = 1
-		Db.Where(p).First(&daopan)
-		ringnum := daopan.Ringnum
-		percent := 0.0
-		if ringnum > 0 {
-			percent = float64(ringnum) / float64(ring) * 100
-		}
-
-		s := fmt.Sprintf("%0.1f", percent)
-		set.Persent = string(s) + "%"
-		re = append(re, set)
-	}
-	return re
-}
