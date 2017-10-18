@@ -412,6 +412,7 @@ func (this *ApiController)Updateuser(){
 		this.EchoJsonErr("用户已注册")
 		return
 	}
+
 	p := this.FormToP("password", "role","companyid","username")
 	for k,v:=range p{
 		if v!=nil{
