@@ -408,6 +408,7 @@ func (this *ApiController)Updateuser(){
 
 	username:=this.GetString("username")
 	Db.Where("username = ? ", username).First(&user)
+
 	if ToString(user.Id)!=id&&user.Id!=0{
 		this.EchoJsonErr("用户已注册")
 		return
