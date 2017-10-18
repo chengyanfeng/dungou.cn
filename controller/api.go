@@ -356,7 +356,7 @@ func (this *ApiController) Login() {
 	user.Password=""
 	this.EchoJsonMsg(user)
 }
-
+//退出
 func (this *ApiController)Exit(){
 	grade:=this.GetString("grade")
 	log:=Del(grade)
@@ -369,7 +369,6 @@ func (this *ApiController)Exit(){
 	fmt.Println(log)
 
 }
-
 //添加
 func (this *ApiController)Adduser(){
 	user:=User{}
@@ -400,7 +399,6 @@ func (this *ApiController)Adduser(){
 		}
 	}
 }
-
 //修改
 func (this *ApiController)Updateuser(){
 	user:=User{}
@@ -410,8 +408,7 @@ func (this *ApiController)Updateuser(){
 
 	username:=this.GetString("username")
 	Db.Where("username = ? ", username).First(&user)
-	fmt.Println("----------------------------")
-	fmt.Println(user.Id)
+
 
 	if ToString(user.Id)!=id&&user.Id!=0{
 		this.EchoJsonErr("用户已注册")
@@ -443,7 +440,6 @@ func (this *ApiController)Updateuser(){
 
 
 }
-
 //密码修改
 func (this *ApiController) Updatepassword(){
 	user:=User{}
@@ -467,7 +463,6 @@ func (this *ApiController) Updatepassword(){
 		}
 	}
 }
-
 //查询
 func (this *ApiController)Finduser(){
 
@@ -526,13 +521,10 @@ func (this *ApiController)Finduser(){
 		this.EchoJsonMsg("您无权限")
 }
 }
-
 //删除
 func (this * ApiController)Deletuser(){
 	id := this.GetString("id")
-
 	db:=Db.Where("id = ?", id).Delete(User{})
-	fmt.Println(db)
 	if strings.Fields(ToString(db))[2]=="<nil>"{
 		if strings.Fields(ToString(db))[3]!="0" {
 			this.EchoJsonMsg("删除成功")
