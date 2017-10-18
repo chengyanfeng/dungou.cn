@@ -2340,3 +2340,129 @@
 2017/10/16 15:35:56 [I] http server Running on http://:9700
 2017/10/16 15:35:58 [D] [BaseFilter /rpc] 
 2017/10/16 15:35:58 [D] [BaseFilter /user/login] 
+2017/10/16 15:46:22 [D] [BaseFilter /] 
+2017/10/16 15:46:28 [D] [BaseFilter /api/getdata] 
+2017/10/16 15:57:04 [D] [BaseFilter /api/getdata] 
+2017/10/16 15:57:19 [D] [BaseFilter /rpc] 
+2017/10/16 15:57:44 [D] [BaseFilter /rpc] 
+2017/10/16 15:57:54 [D] [BaseFilter /rpc] 
+2017/10/16 15:58:07 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 15:58:07 [I] http server Running on http://:9700
+2017/10/16 15:58:10 [D] [BaseFilter /rpc] 
+2017/10/16 15:58:10 [D] [BaseFilter /api/login] 
+2017/10/16 15:58:19 [D] [BaseFilter /rpc] 
+2017/10/16 15:58:19 [D] [BaseFilter /api/getdaopan] 
+2017/10/16 15:58:28 [D] [BaseFilter /rpc] 
+2017/10/16 15:58:28 [D] [BaseFilter /real/getdaopan] 
+2017/10/16 15:59:18 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 15:59:18 [I] http server Running on http://:9700
+2017/10/16 15:59:23 [D] [BaseFilter /rpc] 
+2017/10/16 15:59:23 [D] [BaseFilter /api/login] 
+2017/10/16 15:59:26 [D] [BaseFilter /rpc] 
+2017/10/16 15:59:26 [D] [BaseFilter /real/getdaopan] 
+2017/10/16 15:59:36 [D] [BaseFilter /rpc] 
+2017/10/16 15:59:36 [D] [BaseFilter /real/getdaopan] 
+2017/10/16 16:00:26 [D] [BaseFilter /rpc] 
+2017/10/16 16:00:26 [D] [BaseFilter /real/getdaopan] 
+2017/10/16 16:03:12 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/16 16:03:12 [I] http server Running on http://:9700
+2017/10/16 16:03:26 [D] [BaseFilter /rpc] 
+2017/10/16 16:03:26 [D] [BaseFilter /api/login] 
+2017/10/16 16:03:32 [D] [BaseFilter /rpc] 
+2017/10/17 14:37:47 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 14:37:48 [I] http server Running on http://:9700
+2017/10/17 14:38:36 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 14:38:37 [I] http server Running on http://:9700
+2017/10/17 14:42:08 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 14:42:09 [I] http server Running on http://:9700
+2017/10/17 14:42:52 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 14:42:53 [I] http server Running on http://:9700
+2017/10/17 14:43:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 14:43:10 [I] http server Running on http://:9700
+2017/10/17 14:57:47 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 14:57:48 [I] http server Running on http://:9700
+2017/10/17 14:58:00 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 14:58:00 [I] http server Running on http://:9700
+2017/10/17 14:58:26 [D] [BaseFilter /rpc] 
+2017/10/17 14:58:34 [D] [BaseFilter /rpc] 
+2017/10/17 14:58:34 [D] [BaseFilter /api/login] 
+2017/10/17 14:58:55 [D] [BaseFilter /rpc] 
+2017/10/17 14:58:55 [D] [BaseFilter /real/getvideo] 
+2017/10/17 14:59:11 [D] [BaseFilter /rpc] 
+2017/10/17 14:59:11 [D] [BaseFilter /api/getvideo] 
+2017/10/17 14:59:48 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 14:59:48 [I] http server Running on http://:9700
+2017/10/17 14:59:50 [D] [BaseFilter /rpc] 
+2017/10/17 14:59:50 [D] [BaseFilter /api/login] 
+2017/10/17 14:59:51 [D] [BaseFilter /rpc] 
+2017/10/17 14:59:51 [D] [BaseFilter /api/getvideo] 
+2017/10/17 15:00:09 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 15:00:09 [I] http server Running on http://:9700
+2017/10/17 15:00:12 [D] [BaseFilter /rpc] 
+2017/10/17 15:00:12 [D] [BaseFilter /api/login] 
+2017/10/17 15:00:14 [D] [BaseFilter /rpc] 
+2017/10/17 15:00:14 [D] [BaseFilter /api/getvideo] 
+2017/10/17 15:02:01 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 15:02:01 [I] http server Running on http://:9700
+2017/10/17 15:02:06 [D] [BaseFilter /rpc] 
+2017/10/17 15:02:06 [D] [BaseFilter /api/login] 
+2017/10/17 15:02:09 [D] [BaseFilter /rpc] 
+2017/10/17 15:02:09 [D] [BaseFilter /api/getvideo] 
+2017/10/17 15:08:27 [D] [BaseFilter /rpc] 
+2017/10/17 15:08:27 [D] [BaseFilter /api/map] 
+2017/10/17 15:08:32 [D] [BaseFilter /rpc] 
+2017/10/17 15:08:32 [D] [BaseFilter /api/maps] 
+2017/10/17 15:40:37 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 15:40:38 [I] http server Running on http://:9700
+2017/10/17 15:46:43 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 15:46:44 [I] http server Running on http://:9700
+2017/10/17 15:47:34 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 15:47:35 [I] http server Running on http://:9700
+2017/10/17 15:49:11 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 15:49:12 [I] http server Running on http://:9700
+2017/10/17 15:50:14 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 15:50:16 [I] http server Running on http://:9700
+2017/10/17 16:24:46 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 16:24:46 [I] http server Running on http://:9700
+2017/10/17 16:36:41 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 16:36:41 [I] http server Running on http://:9700
+2017/10/17 16:37:21 [D] [BaseFilter /rpc] 
+2017/10/17 16:37:21 [D] [BaseFilter /api/login] 
+2017/10/17 16:37:25 [D] [BaseFilter /rpc] 
+2017/10/17 16:37:25 [D] [BaseFilter /video/getsection] 
+2017/10/17 16:39:06 [D] [BaseFilter /rpc] 
+2017/10/17 16:39:06 [D] [BaseFilter /video/getvideo] 
+2017/10/17 16:40:06 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 16:40:07 [I] http server Running on http://:9700
+2017/10/17 16:40:10 [D] [BaseFilter /rpc] 
+2017/10/17 16:40:10 [D] [BaseFilter /api/login] 
+2017/10/17 16:40:12 [D] [BaseFilter /rpc] 
+2017/10/17 16:40:12 [D] [BaseFilter /video/getvideo] 
+2017/10/17 16:40:38 [D] [BaseFilter /rpc] 
+2017/10/17 16:40:38 [D] [BaseFilter /video/getlist] 
+2017/10/17 16:40:55 [D] [BaseFilter /rpc] 
+2017/10/17 16:40:55 [D] [BaseFilter /video/getlist] 
+2017/10/17 16:43:22 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 16:43:22 [I] http server Running on http://:9700
+2017/10/17 16:43:25 [D] [BaseFilter /rpc] 
+2017/10/17 16:43:25 [D] [BaseFilter /api/login] 
+2017/10/17 16:43:27 [D] [BaseFilter /rpc] 
+2017/10/17 16:43:27 [D] [BaseFilter /video/getlist] 
+2017/10/17 16:44:49 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/17 16:44:49 [I] http server Running on http://:9700
+2017/10/17 16:44:49 [D] [BaseFilter /rpc] 
+2017/10/17 16:44:49 [D] [BaseFilter /api/login] 
+2017/10/17 16:44:52 [D] [BaseFilter /rpc] 
+2017/10/17 16:44:52 [D] [BaseFilter /video/getlist] 
+2017/10/17 16:45:51 [D] [BaseFilter /rpc] 
+2017/10/17 16:45:51 [D] [BaseFilter /video/getlist] 
+2017/10/17 16:46:02 [D] [BaseFilter /rpc] 
+2017/10/17 16:46:02 [D] [BaseFilter /video/getlist] 
+2017/10/17 16:55:07 [D] [BaseFilter /rpc] 
+2017/10/17 16:55:07 [D] [BaseFilter /video/getsection] 
+2017/10/17 16:56:34 [D] [BaseFilter /rpc] 
+2017/10/17 16:56:34 [D] [BaseFilter /video/getlist] 
+2017/10/17 16:59:25 [D] [BaseFilter /rpc] 
+2017/10/17 16:59:25 [D] [BaseFilter /video/getvideo] 
+2017/10/18 12:10:47 [D] [db conn root:@tcp(localhost:3306)/tdtg?charset=utf8&parseTime=True&loc=Local] 
+2017/10/18 12:10:47 [I] http server Running on http://:9700

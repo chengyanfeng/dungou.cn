@@ -792,31 +792,90 @@ func (this *ApiController) Upremark() {
 
 }
 
-func (this *ApiController) Getvideo() {
-
-}
-
-func Setcompany(args P) (P,error) {
+func Setcompany(args P) (P, error) {
 	dungou := args["dungou"]
 	grade := args["grade"]
 	var err error
 	user := User{}
-	Db.Where("grade = ?",grade).First(&user)
+	Db.Where("grade = ?", grade).First(&user)
 	dglist := user.Companyid
 	if dungou != nil {
-		if strings.Contains(dglist,dungou.(string))||dglist==""{
+		if strings.Contains(dglist, dungou.(string)) || dglist == "" {
 			args["dungou"] = dungou
-		}else {
+		} else {
 			err = errors.New("没有权限")
 			fmt.Println(err)
 		}
-	}else {
-		if dglist==""{
+	} else {
+		if dglist == "" {
 			args["dungou"] = dglist
-		}else {
+		} else {
 			args["dungou"] = dglist
 		}
 
 	}
-	return args,err
+	return args, err
+}
+
+func inserSet(record []string) {
+	enc := mahonia.NewEncoder("UTF-8")
+	set := Dungouset{}
+	p := P{}
+	dungou := enc.ConvertString(record[3])
+	status := "1"
+	p["dungou"] = dungou
+	p["status"] = status
+	Db.Table("dungouset").Where("dungou = ? and status = ?", dungou, status).Updates(P{"status": "0"})
+	log.Println(enc.ConvertString(record[0]))
+	set.Project = enc.ConvertString(record[0])
+	set.Path = enc.ConvertString(record[1])
+	set.Section = enc.ConvertString(record[2])
+	set.Dungou = enc.ConvertString(record[3])
+	set.Type = enc.ConvertString(record[4])
+	set.Company1 = enc.ConvertString(record[5])
+	set.Company2 = enc.ConvertString(record[6])
+	set.Client = enc.ConvertString(record[7])
+	set.Datano = enc.ConvertString(record[8])
+	set.Pressures = ToInt(record[9])
+	set.Jack = ToInt(record[10])
+	set.Ringnum = ToInt(record[11])
+	set.Lon = enc.ConvertString(record[12])
+	set.Lat = enc.ConvertString(record[13])
+	set.Schedule = enc.ConvertString(record[15])
+
+	set.Status = status
+	if record[14] == "上海" {
+		set.City = enc.ConvertString(record[14])
+	} else {
+		set.City = "全国"
+	}
+	if enc.ConvertString(record[5]) == OWNCOMPANY {
+		set.Own = "1"
+	} else {
+		set.Own = "0"
+	}
+	Db.Create(set)
+}
+
+func persent(sets []Dungouset) []Dungouset {
+	re := []Dungouset{}
+	for _, set := range sets {
+		dungou := set.Datano
+		ring := set.Ringnum
+		daopan := Daopan{}
+		p := make(map[string]interface{})
+		p["dungou"] = dungou
+		p["batch"] = 1
+		Db.Where(p).First(&daopan)
+		ringnum := daopan.Ringnum
+		percent := 0.0
+		if ringnum > 0 {
+			percent = float64(ringnum) / float64(ring) * 100
+		}
+
+		s := fmt.Sprintf("%0.1f", percent)
+		set.Persent = string(s) + "%"
+		re = append(re, set)
+	}
+	return re
 }
